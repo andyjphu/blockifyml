@@ -1,11 +1,4 @@
-# import all csv files in ./coinScrapeData/
-
-# Load each dataset one by one 
-
-# For each data set run the sentiment analysis on the post titles using the following code
-
-
-'''
+import os
 import pandas as pd
 import re
 from transformers import pipeline
@@ -23,61 +16,50 @@ def preprocess_text(text):
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
-# Load the dataset
-df_existing = pd.read_csv("bitcoin_mentions_with_comments.csv")
-
-# Extract and preprocess the text data
-existing_post_titles = df_existing["Post Title"].tolist()
-texts = [preprocess_text(text) for text in existing_post_titles if text and len(text) > 10]  # Filter out invalid or short texts
-
-# Classify each text
-results = classifier(texts)
+# Directory containing the CSV files
+data_dir = "./coinScrapeData/"
+results = []
 
 
-bullish_count = 0
-bearish_count = 0
-neutral_count = 0
 
-# Debug: Print individual results
-for idx, (text, result) in enumerate(zip(texts, results)):
-    print(result["label"])
-    if result["label"] == "Bullish":
-        bullish_count += 1
-    elif result["label"] == "Bearish":
-        bearish_count += 1
-    else:
-        neutral_count += 1
+# Iterate through all CSV files in the directory
+for file_name in os.listdir(data_dir):
+    if file_name.endswith(".csv"):
+        symbol = file_name.split(".")[0]  # Extract symbol from the file name
+        file_path = os.path.join(data_dir, file_name)
+        print(f"Processing {file_name}...")
+
+        try:
+            # Load the dataset
+            df = pd.read_csv(file_path)
+        except Exception as e:
+            print(f"Error loading {file_name}: {e}")
+            continue       
         
-    print(f"{idx + 1}. Text: {text}\nSentiment: {result['label']}, Score: {result['score']:.4f}\n")
+        # Extract and preprocess the text data
+        if "Post Title" in df.columns:
+            texts = [preprocess_text(text) for text in df["Post Title"].dropna() if len(text) > 10]
+            
+            # Classify each text
+            sentiment_results = classifier(texts)
+            
+            # Count sentiment results
+            bullish_count = sum(1 for r in sentiment_results if r["label"] == "Bullish")
+            bearish_count = sum(1 for r in sentiment_results if r["label"] == "Bearish")
+            neutral_count = sum(1 for r in sentiment_results if r["label"] == "Neutral")
+            
+            # Append results
+            results.append({
+                "Symbol": symbol,
+                "Bullish": bullish_count,
+                "Bearish": bearish_count,
+                "Neutral": neutral_count,
+            })
+        else:
+            print(f"Warning: No 'Post Title' column found in {file_name}")
 
-
-
-# Calculate percentages
-total = len(results)
-
-
-if neutral_count > bullish_count and neutral_count > bearish_count:
-    if bullish_count > bearish_count:
-        print ("Slightly Bullish")
-        
-    elif bearish_count > bullish_count:
-        print ("Slightly Bearish")
-        
-        
-else:
-    
-    if bullish_count > bearish_count:
-        print ("Bullish")
-        
-    elif bearish_count > bullish_count:
-        print ("Bearish")
-        
-        
-print("Bullish Samples:", bullish_count, "Bearish Samples:", bearish_count, "Neutral Samples:", neutral_count)
-'''
-
-
-
-# For each sentiment analysis result, count the number of bullish, bearish, and neutral sentiments
-
-# store each count in a csv file called results.csv with the following columns: Symbol, Bullish, Bearish, Neutral
+# Save results to a CSV file
+results_df = pd.DataFrame(results)
+results_csv_path = "results.csv"
+results_df.to_csv(results_csv_path, index=False)
+print(f"Sentiment analysis results saved to {results_csv_path}")
