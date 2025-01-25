@@ -31,4 +31,4 @@ coins_with_names = get_coinbase_coins_with_names()
 # Print the coins and their names
 print("Coins on Coinbase with Names:")
 for symbol, name in coins_with_names.items():
-    print(f"{symbol} {name}")
+    print(f"{symbol},{name}")
