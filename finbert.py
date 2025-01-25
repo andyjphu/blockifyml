@@ -2,9 +2,8 @@ import pandas as pd
 import re
 from transformers import pipeline
 
-# Initialize the FinBERT classifier
-classifier = pipeline("sentiment-analysis", model="yiyanghkust/finbert-tone")
-#classifier = pipeline("ElKulako/cryptobert")
+# Initialize the CryptoBERT classifier
+classifier = pipeline("sentiment-analysis", model="ElKulako/cryptobert")
 
 # Preprocessing function to clean text
 def preprocess_text(text):
@@ -26,31 +25,44 @@ texts = [preprocess_text(text) for text in existing_post_titles if text and len(
 # Classify each text
 results = classifier(texts)
 
+
+bullish_count = 0
+bearish_count = 0
+neutral_count = 0
+
 # Debug: Print individual results
 for idx, (text, result) in enumerate(zip(texts, results)):
-    print(result)
-    print(f"{idx + 1}. Text: {text}\nSentiment: {result['label']}, Score: {result['score']}\n")
+    print(result["label"])
+    if result["label"] == "Bullish":
+        bullish_count += 1
+    elif result["label"] == "Bearish":
+        bearish_count += 1
+    else:
+        neutral_count += 1
+        
+    print(f"{idx + 1}. Text: {text}\nSentiment: {result['label']}, Score: {result['score']:.4f}\n")
 
-# Count sentiments with thresholds
-neutral_threshold = 0.6  # Example threshold for neutral classification
-bullish_count = sum(1 for r in results if r['label'] == 'positive' and r['score'] > neutral_threshold)
-bearish_count = sum(1 for r in results if r['label'] == 'negative' and r['score'] > neutral_threshold)
-neutral_count = len(results) - bullish_count - bearish_count
+
 
 # Calculate percentages
 total = len(results)
-bullish_percentage = (bullish_count / total) * 100
-bearish_percentage = (bearish_count / total) * 100
-neutral_percentage = (neutral_count / total) * 100
 
-# Output the results
-print(f"bullish_percentage: {bullish_percentage:.2f}")
-print(f"bearish_percentage: {bearish_percentage:.2f}")
-print(f"neutral_percentage: {neutral_percentage:.2f}")
 
-if bullish_percentage > 60:
-    print("Overall Sentiment: Bullish")
-elif bearish_percentage > 60:
-    print("Overall Sentiment: Bearish")
+if neutral_count > bullish_count and neutral_count > bearish_count:
+    if bullish_count > bearish_count:
+        print ("Slightly Bullish")
+        
+    elif bearish_count > bullish_count:
+        print ("Slightly Bearish")
+        
+        
 else:
-    print("Overall Sentiment: Neutral")
+    
+    if bullish_count > bearish_count:
+        print ("Bullish")
+        
+    elif bearish_count > bullish_count:
+        print ("Bearish")
+        
+        
+print("Bullish Samples:", bullish_count, "Bearish Samples:", bearish_count, "Neutral Samples:", neutral_count)
