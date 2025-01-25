@@ -1,0 +1,1660 @@
+Post Title,Subreddit,Post ID,Created Time,Upvotes,Upvote Ratio,Comments Count,Post URL,Author,Flair,Post Text
+Iron Monkey is a fucking idiot,loopring,1i9coxv,2025-01-24 21:17:41,10,0.65,12,https://i.redd.it/tq1rqkwqu1fe1.jpeg,TulsisTavern,,
+"""Native Rollups?""",loopringorg,1i8jtzm,2025-01-23 20:27:01,77,0.92,15,https://www.reddit.com/r/loopringorg/comments/1i8jtzm/native_rollups/,Iron_Monkey,❓ Unverified ❓,"https://preview.redd.it/71g2smq5juee1.png?width=595&format=png&auto=webp&s=756897298c6a89e8db8e5e7b913756b4cc2e5c2e
+
+**\^ \[**[**I highly recommend reading Uma Roy's fantastic summary of this proposal on Twitter**](https://x.com/pumatheuma/status/1880286929956270261) **+ replies\] \^**
+
+**Disclaimer:** I am not an Ethereum developer.
+
+I have decent understanding of general computer reasoning & logic, alongside some (*rusty*) basic coding skills in a few languages. **My interest in Loopring / Ethereum** stems almost exclusively from the **countless implications** which their successful adoption may very well bring about **within these next few upcoming years**, and **hold immense faith** in their ultimate **potential to drastically reform** how **our entire world & society** operates - **for the better**.
+
+**I would heavily advise that you don't take any of my technical simplifications within this post as definite for the time being - and instead whenever possible: opt to learn directly from source materials / related experts.**
+
+With how fresh [this recent proposal iteration](https://ethresear.ch/t/native-rollups-superpowers-from-l1-execution) actually is, I imagine that most Ethereum L2 teams/developers (*of those even currently focused on this*) are still brainstorming how all of this would work, and how their existing projects would fit in. Even on the Ethereum Research forum post, there have been several [replies over these past few days](https://ethresear.ch/t/native-rollups-superpowers-from-l1-execution/21517/9) following release which brought up some potential concerns with the current design, and are still yet to be answered.
+
+There was [a post made here yesterday](https://www.reddit.com/r/loopringorg/comments/1i7b3d5/saw_vitalik_reposting_about_native_rollups_how/) asking if Native Rollups would mean inevitable obsolescence for Loopring, paired with a considerable amount of apocalyptic-tier reactions (*and unanswered calls for official team comment*). In hopes of somewhat easing the ongoing lack of any explanation whatsoever here (*non-team included*) since then, I wanted to make a quick (optimistic) summary of how I'm understanding everything so far:
+
+* Any existing rollup can become 'Native' once the proposal is implemented:
+   * In a similar manner to how Taiko is a '**Based**' zkEVM, but a (L2) zkEVM nonetheless
+      * with 'Based' meaning that **Ethereum L1 stakers sequence Taiko's proposed blocks**, even if  validation for them being proposed in the first place is done via zkProofs
+   * Loopring/any L2 Rollup would also be able to become '**Native**', but a L2 nonetheless
+      * with 'Native' meaning that **they can essentially grab a precompiled valid proof + state from Ethereum L1**, without having to do it with an off-chain method such as zkProofs
+   * Furthermore, a L2 Rollup also has the option to **become both 'Native' and 'Based'**
+      * which would make them an '**ultrasound** rollup'
+* Despite perhaps seeming like a no-brainer to become 'ultrasound'
+   * Realistically, **we would most likely end up with a mix of all of these** across different rollups:
+      * \[*'Based' / 'Native' / 'Ultrasound' / neither 'Based' nor 'Native'*\]
+   * **Consider that if a Rollup**:
+      * grabs a precompiled valid proof / state from Ethereum L1 (Native)
+      * simply re-executes it
+      * and asks Ethereum L1 stakers to sequence it for settlement (Based)
+   * In the case of doing all three (Ultrasound):
+      * They are asking Ethereum L1 to do a vast majority of the work throughout this entire process, and will therefore **incur heftier fees** (*depending on if 'Native' and/or 'Based'*)
+      * If 'Native' and simply re-executing the provided precompilled proof: then rollup will also **limited to L1's inherit gas limits**
+      * meanwhile **independent proof systems (e.g. zkProofs) are far more flexible with gas usage**: **customised splits** between partaking users, ability to **check gas fee total** prior to sending, **payment of gas using non-$ETH** tokens (**+ possible incentives**: *20% discount when paying for gas via $LRC on Loopring's protocol*) etc.
+
+https://preview.redd.it/2c0lbhy0luee1.png?width=593&format=png&auto=webp&s=7f1dd79360c56f8e1fe4ca227bae81d4833c31bc
+
+* Kind of brings us back to why having '*a healthy Taiko*' L2 is important for Loopring even now:
+   * **Taiko incurs heavier fees due to gaining the privilege of L1 sequencing** (Based)
+      * which **need to be offset by a healthy amount of users + constant transactions**, or otherwise fees and/or settlement speed would greatly suffer due to the increased cost from L1 sequencers
+   * If 'Based' Taiko achieves stable overall performance, then **Loopring also benefits as a non-based L3**:
+      * **By using its own zkProofs** for both internal L3 sequencing + validation without incurring L1 fees
+      * with **resulting rollup blocks** (*in reality: thousands+ of L3 transactions*) **subsequentially being settled onto Taiko** and counted as a 'single transaction' block (alongside the many others which are already being made directly on Taiko as 'true single transactions').
+      * **If the Loopring L3 zkProofs are implemented bug-free, and are sound in logic** (*e.g. no token dictating this process*): L3 block is settled on 'Based' Taiko **->** and the containing Taiko L2 block is settled by L1 sequencers **-> Loopring essentially inherits the best of both worlds**
+
+Therefore, I am inclined to believe that **regardless of Native Rollups existing, the incentive to use Loopring as an L3 across various L2s should still remain** \- primarily due to the gas implications which make it counter-productive for everyone to be 'Native' / 'Ultrasound'?
+
+Loopring L3s would still benefit from the underlying 'Native' / 'Based' / 'Ultrasound' properties of whichever L2 is being passed its zkProof blocks - while circumventing the increased gas & limitations, yet still retaining '***near-absolute***' **Ethereum L1 security inheritance** (*again, assuming the zkProofs used are bug-free + sound*)
+
+* at the cost of the L3 proofs / sequencing technically not having '***absolute inheritance***'
+   * (*achieveable throughout an entire transaction if made directly using 'Native' / 'Ultrasound' Rollups*)
+
+Keep in mind that a lot of Loopring's value as a product originates from use in conjunction with its **Smart Wallet**:
+
+* due to the sheer **convenience** (*yet minimal security tradeoff*) provided to its end users
+   * for (*typically intended*) use as a **daily function, yet non-custodial, hot wallet**
+* **natively intertwined with its L2 / L3 protocols** to create a **feature-rich & portable single-app  experience**
+   * **simulataneously tailored towards performing a vast amount of financial tasks:**
+   * ranging anywhere from **general Ethereum asset management**,
+   * to **advanced day-trading** (*e.g. long/short positions for non-Ethereum assets w/ CEX liquidity & leverage*)
+
+I'll conclude here because I didn't even intend for this to end up as long as it already has. As of now, **my main struggle** when trying to piece everything together - **is figuring out where the clear boundaries lay for what is considered valid use** when utilising a mix of ""Native"" and alternative proofs (e.g. ZK) layers, in the context of both:
+
+**a) an individual rollup layer**
+
+* **What optimisations can be made to a** 'Native' Rollup **precompiled proof** **prior to re-executing**?
+   * **What are the limits** of this **before a proof is no longer valid / Rollup is no longer truly 'Native'**?
+
+**b) multi-layer rollup stacks** recursively settling proofs on each other
+
+* How would different **varying proofs types + degrees of 'Native' / 'Based'** affect performance / stability?
+   * What should you analyse to determine **which stack is best optimised for needs** \+ **risk adversity level**?
+
+**Just to clarify again: I'm not an Ethereum developer** ‼️ but rather just another (*currently* *very tired*) ape amongst the many of us here. Regardless, I thought this would still probably be worthwhile sharing given yesterday's sentiment - at least while we wait to receive official clarification from the Loopring team detailing their outlook on all of this.
+
+🌀💙"
+GameStop x PSAcard *could* single-handedly warrant reviving their NFT Marketplace,loopringorg,1i3ptr6,2025-01-17 15:25:02,272,0.93,38,https://www.reddit.com/r/loopringorg/comments/1i3ptr6/gamestop_x_psacard_could_singlehandedly_warrant/,Iron_Monkey,💬 Discussion 💬,"[Alright, alright - I know: \\""Another GameStop post on \/r\/loopringorg 🙄\\""  ](https://preview.redd.it/pfhqwbr8iree1.png?width=2160&format=png&auto=webp&s=1fe7632ee32fba08797a359d097116a5b43399a6)
+
+Nobody wants to see this seemingly dead horse (*responsible for leading many of us here*) continue to be whacked like a piñata - especially in another shameless attempt to harvest what little short-term hopium might still be left inside.
+
+**I truly get it, and let me be explicitly clear**: the intent of my post is not to convince you that any of this is currently in the works /  likely to happen. In actuality, this serves as a less abstract & deeper-dive extension of [another post made here last month which received significant traction](https://www.reddit.com/r/loopringorg/comments/1h5bcuv/could_looprings_partnership_with_gamestop_open/) \- and was **merely speculating about this recent partnership**.
+
+(*Outside of surface-level + light snooping done solely for this: I am virtually clueless regarding any existing specifics within the card grading scene. However, if you happen to be plugged in + notice something stated which turns out to be outright false / heavily goes against established etiquette or standards etc. - please just let me know* 💙)
+
+Mixed inbetween the many optimistic replies to the original post, there were also **skeptics wondering how tokenization of physical cards via NFTs could even be implemented and/or provide worthwhile utility**. However, nobody in the thread seemed to be aware of the fact that such a Web3 service already exists:
+
+[https:\/\/courtyard.io\/about](https://preview.redd.it/x7nm3o8lzkde1.png?width=1920&format=png&auto=webp&s=5053e40d2fa3334f03ad55663c18bc2a24a66062)
+
+https://preview.redd.it/x2vtpbs39lde1.png?width=845&format=png&auto=webp&s=5f2743aa581af3a8ca2bd8c7e04eec048e469dc8
+
+https://preview.redd.it/rmzux86t8lde1.png?width=869&format=png&auto=webp&s=b635d0bb01d5b0677a9c196af48663b89cc550b1
+
+https://preview.redd.it/hxi8ge78blde1.png?width=819&format=png&auto=webp&s=d7c2e7601c04e82d107bac4ba8c81d9b12621831
+
+**Courtyard utilises Polygon's Proof-of-Stake chain** as its back-end for minting/storing/managing NFTs. These **NFTs are owned + used by their customers to digitally verify ownership of any given graded trading card being held in a real-life physical vault by their partner: Brink's**.
+
+https://preview.redd.it/3c5xebii4lde1.png?width=869&format=png&auto=webp&s=52358e4a54568041478ed591d70c834a7128d404
+
+[https:\/\/courtyard.io\/brinks](https://preview.redd.it/j7msawwy3lde1.png?width=878&format=png&auto=webp&s=d366b4730eb8fcad31b22a92bb1746a7f2b25dbe)
+
+**When Brink's initially receive a physical graded card for vaulting - the corresponding NFT for that graded serial number is minted + distributed to its sender**. These can then be **circulated throughout Courtyard's platform** via marketplace + auctions + digital pack opening / peer-2-peer trades.
+
+* (*+ the original vaulter of a card(s) is incentivised to provide their liquidity for these services via fee earning schemes based on subsequent further use of their card(s) by other users on the platform*)
+
+[https:\/\/courtyard.io\/marketplace](https://preview.redd.it/sjvojid87lde1.png?width=1920&format=png&auto=webp&s=b4888e3cb6a29d8520190fae76edf9109075e0dc)
+
+https://preview.redd.it/mzddlraf7lde1.png?width=1920&format=png&auto=webp&s=d4e17cc7603172aedcd42dd45d4c29e476e2ee97
+
+[https:\/\/courtyard.io\/auctions\/](https://preview.redd.it/7jqt1b3u7lde1.png?width=1920&format=png&auto=webp&s=fb4abc3758d71d0c2c93b4f53b1dff55b5d2220a)
+
+[https:\/\/courtyard.io\/vending-machine\/](https://preview.redd.it/vam0n4i08lde1.png?width=1920&format=png&auto=webp&s=599bb042854c58acc876d9bf08e3d6825a21a016)
+
+https://preview.redd.it/42ml0pc68lde1.png?width=1920&format=png&auto=webp&s=6579c7934af1a5f891d1904b5ffc37eef62b20ae
+
+**When a user decides to 'redeem' their NFT representing ownership proof** (*being used for these instantaneous selling / trading services*) in order **to receive the corresponding tangible physical card**: the **NFT is exchanged with Courtyard, who then handle shipping the card to you from Brink's**.
+
+Overall, a very neat and **useful service - especially if you specifically highly value the financial aspect of this collectibles hobby**. Alternatively, these could also be used as a **'digital trophy'** of sorts by displaying on your Web3 profile(s) / within metaverse spaces (*e.g. games which choose to integrate specific NFTs*), **for those who favour their digital social circles** more than the traditional benefits of physical ownership.
+
+>""Yeah, this is cool and all u/Iron\_Monkey... but isn't this post about GameStop x PSAcards? and how they are going to finally turbo-moonpump the $LRC bag I dumped my entire life savings into? Instead it seems like you have just come to shill a project which completely screwed over their chances by being first 🤬""
+
+I wanted to highlight Courtyard's existing service first because **it is living & undeniable proof that**:
+
+* **NFT tokenization of graded trading cards is not only feasible to execute**
+   * but **the utility provided is also clearly significant** if it already has a **sizeable demographic of active users** \- with **many listings being in the $XXX price range** (*+ even $XXXX isn't uncommon*)
+      * **77k listings via marketplace feature alone since March 2022 launch**
+
+[and now for why I believe GameStop x PSAcards still have the advantage if they choose to enter this space 🧘‍♂️](https://preview.redd.it/shnkgodimree1.png?width=854&format=png&auto=webp&s=5481b1d9262d28b7b7f486f090aa08ac87b31d3a)
+
+* The **GameStop NFT Marketplace was built using our beloved Loopring protocol**, and is therefore **objectively superior to Courtyard's Polygon PoS chain**.
+   * Although Polygon's PoS chain is based on Ethereum + its transaction history (*therefore making assets on either inherently bridgeable to the other*) - it is still a **centralised sidechain** being secured by its own (*waaaay smaller than Ethereum L1's*) demographic of stakers.
+      * (*Stakers lock X amount of funds in exchange for gaining a proportional amount of votes which can either approve/decline blocks/transactions being proposed for settlement*)
+   * **Loopring uses zkRollups, making it a 'true L2'** solution inheriting Ethereum's security because **only the re-constructable cryptographic proofs being used to validate compressing / bundling transactions are moved off-chain** (*while Polygon PoS is moving your assets off-chain*).
+      * Polygon PoS is an relic of its time because **aside from being a permanent potential security risk for user assets** vs L2s - **even the superior fees / speed benefit it once provided is negligible** with Loopring L3 (*e.g. Loopring DeFi on Taiko zkEVM*) now achieving instanteous settlement + sub-cent fees (*which can even be entirely sponsored by dApps for their users using gas tanks*) via zkRollups.
+      * **In Polygon's defence: they also know this** and have diverted their focus towards their new Hermez zkEVM in these past couple years. The current plan for the existing fragmented PoS chain is to transition towards being a 'zkEVM Validium', which I'm admitedly not versed on as of now but seems to still be somewhat weaker security wise vs true L2/L3s.
+* **GameStop's NFT Marketplace + accompanying (consumer-focused) Wallet have both already been stress tested by thousands of users / creators** in functionality during their public Beta releases.
+   * [nft.gamestop.com](http://nft.gamestop.com) has remained online (*albeit with gutted marketplace functionality*), and the Wallet is still functional for Ethereum L1 / Loopring / Immutable use if you didn't get rid of it.
+      * Again, this highlights that **all of the code for these products is finished and still functional** \- just not 'officially live' due to the '**regulatory uncertainty**' reasoning given for shutdown last year.
+      * (+ their reasoning will likely no longer be a valid concern within the near future based on [how crypto-friendly this incoming US administration have projected their intentions to be](https://www.reuters.com/technology/trumps-inauguration-marks-new-era-cryptocurrency-2025-01-17/) **- an extreme contrast to the current one guilty of repeatedly halting attempts made to advance the space**).
+
+[https:\/\/x.com\/RyanSAdams\/status\/1788285597095797211](https://preview.redd.it/w1ty019nmkee1.png?width=702&format=png&auto=webp&s=7ec6e2b6fa538014958ffd635efa743ee5d64375)
+
+[https:\/\/x.com\/ryancohen\/status\/1625507240831553537 🧐](https://preview.redd.it/6z214pd7kree1.jpg?width=1170&format=pjpg&auto=webp&s=961e60091033f95fe3e17559d437a8e1622e6a08)
+
+* **GameStop x PSAcard are inherently just better suited for executing this tokenized graded cards/collectibles niche** compared to Courtyard x Brink's, **paired with having significantly wider potential customer onboarding reach**.
+   * **GameStop is the world's biggest video game retailer.**
+      * **Pokemon, Magic the Gathering, and Yu-Gi-Oh make up a huge chunk of the current graded card market**. Take a wild guess what demographic is most likely to buy these?
+   * **PSA is the world's leading card grading authenticator.**
+      * \+ already have their **own in-house Vault** system.
+   * **Courtyard was created solely to execute this tokenized marketplace niche.**
+      * Yet somehow **on this Ethereum-based subreddit within a post discussing the idea of this exact product potentially being executed by GameStop x PSA** \- *nobody mentioned them existing*?
+   * **Brink's is an established firm, but their primary customer base is far more generalised** \- with trading cards / collectables most definitely not being anywhere near a leading demographic.
+      * This must have some sort of **effect on their processing speeds when vaulting cards** if backlogged / perhaps even on average days.
+      * **Greatly diminished efficiency of any potential advertising aimed at directing existing customers** towards Courtyard's service.
+   * **With the GameStop x PSAcard partnership - you only need to give your card(s) to GameStop** (and they deliver to PSA for grading: who have the ability to immediately vault + tokenize them afterwards).
+      * **This process is specialised & streamlined for its purpose** (with standardised risk-appropriate care precautions in place + context-suitable insurance policies) **due to being a direct partnership between 2 companies who collectively possess all of the resources required to make this work**.
+      * **Customers avoid the unnecessary potential headache from using mail services** for each individual acquiring / grading / vaulting steps, and now also have the further benefit of being able to **collect redeemed cards at a local GameStop**.
+      * If you have a GameStop Pro membership: it is already cheaper to get your cards PSA graded through them instead of PSA directly partially because of the free shipping benefit - but moreso primarily because it is **$24.99/card via PSA's website** vs **$17.99/card @ GameStop**.
+
+...and for the delectable '**cherry on top**'?
+
+* Nat Turner (**CEO of Collectors - parent company of PSAcards**)
+   * was **appointed to GameStop's Board of Directors** on the 18th of November 2024
+      * (*cohencidentally shortly after the US presidential election results* 🤔)
+   * has **spoken several times in the past few years about his** **intent to enter the NFT space**
+      * and more specifically, utilising NFTs within the context of ""**IRL collectibles**""**:**
+
+[https:\/\/magazine.wharton.upenn.edu\/issues\/spring-summer-2023\/where-are-they-now\/](https://preview.redd.it/ov48oewtlqde1.png?width=633&format=png&auto=webp&s=03a8e43694be31bc50554039b5fdea881a9ebfea)
+
+[🌀 Power to the Collectors 🏴‍☠️🫡](https://i.redd.it/lt1qfqzdu2ee1.gif)"
+2024 Performance Review of Major Exchange Coins/Tokens,CryptoCurrency,1hwgzth,2025-01-08 05:22:00,4,0.64,6,https://www.reddit.com/r/CryptoCurrency/comments/1hwgzth/2024_performance_review_of_major_exchange/,MemenaSerena,GENERAL-NEWS,"**CEXs**
+
+**Gainers and Losers:**
+
+* **BGB (Bitget):** Up by **970.2%** 🚀
+* **WBT (WhiteBIT):** Up by **343.7%**
+* **GT (Gate.io):** Up by **263.1%**
+* **BNB (Binance):** Up by **132.2%**
+* **LEO (Bitfinex):** Up by **124.6%**
+* **CRO (Crypto.com):** Up by **64.5%**
+* **KCS (KuCoin):** Up by **7.8%**
+* **HT (Huobi):** Down by **47.5%** 🔻
+* **OKB (OKX):** Down by **11.6%** 🔻
+
+# DEXs
+
+**Gainers and Losers:**
+
+* **XLM (Stellar):** Up by **271.9%** 🚀
+* **UNI (Uniswap):** Up by **124.8%**
+* **SUSHI (SushiSwap):** Up by **54.7%**
+* **GNO (Gnosis):** Up by **40.1%**
+* **1INCH (1inch Network):** Down by **5.4%** 🔻
+* **CAKE (PancakeSwap):** Down by **13.6%** 🔻
+* **RUNE (Thorchain):** Down by **14.1%** 🔻
+* **LRC (Loopring):** Down by **18.2%** 🔻
+* **JUP (Jupiter):** Down by **48.2%** 🔻
+* **OSMO (Osmosis):** Down by **71.1%** 🔻
+
+*(Numbers are according to CoinGecko as of* ***January 1, 2025 - 14:00 UTC***\*.)\*
+
+# Summary
+
+**BGB (Bitget)** dominated the **CEX tokens** with a jaw-dropping **970.2% surge**, followed by **WBT (WhiteBIT)** with **343.7%** and **GT (Gate.io)** at **263.1%**.
+
+**BNB (Binance)** also delivered an impressive **132.2% gain** \- Considering BNB's MarketCap, this is an impressive gain but one would expect even more based on its huge userbase.
+
+**HT (Huobi)** and **OKB (OKX)** underperformed, declining by **47.5%** and **11.6%**, respectively.
+
+On the **DEX side**, **XLM (Stellar)** led with an impressive **271.9% surge**, while **UNI (Uniswap)** and **SUSHI (SushiSwap)** followed with **124.8%** and **54.7%** gains.
+
+**OSMO (Osmosis)** suffered the steepest decline, falling by **71.1%**, followed by **JUP (Jupiter)** at **48.2%**. **LRC,RUNE, CAKE,1INCH** had decline as well - Considering the bull sentiments in 2024, such results could be worrying for their communites.
+
+Overall, **CEX tokens outperformed DEX tokens** in 2024, showcasing stronger resilience and more User-friendliness, people still prefer and trust CEXs more than Dexs.
+
+Numbers are based on CoinMarketCap (08.01.2024-08.01.2025)
+
+https://preview.redd.it/uxq3z1jjxqbe1.png?width=1200&format=png&auto=webp&s=cc462d72371384c9a58975eb0cf86803ab1ab169
+
+https://preview.redd.it/llyofuakxqbe1.png?width=1080&format=png&auto=webp&s=920ebc35056edf8544e6874f74a960bd6ec434bd
+
+https://preview.redd.it/8rop4kykxqbe1.png?width=1718&format=png&auto=webp&s=1e9d228207001065d70b9bc923fc0397771d8443
+
+"
+Daily Discussion,LoopringLounge,1hvmf7z,2025-01-07 02:45:08,1,0.6,0,https://www.reddit.com/r/LoopringLounge/comments/1hvmf7z/daily_discussion/,AutoModerator,Discussion,"Discuss Loopring stuff here that doesn't require its own post
+
+# Official Loopring Subreddit
+
+[r/loopringorg](https://www.reddit.com/r/loopringorg/)
+
+# Helpful Links
+
+* [Loopring Wallet](https://loopring.io/)
+* [Loopring Exchange](https://exchange.loopring.io/)
+* [Loopring Protocol Website](https://loopring.org/)
+* [Twitter](https://twitter.com/loopringorg)
+* [Discord](http://discord.gg/KkYccYp)
+* [Medium](https://medium.com/loopring-protocol)
+* [GitHub](https://github.com/loopring)
+* [Loopring Protocol Design Doc (whitepaper)](https://github.com/Loopring/docs/wiki/Loopring3_Design)
+* [Newsletter](https://loopring.substack.com/)
+* [YouTube](https://www.youtube.com/c/loopring)
+
+# ZKP Links
+
+* [zkSNARK Circuit Code](https://medium.com/loopring-protocol/loopring-open-sources-its-zksnark-circuit-code-53c934b67ce5)
+* [zkSNARK Prover Optimizations](https://medium.com/loopring-protocol/zksnark-prover-optimizations-3e9a3e5578c0)
+
+# Extra Resources
+
+* [LRC Token Contract](https://etherscan.io/token/0xbbbbca6a901c926f240b89eacb641d8aec7aeafd)"
+"Crypto has been doing incredibly well this year, so let's see how the 2 cryptos Apes are invested in are doing",gme_meltdown,1hgiwde,2024-12-17 14:40:35,45,0.91,11,https://i.redd.it/7v9s3bj9pg7e1.png,DK-ButterflyOwner,They targeted morons,
+need help with transaction history/order book,loopringorg,1hg5bps,2024-12-17 02:17:45,11,0.8,9,https://www.reddit.com/r/loopringorg/comments/1hg5bps/need_help_with_transaction_historyorder_book/,EstablishmentNo1329,🛟 Assistance 🛟,"hello, i m currently on the loopring official wallet and i want to see my transaction history, i bought lrc plenty of times using fiat, and i want to see my order book, the prices i bought at and how much lrc i bought using ramp. where can i find it? thank you so much"
+Adresse von Steveguo (LRC CEO) macht sachen mit GME NFT contract Adresse.,Spielstopp,1hf5wf8,2024-12-15 18:51:40,49,0.95,12,https://www.reddit.com/r/Spielstopp/comments/1hf5wf8/adresse_von_steveguo_lrc_ceo_macht_sachen_mit_gme/,AncientCosmonaut,NFT / Krypto,"Achtung: Teilweise Copy Pasta vom Loopring unter.
+
+Vor ein paar Tagen gab es also einen Beitrag über neue Aktivitäten beim Gamestop-NFT-Vertrag. Kürzlich gab es eine weitere Transaktion, und ich glaube nicht, dass sie aufgegriffen wurde, aber die Adresse, die damit interagiert, ist eine mit dem ENS von steveguo.eth, dem Loopring-CEO.
+
+Also, lasst uns das mal genauer betrachten. - GME-Vertragsadresse: [https://etherscan.io/address/0xc852ac7aae4b0f0a0deb9e8a391eba2047d80026#internaltx](https://etherscan.io/address/0xc852ac7aae4b0f0a0deb9e8a391eba2047d80026#internaltx)
+
+\- Wenn man sich die letzte Transaktion ansieht, ist die Absenderadresse [https://etherscan.io/address/0x59f3163ab39b8b90daf57508bc1faecb2f2cd374](https://etherscan.io/address/0x59f3163ab39b8b90daf57508bc1faecb2f2cd374)
+
+\- Etherscan hat einen Abschnitt „finanziert von“, der für mich so aussieht, als würde er ENS-Wallets anzeigen, die Geld überweisen. Und in diesem Fall wird dieses Wallet von „steveguo.eth“ finanziert.
+
+[https://etherscan.io/address/0x1f28f10176f89f4e9985873b84d14e75751bb3d1](https://etherscan.io/address/0x1f28f10176f89f4e9985873b84d14e75751bb3d1) Diese Finanzierung erfolgte vor 239 Tagen, aber die NFT-Transaktionen sind aktuell
+
+Entweder Steve selbst oder einer der anderen Ingenieure bei Loopring interagiert definitiv mit der GME-Vertragsadresse zum Testen. Dieser Vertrag war für „create nft“
+
+Jetzt haben wir also einen 100-prozentigen Beweis, dass GME und LRC weiterhin zusammenarbeiten.
+
+Ich war in letzter Zeit ziemlich pessimistisch, da keine Neuigkeiten von Loopring positiv waren, aber selbst ich fange an, Hoffnung zu schöpfen. Es stellt sich heraus, dass das Schweigen bedeutet, dass sie immer noch unter Geheimhaltungsvereinbarung stehen und immer noch mit dem ursprünglichen Plan fortfahren.
+
+\-----
+
+Persönliche Gedanken.
+
+Spoiler: Der GME-NFT-Marktplatz wurde nie als gescheitert angesehen sondern nur aufgrund von ""anhaltende regulatorische Unsicherheit im Kryptobereich"" (vorübergehend) abgeschaltet. Diese Entscheidungen spiegeln die Herausforderungen wieder, denen Unternehmen im Kryptobereich aufgrund fehlender klarer regulatorischer Rahmenbedingungen(USA) gegenüberstehen.
+
+Nützliche Infos:
+
+\- GME hat ein paar, begrenzte NFT's mit Nutzen gestartet. (Illiuvium, CyberCrew, Musik, Looperlands).  
+\- Der Marktplatz hat die BETA-Phase nie verlassen.  
+\- Die URL ist immer noch verfügbar.  
+\- Regulatorische Unsicherheit (zu der Zeit), SEC mit Ethereum als Sicherheit oder nicht.  
+\- Grading Card Eigentum in Kombination mit NFT-Nutzung wäre ein Real World use case von Kr.  
+\- Das Eigentum an digitalen Vermögenswerten und der Weiterverkauf von Spielen würde einen Marktplatz benötigen.
+
+Ich habe selbst noch Loopring weil ich damals davon ausging, dass das Ding mit GME, Loopring und IMX groß wird. Vielleicht war ich einfach nur zu früh dran. Die Sterne stehen gut, dass mit der neuen US-Regierung und einem neuen SEC-Chef der Pro Krypto ist, der Markplatz neu ausgerollt wird."
+Steveguo (LRC CEO) address interacting with GME NFT contract address,Superstonk,1heqisp,2024-12-15 06:13:55,842,0.89,41,https://www.reddit.com/gallery/1heqisp,1c3m4nn,:NFT:  Gamestop Marketplace,
+"Steveguo (LRC CEO) address interacting with GME NFT contract address, we're back?",loopringorg,1heq45n,2024-12-15 05:44:15,365,0.94,51,https://www.reddit.com/r/loopringorg/comments/1heq45n/steveguo_lrc_ceo_address_interacting_with_gme_nft/,datasmash,📰 News 📰,"So a few days ago there was a [post](https://reddit.com/r/loopringorg/comments/1hbrtei/new_gamestop_nft_nft_factory_loopring_contract/) about new activity on the Gamestop NFT contract.
+
+There was another txn recently, and I don't think its been picked up on but the address interacting with it is one with the ENS of steveguo.eth, the loopring CEO.
+
+So lets break this down.
+
+\- GME Contract address: [https://etherscan.io/address/0xc852ac7aae4b0f0a0deb9e8a391eba2047d80026#internaltx](https://etherscan.io/address/0xc852ac7aae4b0f0a0deb9e8a391eba2047d80026#internaltx)
+
+\- Looking at the latest txn, the from address is [https://etherscan.io/address/0x59f3163ab39b8b90daf57508bc1faecb2f2cd374](https://etherscan.io/address/0x59f3163ab39b8b90daf57508bc1faecb2f2cd374)
+
+\- Etherscan has a \`funded by\` section, which looks to me showing ENS wallets sending funds in. And in this case, this wallet is funded by \`steveguo.eth\` . [https://etherscan.io/address/0x1f28f10176f89f4e9985873b84d14e75751bb3d1](https://etherscan.io/address/0x1f28f10176f89f4e9985873b84d14e75751bb3d1) This funding was 239 days ago, but the NFT txns are recent
+
+https://preview.redd.it/0i3eh5f0rz6e1.png?width=301&format=png&auto=webp&s=352b42c35753f5226a5f20cc5da0feca42f11f1e
+
+So either Steve himself, or one of the other engineers on Loopring is definitely interacting with the GME contract address for testing. This contract was for \`create nft\`
+
+https://preview.redd.it/2ilj3ezgqz6e1.png?width=1015&format=png&auto=webp&s=7240e23f0db682020d6c70396bbfcc5c72f13d54
+
+So now we have 100% proof GME + LRC are still working together.
+
+I've been pretty bearish of late, as no news from Loopring has not been positive, but even I'm starting to gain hope. Turns out the silence means they're still under NDA, and still moving ahead with the original plan.
+
+I'm not one for hopium, but this is traceable and real right?"
+Tipps für den günstigen Tausch oder Verkauf meines Kryptoportfolios gesucht,Finanzen,1hdk236,2024-12-13 14:24:26,0,0.5,2,https://www.reddit.com/r/Finanzen/comments/1hdk236/tipps_für_den_günstigen_tausch_oder_verkauf/,ingo_1988,Investieren - Krypto,"Hallo,
+
+ich möchte mein Kryptoportfolio auf meinem Ledger verkleinern und habe dabei folgende Anliegen:
+
+1. Ich möchte einige Werte in Bitcoin oder Ethereum tauschen (siehe Bild im Anhang).
+2. Alternativ würde ich sie gerne gegen Euro verkaufen.
+
+Kennt jemand eine Plattform oder einen Weg, um dies mit möglichst geringen Gebühren umzusetzen?
+
+Bisher habe ich festgestellt, dass die Gebühren oft sehr hoch sind und teilweise mehr als die Hälfte des Betrags ausmachen. Ich hoffe, jemand kann mir weiterhelfen. 
+
+Vielen Dank!
+
+https://preview.redd.it/v9tslj3n2o6e1.png?width=774&format=png&auto=webp&s=4e73abce3698aefa1f977d8a7984e8fae804de4c
+
+  
+
+
+"
+$11Trillion in 1 wallet?,loopringorg,1hapb17,2024-12-09 19:44:42,128,0.91,27,https://i.redd.it/lhlo8ye84x5e1.jpeg,FuqnGamer,💬 Discussion 💬,"I’m sure there’s an easy explanation, but this 1 wallet has $11 Trillion in it?
+Is this like theee main account that facilitates things? Thanks in advance-"
+Question regarding GameStop wallet,loopringorg,1hag7ku,2024-12-09 13:13:35,9,0.77,14,https://www.reddit.com/r/loopringorg/comments/1hag7ku/question_regarding_gamestop_wallet/,SmellsLikeBu11shit,🛟 Assistance 🛟,"Alright, so I imported my GameStop wallet to MetaMask, and I am able to connect to [https://defi.loopring.io/#/l2assets](https://defi.loopring.io/#/l2assets) and see my ETH and LRC, i can see my NFTs via [https://explorer.loopring.io/](https://explorer.loopring.io/) \- but can I send/receive my NFTs through the loopring portal? Or is there a better method to send/receive NFTs I have in my GameStop wallet?
+
+I feel like my brain is dummysmooth, any help is appreciated 🙏
+
+Edit: Anyone jumping into my DMs, reply on this post if you're legit. Obligatory if you're in my DMs I'm gonna assume it's a scam"
+Best way to move LRC from my loopring wallet layer 2 to my coinbase account?,loopringorg,1h9ebh0,2024-12-08 03:20:14,40,0.88,19,https://www.reddit.com/r/loopringorg/comments/1h9ebh0/best_way_to_move_lrc_from_my_loopring_wallet/,_The_Flying_Elvis_,🛟 Assistance 🛟,I need to move some funds to my coinbase account from my layer 2 loopring account. I only hold LRC in the layer 2 wallet. What is the safest and cheapest way to move my funds to coinbase? Thanks in advance
+Short term update,loopringorg,1h8rjuq,2024-12-07 07:34:05,103,0.84,37,https://i.redd.it/c5z5r8128f5e1.jpeg,TBMengo_jr,⚙️ Technicals ⚙️,"We are in the process of a multi year ""wedge"" breakout, and right on the upper trend line we are forming a bull flag, interesting, isn t it? We are riding the Bollinger band daily togheter with the trendine that is taking us to heaven. ADX is incredible in the daily and warming up on the weekly, same for dmi+, which signal a strong bullish trend. Rsi weekly entered the bull zone, the daily is cooling down on consolidation and Macd nothing new. 
+If we see a breakout of the flag to the downside we have an harmonic competition right under the trend line. "
+Daily Discussion,LoopringLounge,1h8nkk6,2024-12-07 02:45:07,2,0.75,0,https://www.reddit.com/r/LoopringLounge/comments/1h8nkk6/daily_discussion/,AutoModerator,Discussion,"Discuss Loopring stuff here that doesn't require its own post
+
+# Official Loopring Subreddit
+
+[r/loopringorg](https://www.reddit.com/r/loopringorg/)
+
+# Helpful Links
+
+* [Loopring Wallet](https://loopring.io/)
+* [Loopring Exchange](https://exchange.loopring.io/)
+* [Loopring Protocol Website](https://loopring.org/)
+* [Twitter](https://twitter.com/loopringorg)
+* [Discord](http://discord.gg/KkYccYp)
+* [Medium](https://medium.com/loopring-protocol)
+* [GitHub](https://github.com/loopring)
+* [Loopring Protocol Design Doc (whitepaper)](https://github.com/Loopring/docs/wiki/Loopring3_Design)
+* [Newsletter](https://loopring.substack.com/)
+* [YouTube](https://www.youtube.com/c/loopring)
+
+# ZKP Links
+
+* [zkSNARK Circuit Code](https://medium.com/loopring-protocol/loopring-open-sources-its-zksnark-circuit-code-53c934b67ce5)
+* [zkSNARK Prover Optimizations](https://medium.com/loopring-protocol/zksnark-prover-optimizations-3e9a3e5578c0)
+
+# Extra Resources
+
+* [LRC Token Contract](https://etherscan.io/token/0xbbbbca6a901c926f240b89eacb641d8aec7aeafd)"
+$1.40 Loops could be coming sooner than you think.,loopringorg,1h8hlqm,2024-12-06 20:44:13,226,0.85,92,https://www.reddit.com/r/loopringorg/comments/1h8hlqm/140_loops_could_be_coming_sooner_than_you_think/,jcren2,💬 Discussion 💬,"Loopring has been stuck in a multi years long triangle pattern on the weekly that is has only recently broken out of. It has found strong support above the .30 level and will be making many moves up in the weeks to come. Judging from the size of the triangle pattern that LRC has broken out of, we may see an approx. $1.40 LRC in the weeks to come.
+
+Obviously not financial advice, just supreme optimism and confidence in this thing! Time to DCA and HODL. Going into orbit soon.
+
+Edit: thank you for the awards guys! I don’t think I’ve ever gotten one on a post before. It’s special to have gotten some from you guys, so again, a very big thanks. 
+
+https://preview.redd.it/v85zy5390c5e1.png?width=1362&format=png&auto=webp&s=32a5c2038b31d6bb91c53095ef37c7676e7e07bf"
+Did I fuck up and send LRC on the wrong network?,loopringorg,1h8h3z6,2024-12-06 20:18:44,19,0.84,8,https://www.reddit.com/r/loopringorg/comments/1h8h3z6/did_i_fuck_up_and_send_lrc_on_the_wrong_network/,symbolofasymbol,🛟 Assistance 🛟,"I sent a small amount of LRC from my iOS GameStop wallet to my ETH Trezor wallet. [explorer.Loopring.io](http://explorer.Loopring.io) says the transaction was successful. But the LRC does not show up in my Trezor wallet or even through my connected metamask, [Etherscan.io](http://Etherscan.io) does not show my wallet received anything...
+
+What's weird is that I've sent LRC to my Trezor wallet from the iOS Loopring Wallet app before with no issues, I can see the LRC sitting in my Treazor wallet.
+
+Is it lost forever?"
+Where’d my wallet go? ,loopringorg,1h8glaa,2024-12-06 19:52:35,5,0.6,4,https://www.reddit.com/r/loopringorg/comments/1h8glaa/whered_my_wallet_go/,DaetheFancy,🛟 Assistance 🛟,"EDIT: SOLVED 
+
+I’m gonna leave this just in case someone else searches at some point. In the settings menu there’s “group 1” and group 2 wallets. My original was in group 1. Accessing after such a long time it had defaulted to group 2 wallets which were not active. 
+
+Ok, I’ve had a small bag of lrc since the glory days of the 10 quarterly reports. Had bound a DNS name, tried my hand at loophead challenges. But then because of life, havnt touched my loopring wallet in months, possibly even close to a year. But never deleted, or upgraded my phone. 
+
+So today when I log in, I found it odd that I had 0 coins(should have been around 500-2000LRC, so not much, but still) no NFTs, and no activated L2 wallet. 
+
+Can someone fill me in? I’m a bit frustrated and deeply disappointed. Also concerned since I had linked the on-ramps to my bank previously as well. 
+
+Thanks in advance loopers, hopefully we see that $5 waiting room again. "
+help needed remembering,loopringorg,1h7vpao,2024-12-06 02:04:43,10,0.75,5,https://www.reddit.com/r/loopringorg/comments/1h7vpao/help_needed_remembering/,No_Choice4905,🛟 Assistance 🛟,"so i bought some LRC during its peak and then forgot about it all this time and now i cannot find it. Need help remembering which platform I might have bought it on residing in Singapore in Nov 2021. I don’t think I did the Loopring exchange as I probably didn’t want to spend on the gas to exchange and I probably went for an easy way of buying it. I know it’s my fault but would really appreciate if anyone has any idea where I might have bought it from (I might have swapped, bought it from CEX…) thanks a lot"
+Anybody else hear that rocket countdown?? 🚀🚀🚀,loopringorg,1h7juc6,2024-12-05 16:06:16,247,0.85,51,https://i.redd.it/l8040s8mh35e1.jpeg,Trux20,😂 Memes 😂,We’re back in the top 200. We’re back going up. Will history repeat itself?
+Will staking update automictically or do I need to unstak and restake.....,loopringorg,1h6uruy,2024-12-04 18:36:19,42,0.89,22,https://www.reddit.com/r/loopringorg/comments/1h6uruy/will_staking_update_automictically_or_do_i_need/,MoonApe420_,🛟 Assistance 🛟,"Will staking update automictically... or do I need to unstak and restake.....???
+
+Idk if I am just dumb... or not but shouldn't this update it is over 1% now.. Idk if I have to do something or not.. This is on the Loopring website BTW...
+
+Been in since LRC and GME were whispers then the ATM will keep holding... !!!!!!!!!! 🚀🚀🚀🚀🚀🚀🚀   🚀🚀🚀🚀🚀   🚀
+
+https://preview.redd.it/p0mqdnak3x4e1.png?width=531&format=png&auto=webp&s=4af5e2127fb6dc61e77f6b3b32b4dd621cadda43
+
+"
+What's that green on my screen! It's usually red! ,loopringorg,1h6c57w,2024-12-04 04:25:20,129,0.94,13,https://i.redd.it/ayacjbcnvs4e1.jpeg,slightleee,🛟 Assistance 🛟,Well that's different....I like it 👍 
+Pump Baby Pump 💥💥💥,loopringorg,1h61s55,2024-12-03 18:38:16,445,0.91,82,https://i.redd.it/5mqjkttwyp4e1.jpeg,Trux20,📊 Metrics 📊,Let’s watch this thing rip!
+The future of LRC?,loopringorg,1h5zsl6,2024-12-03 17:13:04,118,0.9,50,https://www.reddit.com/r/loopringorg/comments/1h5zsl6/the_future_of_lrc/,pico020,💬 Discussion 💬,"Hi y'all.
+
+I'm holding quite a bag of LRC (almost 10k). Bought in 2021, didn't sell at ATH, bought more in 2022 and 2023 and stopped buying because I wanted to invest in other projects. 
+
+My average costs is around $0.33, so I'm almost on break even again. One side of me says to get out and reinvest in other crypto, the other side of me says to keep my LRC and hope for gains. I believe in the tech and such, I love the wallet, but I'm afraid people just won't buy LRC anymore. On the other hand, there is so much growth possible.
+
+What do you think? Can LRC hit a dollar next year? Will alt season bring some big money to LRC? Will Loopring promote this token? Will there be partnerships or major steps so people will focus on LRC again? "
+Boom of Native Tokens - November Price Performance Review of Major Exchange Coins/Tokens,CryptoCurrency,1h5i925,2024-12-03 02:41:45,4,0.75,4,https://www.reddit.com/r/CryptoCurrency/comments/1h5i925/boom_of_native_tokens_november_price_performance/,MemenaSerena,EXCHANGES,"# CEXs
+
+**Gainers:**
+
+* **CRO (Crypto.com):** Up by **180.8%**
+* **HT (Huobi):** Up by **74.3%**
+* **OKB (OKX):** Up by **45.3%**
+* **LEO (Bitfinex):** Up by **44.6%**
+* **BGB (Bitget):** Up by **41.7%**
+* **KCS (KuCoin):** Up by **40%**
+* **GT (Gate.io):** Up by **35.3%**
+* **WBT (WhiteBIT):** Up by **23.3%**
+* **BNB (Binance):** Up by **15%**
+
+# DEXs
+
+**Gainers:**
+
+* **XLM (Stellar):** Up by **480.4%**
+* **LRC (Loopring):** Up by **130.1%**
+* **SUSHI (SushiSwap):** Up by **118.3%**
+* **1INCH (1inch Network):** Up by **111.5%**
+* **UNI (Uniswap):** Up by **96.7%**
+* **CAKE (PancakeSwap):** Up by **91.1%**
+* **OSMO (Osmosis):** Up by **60.7%**
+* **GNO (Gnosis):** Up by **34.6%**
+* **JUP (Jupiter):** Up by **29.4%**
+* **RUNE (Thorchain):** Up by **21.5%**
+
+**Numbers are according to CoinGecko (04.11.2024 - 14:00 UTC).**
+
+# Summary
+
+**CRO (Crypto.com)** dominated among CEX tokens with an explosive **180.8%** surge(Almost 3x), while **XLM (Stellar)** led the DEX tokens with a staggering **480.4%** increase. **HT (Huobi)** and **OKB(OKX)** also showed strong growth with **74.3%, 45,3%**, and **almost all the DEX tokens** impressed us with a remarkable rise. The market witnessed impressive gains overall, highlighting significant bullish momentum across both centralized and decentralized exchanges.
+
+https://preview.redd.it/mvei47i48l4e1.png?width=1347&format=png&auto=webp&s=34a108f28761c920e8adcfa5f98ec7bc821184c2
+
+https://preview.redd.it/r4bjn9m68l4e1.png?width=2100&format=png&auto=webp&s=b481c9c6c3c229fdcfe7ce4311a7cff35e478f33
+
+"
+LRC wallet staking -- is it worth it?,loopringorg,1h1ee33,2024-11-27 15:41:58,54,0.83,43,https://www.reddit.com/r/loopringorg/comments/1h1ee33/lrc_wallet_staking_is_it_worth_it/,jcren2,💬 Discussion 💬,"I currently have a great deal of LRC and I'd like to stake a portion of it. What is the state of loopring staking atm? If I staked 100,000 LRC or more, what is the return like? I dont have an LRC wallet atm, but I would create one if its worth it, otherwise I'd leave them in my cold wallet. 
+
+  
+Also does anyone here have any experience with LRC staking? How did it work out for you? Are you happy with the results?"
+What’s doing on with dodge?,dogecoin,1gzvyq6,2024-11-25 17:29:34,1,0.6,4,https://i.redd.it/kj3bx82dj43e1.jpeg,Boippop,,5 years in! Finally up but doesn’t look to last. What’s going on?
+NFT Marketplace - What Are the Chances?,loopringorg,1gzp7zo,2024-11-25 12:59:44,119,0.91,34,https://www.reddit.com/r/loopringorg/comments/1gzp7zo/nft_marketplace_what_are_the_chances/,beep-frotz-negatory,💬 Discussion 💬,"Loopring has a roadmap for the future, as noted by the recent Q3 update, which significantly involves multi-network features.  I do see this as a desirable feature, and hopefully it'll bring more users into the ecosystem that benefit from its utility.  The roadmap does make me slightly bullish on Loopring over 2025, but I want to see how successful (in terms of users) each milestone is before considering more buy orders.
+
+On the other hand, I am looking for the odds of a short-term catalyst which could cause a spike in LRC.  In this case, the catalyst I am looking at is the GameStop NFT Marketplace.  Similar to a Pros & Cons list, I am attempting to decide if it's worth placing a further ""bet"" on a potential future release.  Here are my initial thoughts:
+
+\*The NFT Marketplace will not be returning:\*  
+1)  Regulatory risk continues to loom over NFTs.  Their classification as a security would be detrimental to a final release.  
+2)  NFT Marketplace revenues were low when GameStop decided to wind down the Beta operations.  If I remember correctly, the marketplace was released at the tail end of the NFT hype.  Without providing any utility NFTs in a non-beta marketplace, perhaps we'd see the same revenue trend.
+
+\*The NFT Marketplace will be returning\*  
+1)  GameStop has left the Beta NFT Marketplace site up.  If there was 0% chance of them releasing a final product, why leave the website up and operational (besides continuing to provide the winding-down notice & instructions)?  I am still able to connect my Loopring Wallet to the marketplace (which simply feels good).  
+2)  One of GameStop's creator wallets still holds over $28,000 in crypto:  https://explorer.loopring.io/account/183393.  Although, for a public company like GameStop, this is small potatoes.  However, if there was no intention on continuing to pursue blockchain products, why not drain the wallet and redirect the funds?  
+3)  Although it continues to loom, there is a possibility that the regulatory risk involving NFTs could fall by the wayside with the new administration.  With an infrastructure currently in place, GameStop would be in prime position to hit the ground running.
+
+So far, I am leaning towards a greatly possibility of a Loopring-powered (as one of the partners) GameStop NFT Marketplace.  The marketplace was sleek, the community was wonderful, and I loved the functionality.  However, it's more of a 55/45 chance in my mind.  What other 'Pros vs Cons' am I missing that could weigh the scale one way or another?  I'm all ears for both negative and positive."
+🔄 كيفية تبديل عملة لوبرينج (LRC) على كريبتوبترا 🚀,CryptoPetra,1gz4txv,2024-11-24 18:31:38,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1gz4txv/كيفية_تبديل_عملة_لوبرينج_lrc_على_كريبتوبترا/,Best-Ad-5053,,"
+
+
+
+تعلّم كيفية تبديل عملة لوبرينج (LRC) بسهولة عبر كريبتوبترا، منصة التبديل الرائدة في الأردن. اتبع هذه الخطوات البسيطة:
+
+
+
+1️⃣ إنشاء حساب:
+
+
+
+قم بزيارة كريبتوبترا واضغط على ""إنشاء حساب"" لبدء التسجيل.
+
+2️⃣ البحث عن عملة لوبرينج (LRC):
+
+
+
+استخدم خاصية البحث للعثور على عملة لوبرينج (LRC) ضمن قائمة العملات المتاحة.
+
+3️⃣ التبديل:
+
+
+
+اختر عملة لوبرينج (LRC) وحدد العملة التي ترغب في التبديل إليها، ثم أكمل العملية بأمان.
+
+💡 ما هي عملة لوبرينج (LRC)؟
+
+عملة لوبرينج (LRC) هي عملة رقمية تستخدم في بروتوكول Loopring، الذي يهدف إلى تحسين عمليات تداول الأصول الرقمية من خلال تقنية الزكزكا (zkRollups) التي تزيد من كفاءة وسرعة التداولات. تسعى لوبرينج إلى توفير تجربة تداول أفضل وآمنة للمستخدمين.
+
+
+
+تداول العملات الرقمية بشكل سهل وآمن مع كريبتوبترا!
+
+
+
+\#لوبرينج #LRC #كريبتوبترا #كريبتو #التشفير\_في\_الأردن #بلوكتشين #تبديل #الأردن #usdt\_jordan #bitcoin\_jordan #العملات\_الرقمية #تداول\_العملات"
+Thread for buying and selling LRC. Moving on and off L2 and best pathways,loopringorg,1gz02mx,2024-11-24 15:04:13,79,0.95,27,https://www.reddit.com/r/loopringorg/comments/1gz02mx/thread_for_buying_and_selling_lrc_moving_on_and/,ilikeplantsandsuch,💬 Discussion 💬,"This is probably the area of greatest ignorance among LRC holders, including myself, with little to no helpful advice coming from senior users or people who actually know. 
+A healthy ecosystem will rely on the ease and ability and cost of moving this product around and finding the greatest benefit.
+
+Here are the big questions:
+
+1. Buying and holding on CEX vs buying on CEX and moving to LSW (Loopring Smart Wallet).
+
+2. Benefits of moving to L2 vs holding on L1.
+
+3. The most efficient pathway (cost effective/least steps) of buying on CEX and moving to L2 on LSW. 
+
+4. The most efficient pathway of moving from L2 on LSW back to CEX to cash out.
+
+5. The most efficient pathway of cashing out in general using options like swapping on L2 in LSW and moving to CEX in other forms like USDC or ETH, etc.
+
+6. Which CEX charges lowest fees to sell LRC directly. 
+
+I personally believe once these pathways are well understood, there will be more interest in this ecosystem and there will be greater incentives to buy in and support Loopring in general. 
+My personal experiences using CEX and layer-swapping in either direction results in massive price impact. 
+A case has not yet been made for how and why utilizing L2 is an advantage to normies.
+In fact often when the question is posed of what are the most cost effective pathways, the answers coming back suggest those people either have never or only very rarely have even attempted to move LRC around."
+To all the bears/sellers,loopringorg,1gypie0,2024-11-24 07:05:40,70,0.74,29,https://i.redd.it/7n69e3y4bu2e1.png,TBMengo_jr,⚙️ Technicals ⚙️,"Does it look to you like a bearish chart? 
+We are over a support(green box) that we just tested giving us 10% with low volume.
+We are right there to break out the 50MA(blue line). Next target is the golden pocket/trend line of a possible wedge. If we break it we moon. 
+
+Macro patterns: we are inside an accomulation structure weekly and like I wrote this is the spring so expect big moves like we have recently seen, that golden pocket is right halfway, so we could expect a bit of retracement or a sharp breakout. 
+Lastly as you can see there is a big weekly wedge, that coincides with the golden pocket, so expect a really sharp breakout or a retracement. 
+
+Hope this helped y'all to clear your mind and decide what Is best for you. "
+Any of these worth keeping? ,btc,1gy33de,2024-11-23 11:10:42,13,0.64,48,https://i.redd.it/bgbe2a3ydo2e1.jpeg,simonphoenix1910,🐻 Bearish,I have BTC and ETH which I plan on holding but are any of these absolute garbage that I should sell and reinvest? TIA
+What Are Your Thoughts on Loopring (LRC)? (x-post from /r/Cryptocurrency),CryptoCurrencyClassic,1gy1gyt,2024-11-23 09:59:03,1,1.0,0,https://www.reddit.com/r/CryptoCurrency/comments/1gy17od/what_are_your_thoughts_on_loopring_lrc/,ASICmachine,,
+What Are Your Thoughts on Loopring (LRC)?,CryptoCurrency,1gy17od,2024-11-23 09:47:05,11,0.6,60,https://www.reddit.com/r/CryptoCurrency/comments/1gy17od/what_are_your_thoughts_on_loopring_lrc/,infxmousrogue,DISCUSSION,"Hey everyone,
+
+I’ve been holding Loopring (LRC) since 2021, and I can’t help but notice that while other cryptos are seeing some solid gains in the current market, LRC isn’t really rallying the same way. Back when I bought in, the hype around Layer 2 solutions and Loopring’s potential to revolutionize decentralized trading had me convinced it was a solid bet.
+
+But now, with so much competition in the Layer 2 and DeFi space—Optimism, Arbitrum, zkSync, and more—I’m wondering if LRC is falling behind. It doesn’t seem to be capturing the same momentum as these other projects.
+
+What’s your take? Is Loopring still a strong long-term hold, or has it been outpaced by newer tech and better marketing? Do you think the project still has the potential to deliver on its vision, or is it time to reconsider?
+
+I’d love to hear your insights—especially from those closely following the project or actively using its ecosystem."
+Loopring wallet,coinspotau,1gxxsjh,2024-11-23 06:41:06,3,1.0,1,https://www.reddit.com/r/coinspotau/comments/1gxxsjh/loopring_wallet/,Aggressive_Excuse_20,,Anyone moved lrc over from the loopring wallet? Do you have to move to L1 first then to CoinSpot or can I send it straight from L2?
+Bitcoin Hits All-Time High After BTC ETF Options Debut,Gemini,1gx95hl,2024-11-22 09:32:25,4,0.75,1,https://www.reddit.com/r/Gemini/comments/1gx95hl/bitcoin_hits_alltime_high_after_btc_etf_options/,Gemini_Gianna,News 📰,"Market Update - November 22, 2024
+
+https://preview.redd.it/zrfti4t7rg2e1.png?width=2024&format=png&auto=webp&s=ee9b5cc51e62790dbd63e1bfa9b2839fc2f29c0c
+
+**Takeaways**
+
+* **BlackRock’s iShares Bitcoin Trust became the first US spot bitcoin ETF approved for options trading:** The price of bitcoin subsequently surged to nearly $98,000 on Thursday, reaching a new all-time high.
+* **Institutional interest in MicroStrategy surged this week, with the value of those holdings jumping to $15.3 billion:** Microstrategy founder Michael Saylor has continued to purchase bitcoin and MSTR shares have seen year-to-date gains of roughly 450%.
+* **Trump considers Teresa Goody Guillén for SEC chair:** Her appointment would likely usher in crypto-friendly policies and regulatory reform.
+* **Meme coins including Bonk, Mog, and Brett have set all-time highs amid a rally partly driven by the resurgence of DOGE to $0.43:** Bonk surged 120% following a burn campaign earlier this week, while Moo Deng also hit record prices.
+* **Russia has drafted amendments to tax crypto income, classifying digital assets as property:** The new laws would subject trading and mining income to a 15% personal income tax, while VAT exemptions would apply to crypto transactions.
+
+
+
+➕ Topic of the Week: Recurring Buys
+
+🫱 [Read more here](https://www.gemini.com/blog/bitcoin-hits-all-time-high-after-btc-etf-options-debut-memecoins-make-moves)"
+Where is my LRC?,loopringorg,1gvlpn6,2024-11-20 04:28:08,40,0.89,23,https://www.reddit.com/gallery/1gvlpn6,dbd1988,🛟 Assistance 🛟,"I accidentally sent LRC from my L2 GameStop wallet to the exact same wallet. I meant to transfer it into ETH, so I copied the ETH address and pasted it as the receiver. Turns out it’s the same address. 
+
+However, when I check on etherscan, it shows the sending wallet as empty, but the receiving wallet with the LRC that I sent. They’re the same exact address. How is this possible?"
+Sent LRC to right address but on wrong network. Help please,loopringorg,1gu1gkj,2024-11-18 05:04:42,15,0.75,12,https://www.reddit.com/r/loopringorg/comments/1gu1gkj/sent_lrc_to_right_address_but_on_wrong_network/,HecklaBang,🛟 Assistance 🛟,"Was trying to send some of my LRC from L1 account (loopring wallet) to binance exchange. I sent it to the right address but i chose L2 account(which does not exist) instead of L1. Thus the LRC never arrived. I did the same thing one hour ago, then I chose L1 account and it arrived in a few minutes. 
+
+Is there any possibility for me to get the LRC I sent to an L2 account that doesn’t exist back? 
+
+Thanks for any suggestions and help❤️"
+Beautiful Sight in the Loopring Wallet Today,loopringorg,1gu0uif,2024-11-18 04:16:38,249,0.93,48,https://i.redd.it/fql2nlrdnm1e1.jpeg,beep-frotz-negatory,📰 News 📰,
+"Loopring ""transfers of LRC not available"" off of Layerswap. Sign of something happening behind the scenes? ",loopringorg,1gtm8z7,2024-11-17 15:03:19,15,0.6,22,https://www.reddit.com/r/loopringorg/comments/1gtm8z7/loopring_transfers_of_lrc_not_available_off_of/,mebax123,💬 Discussion 💬,"I am attempting to transfer LRC to L1 via Layerswap today. On my fourth transaction, I received the below notice. With the news of Buck returning and the hope that this could be indicative of the return of the NFT marketplace, could this ""error"" be a signal of something positive taking place for tomorrow?
+
+https://preview.redd.it/j20n8stxpi1e1.png?width=437&format=png&auto=webp&s=e4185b212e5529e2bf2f62dbc8829ed6f3002d01
+
+  
+"
+Looks like the rocket is warming up ,loopringorg,1gsxqwk,2024-11-16 16:40:40,155,0.83,30,https://i.redd.it/gw9iusjf2c1e1.jpeg,Octopus_vagina,💬 Discussion 💬,Hope you all have enough loops purchased during the bear market to ride to $5 and more 
+Old GameStop wallet help,loopringorg,1gpgvq4,2024-11-12 04:23:22,21,0.89,7,https://www.reddit.com/r/loopringorg/comments/1gpgvq4/old_gamestop_wallet_help/,Gnomeboi,🛟 Assistance 🛟,"I have an old GS wallet I haven't messed with since it was discontinued, finally getting around to porting it to MM. Secret recovery phrase went smooth everything seemed to be in order except wallet is now empty? Went to loopring and it asked to activate l2 which I did, but I thought I had already done that back in GS days? Idk I'm very confused. Still can't find any of my lrc on l2. Now I'm thinking maybe I waited to long and someone hacked it somehow? I try etherscan my newly imported MM address and shows nothing but the eth I added for l2. Then I realized the new MM address and my old GS wallet address are different and if I etherscan the old one (which I found from some coinbase transfer transaction history), I see a bunch of funds in the old wallet still. I'm not sure if I've made some grievous oversights or am just an idiot but I'm frustrated enough to ask the masses to weigh in 😅 please illucidate me. (Also inb4 all the scammer start messaging)"
+Buongiorno Loopring. These last few years were a wild ride but its not time to move on.,loopringorg,1gp76kv,2024-11-11 18:55:35,142,0.83,60,https://www.reddit.com/r/loopringorg/comments/1gp76kv/buongiorno_loopring_these_last_few_years_were_a/,beep-frotz-negatory,💬 Discussion 💬,"I've been averaging my cost basis in anticipation for the next run.  Regulatory risk may loosen, Loopring has some solid products (with more features to come), and market sentiment is extremely high.  Many here have been hurt, I get it, but I'm personally excited to see what LRC will do in the months ahead.  It's okay to be bearish on Loopring and it's okay to be bullish.  For me?  I'm pumped."
+Transfer LRC from L2 to coinbase,loopringorg,1goxowm,2024-11-11 12:26:11,16,0.77,24,https://www.reddit.com/r/loopringorg/comments/1goxowm/transfer_lrc_from_l2_to_coinbase/,Unusual_Lemon_2453,🛟 Assistance 🛟,"Bought a ton of lrc 2 years ago and kinda forgot about it. I remember before to transfer out, I had to transfer to L1 then send to exchange from L1. It was soo redundant, that at one point i was just converting my loops to usdc and leaving it in the loopring L2 wallet.but I still have a ton of loops that I'd like to transfer out in case I want a quick cashout. Can someone guide me through the process, i dont want to go through metamask, or open another wallet or go through a 3rd party. Also, is it cheaper to convert to usdc before transferring. 
+.                                   
+.               
+.
+.
+.
+.
+
+
+
+
+Conclusion: so after much deliberation, and community feedback.... i decided to transfer back to L1 and send to exchange from there. It made no sense for me to try any other method because of the ridiculous high gas fees for a tester amount. Good luck everyone."
+Let's go...break top #300 again!,loopringorg,1gn26l8,2024-11-08 23:34:51,351,0.9,46,https://i.redd.it/kem92tb11tzd1.jpeg,PeederSchmychael,📰 News 📰,
+Daily Discussion,LoopringLounge,1gllaij,2024-11-07 02:45:09,2,1.0,2,https://www.reddit.com/r/LoopringLounge/comments/1gllaij/daily_discussion/,AutoModerator,Discussion,"Discuss Loopring stuff here that doesn't require its own post
+
+# Official Loopring Subreddit
+
+[r/loopringorg](https://www.reddit.com/r/loopringorg/)
+
+# Helpful Links
+
+* [Loopring Wallet](https://loopring.io/)
+* [Loopring Exchange](https://exchange.loopring.io/)
+* [Loopring Protocol Website](https://loopring.org/)
+* [Twitter](https://twitter.com/loopringorg)
+* [Discord](http://discord.gg/KkYccYp)
+* [Medium](https://medium.com/loopring-protocol)
+* [GitHub](https://github.com/loopring)
+* [Loopring Protocol Design Doc (whitepaper)](https://github.com/Loopring/docs/wiki/Loopring3_Design)
+* [Newsletter](https://loopring.substack.com/)
+* [YouTube](https://www.youtube.com/c/loopring)
+
+# ZKP Links
+
+* [zkSNARK Circuit Code](https://medium.com/loopring-protocol/loopring-open-sources-its-zksnark-circuit-code-53c934b67ce5)
+* [zkSNARK Prover Optimizations](https://medium.com/loopring-protocol/zksnark-prover-optimizations-3e9a3e5578c0)
+
+# Extra Resources
+
+* [LRC Token Contract](https://etherscan.io/token/0xbbbbca6a901c926f240b89eacb641d8aec7aeafd)"
+ October Price Performance Review of Major Exchange Coins/Tokens,CryptoCurrency,1ghwyk8,2024-11-02 09:54:28,0,0.44,3,https://www.reddit.com/r/CryptoCurrency/comments/1ghwyk8/october_price_performance_review_of_major/,MemenaSerena,EXCHANGES,"# CEXs
+
+# Gainers:
+
+* WBT (WhiteBIT): Up by **65.7%**
+* BGB (Bitget): Up by **15.8%**
+* KCS (KuCoin): Up by **14.6%**
+* BNB (Binance): Up by **6.2%**
+* HT (Huobi): Up by **6.8%**
+* GT (Gate.io): Up by **1.5%**
+* LEO (Bitfinex): Up by **3.6%**
+
+**Losers:**
+
+* OKB (OKX): Down by **5.7%**
+* CRO (Crypto.com): Down by **7.4%**
+
+**DEXs**  
+**Gainers:**
+
+* GNO (Gnosis): Up by **27.9%**
+* JUP (Jupiter): Up by **22.4%**
+* RUNE (Thorchain): Up by **19.7%**
+* UNI (Uniswap): Up by **11.1%**
+
+**Losers:**
+
+* OSMO (Osmosis): Down by **26.3%**
+* SUSHI (SushiSwap): Down by **4.5%**
+* 1INCH (1inch Network): Down by **5.7%**
+* CAKE (PancakeSwap): Down by **7%**
+* LRC (Loopring): Down by **1.3%**
+* XLM (Stellar): Down by **1.2%**
+
+Numbers are according to CoinGecko (01.11.2024 - 14:00 UTC).
+
+WBT (WhiteBIT) led the CEXs with a remarkable **65.7%** increase, while GNO (Gnosis) was the top performer among DEXs, rising by **27.9%**. In contrast, OSMO (Osmosis) saw a significant decline of **26.3%**, marking the largest loss among DEX tokens.
+
+https://preview.redd.it/ips98gjguhyd1.png?width=1080&format=png&auto=webp&s=583b4c830c554ceb4bc195545698ef8252a806db
+
+https://preview.redd.it/ndovxhlhuhyd1.png?width=1200&format=png&auto=webp&s=696c5680a940c262bdc8f9f13d3d1aadc31f07b3
+
+"
+Soon 5k +,loopringorg,1gdgafy,2024-10-27 13:29:01,155,0.85,14,https://i.redd.it/murievya3cxd1.png,Lima512,📊 Metrics 📊,"To the moon, sooner or later 😬😬"
+🔄 How to Swap LRC (Loopring) on CryptoPetra 🚀,CryptoPetra,1g8v716,2024-10-21 13:19:24,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1g8v716/how_to_swap_lrc_loopring_on_cryptopetra/,Best-Ad-5053,,"
+Learn how to swap LRC (Loopring) effortlessly on CryptoPetra, Jordan’s leading cryptocurrency exchange. Follow these simple steps:
+
+1️⃣ Create an Account: Visit CryptoPetra and click “Sign Up.”
+2️⃣ Search for LRC: Use the search function in the exchanger to find LRC.
+3️⃣ Swap LRC: Select LRC and the cryptocurrency you want to swap it for, then complete the transaction securely.
+
+About LRC (Loopring):
+Loopring (LRC) is a decentralized exchange protocol that allows users to create and operate their own order book-based exchanges while benefiting from the advantages of layer-2 scaling solutions. It enables fast, secure, and low-cost trading of cryptocurrencies.
+
+🌟 Key Uses for LRC: Trading on decentralized exchanges, staking for rewards, and participating in governance within the Loopring protocol.
+
+
+🤖 Bot: @CryptoPetra_bot
+📱 Telegram: @CryptoPetra_Support
+
+
+#LRC #Loopring #CryptoExchange #CryptoPetra #JordanCrypto #Blockchain #CryptoTrading"
+"Pulling out, but need your help ",loopringorg,1g28gja,2024-10-12 15:58:50,43,0.63,41,https://i.redd.it/ltzdpg1dsdud1.jpeg,JBosbos,🛟 Assistance 🛟,"Hey, so I’ve been in Loopring for a few years now I’ve been through the ups and downs here at the downs for a long time. It’s time for me to disembark this ship with my $300 that’s left, I originally had around $9K.. which is hilarious. 
+
+I’ve been trying to cash out for a long time, but haven’t figured out exactly how. The LRC app is not very user-friendly I’m not gonna lie. 
+
+Can someone please point me in the right direction of how exactly I can cash out to my bank account using this Loopring app? Thank you very much!"
+"Today's Top #3: LRC team admits the hack was likely an internal that did it, and they were infected with malware for months before the second incident.",u_coinfeeds-bot,1g1uixz,2024-10-12 03:00:13,1,1.0,0,https://www.reddit.com/r/u_coinfeeds-bot/comments/1g1uixz/todays_top_3_lrc_team_admits_the_hack_was_likely/,coinfeeds-bot,,"tldr; Loopring experienced a security breach affecting its Smart Wallet users, resulting in asset losses for 58 wallets. The attack involved compromising Loopring's 2FA server and exploiting vulnerabilities in the wallet's guardian system. The hacker manipulated accounts to gain control and drain assets. Loopring has since enhanced security measures, including stricter access controls and human oversight for recovery operations. The incident highlights the need for multiple guardians to secure wallets. Loopring is collaborating with security experts and law enforcement to recover lost funds.
+
+*This summary is auto generated by a bot and not meant to replace reading the original article. As always, DYOR.
+
+https://www.reddit.com/r/CryptoCurrency/comments/1g1fqbb/lrc_team_admits_the_hack_was_likely_an_internal/"
+LRC logo is different between coinbase and ledger wallet app,loopringorg,1g0az0l,2024-10-10 00:35:45,0,0.47,11,https://www.reddit.com/gallery/1g0az0l,Kooky_Bar_354,🛟 Assistance 🛟,"I am new to crypto and LRC and just bought a decent amount of it on coinbase. I want to move it to my ledger hard wallet. But the LRC app available is ""loopringCoin v2"" with a differemt logo. Are they both the same thing or am i transfering to the wrong destination? Thanks ahead!"
+Daily Discussion,LoopringLounge,1fy28uo,2024-10-07 03:45:07,1,0.6,0,https://www.reddit.com/r/LoopringLounge/comments/1fy28uo/daily_discussion/,AutoModerator,Discussion,"Discuss Loopring stuff here that doesn't require its own post
+
+# Official Loopring Subreddit
+
+[r/loopringorg](https://www.reddit.com/r/loopringorg/)
+
+# Helpful Links
+
+* [Loopring Wallet](https://loopring.io/)
+* [Loopring Exchange](https://exchange.loopring.io/)
+* [Loopring Protocol Website](https://loopring.org/)
+* [Twitter](https://twitter.com/loopringorg)
+* [Discord](http://discord.gg/KkYccYp)
+* [Medium](https://medium.com/loopring-protocol)
+* [GitHub](https://github.com/loopring)
+* [Loopring Protocol Design Doc (whitepaper)](https://github.com/Loopring/docs/wiki/Loopring3_Design)
+* [Newsletter](https://loopring.substack.com/)
+* [YouTube](https://www.youtube.com/c/loopring)
+
+# ZKP Links
+
+* [zkSNARK Circuit Code](https://medium.com/loopring-protocol/loopring-open-sources-its-zksnark-circuit-code-53c934b67ce5)
+* [zkSNARK Prover Optimizations](https://medium.com/loopring-protocol/zksnark-prover-optimizations-3e9a3e5578c0)
+
+# Extra Resources
+
+* [LRC Token Contract](https://etherscan.io/token/0xbbbbca6a901c926f240b89eacb641d8aec7aeafd)"
+Boom of DEX cryptocurrencies - September Price Performance Review of Major Exchange Coins/Tokens,CryptoCurrency,1ftkx1o,2024-10-01 06:35:08,0,0.47,0,https://www.reddit.com/r/CryptoCurrency/comments/1ftkx1o/boom_of_dex_cryptocurrencies_september_price/,MemenaSerena,EXCHANGES,"**CEXs**  
+**Gainers:**
+
+* GT (Gate.io): Up by 18.8%
+* OKB (OKX): Up by 15.3%
+* BNB (Binance): Up by 11.2%
+* HT (Huobi): Up by 8.9%
+* CRO (Crypto.com): Up by 6.9%
+* WBT (WhiteBIT): Up by 6.1%
+* BGB (Bitget): Up by 4.7%
+* LEO (Bitfinex): Up by 2.2%
+
+**Losers:**
+
+* MX (MEXC): Down by 7.0%
+* KCS (KuCoin): Down by 0.5%
+
+**DEXs**  
+**Gainers:**
+
+* **OSMO (Osmosis): Up by 55.9%**
+* SUSHI (SushiSwap): Up by **44.5%**
+* RUNE (Thorchain): Up by **35.2%**
+* UNI (Uniswap): Up by **35.1%**
+* 1INCH (1inch Network): Up by 21.6%
+* JUP (Jupiter): Up by 23.7%
+* CAKE (PancakeSwap): Up by 20.9%
+* GNO (Gnosis): Up by 16.2%
+* LRC (Loopring): Up by 13.8%
+* XLM (Stellar): Up by 10.7%
+
+Numbers are according to CoinGecko (01.10.2024 - 10:00 UTC).
+
+OSMO (Osmosis) takes the lead among DEX tokens with an impressive **55.9% increase**, while SUSHI (SushiSwap) and RUNE (Thorchain) also show strong performances.
+
+GT (Gate.io) is the champion of the month among CEX tokens, with OKB (OKX) and BNB (Binance) following closely behind.
+
+https://preview.redd.it/6sejuxvph4sd1.png?width=3840&format=png&auto=webp&s=cd3cd89c62ebb89f10e44fdbea12999aac5f0b4b
+
+"
+The holy grail ,NFT,1fsdwd4,2024-09-29 16:27:18,0,0.3,3,https://i.redd.it/54ft8m8l5trd1.jpeg,jimmy-jimjim312,:discuss: Discussion,Time to eat some crayons.
+Are Layer 2 Blockchains worth as an investment,CryptoIndia,1fo1dcl,2024-09-23 21:49:09,1,0.57,2,https://www.reddit.com/r/CryptoIndia/comments/1fo1dcl/are_layer_2_blockchains_worth_as_an_investment/,Mr_Hodlerr,,"Layer 2 blockchains aim to make the Web3 ecosystem easier to use, more scalable, and cost-effective. However, some of them raise concerns about security and decentralization. While they are being adopted, will they be able to compete with Layer 1 blockchains like Solana?
+
+[Performance of best layer 2 cryptos](https://botsfolio.com/crypto-portfolios/Layer-2-Blockchains)
+
+https://preview.redd.it/8sx7ieifxnqd1.png?width=1120&format=png&auto=webp&s=0637c6ea1f527854c126f1fb77abbada721ac74c
+
+"
+Finally found official November 2022 sell prices,blockfi,1fmls34,2024-09-22 01:14:34,26,0.97,16,https://www.reddit.com/r/blockfi/comments/1fmls34/finally_found_official_november_2022_sell_prices/,trandonbay,Discussion,"I was finally able to find the official November 2022 sell prices digging through the BlockFi news archives. 
+
+https://preview.redd.it/i28fjjq3oaqd1.png?width=647&format=png&auto=webp&s=ba9a3656dccdd46a5305175504c3ae49fa18bf47
+
+Official Link: [https://blockfi.com/proof-of-claim-faq/](https://blockfi.com/proof-of-claim-faq/)
+
+I wanted to share because I'm preparing for the upcoming tax season, and once the 2nd distribution comes in for me, I will finally be able to end this whole debacle!"
+Daily Discussion,LoopringLounge,1fb1p18,2024-09-07 03:45:09,3,1.0,0,https://www.reddit.com/r/LoopringLounge/comments/1fb1p18/daily_discussion/,AutoModerator,Discussion,"Discuss Loopring stuff here that doesn't require its own post
+
+# Official Loopring Subreddit
+
+[r/loopringorg](https://www.reddit.com/r/loopringorg/)
+
+# Helpful Links
+
+* [Loopring Wallet](https://loopring.io/)
+* [Loopring Exchange](https://exchange.loopring.io/)
+* [Loopring Protocol Website](https://loopring.org/)
+* [Twitter](https://twitter.com/loopringorg)
+* [Discord](http://discord.gg/KkYccYp)
+* [Medium](https://medium.com/loopring-protocol)
+* [GitHub](https://github.com/loopring)
+* [Loopring Protocol Design Doc (whitepaper)](https://github.com/Loopring/docs/wiki/Loopring3_Design)
+* [Newsletter](https://loopring.substack.com/)
+* [YouTube](https://www.youtube.com/c/loopring)
+
+# ZKP Links
+
+* [zkSNARK Circuit Code](https://medium.com/loopring-protocol/loopring-open-sources-its-zksnark-circuit-code-53c934b67ce5)
+* [zkSNARK Prover Optimizations](https://medium.com/loopring-protocol/zksnark-prover-optimizations-3e9a3e5578c0)
+
+# Extra Resources
+
+* [LRC Token Contract](https://etherscan.io/token/0xbbbbca6a901c926f240b89eacb641d8aec7aeafd)"
+August Price Performance Review of Major Exchange Coins/Tokens,CryptoCurrency,1f71v25,2024-09-02 04:40:22,0,0.2,0,https://www.reddit.com/r/CryptoCurrency/comments/1f71v25/august_price_performance_review_of_major_exchange/,MemenaSerena,EXCHANGES,"**CEXs**  
+**Gainers:**
+
+* HT (Huobi): Up by 27.4%
+* WBT (WhiteBIT): Up by 4.0%
+* LEO (Bitfinex): Up by 3.7%
+* GT (Gate.io): Up by 2.0%
+
+**Losers:**
+
+* KCS (KuCoin): Down by 9.7%
+* BGB (Bitget): Down by 6.6%
+* BNB (Binance): Down by 6.4%
+* CRO (Crypto.com): Down by 4.8%
+* OKB (OKX): Down by 2.8%
+* MX (MEXC): Down by 1.1%
+
+**DEXs**  
+**Gainers:**
+
+* RUNE (Thorchain): Up by 3.2%
+
+**Losers:**
+
+* 1INCH (1inch Network): Down by 28.4%
+* GNO (Gnosis): Down by 20.9%
+* JUP (Jupiter): Down by 19.7%
+* UNI (Uniswap): Down by 12.3%
+* SUSHI (SushiSwap): Down by 11.9%
+* LRC (Loopring): Down by 9.5%
+* OSMO (Osmosis): Down by 6.6%
+* XLM (Stellar): Down by 4.4%
+* CAKE (PancakeSwap): Down by 3.0%
+
+Numbers are according to CoinGecko (01.09.2024 - 10:00 UTC).
+
+HT (Huobi) is the champion of the month among CEX tokens, but it is down by 79.4% over the year. The second place goes to WBT (WhiteBIT), which has increased by 102.8% over the year.
+
+RUNE (Thorchain) leads the DEX tokens this month, with a yearly increase of 140.8%.
+
+https://preview.redd.it/wyq2ufdjycmd1.png?width=6250&format=png&auto=webp&s=77105d339d5951371263d095fd2818e3f5a035fa
+
+https://preview.redd.it/nf72nuxsycmd1.png?width=2880&format=png&auto=webp&s=5bcae9f84ff224a7ce8e3fd7b20f9635dbe5b0eb
+
+"
+Falling out of the top #300. Yikes ,loopringorg,1f2sz0b,2024-08-27 17:37:30,340,0.91,115,https://i.redd.it/a3il3g710ald1.jpeg,PeederSchmychael,📈 Fundamentals 📈,... The main status update is not helping.
+Are Layer 2 Blockchains really helping web3?,CryptoCurrency,1eysdk4,2024-08-22 15:34:34,11,0.63,34,https://www.reddit.com/r/CryptoCurrency/comments/1eysdk4/are_layer_2_blockchains_really_helping_web3/,Mr_Hodlerr,DISCUSSION,"Layer 2 Blockchains say they exist to make web3 faster, easier to use, and scalable. But what help does it offer in terms of use cases? While meme coin trading, gambling, and betting have gained popularity, they face significant legal hurdles. Major lending protocols and DAOs (with billion dollars in volume) still operate on OG Layer 1s due to their robustness and security. For Layer 2s to gain wider adoption, they must offer tangible improvements over Layer 1s and address both technical and practical challenges effectively.
+
+[Performance of a Layer 2 crypto portfolio](https://botsfolio.com/crypto-portfolios/Layer-2-Blockchains)
+
+https://preview.redd.it/bxzw3cdzh9kd1.png?width=1130&format=png&auto=webp&s=1c9ad24bdeebb3c05d4614b8f555a460f9e47482
+
+"
+📣BREAKING NEWS: 🪙 MyCoinChange New Coin Listing 🪙,MyCoinChange,1esn3wq,2024-08-15 01:17:46,3,1.0,1,https://i.redd.it/3cuiv0s8irid1.jpeg,Mycoinchange_co,,
+Swap taking long time,ledgerwallet,1esfw7x,2024-08-14 19:20:08,2,0.75,9,https://www.reddit.com/r/ledgerwallet/comments/1esfw7x/swap_taking_long_time/,RandomStoryBro,Official Support Response,"So, I used the swap feature for the first time last night. Swapped some LRC (Loopring) for Eth, using 1inch DEX. The transaction already took the (very small) gas fee, which was about 39 cents. It also says the transaction has been confirmed on etherscan.
+
+At this time, it is about 14 hours later and the Loopring has not yet left my wallet/still shows on ledger. However, the transaction does not appear to be pending in my swap history on ledger live. 
+
+Has anyone else had similar issues? Any ideas why this transaction does not appear to have begun yet, even though I already paid the gas fee?
+
+Cheers :)"
+"ICYOOTL, 10th August 2024",loopringorg,1eomr8g,2024-08-10 02:56:16,89,0.89,49,https://www.reddit.com/r/loopringorg/comments/1eomr8g/icyootl_10th_august_2024/,AvgBoyd,📰 News 📰,"Good day everyone,
+
+ICYOOTL stands for ""In Case You're Out Of The Loop"" (pun intended or otherwise as individually/subjectively interpreted).
+
+ICYOOTL includes updates from the Loopring discord server that I find objectively meaningful, on a voluntary basis. For simplicity sake, it'll be text-based with their discord links (click to access only if you have permission to the group) listed as sources.
+
+Every topic segment that's included is formatted with a separation ""..."" with questions, accompanying posts (quoted for context), and/or statements formatted using ""Date/Month/Year, DC username, (role): text"".
+
+I intend on keeping this update stream for my personal future reference, but if you're looking to follow I hope that you've found the points I've included as objective as I have.
+
+...
+
+9th June 2024, \_not\_it (member): Hi u/Magic Pan, me again. Question: Is Loopring planning for LRC to have any meaningful, or more, utility in the future? For instance, it seems Loopring is focusing heavily on expanding the wallet to be used on other networks. Is Loopring expecting or planning for LRC to have a role in any of the multi-network expansion of the LSW or the protocol?  
+People are wondering and/or concerned that there is an expanding separation between Loopring’s planned developments on one end, and the actual token on the other.
+
+[https://discord.com/channels/488848270525857792/903390107539742751/1249129408191529000](https://discord.com/channels/488848270525857792/903390107539742751/1249129408191529000)
+
+18th July 2024, magicpan888 (Team): Regarding the utility of LRC, the current uses are:
+
+1. Staking: Stake LRC to earn trading fees accumulated via Loopring DEX.
+2. Gas Fee Deduction: Use LRC as the payment token to receive a 20% discount on gas fees.
+
+Looking ahead, we can consider adding more utilities such as:
+
+1. Collateral: Allow LRC to be used as collateral for Loopring Portal.
+2. Governance Participation: Enable LRC holders to have a greater role in governance, such as voting on network expansions and new token listings on the Portal.
+3. Revenue Sharing: Provide LRC stakers with additional revenue-sharing opportunities, such as sharing revenue from Loopring DeFi activities, distinct from today's DEX trading fees. while we are also looking forward hearing any constructive suggestions from community.
+
+[https://discord.com/channels/488848270525857792/903390107539742751/1263361673540927579](https://discord.com/channels/488848270525857792/903390107539742751/1263361673540927579)
+
+18th July 2024, \_not\_it (member): Hi u/Magic Pan thank you for responding here, but I don’t think you answered the question. The question is: Is Loopring expecting or planning for LRC to have a role in any of the multi-network expansion of the LSW or the protocol?  
+For instance, one of the two pieces of “utility” you mention is staking to earn DEX trading fees. But the DEX is not part of the multinetwork deployment, so your answer doesn’t specifically address LRC utility in connection with multinetwork. What role, if any, will LRC have in connection with multinetwork plans? Because it continues to look like LRC is not *needed* for anything
+
+[https://discord.com/channels/488848270525857792/903390107539742751/1263492185211277333](https://discord.com/channels/488848270525857792/903390107539742751/1263492185211277333)
+
+19th July 2024, magicpan888 (Team): LRC more ties to the protocol itself. When Loopring is deployed as layer 3 on top of other EVM compatible networks, Loopring protocol extends its usage on those networks as well. Though Loopring Wallet can be the portal for user to get access to Loopring Defi services, by nature it's a rather different product than Loopring Protocol. This is the reason why we try to revision Loopring Protocol and Loopring Smart Wallet earlier.
+
+[https://discord.com/channels/488848270525857792/903390107539742751/1263835112139657296](https://discord.com/channels/488848270525857792/903390107539742751/1263835112139657296)
+
+...
+
+>18th July 2024, byron.loopring.eth (Team): Ethereum Layer 3 is coming..Ethereum Layer 3 is coming...
+
+>but the user won't even realize it's L3. A seamless DeFi Dapp experience on every network - this is Loopring L3 *(rollout beginning as early as next week)*.
+
+>[https://discord.com/channels/488848270525857792/684546507336056840/1263498544866656327](https://discord.com/channels/488848270525857792/684546507336056840/1263498544866656327)
+
+6th August 2024, \_not\_it (member): Yo u/B.👾, what's the deal with this: ⁠📣︱announcements⁠ ?
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1270169325319356577](https://discord.com/channels/488848270525857792/488848270525857796/1270169325319356577)
+
+6th August 2024, byron.loopring.eth, (Team): As happens with new tech, ran into some things we need to improve / tweak - but we're getting close now - testing the new version this week, if no more tweaks are needed, it could be next week
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1270406544114319484](https://discord.com/channels/488848270525857792/488848270525857796/1270406544114319484)
+
+6th August 2024, \_not\_it (member): Hey, thanks for the response. Which parts of the Loopring protocol and/or products will be rolled out onto Taiko as part of L3?
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1270406814135095408](https://discord.com/channels/488848270525857792/488848270525857796/1270406814135095408)
+
+6th August 2024, byron.loopring.eth, (Team): A new DeFi DApp that has Loopring products within it - like Dual Investment, Loopring Portal, Block Trade, others (likely not all at the start, but will be added)
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1270407070939877447](https://discord.com/channels/488848270525857792/488848270525857796/1270407070939877447)
+
+6th August 2024, \_not\_it (member): Thanks for the response. A couple follow ups, please--numbered for ease in responding :).
+
+1. Just for clarity's sake: are you saying Dual Investment, Portal, and Block Trade will \~certainly\~ be part of the initial roll out, but others (like what?) may be added later? Or are you saying that it's uncertain what will be definitely part of the initial roll out?
+2. What role, if any, does LRC have in the L3 products on Taiko? For instance, will LRC be required for use of L3 products on Taiko?
+3. Will there be any trading or use competitions / incentives associated with the rollout? If so, will rewards be something other than Loopheads or picture/gif-related NFTs?
+4. Finally, with L3 officially launching, will marketing efforts (other than tweets from Loopring-associated accounts) begin? (Previously, you mentioned that we'll likely have to rely on marketing or co-marketing with partners. Are there steps in place for Taiko or other mediums/platforms to promote Loopring's Taiko-related L3 offerings?)
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1270409239243919432](https://discord.com/channels/488848270525857792/488848270525857796/1270409239243919432)
+
+8th August 2024, ablankstory (Team): Here's my take on this, for what it's worth:
+
+1. We will deploy ""Loopring Earn"" onto Taiko. This means in both the Wallet app (using a Taiko wallet) and Loopring Earn Dapp (switch network to Taiko). The products on Loopring Earn (when connected using the Taiko network) will be Dual Investment, Block Trade, and Portal. If we release additional Loopring Earn products, and we think it makes sense to deploy those products to the Taiko instance of Loopring Earn, we will. Think of Loopring Earn as a DApp deployed on Taiko. It'll be a L3 behind the scenes, but for all intents and purposes it will look/feel/function like a DApp deployed on Taiko.
+2. The utility of LRC on Taiko is still being discussed. But to be transparent, its utility will be what Loopring makes it - not what Taiko makes it. Meaning, Taiko isn't forced to require anyone to spend LRC for transactions or anything else. However, Loopring Earn deployed on Taiko may make use of LRC or provide benefits to LRC holders. We (Loopring) would love to provide more utility for LRC holders and are discussing different approaches to that end.
+3. If this is in reference to competitions to help promote Loopring Earn on Taiko, we are discussing promotions/incentives. While we have NFTs available today to provide as promotional rewards, it's unlikely someone outside of the Loopring community will see value in a Loophead NFT (not saying there isn't any value, but perceived value is different). We may look to provide other rewards/incentives to help promote the launch. We would also work closely with Taiko to help co-market/promote as well.
+4. Tapping into other partners' communities is always helpful. So when we deploy Loopring Earn on Taiko, we will work with Taiko to help promote.
+
+That's what I have for now. Hopefully it's helpful to you.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1270950686825386035](https://discord.com/channels/488848270525857792/488848270525857796/1270950686825386035)
+
+...
+
+>19th July 2024, ilikeplantsandsuch (member): convoluted doesnt begin to describe it, but adding expensive to that list is gonna kill it for any meaningful participation
+
+19th July 2024, ablankstory (Team): so to do what you want to do purely with an EOA wallet is all the same steps, except the transfer to your Loopring Smart Wallet at the end. I think your frustration/confusion is moreso on the side of the CEX (e.g., Coinbase) not allowing direct transfer to your wallet over the Taiko network. Because of that, you're needing to bridge the ETH from X network to Taiko. In this instance, it's cheapest for you to first move the ETH to Base and then to Taiko rather than doing a L1 transfer to a wallet and then a bridge. So again, I wouldn't say it's necessarily the wallet's fault...moreso how easy it is to move from a CEX to a non-mainstream (yet) chain.
+
+[https://discord.com/channels/488848270525857792/903390107539742751/1263572352038469754](https://discord.com/channels/488848270525857792/903390107539742751/1263572352038469754)
+
+19th July 2024, ablankstory (Team): Once we add Base to our wallet, you would be able to withdraw from Coinbase to your Loopring Wallet (base network) and then bridge to Taiko from our wallet (assuming Layerswap and other bridges support our Base smart contract wallet)
+
+[https://discord.com/channels/488848270525857792/903390107539742751/1263572589603852409](https://discord.com/channels/488848270525857792/903390107539742751/1263572589603852409)
+
+...
+
+8th August 2024, nirry (member): The roles and definitions of Loopring the ""company"" and loopring the ""protocol"" are vague and unclear. Could we get some clarity on how Loopring plans to erode this overlap and meet the decentralization requirements that their peers have made? Here's an example of a real DAO of a real protocol making proposals to do business with an external entity: [https://snapshot.org/#/epochisland.eth](https://snapshot.org/#/epochisland.eth)
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1270943475197542490](https://discord.com/channels/488848270525857792/488848270525857796/1270943475197542490)
+
+8th August 2024, ablankstory (Team): There is a plan to hit stage 1 and possibly stage 2 (this year). I don’t want to put a timeframe on it because of potential delays, etc. But the plan is to update the smart contract so that it has a required delay + multi-sig override in case of critical bugs.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1270944974447579228](https://discord.com/channels/488848270525857792/488848270525857796/1270944974447579228)
+
+Regarding a DAO, there have been some discussions but not a lot focused around it. Not saying it won’t happen, just that it’s not a focus at this time.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1270945361921314989](https://discord.com/channels/488848270525857792/488848270525857796/1270945361921314989)
+
+...
+
+>9th August 2024, byron.loopring.eth (Team): Yeah we haven't begun to impliment this yet. Just discussed it a lot and agree that after these products are launched across Multi-Network this is the next likely step that makes sense for LRC
+
+>[https://discord.com/channels/488848270525857792/488848270525857796/1271162593175666770](https://discord.com/channels/488848270525857792/488848270525857796/1271162593175666770)
+
+9th August 2024, writerofjots (member): So, u/B.👾 , according to this message from yesterday, the Loopring team does know how to discuss and even agree on things. Which is a relief, let me tell you. So, since you have said so many times that the team is discussing the hack and whether victims will be made whole, what has the team agreed on? Because, it's been 61 days since the hack, and weeks since I started asking this same question. Seems like plenty of time for Loopring to come to an agreement, don't you think?
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271464752043790346](https://discord.com/channels/488848270525857792/488848270525857796/1271464752043790346)
+
+9th August 2024, ablankstory (Team): The executive leadership team has presented a few options to our advisors. They’re working to finalize the official strategy/approach. But a full agreement on the plan hasn’t been made yet.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271467653915213888](https://discord.com/channels/488848270525857792/488848270525857796/1271467653915213888)
+
+It takes a long time because it’s a $5M loss that wasn’t accounted for in our financial forecast. It’s not like $20 you can find in an old pair of jeans. We need to ensure we make the right moves so that we don’t negatively impact the business for the long term, while still doing our best to take care of our community and the hacked individuals.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271468760397512705](https://discord.com/channels/488848270525857792/488848270525857796/1271468760397512705)
+
+...
+
+>10th August, 2024, bitcorn (member): Loopring has left us in the dark… on a lot of things… some about the hack, some about the future… I assume it’s because the future is really unknown. The tech is great and I hope it finds the spotlight and gets utilized… right now, I’m just hurt. Sucks to see the family fight and get torn apart
+
+>[https://discord.com/channels/488848270525857792/488848270525857796/1271543217732583454](https://discord.com/channels/488848270525857792/488848270525857796/1271543217732583454)
+
+>
+
+10th August 2024, ablankstory (Team): I'm going to be honest here, I don't understand comments about leaving people in the dark on the future or the roadmap. Can you tell me what's unclear and maybe I can help?
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271543437434294292](https://discord.com/channels/488848270525857792/488848270525857796/1271543437434294292)
+
+I DO understand the frustration around the hack, genuinely - I get it on a personal level.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271543528085913804](https://discord.com/channels/488848270525857792/488848270525857796/1271543528085913804)
+
+10th August 2024, dutchchicken (member): I can't speak for anyone other than myself, but so much has changed and most of what we get are ""L3 soon"" and ""multi-network soon"" and a bunch of other ""soons,"" so the timing us unclear. Why? What is causing things to be postponed?
+
+What is the nature of the relationship with Taiko as it seems to be less integrated and symbiotic than was initially sold to us. What role do people now play on each team and is there any overlap? And I see a lot of things in bitcorns post that I was going to add here, so I'll shut up now.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271545232722366691](https://discord.com/channels/488848270525857792/488848270525857796/1271545232722366691)
+
+10th August 2024, bitcorn (member): I guess I just don’t currently see the value in the loopring token. I see the value in the tech but I would love to see the team address where the usage currently stands (4+ years and the usage is way low), talk about taiko and that split, talk about the benefits of that split and the negatives… talk about the plan of how to get from today to the future we want where loopring is massively used and what fees would go to holders of the token (I’m questioning why I hold… sure there’s staking but staking ETH gets more )… just lots and lots of questions and uncertainty. What happened with GSMP? Is there any connections still there? Is that 100% dead to LRC? Are there other partnerships coming? Just feel I don’t know anything… and maybe that’s my fault
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271544848188702810](https://discord.com/channels/488848270525857792/488848270525857796/1271544848188702810)
+
+10th August 2024, ablankstory (Team): there's a lot to unpack here...
+
+1. I can't talk on the specifics around the split as that was Daniel's decision and made before I came onboard (i think). I can only speculate that he loves building and innovating in the space. Loopring is and always will be an app specific rollup. Daniel most likely wanted to build a generic one to help extend Ethereum even more. As to why the split, if I had to guess - getting more VC interest to fund a massive, expensive project. That doesn't mean that Loopring and Taiko don't talk, share ideas, strategize together still. But as you know, they are two separate projects.
+2. Benefits are that each project can carry out its goals but still find synergy and benefits when and where we want to collaborate. For example, we can continue building our wallet, deploy on multiple L2, etc. Taiko can continue to extend ethereum with any evm-compatible dapp that wants to build on it. That includes Loopring and our Loopring Earn dapp.
+3. Our current plan is to continue extending Loopring L3 (Earn and maybe more features) to other L2s. I'll say it's taken a bit longer than I would've anticipated to get our support for Taiko fully up and running. But I think that can be attributed to (1. it was our first deployment on an L2, 2. they are a new chain and working through their own issues, 3. the hack, buttoning up our security, reworking the app to support seed phrases, etc. have been the priority). I would love to see us roll out support for Base and other L2s at a faster pace, and we want to. The more L2s we can add support for, the more eyes we can get on Loopring. Additionally, we still have our plans to enhance Portal, Block Trade, introduce Trading Bots, etc. to help further the applications and functionality of our Wallet and Protocol.
+4. I can't really comment on GSMP because they just decided to shut it down. I don't think anyone is happy with the decision. I personally haven't chatted with them recently.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271547065859833877](https://discord.com/channels/488848270525857792/488848270525857796/1271547065859833877)
+
+I'd say the hack is what really slowed things down. We needed to understand how the hack was performed, work with a security team to figure out what changes needed to occur, make those changes, rework the app (backend and frontend), etc. This was a huge ""project"" that wasn't accounted for when we were planning out CY2024 and early 2025. Additionally, the team continues to work on the app itself to rewrite it in a common language so future updates can happen faster - but to put this into perspective, another app did this and I think it took them 1 year to get every screen/function/etc. switched over. So we're still in early innings on this part.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271547953319903232](https://discord.com/channels/488848270525857792/488848270525857796/1271547953319903232)
+
+but that's the app team, not necessarily the backend team...if that makes sense. So that isn't stopping ALL work by any means. Just wanted to remind you that it's happening.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271548089584582687](https://discord.com/channels/488848270525857792/488848270525857796/1271548089584582687)
+
+10th August 2024, dutchchicken (member): Thank you, u/blank. I think that being this open and honest is the best way to allay concerns and uncertainty. Please remember, we KNOW we are basically beta-testers and this is a work in progress. That is why it is so detrimental to feel like we are being kept in the dark. There are still questions about the multi-sig wallet and who is using it for what, but that is beyond my comprehension, so I will let someone who knows how to ask intelligent questions on that topic jump in. But please, please, please keep this line of communication going. It will benefit this project immensely.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271548666762756200](https://discord.com/channels/488848270525857792/488848270525857796/1271548666762756200)
+
+And not to harp on this, but having 1st and 3rd party cyber-coverage as a part of your E&O insurance would likely have included forensics teams that would have done a lot of this for you. Just saying, prudent risk management is essential. Please tell the team that it is worth the investment.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271549029356011551](https://discord.com/channels/488848270525857792/488848270525857796/1271549029356011551)
+
+10th August 2024, ablankstory (Team): During our discussions on updating our smart contract to add a delay (30-60 days for changes unless it's a critical bug), we have discussed more individuals. Since we don't have an official DAO, we would need to find other leaders in the Ethereum community to act as those signers. Finding those people, and those people being interested, is what we'll need to look at. It may be difficult to find willing people that are known and trustworthy.
+
+[https://discord.com/channels/488848270525857792/488848270525857796/1271549174751694929](https://discord.com/channels/488848270525857792/488848270525857796/1271549174751694929)
+
+...
+
+All posts in their text form have been copied and pasted as-is and only edited solely to correct any formatting issues and to improve readability to my best ability. Disclaimer-wise, I am not responsible for any future edits made on these posts that are linked to their respective discord link sources. I am not part of the loopring team, and any comments I choose to make in this post are solely my own opinions."
+Daily Discussion,LoopringLounge,1em5wd0,2024-08-07 03:45:08,0,0.5,1,https://www.reddit.com/r/LoopringLounge/comments/1em5wd0/daily_discussion/,AutoModerator,Discussion,"Discuss Loopring stuff here that doesn't require its own post
+
+# Official Loopring Subreddit
+
+[r/loopringorg](https://www.reddit.com/r/loopringorg/)
+
+# Helpful Links
+
+* [Loopring Wallet](https://loopring.io/)
+* [Loopring Exchange](https://exchange.loopring.io/)
+* [Loopring Protocol Website](https://loopring.org/)
+* [Twitter](https://twitter.com/loopringorg)
+* [Discord](http://discord.gg/KkYccYp)
+* [Medium](https://medium.com/loopring-protocol)
+* [GitHub](https://github.com/loopring)
+* [Loopring Protocol Design Doc (whitepaper)](https://github.com/Loopring/docs/wiki/Loopring3_Design)
+* [Newsletter](https://loopring.substack.com/)
+* [YouTube](https://www.youtube.com/c/loopring)
+
+# ZKP Links
+
+* [zkSNARK Circuit Code](https://medium.com/loopring-protocol/loopring-open-sources-its-zksnark-circuit-code-53c934b67ce5)
+* [zkSNARK Prover Optimizations](https://medium.com/loopring-protocol/zksnark-prover-optimizations-3e9a3e5578c0)
+
+# Extra Resources
+
+* [LRC Token Contract](https://etherscan.io/token/0xbbbbca6a901c926f240b89eacb641d8aec7aeafd)"
+The innate problem with LRC,loopringorg,1elxx7b,2024-08-06 20:26:40,101,0.87,42,https://www.reddit.com/r/loopringorg/comments/1elxx7b/the_innate_problem_with_lrc/,8----B,💬 Discussion 💬,"Loopring has (imo) the best tech and their sub-layered marketplaces are the best way to day trade crypto, but few use it. However the problem isn’t just with marketing. Even if everyone jumped on it today, LRC would have no inherent buy pressure. With 20% of all transaction fees distributed to the LRC stakers, buy pressure should come, until you realize the better this technology gets, the lower the fee is. It’s already tiny and our small fraction do that equates to less than a penny most times. 
+
+The technology Loopring made is great, but the token LRC just can’t capitalize on it "
+RIP,loopringorg,1ekhgsr,2024-08-05 03:05:24,0,0.44,31,https://www.reddit.com/r/loopringorg/comments/1ekhgsr/rip/,HolidayAlert7515,💬 Discussion 💬,"Loopring (LRC) was always a long shot, a gamble that many now regret. From the start, skeptics warned it was more hype than substance, a shiny promise of decentralized trading that was always out of reach. Investors, lured by dreams of easy gains, poured money into a project teetering on the brink of irrelevance. As the market turned and competition grew, it became painfully clear: buying Loopring was a misstep, a misguided hope in a volatile sea of uncertainty. Now, it stands as a cautionary tale, a reminder that not all that glitters in crypto is gold."
+July Price Performance Review of Major Exchange Coins/Tokens,CryptoCurrency,1ehboxu,2024-08-01 04:41:18,2,0.56,6,https://www.reddit.com/r/CryptoCurrency/comments/1ehboxu/july_price_performance_review_of_major_exchange/,MemenaSerena,EXCHANGES,"# CEXs
+
+Only one Gainer:
+
+1. **WBT (WhiteBIT): Up by 6.7%**
+
+Losers:
+
+1. **HT (Huobi): Down by 17.6%**
+2. MX (MEXC): Down by 11%
+3. OKB (OKX): Down by 7.7%
+4. KCS (KuCoin): Down by 6.3%
+5. BGB (Bitget): Down by 8.2%
+6. CRO (Crypto.com): Down by 5.3%
+7. GT (Gate.io): Down by 5.2%
+8. BNB (Binance): Down by 2.87%
+9. LEO (Bitfinex): Down by 1.97%
+
+# DEXs
+
+Gainers:
+
+1. **JUP (Jupiter): Up by 16.2%**
+2. XLM (Stellar): Up by 6.35%
+3. RUNE (Thorchain): Up by 0.3%
+
+Losers:
+
+1. **GNO (Gnosis): Down by 31%**
+2. UNI (Uniswap): Down by 22.3%
+3. SUSHI (SushiSwap): Down by 23.55%
+4. OSMO (Osmosis): Down by 18.2%
+5. LRC (Loopring): Down by 19.7%
+6. 1INCH (1inch Network): Down by 13.7%
+7. CAKE (PancakeSwap): Down by 12.9%
+
+Numbers are according to CoinGecko (01.08.2024 - 10:00 UTC).
+
+**WBT (WhiteBIT)** is the champion of the month among **CEX tokens**, while **JUP (Jupiter)** leads the **DEX tokens**.
+
+**HT (Huobi**) is the biggest loser among CEXs, and **GNO (Gnosis)** has experienced the most significant drop among DEXs.
+
+https://preview.redd.it/9qy6usavh0gd1.png?width=1999&format=png&auto=webp&s=e3ece1ce3546238e2b5dc408ffdcd8f9fb66031c
+
+https://preview.redd.it/1xanfmw0i0gd1.png?width=1718&format=png&auto=webp&s=54a644dfd4cbff0b527cdea0028dd2349524dbf8"
+Imagine building for 6 years just to have these 2 utilities only. Funny thing is staking LRC only gets you 0.14% APR LOL! What a slow ass development. Best part is they still chanting “ we are still building “. But hey dictator Helios won’t let you call Poopring out like that.,loopring,1egmyf0,2024-07-31 09:17:33,16,0.61,28,https://www.reddit.com/gallery/1egmyf0,Justaboywandering,,
+Long time LRC holder ,loopringorg,1egc56r,2024-07-30 22:34:56,121,0.87,41,https://www.reddit.com/r/loopringorg/comments/1egc56r/long_time_lrc_holder/,Noske2K,💬 Discussion 💬,"I’m a big LRC holder, and will continue to hold LRC. I personally am not super scared like a lot of Loopring holders are because the alt market in general has been moving together. Every time I check Loopring when it goes down by 7% I see that the rest of the alt coins have also gone down by 7% during that specific timeframe over the past four months. The only major move was when Loopring got hacked, but it still didn’t make a crazy difference vs other all coins.
+
+My question to you guys is, does Loopring have something to look forward to? I know that Loopring itself doesn’t have a crazy amount of active customers. However, is there something that we can look forward to in the community that will possibly increase Loopring value a ton? Sometimes it feels like it’s a dying coin because it’s been around so long. But if they’re still working on it and there’s gonna be big changes soon, I would love to hear about them."
+What would you change if you were running Loopring? A few of my thoughts...,loopringorg,1edlb84,2024-07-27 13:11:21,71,0.79,43,https://www.reddit.com/r/loopringorg/comments/1edlb84/what_would_you_change_if_you_were_running/,datasmash,💬 Discussion 💬,"I've been here a while, I stacked heavily before the GME stuff was a thing, and rode it all the way up and now all the way back down. Its been excruciating to watch. If I were in charge of Loopring, this is what I would do differently to drive growth, adoption, and trust within the community
+
+## Marketing
+
+- Increase Marketing Efforts: There needs to be a significant ramp-up of marketing campaigns. The current efforts are insufficient and quite frankly an embarrassment. 
+- Replace Ineffective Personnel: Byron would have to go. His contributions are more akin to a social media intern rather than someone driving substantial adoption, defining strategy and creating meaningful content.
+- Hire Effective Promoters: Hire the people who are currently hyping up shitcoins in the top 50. If they can do that with projects that have zero fundamentals, imagine what they can achieve with an actual project
+
+## Community Trust and Relations:
+
+- Fix Airdrops: The current airdrop strategy has destroyed the trust of OG users. This needs to be fixed immediately.
+- Revise Taiko Partnership Terms: Remind Wang that offering the Loopring community only 0.25% of the airdrop funds is insulting, especially after moving forward with the tech invested in (zkEVM).
+- Deploy Loopring as L3 on Taiko L2: This integration needs to happen to strengthen the ecosystem. Now they've committed down this path, Loopring is not viable without the reduced fees L3 will bring
+- Swallow the gas fee's for all OG users who paid for guardians txns, contract upgrades, ENS, etc so they can create a new multi network wallet mirroring their old one. Whoever thought that people would just be ok with having to create new wallets is a moron and should be fired
+- The hack. This is obvious, make it right, be on hand to support people who trusted the platform, set an example
+
+## User Experience:
+
+- Reduce Fees: Lower the fees for adding guardians and wallet creation. High fees make the platform less attractive and negate its purpose. If this means L3, then whatever, but currently fee's are a huge barrier
+- Engage with the Community: Regularly interact with users to validate ideas and understand their needs, rather than building technically interesting features with no clear use case.
+- Rebuild Trust: Trust is crucial. Deliberate steps need to be taken to rebuild it.
+
+## Trading and Technology:
+- Increase Trading Pairs on DEX: Like Uniswap, more trading pairs should be available to drive volume and adoption. The LRC token is pretty much worthless right now without volume
+- Enhance NFT Technology: Shift focus from trash JPEGs to real-world applications like property, e-commerce, and insurance tech. At the very least make dynamic/oracle-based NFTs usable for creators.
+- Reintroduce Points for Activity: Bring back points for user activity and make them worthwhile. Users shouldn't need to log in daily for two years just to cover one transaction.
+- Empower Users: Truly enable people to be their own bank.
+
+## Waste of time
+
+- On/Off ramps
+- GME partnership
+- Loopheads
+- Staking
+- Dual investment
+- AMM
+- NFTs
+- Red packets
+- Portal/margins
+- Multi-network (probably)
+
+## Stuff that has actually worked
+
+- Guardians
+- DEX (though more pairs are needed)
+- Block trading / CEX liquidity
+
+Loopring had immense potential, and has done a pretty decent job at building something, but a terrible job at execution in terms of adoption and community trust.
+
+It feels like on the current trajectory the we're never coming back. A change is needed. Whoever"
+Long position on Loopring Portal explained in simple language:,loopringorg,1e7srsk,2024-07-20 06:41:13,89,0.91,21,https://www.reddit.com/r/loopringorg/comments/1e7srsk/long_position_on_loopring_portal_explained_in/,Icy_Particular3663,💬 Discussion 💬,"My Experience using Loopring Portal:
+
+**Total Collateral** = $386
+
+* This is the amount of USDT I locked into the portal 
+* These funds still stay in my custody in the Loopring wallet, but I’ve signed a smart contract which means that if I lose a lot of money trading in Loopring portal my **collateral** will be liquidated.
+
+**Total debt**  = 385.59
+
+* This is the amount of USDT I borrowed from the Loopring Portal to purchase LRC during the dip 
+* This means I’m betting on looping’s price increasing = I'm going long
+* On this debt I also need to pay interest this is paid hourly (0.001713%). This adds up to 15.01% APR
+
+**Total profit** = $52.21
+
+* This is the amount of **profit** I’ve made so far in my long position on $LRC
+* This is because the price of LRC has gone up today; it is higher than the price I bought in at
+
+**Total Equity** = $438.70
+
+* This is my collateral + profit
+* It's how much my position is worth after I pay back my **Total debt**
+
+**Margin Level** = 2.14
+
+This indicates how close my position is to:
+
+**Being liquidated** = I lose the $386 I locked in as collateral 
+
+*OR*
+
+Getting **margin call**ed = I will be asked to add more collateral to avoid the liquidation 
+
+
+
+How is **Margin Level** calculated? 
+
+* **Total equity/total collateral** + 1 = 438/386 + 1 = 2.14 (rounded) 
+
+If my **Equity** decreases eg) if loopring price decreases, then this number **(Margin level)** gets lower. Once it reaches 1.10 I will lose all my **collateral** so it can be used to repay my **debt**. UNLESS I supply more **collateral** and increase this **margin level**, so I can stop the liquidation.
+
+  
+Read a more accurate and detailed breakdown by Magic here: [https://medium.com/loopring-protocol/loopring-portal-is-live-a-look-inside-da5b95126372](https://medium.com/loopring-protocol/loopring-portal-is-live-a-look-inside-da5b95126372)   
+  
+Hope my post helps ya guys! Also keep a look out for when the demo trading feature is realeased on Loopring Portal! It will be a really great learning tool! Would you like to see a similar breakdown of a short position? What else do ya wanna know about Loopring Portal? 
+
+\*Disclaimer be careful! Trading with leverage involves a lot of risk. I'm still learning and I'm currently at a safe **margin level** (2.14) because I did not borrow too much! 
+
+🍦icecream.loopring.eth🍦
+
+https://preview.redd.it/erhgx90tindd1.png?width=1170&format=png&auto=webp&s=4d5caee27e2b6cecae43821dd263ef0e86d74439
+
+"
+"So Poopring finally get fake hypeman Byron to speak out regarding the hack . Guess what…. He’s looking to sweep things under the rug. With the community making fun of the victims earlier, and with tyrant dictator Helios in control. It’s no wonder they want to shape the narratives their way.",loopring,1e6dqga,2024-07-18 11:06:57,23,0.66,14,https://www.reddit.com/gallery/1e6dqga,Justaboywandering,,
+Daily Discussion,LoopringLounge,1dxb3z3,2024-07-07 03:45:08,0,0.5,0,https://www.reddit.com/r/LoopringLounge/comments/1dxb3z3/daily_discussion/,AutoModerator,Discussion,"Discuss Loopring stuff here that doesn't require its own post
+
+# Official Loopring Subreddit
+
+[r/loopringorg](https://www.reddit.com/r/loopringorg/)
+
+# Helpful Links
+
+* [Loopring Wallet](https://loopring.io/)
+* [Loopring Exchange](https://exchange.loopring.io/)
+* [Loopring Protocol Website](https://loopring.org/)
+* [Twitter](https://twitter.com/loopringorg)
+* [Discord](http://discord.gg/KkYccYp)
+* [Medium](https://medium.com/loopring-protocol)
+* [GitHub](https://github.com/loopring)
+* [Loopring Protocol Design Doc (whitepaper)](https://github.com/Loopring/docs/wiki/Loopring3_Design)
+* [Newsletter](https://loopring.substack.com/)
+* [YouTube](https://www.youtube.com/c/loopring)
+
+# ZKP Links
+
+* [zkSNARK Circuit Code](https://medium.com/loopring-protocol/loopring-open-sources-its-zksnark-circuit-code-53c934b67ce5)
+* [zkSNARK Prover Optimizations](https://medium.com/loopring-protocol/zksnark-prover-optimizations-3e9a3e5578c0)
+
+# Extra Resources
+
+* [LRC Token Contract](https://etherscan.io/token/0xbbbbca6a901c926f240b89eacb641d8aec7aeafd)"
+What is network fee not enough?,loopringorg,1dufzeb,2024-07-03 10:39:30,14,0.72,12,https://i.redd.it/4z8yq2pbfbad1.png,AffectionatePleeb,🛟 Assistance 🛟,I tried to take out my staked coins and I can't. What's up with that?
+Recent Price Fall in the Industry Hits Exchange Coins Hard: June Price Performance Review of Major Exchange Coins/Tokens,CryptoCurrency,1dtfbqk,2024-07-02 02:43:11,1,0.53,5,https://www.reddit.com/r/CryptoCurrency/comments/1dtfbqk/recent_price_fall_in_the_industry_hits_exchange/,MemenaSerena,EXCHANGES,"CEXs
+
+The Only Gainer:
+
+1. **MX** (MEXC): Up by 2.5%
+
+Losers:
+
+1. **KCS** (KuCoin): Down by 1.05%
+2. **WBT** (WhiteBIT): Down by 1.95%
+3. **BNB** (Binance): Down by 2.3%
+4. **LEO** (Bitfinex): Down by 2.5%
+5. **GT** (Gate. io ): Down by 3.2%
+6. **HT** (Huobi): Down by 7.95%
+7. **OKB** (OKX): Down by 12%
+8. **BGB** (Bitget): Down by 16.3%
+9. **CRO** (Crypto. com): Down by 18.1%
+
+DEXs
+
+No Gainers:
+
+Losers:
+
+1. **UNI** (Uniswap): Down by 6.66%
+2. **XLM** (Stellar): Down by 13.8%
+3. **GNO** (Gnosis): Down by 15.6%
+4. **1INCH** (1inch Network): Down by 19.98%
+5. **CAKE** (PancakeSwap): Down by 22.55%
+6. **JUP** (Jupiter):  Down by 24.65%
+7. **SUSHI** (SushiSwap): Down by 27.7%
+8. **RUNE** (Thorchain): Down by 31.9%
+9. **LRC** (Loopring): Down by 33.5%
+10. **OSMO** (Osmosis): Down by 34,9%
+
+Numbers are according to CoinGecko (01.07.2024 - 10:00 UTC)
+
+**MX** (MEXC) **is the champion of the month**
+
+**$OSMO is the loser of the month**
+
+https://preview.redd.it/bq7pfrsdx1ad1.png?width=1200&format=png&auto=webp&s=90ee5d8481d22fc7d66f251e92528025353a09b2
+
+https://preview.redd.it/raby67oex1ad1.png?width=1280&format=png&auto=webp&s=1807fd3e7ae4fbdbd2731ad39d66065a626d28e0
+
+"
+Red packet going around,loopringorg,1dptsni,2024-06-27 11:17:45,79,0.88,14,https://i.redd.it/5a7add9os49d1.jpeg,KamikazePants,🧧 Red Packet 🧧,
+Should I sell my crypto and offset against my income to save tax?,IndianStreetBets,1dplq31,2024-06-27 03:47:08,7,0.64,17,https://www.reddit.com/gallery/1dplq31,nar493,Meme,"It's just sarcasm guys, I am unemployed and have 0 earnings"
+"GameStop can buy MicroCenter and Newegg and still have $1.5B in cash. They could buy Barnes and Nobles, Bed Bath & Beyond, and Toys R Us on top of that and still have $1.35B left. They can buy Loopring, start a bank/exchange. They can buy video game developers and publishers. So many possibilities!!",Superstonk,1ddrh9v,2024-06-11 18:46:30,1456,0.95,145,https://www.reddit.com/r/Superstonk/comments/1ddrh9v/gamestop_can_buy_microcenter_and_newegg_and_still/,greencandlevandal,🗣 Discussion / Question,"Here is an article from TradingView discussing some small cap video game publishers and developers that are all available for GameStop to acquire.
+
+https://preview.redd.it/qm3rxesbt06d1.png?width=2272&format=png&auto=webp&s=3d4a34538c5c283fab3000404595eab5ad241156
+
+[https://www.tradingview.com/sparks/entries/small-cap-video-game-stocks-the-indie-players/](https://www.tradingview.com/sparks/entries/small-cap-video-game-stocks-the-indie-players/)
+
+https://preview.redd.it/69l46o93u06d1.png?width=2330&format=png&auto=webp&s=e61e65824c620c48bb7a38666ff163d3e1d3ab51
+
+Here's some more options from Larry Cheng's poll on X.
+
+https://preview.redd.it/c646fgryt06d1.png?width=1188&format=png&auto=webp&s=049ec8d68e95602a9c845a841a1a4be7db98506f
+
+"
+A Look Into Grayscale's Proposed Privacy ETF & Potential Role of Oasis,altcoin,1ddj57f,2024-06-11 13:00:41,8,0.91,1,https://www.reddit.com/r/altcoin/comments/1ddj57f/a_look_into_grayscales_proposed_privacy_etf/,DC600A,,"The financial aspect of crypto is a huge draw for users. Now, despite the volatility of the crypto markets, the lucrative pull is undeniable. So, when Bitcoin ETFs got approved and succeeded, it paved the way for Ethereum ETFs. While early market sentiments are yet to call out the final result if it is a hit or a miss, indications are it will be successful. The focus now shifts to another untapped potential for ETFs - privacy, and it is a big deal.
+
+Whether you are a veteran or a newbie in the ETF scene, Grayscale is a well-known name that inspires confidence. Some sources have suggested that Grayscale is prepped for filing a privacy ETF and they have been considering and monitoring several projects since 2022. Here is the list of assets under consideration:
+
+* 0x (ZRX)
+* 1inch (1INCH)
+* Apecoin (APE)
+* Arweave (AR)
+* Axie Infinity (AXS)
+* Bancor (BNT)
+* BitTorrent (BTT)
+* Bora (BORA)
+* Iota (IOTA)
+* Kava (KAVA)
+* Kyber Network Crystal (KNC)
+* Loopring (LRC)
+* Monero (XMR)
+* Near (NEAR)
+* Numeraire (NMR)
+* [Oasis (ROSE)](https://coinmarketcap.com/currencies/oasis-network/)
+
+While Ethereum itself depends on L2 solutions to implement privacy effectively in its ecosystem, there is no dearth of blockchain protocols that have been working in this field and have achieved various degrees of success. As a pioneer in smart privacy for web3 and AI with privacy-preserving technologies in use, [Oasis](https://oasisprotocol.org/)'s inclusion in the above list is as expected. However, before getting into how or why Oasis / $Rose could feature in Grayscale's plans, it is useful first to examine the makeup of the privacy ETF.
+
+Ed, a well-known persona in the blockchain and crypto and web3 space, and an engaged Oasis community member with 3+ years of experience being embedded across the ecosystem while contributing towards community building, business development, networking, and marketing activities, has put it all together.
+
+Let's start by looking at what type of projects will constitute this ETF.
+
+* Data Privacy Solution Providers
+* Cyber Service Providers
+* Blockchain-Based Privacy Solutions
+* Network & Communication Security Provider
+* Privacy-Preserving Protocols
+
+The projects considered also have some eligibility criteria to fulfill before qualifying and we will mention the top 3 here.
+
+First, a substantial portion, if not all, of their revenue has to come from one or more of the categories mentioned above. Second, the projects need to be listed on U.S., non-U.S. developed market or emerging market exchanges. Third, the market cap must equal to or in excess of $250M.
+
+Projects are scored as 'primary' or 'secondary' based on three metrics.
+
+1. Data Privacy Solutions, Cyber Services, or Blockchain Privacy Solutions take priority over other sectors
+2. If ALL or just some business operations are aimed at privacy
+3. By alignment with GDPR and CCPA regulations
+
+The prominence and priority of Oasis in Grayscale's proposed privacy ETF plans becomes evident based on the above discussion as it firmly falls under the 'primary' category. While the fact remains that quite a few of the projects mentioned above in Grayscale's list have lost relevance, Oasis has gone from strength to strength emerging as a regulatory-compliant solution provider in addition to its confidentiality capabilities.
+
+According to Ed, this is just the tip of the iceberg and there are other reasons too that underline why Oasis / $Rose is well-positioned in Grayscale's proposed privacy ETF.
+
+To note, Grayscale has reiterated its principal investment strategy of avoiding exposure to digital assets directly, and still, $Rose has potentially a significant role to play in the privacy ETF when it comes out. Intrigued? The answer lies in a single entity having effected a huge accumulation of $Rose (approximately $440M) on chain through Coinbase. To deep dive into this, [check out Ed's thread](https://x.com/ECrypto0/status/1800135721648546253) on Twitter (X).
+
+Favorable market sentiments of ETFs aside, Grayscale's backing of the privacy narrative is well-deserved and timely. Oasis has always been privacy-focused in line with its founder, Prof. Dawn Song's expertise in computer security and decentralized confidentiality. In conclusion, the potential is all there for a blockbuster privacy ETF with an MVP role by Oasis, but nothing is concrete yet. Hopefully, we will hear something positive very soon.
+
+Let's discuss in the comments what you like about privacy ETFs, and also what other criteria, metrics, and projects you think would make it more robust and impactful."
+Examining Grayscale's Proposed Privacy ETF & Potential Role of Oasis,CryptoMarkets,1ddccka,2024-06-11 07:58:54,2,1.0,0,https://www.reddit.com/r/CryptoMarkets/comments/1ddccka/examining_grayscales_proposed_privacy_etf/,DC600A,,"Crypto markets have always been volatile but its lucrative pull is undeniable. It was thus no wonder when Bitcoin ETFs got approved and have become a huge hit since then. After a lot of speculation if and when it will come to pass, recently Ethereum ETFs have also become a reality. While early market sentiments are yet to call out the final result if it is a hit or a miss, indications are it will be successful. The focus now shifts to another untapped potential for ETFs - privacy, and it is a big deal.
+
+Anyone who is in the know about the ETF scene knows how Grayscale is a name that inspires confidence. Some sources have suggested that Grayscale is prepped for filing a privacy ETF and they have been considering and monitoring several projects since 2022. Here is the list of assets under consideration:
+
+* 0x (ZRX)
+* 1inch (1INCH)
+* Apecoin (APE)
+* Arweave (AR)
+* Axie Infinity (AXS)
+* Bancor (BNT)
+* BitTorrent (BTT)
+* Bora (BORA)
+* Iota (IOTA)
+* Kava (KAVA)
+* Kyber Network Crystal (KNC)
+* Loopring (LRC)
+* Monero (XMR)
+* Near (NEAR)
+* Numeraire (NMR)
+* Oasis (ROSE)
+
+As a pioneer in smart privacy for web3 and AI with privacy-preserving technologies in use, [Oasis](https://oasisprotocol.org/) is a prominent name in the privacy blockchain protocol space. However, before getting into how or why Oasis / $Rose could feature, it is useful to first examine the makeup of the privacy ETF.
+
+Ed, a well-known persona in the blockchain and crypto and web3 space, and an engaged Oasis community member with 3+ years of experience being embedded across the ecosystem while contributing towards community building, business development, networking, and marketing activities, has put it all together.
+
+Let's start by looking at what type of projects will constitute this ETF.
+
+* Data Privacy Solution Providers
+* Cyber Service Providers
+* Blockchain-Based Privacy Solutions
+* Network & Communication Security Provider
+* Privacy-Preserving Protocols
+
+The projects considered also have some eligibility criteria to fulfill before qualifying and we will mention the top 3 here.
+
+First, a substantial portion, if not all, of their revenue has to come from one or more of the categories mentioned above. Second, the projects need to be listed on U.S., non-U.S. developed market or emerging market exchanges. Third, the market cap must equal to or in excess of $250M.
+
+Projects are scored as 'primary' or 'secondary' based on three metrics.
+
+1. Data Privacy Solutions, Cyber Services, or Blockchain Privacy Solutions take priority over other sectors
+2. If ALL or just some business operations are aimed at privacy
+3. By alignment with GDPR and CCPA regulations
+
+The prominence and priority of Oasis in Grayscale's proposed privacy ETF plans becomes evident based on the above discussion as it firmly falls under the 'primary' category. While the fact remains that quite a few of the projects mentioned above in Grayscale's list have lost relevance, Oasis has gone from strength to strength emerging as a regulatory-compliant solution provider in addition to its confidentiality capabilities.
+
+According to Ed, this is just the tip of the iceberg and there are other reasons too that underline why Oasis / $Rose is well-positioned in Grayscale's proposed privacy ETF.
+
+To note, Grayscale has reiterated its principal investment strategy of avoiding exposure to digital assets directly, and still, $Rose has potentially a significant role to play in the privacy ETF when it comes out. Intrigued? The answer lies in a single entity having effected a huge accumulation of $Rose (approximately $440M) on chain through Coinbase. To deep dive into this, [check out Ed's thread](https://x.com/ECrypto0/status/1800135721648546253) on Twitter (X).
+
+Favorable market sentiments of ETFs aside, Grayscale's backing of the privacy narrative is well-deserved and timely. Oasis has always been privacy-focused in line with its founder, Prof. Dawn Song's expertise in computer security and decentralized confidentiality. In conclusion, the potential is all there for a blockbuster privacy ETF with an MVP role by Oasis, but nothing is concrete yet. Hopefully, we will hear something positive very soon.
+
+Do discuss in the comments what you like about privacy ETFs, and also what other criteria, metrics, and projects you think would make it more robust and impactful."
+How to send LRC from the old wallet to the new wallet to activate my loopring L2 with taiko,loopringorg,1dda4cz,2024-06-11 05:40:07,12,0.88,5,https://www.reddit.com/r/loopringorg/comments/1dda4cz/how_to_send_lrc_from_the_old_wallet_to_the_new/,The-last-call,🛟 Assistance 🛟,"Every time i try to send LRC from my oldest wallet the application shutdown how can I solve it? 
+
+
+Text text text text text text text text text 
+
+Text text text text text text text text text 
+
+Text text text text text text text text text 
+
+Text text text text text text text text text 
+
+Text text text text text text text text text "
+"Trying to get into the loopring app, and the app is having issues....is anyone else locked out? The max block trade right now is 59 LRC...WTF?",loopring,1dcwf7w,2024-06-10 16:58:33,5,0.78,2,https://www.reddit.com/r/loopring/comments/1dcwf7w/trying_to_get_into_the_loopring_app_and_the_app/,matthegc,,
+Loopring Layer 2 - GME Wallet Issues,loopringorg,1dcu7e8,2024-06-10 15:29:10,18,0.99,14,https://www.reddit.com/r/loopringorg/comments/1dcu7e8/loopring_layer_2_gme_wallet_issues/,psychedelicstargazer,💬 Discussion 💬,"I forgot I had assets on the GME wallet in Loopring Layer 2 - it currently shows 10 LRC, about 0.18 ETH, and some GS NFTs. However, when I open my wallet in MetaMask or Coinbase Wallet, none of my crypto or NFTs show up. And I get an error message every time I try to send it to an address. 
+
+Also, when I loop up my wallet on Etherscan, it shows I have a 0 balance?? 0x62b1DE06d7a8431B71Ae980a788233b539c11E99 
+
+I'd like to cash this out to buy more GME today. Any help as to how to get these funds out would be appreciated.
+
+  
+"
+Moving crypto out as  Canadian,loopringorg,1dcq7rh,2024-06-10 12:48:44,1,0.53,12,https://www.reddit.com/r/loopringorg/comments/1dcq7rh/moving_crypto_out_as_canadian/,FreeandFurious,💬 Discussion 💬,"I have LRC and ETH in my loopring wallet. 
+
+I funded Newton from my bank, transfer to Binance, and then sent it to the wallet from there. 
+
+Pretty sure Newton and Binance aren’t a thing anymore (in Canada?). 
+
+So how I can get my coins out of this wallet and potentially turn it back to cash or only ETH. "
+Claim LRC in Loopring Wallet,loopringorg,1dclcxu,2024-06-10 09:20:54,12,0.8,20,https://www.reddit.com/r/loopringorg/comments/1dclcxu/claim_lrc_in_loopring_wallet/,pico020,⚙️ Technicals ⚙️,"I'm trying to claim my staked LRC in the Loopring Wallet, but it says ""not enough network fee"". How can I fix this? 
+
+Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text"
+"My old V2.1.0 Loopring Wallet was eligable for the Taiko drop, but it didn't work. My solution:",loopringorg,1dcff6u,2024-06-10 03:00:37,25,0.93,11,https://www.reddit.com/r/loopringorg/comments/1dcff6u/my_old_v210_loopring_wallet_was_eligable_for_the/,Wrong_Roll_8302,🛟 Assistance 🛟,"I created a new Loopring Wallet (V3.7.4.292) and sent some LRC from my old wallet to the new one to activate (only) L2 (some 4 Dollar something). 
+
+Than i went back to my old wallet and checked under L2 -> ""Utility"" -> dApp Browser -> TAIKO Airdrop claim, if my wallet is eligable, again.
+
+i went through all the steps, connected my OLD wallet and it was confirmed, that it is eligable.
+
+But in the last step i had to change the wallet adress from the OLD one to the NEW one (copy & paste). Only than it was completed.
+
+today i recieved 55 TAIKO :)
+
+I hope, that helps some of you!"
+I’m out.,loopringorg,1dc0d11,2024-06-09 14:21:16,278,0.77,175,https://www.reddit.com/r/loopringorg/comments/1dc0d11/im_out/,CogBlocker,💬 Discussion 💬,"Transferred all my LRC to ETH and will hold that in my Coinbase account. I’m over Loopring, Taiko and their wallet. Just can’t deal with all the BS anymore….and now people’s super Uber secure LRC wallets are getting hacked? I wanted to believe but I just can’t anymore.
+
+$25k initial investment @ $2.08 turned into $4500"
+Help with Taiko,loopringorg,1db87is,2024-06-08 13:34:53,7,0.71,7,https://www.reddit.com/r/loopringorg/comments/1db87is/help_with_taiko/,thesehands_diamonds,🛟 Assistance 🛟,"I have activated L1 and L2 wallet and loopring ENS. I made a new wallet for taiko. My original wallet says I can upgrade v2.1 to v2.3. if I do that (have to pay LRC?) can I get taiko in that wallet and just have 1 wallet? 
+
+Also if above is no, how do I bind looting wallet to taiko? I not eligible for drop but seems like I should have ""activity"" button but doesn't show in Android app"
+Daily Discussion,LoopringLounge,1da551w,2024-06-07 03:45:07,2,1.0,0,https://www.reddit.com/r/LoopringLounge/comments/1da551w/daily_discussion/,AutoModerator,Discussion,"Discuss Loopring stuff here that doesn't require its own post
+
+# Official Loopring Subreddit
+
+[r/loopringorg](https://www.reddit.com/r/loopringorg/)
+
+# Helpful Links
+
+* [Loopring Wallet](https://loopring.io/)
+* [Loopring Exchange](https://exchange.loopring.io/)
+* [Loopring Protocol Website](https://loopring.org/)
+* [Twitter](https://twitter.com/loopringorg)
+* [Discord](http://discord.gg/KkYccYp)
+* [Medium](https://medium.com/loopring-protocol)
+* [GitHub](https://github.com/loopring)
+* [Loopring Protocol Design Doc (whitepaper)](https://github.com/Loopring/docs/wiki/Loopring3_Design)
+* [Newsletter](https://loopring.substack.com/)
+* [YouTube](https://www.youtube.com/c/loopring)
+
+# ZKP Links
+
+* [zkSNARK Circuit Code](https://medium.com/loopring-protocol/loopring-open-sources-its-zksnark-circuit-code-53c934b67ce5)
+* [zkSNARK Prover Optimizations](https://medium.com/loopring-protocol/zksnark-prover-optimizations-3e9a3e5578c0)
+
+# Extra Resources
+
+* [LRC Token Contract](https://etherscan.io/token/0xbbbbca6a901c926f240b89eacb641d8aec7aeafd)"
+What is the cheapest most efficient pathway to and from exchanges and the app for buying and selling,loopringorg,1d9nnqj,2024-06-06 13:21:37,1,0.6,2,https://www.reddit.com/r/loopringorg/comments/1d9nnqj/what_is_the_cheapest_most_efficient_pathway_to/,ilikeplantsandsuch,💬 Discussion 💬,"Hi guys. What is the current cheapest pathway everyone is using?
+
+Banxa and ramp are obviously not it
+
+Also what are the cheapest options for swapping? the LSW is obviously not that either in my experience.
+
+i would love to hear everybody’s experiences and solutions.
+
+here are some obligatory words for the automod:
+
+Loopring (LRC) is a decentralized exchange (DEX) protocol built on the Ethereum blockchain. It aims to provide a high-speed, low-cost trading platform that leverages the benefits of both centralized and decentralized exchanges. Here's a breakdown of its key features and components:
+
+1. **Layer 2 Solution**: Loopring uses a technology called zkRollups (Zero-Knowledge Rollups) to increase transaction throughput and reduce costs. This allows for many transactions to be processed off-chain, with only the final state being recorded on the Ethereum blockchain, significantly improving scalability.
+
+2. **Security**: By using zkRollups, Loopring ensures that user assets are always under their control, even though the transactions are processed off-chain. This combines the security of a decentralized exchange with the efficiency of centralized exchanges.
+
+3. **Token (LRC)**: LRC is the native utility token of the Loopring protocol. It is used for various purposes within the ecosystem, including staking, which is required for certain operations and to earn protocol fees.
+
+4. **Decentralized Exchanges (DEXs)**: Loopring provides the infrastructure for building DEXs that can offer high throughput and low fees, making decentralized trading more practical and accessible.
+
+5. **Order Matching**: Loopring employs an order ring-matching system where multiple orders can be matched together in a circular trade, increasing liquidity and improving the chances of order fulfillment.
+
+6. **Liquidity Mining and Incentives**: To attract users and liquidity providers, Loopring offers various incentive programs, including liquidity mining rewards, where users can earn LRC tokens for providing liquidity to the platform.
+
+Overall, Loopring aims to enhance the user experience in decentralized trading by addressing key issues like scalability, cost, and security through innovative use of zkRollups and other advanced blockchain technologies."
+Am I shit out of luck? ,loopringorg,1d9azld,2024-06-06 01:43:54,20,0.78,45,https://www.reddit.com/r/loopringorg/comments/1d9azld/am_i_shit_out_of_luck/,Emerald_Flamingos,🛟 Assistance 🛟,"I've had a loopring wallet since it was created. After I broke my 420 day sign in streak I stopped using it for anything other than storage of loops. This was over a year ago. Now I see this TAIKO airdrop & thought since I met the first 3 criteria, I would be receiving an airdrop. However, my Taiko-activated newly created and activated wallet is  ineligible for the airdrop. 
+
+Are long-time holders getting shafted again here? Am I missing out on this airdrop because my activity isn't recent enough??? After being coerced to create and activate a new wallet to receive this airdrop??
+
+Someone help me make sense of it....
+
+""To be eligible for the airdrop, the recipient's address must have engaged in at least one Loopring smart wallet transaction or one Loopring L2 transaction within the 12 months prior to the airdrop. The snapshot for this airdrop is set at the Ethereum mainnet block height 19859999.
+
+Multiplier Factor Criteria:
+
+Hold a minimum of 1,000 LRC on L1 or Loopring L2
+Have a Loopring L2 account
+Use a Loopring smart wallet address"""
+When will loopring transfer Taiko?,loopringorg,1d8yyci,2024-06-05 15:45:15,19,0.76,19,https://i.redd.it/s77i0rcc4t4d1.jpeg,Delavachi,💬 Discussion 💬,"Does anyone knows when loopring will send out the airdrops? 
+I Hope we will receive our tokens before it goes to LRC prices 😭
+
+
+
+
+
+TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT   TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT "
+Proof that Byron fucked us,loopring,1d8sblq,2024-06-05 11:10:49,9,0.61,10,https://i.redd.it/z9wj0hqdrr4d1.jpeg,Justaboywandering,,
+Dear Members of the Board,loopringorg,1d8365t,2024-06-04 13:40:58,108,0.76,44,https://www.reddit.com/r/loopringorg/comments/1d8365t/dear_members_of_the_board/,stepwn,💬 Discussion 💬,"I am writing to express my concerns and disappointment regarding the recent TAIKO airdrop to Loopring wallets with ""account activity"" over the past year. While this initiative was presented as a reward for active participation, the execution and distribution of these rewards have raised several issues that need to be addressed urgently.
+
+Firstly, the criteria for receiving the airdrop, particularly the multipliers based on wallet ""interactions"" has resulted in significant disparities. Many long-term investors who have held substantial amounts of LRC for over three years received nothing, while others with minimal activity were rewarded disproportionately. This inconsistency undermines the principle of fair distribution and equitable treatment of all stakeholders.
+
+It appears that the airdrop and other reward mechanisms, such as NFT red packets, are being used as ***a disguised gambling system***. This system requires users to perform certain tasks with the hope of receiving valuable rewards, essentially serving as ***unpaid user testing for Loopring’s products***. This approach not only exploits the community’s efforts but also introduces elements of chance and favoritism, which is contrary to the ethos of fairness and transparency.
+
+Moreover, many of us invested heavily in Loopring three years ago, anticipating the development of zkEVM technology. However, following the departure of the CEO and the pivot to TAIKO, we find ourselves holding investments in a project that has not delivered on its initial promise. While the remaining technology is still worth investing in, the current practices of gambling-like rewards and ***potential self-dealing are deeply concerning***.
+
+The lack of transparency regarding the specifics of how participation over the past year would affect TAIKO airdrop rewards has led to a sense of betrayal among the community. It seems that those with closer ties to the team, who were able to create multiple wallets, have benefited disproportionately. This situation, whether intentional or not, creates an environment that feels akin to the inequality depicted in George Orwell’s ""Animal Farm"" – where some are ""more equal than others.""
+
+I am calling on the Loopring board to address these issues with immediate effect. Transparency is paramount. ***The community deserves it***.
+
+Loopring has always promoted the concept of being your own bank, emphasizing equality and fairness. It is crucial that the current practices align with these principles to restore trust and integrity within the community.
+
+edit: cool to watch the number of shares go up with this post while the upvote ratio goes down along side. why share something you don't like unless you want others to manipulate the scoring system? now at 66%"
+TAIKO Airdrop Eligibility and Criteria,loopringorg,1d832tx,2024-06-04 13:37:07,30,0.82,39,https://www.reddit.com/r/loopringorg/comments/1d832tx/taiko_airdrop_eligibility_and_criteria/,FireSpiritBoi,💬 Discussion 💬,"QUESTION:
+
+Why do I only get 110 Taiko when I have met the criteria for 1, 2 and 3?
+
+1. I have 50k LRC
+
+2. I have had an L2 for 2 years
+
+3. I have loopring.eth ens linked to my wallet.
+
+
+
+CRITERIA:
+
+To qualify for the TAIKO airdrop, recipients must meet the following requirements:
+
+**Entry Criteria:**  
+To be eligible for the airdrop, the recipient's address must have engaged in at least one Loopring smart wallet transaction or one Loopring L2 transaction within the 12 months prior to the airdrop. The snapshot for this airdrop is set at the Ethereum mainnet block height 19859999.
+
+**Multiplier Factor Criteria:**
+
+1. Hold a minimum of 1,000 LRC on L1 or Loopring L2
+2. Have a Loopring L2 account
+3. Use a Loopring smart wallet address
+4. Hold one or more Loopheads NFTs
+5. Hold one or more Taiko Task NFTs
+6. Hold more than 100,000 LRC on L1 or Loopring L2
+
+**Weight Categories:**  
+Each additional criterion met (from the Multiplier Factor Criteria) will double the address's weight. The six different weight categories are: 1x, 2x, 4x, 8x, 16x, and 32x.
+
+**Additional Note for Taiko Task NFT Holders:**  
+Since the Loopring smart wallet doesn't support deploying on various networks with the same address when the task kicked off, users have provided another Loopring Smart Wallet address to receive this NFT. That Loopring Smart Wallet address will be treated as eligible for at least the minimum 1x factor.
+
+This structured approach ensures that more engaged users receive greater rewards through the airdrop.
+
+
+
+"
+Loopring at it again. Taiko Airdrop drama.,CryptoCurrency,1d80ikw,2024-06-04 11:50:28,80,0.7,52,https://www.reddit.com/r/CryptoCurrency/comments/1d80ikw/loopring_at_it_again_taiko_airdrop_drama/,krfc89,COMEDY,"As alwys loopring team delivers. After 10 quarterly reports, Game Stop fiasko and D.Wang leaving woth Zkvm technology to start new project it was time to wreck the Old users and early adopters, people who bought in years ago because of Zkvm.
+
+Team decided that people who activated the wallet, activated L2, staked and participated in liquidity pools for years are not eligible for the Taiko airdrop. 
+
+Why ? 
+
+Because they aren't active enough and they are ""Old"" users. It means people who staked and provided liquidity in thousands of dollars for years are less active then people who just bought some Lrc month ago. 
+
+Guess this is how loyality of early adopters is rewarded. 
+
+This Air Drop is worth at least 7/10 quarterly reports"
+"Main wallet now says ""you haven't created a wallet yet, please create on first""",loopringorg,1d7xyk3,2024-06-04 10:03:39,13,1.0,21,https://www.reddit.com/r/loopringorg/comments/1d7xyk3/main_wallet_now_says_you_havent_created_a_wallet/,Draxzzs,🛟 Assistance 🛟,"I've updated the loopring app to the latest release and created a new wallet to activate Taiko. Now my old walleet, which I have for years and which contains my ETH + LRC, shows that I haven't created a wallet yet. I can't do anything with.. What's happening? Can I restore this? Any help is welcome.
+
+  
+ps: don't DM me, I won't fall for scams. Replies as comments are appreciated."
+ How the Major Exchange Coins / Tokens performed in May:,CryptoCurrency,1d7198p,2024-06-03 06:33:11,20,0.76,11,https://www.reddit.com/r/CryptoCurrency/comments/1d7198p/how_the_major_exchange_coins_tokens_performed_in/,MemenaSerena,EXCHANGES,"Gainers:
+
+1. **BGB** (Bitget): Up by 19%
+2. **BNB** (Binance): Up by 7.9%
+3. **GT** (Gate. io ): Up by 4.7%
+4. **LEO** (Bitfinex): Up by 2.2%
+
+Losers:
+
+1. **WBT** (WhiteBIT): Down by 1.1%
+2. **KCS** (KuCoin): Down by 1.1%
+3. **OKB** (OKX): Down by 7.1%
+4. **HT** (Huobi): Down by 8.5%
+5. **MX** (MEXC):  Down by 13.7%
+6. **CRO** (Crypto. com): Down by 16.1%
+
+DEXs
+
+Gainers:
+
+1. **UNI** (Uniswap): Up by 28.7%
+2. **1INCH** (1inch Network): Up by 22.6%
+3. **RUNE** (Thorchain): Up by 13,2%
+4. **GNO** (Gnosis): Up by 10.5%
+5. **SUSHI** (SushiSwap): Up by 8.9%
+6. **JUP (Jupiter):** Up by 2.1%
+7. **CAKE** (PancakeSwap): Up by 0.9%
+
+Losers:
+
+1. **XLM** (Stellar): Down by 3.8%
+2. **LRC** (Loopring): Down by 4,4%
+3. **OSMO** (Osmosis): Down by 5,4%
+
+Numbers are according to CoinGecko (3.05/3.06 - 10:30 UTC)
+
+**$UNI is the champion of the month**
+
+$CRO is the loser of the month
+
+https://preview.redd.it/kkas56vt3c4d1.png?width=1200&format=png&auto=webp&s=8ac8efbb045786c83e0814b1811b6f4c8d9d1de6
+
+https://preview.redd.it/8d3ehb2x3c4d1.png?width=1114&format=png&auto=webp&s=453554d2daa7830ffbdda89aa535650be25813eb"

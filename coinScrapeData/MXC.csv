@@ -1,0 +1,1127 @@
+Post Title,Subreddit,Post ID,Created Time,Upvotes,Upvote Ratio,Comments Count,Post URL,Author,Flair,Post Text
+Can only download / view old media uploads,matrixdotorg,1i8xmbv,2025-01-24 10:13:34,2,0.75,2,https://www.reddit.com/r/matrixdotorg/comments/1i8xmbv/can_only_download_view_old_media_uploads/,justeverything61,,"edit#2// nevermind... some things were cached in my old browser... using a fresh session made it work. -.-
+
+
+
+Dear reddit,
+
+I just migrated my synapse server (from standalone instance with nginx proxy to docker ""synapse"" with nginx proxy ""synapse\_proxy"") to another host, keeping the hostname and most of the configuration from homeserver.yaml. Also moved over the database and the media\_store. I'm able to login on th new server, send and receive messages and open  preview / download media files that were present pre-migration.
+
+If I not upload any new media no thumbnails are generated and I can't download the file. Downloading results in following errors:
+
+`synapse | 2025-01-24 14:47:43,994 - synapse.http.server - 130 - INFO - GET-296 - <XForwardedForRequest at 0x7f1036076480 method='GET' uri='/_matrix/media/v3/download/messenger.domain.de/FzlZgrGeylkXNrZjxYcUnBkX?allow_redirect=true' clientproto='HTTP/1.1' site='8008'> SynapseError: 404 - Not found`
+
+`synapse | 2025-01-24 14:47:43,994 - synapse.access.http.8008 - 508 - INFO - GET-296 -` [`10.110.167.4`](http://10.110.167.4) `- 8008 - {None} Processed request: 0.002sec/0.000sec (0.000sec, 0.001sec) (0.000sec/0.001sec/1) 45B 404 ""GET /_matrix/media/v3/download/messenger.domain.de/FzlZgrGeylkXNrZjxYcUnBkX?allow_redirect=true HTTP/1.1"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" [0 dbevts]`
+
+`synapse_proxy |` [`10.110.167.4`](http://10.110.167.4) `- - [24/Jan/2025:14:47:43 +0000] ""GET /_matrix/media/v3/download/messenger.domain.de/FzlZgrGeylkXNrZjxYcUnBkX?allow_redirect=true HTTP/2.0"" 404 45 ""-"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" ""-""`
+
+downloading an older file works as it should:  
+`synapse | 2025-01-24 14:47:17,665 - synapse.access.http.8008 - 508 - INFO - GET-275 -` [`10.110.167.4`](http://10.110.167.4) `- 8008 - {None} Processed request: 0.004sec/-0.000sec (0.001sec, 0.000sec) (0.000sec/0.001sec/1) 13062B 200 ""GET /_matrix/media/v3/download/messenger.domain.de/kURpGXNQkfCFzafhOsLPPOLv?allow_redirect=true HTTP/1.1"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" [0 dbevts]`
+
+`synapse_proxy |` [`10.110.167.4`](http://10.110.167.4) `- - [24/Jan/2025:14:47:17 +0000] ""GET /_matrix/media/v3/download/messenger.domain.de/kURpGXNQkfCFzafhOsLPPOLv?allow_redirect=true HTTP/2.0"" 200 13062 ""-"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" ""-""`
+
+uploading a new file is working as far as I can see:  
+`synapse | 2025-01-24 14:59:19,875 - synapse.media.media_repository - 347 - INFO - POST-411 - Stored local media in file '/data/media_store/local_content/gj/sS/OYYrDZuizAxwermiUPLw'`
+
+`synapse | 2025-01-24 14:59:19,883 - synapse.rest.media.upload_resource - 119 - INFO - POST-411 - Uploaded content with URI 'mxc://messenger.domain.de/gjsSOYYrDZuizAxwermiUPLw'`
+
+`synapse | 2025-01-24 14:59:19,883 - synapse.access.http.8008 - 508 - INFO - POST-411 -` [`10.110.167.4`](http://10.110.167.4) `- 8008 - {@usernamereplaced:messenger.domain.de} Processed request: 0.010sec/0.000sec (0.000sec, 0.000sec) (0.000sec/0.007sec/1) 89B 200 ""POST /_matrix/media/v3/upload?filename=example.pdf HTTP/1.1"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" [0 dbevts]`
+
+`synapse_proxy |` [`10.110.167.4`](http://10.110.167.4) `- - [24/Jan/2025:14:59:19 +0000] ""POST /_matrix/media/v3/upload?filename=example.pdf HTTP/2.0"" 200 89 ""-"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" ""-""`
+
+if I upload some image, the thumbnail generation is also not working:  
+`synapse_proxy |` [`10.110.167.4`](http://10.110.167.4) `- - [24/Jan/2025:15:06:28 +0000] ""POST /_matrix/media/v3/upload HTTP/2.0"" 200 89 ""-"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" ""-""`
+
+`synapse | 2025-01-24 15:06:28,608 - synapse.media.media_repository - 347 - INFO - POST-516 - Stored local media in file '/data/media_store/local_content/DU/Lg/EBVzDDmmkDtjZufNwsFO'`
+
+`synapse | 2025-01-24 15:06:28,859 - synapse.rest.media.upload_resource - 119 - INFO - POST-516 - Uploaded content with URI 'mxc://messenger.domain.de/DULgEBVzDDmmkDtjZufNwsFO'`
+
+`synapse | 2025-01-24 15:06:28,859 - synapse.access.http.8008 - 508 - INFO - POST-516 -` [`10.110.167.4`](http://10.110.167.4) `- 8008 - {@usernamereplaced:messenger.domain.de} Processed request: 0.252sec/0.000sec (0.138sec, 0.001sec) (0.001sec/0.087sec/6) 89B 200 ""POST /_matrix/media/v3/upload?filename=preview.png HTTP/1.1"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" [0 dbevts]`
+
+`synapse_proxy |` [`10.110.167.4`](http://10.110.167.4) `- - [24/Jan/2025:15:06:28 +0000] ""POST /_matrix/media/v3/upload?filename=preview.png HTTP/2.0"" 200 89 ""-"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" ""-""`
+
+`synapse | 2025-01-24 15:06:28,964 - synapse.http.server - 130 - INFO - GET-517 - <XForwardedForRequest at 0x7f10377a4cb0 method='GET' uri='/_matrix/media/v3/thumbnail/messenger.domain.de/DULgEBVzDDmmkDtjZufNwsFO?width=800&height=600&method=scale&allow_redirect=true' clientproto='HTTP/1.1' site='8008'> SynapseError: 404 - Not found`
+
+`synapse | 2025-01-24 15:06:28,964 - synapse.access.http.8008 - 508 - INFO - GET-517 -` [`10.110.167.4`](http://10.110.167.4) `- 8008 - {None} Processed request: 0.001sec/0.000sec (0.000sec, 0.000sec) (0.000sec/0.000sec/1) 45B 404 ""GET /_matrix/media/v3/thumbnail/messenger.domain.de/DULgEBVzDDmmkDtjZufNwsFO?width=800&height=600&method=scale&allow_redirect=true HTTP/1.1"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" [0 dbevts]`
+
+`synapse_proxy |` [`10.110.167.4`](http://10.110.167.4) `- - [24/Jan/2025:15:06:28 +0000] ""GET /_matrix/media/v3/thumbnail/messenger.domain.de/DULgEBVzDDmmkDtjZufNwsFO?width=800&height=600&method=scale&allow_redirect=true HTTP/2.0"" 404 45 ""-"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0"" ""-""`
+
+`synapse | 2025-01-24 15:06:29,014 - synapse.http.server - 130 - INFO - GET-519 - <XForwardedForRequest at 0x7f103114bc20 method='GET' uri='/_matrix/media/v3/download/messenger.domain.de/DULgEBVzDDmmkDtjZufNwsFO?allow_redirect=true' clientproto='HTTP/1.1' site='8008'> SynapseError: 404 - Not found`
+
+The paths / files that are specified in the logs are existant for old and for new files. They also have the same permissions for the synapse user (in docker it's ID 991) - any ideas? :/
+
+edit:// the GUI shows this error for the new files:
+
+`An error occurred while downloading this fileM_NOT_FOUND: MatrixError: [404] Not found (https://messenger.domain.de/_matrix/media/v3/download/messenger.domain.de/rmZheQQYLhoAuismATSuminl?allow_redirect=true)`
+
+on disk I can see the file at the media\_store path `/media_store/local_content/rm/Zh/eQQYLhoAuismATSuminl`
+
+"
+help a new artist release their first ep!,fundraiser,1i8qagw,2025-01-24 02:43:06,0,0.5,1,https://www.reddit.com/r/fundraiser/comments/1i8qagw/help_a_new_artist_release_their_first_ep/,lobot_emi,,"making music is not cheap if you don't want it to sound cheap - i need your help for taking my work to the next level and pay the studio and producer <3 
+
+you'll find the link to my gofundme and my spotify down below! any help is appreciated
+
+[my fundraiser!](https://gofund.me/eabcd04b)
+
+[my spotify!](https://open.spotify.com/artist/0FmcGEw5HkFOkrFlKETBRS?si=UKJhGti9Rryee_9EgBRzcg)
+
+you can also find my music on [youtube!](https://youtube.com/@byeemi?si=MXcJNu0BWJG8FwB-) 
+
+if you want to keep up to date with the release of the project i'm raising money for, you can find me on insta and tiktok with the same user: @/lobotemi"
+Hi Ren by Ren,BPDSongs,1i8np1z,2025-01-23 23:51:28,6,0.88,1,https://www.reddit.com/r/BPDSongs/comments/1i8np1z/hi_ren_by_ren/,Crystalmagicmama,This song gets me so much,https://youtu.be/s_nc1IVoMxc?si=OwgniLrUK9Uu0gOB
+MxC (MOLESTEDxCARCASS) 2 track demo,mincegore,1i8mf02,2025-01-23 22:39:24,1,1.0,0,https://v.redd.it/wceluoxe4vee1,Expert_Photo6698,new realease,"Just started experimenting with mincegore. And decided to make some stuff.
+
+Let me know how it is, once released I’ll be making tapes and cds and giving them out for free, you want one you can hit me up in the comments I’ll give you details 
+
+Thanks for looking "
+Is this Crowley? The lyrics. Listen. Oh my God.,GoodOmensAfterDark,1i8d82i,2025-01-23 15:32:40,17,0.91,19,https://www.reddit.com/r/GoodOmensAfterDark/comments/1i8d82i/is_this_crowley_the_lyrics_listen_oh_my_god/,tismrot,Audio/Video,https://youtu.be/s_nc1IVoMxc?si=wqMb4WbyN5v_YUL9
+Next relationship reading?,TarotReading,1i7y96j,2025-01-23 02:39:37,1,1.0,1,https://i.redd.it/ws12f9zc6pee1.jpeg,BeneficialBath7583,,"My last reading about the situationship that just ended was completely right, and this is the reading I got for my next relationship. I would love a second opinion, thank you!"
+"Bay Harbor Butcher, is that you?!!!??!?!!??!?!?",BasketballGM,1i7t9vz,2025-01-22 21:37:10,20,0.92,3,https://www.reddit.com/r/BasketballGM/comments/1i7t9vz/bay_harbor_butcher_is_that_you/,CharlieSheenGod,Other,"https://preview.redd.it/t445yzsonnee1.png?width=1372&format=png&auto=webp&s=7cf91aae03086d9fdb6eddd29884d50268362dfb
+
+Can't wait for Dextar Morgen to enter the league lmao......"
+Any Prayer for Cleansing fans here?,Hardcore,1i7r0qn,2025-01-22 19:46:31,197,0.99,43,https://i.redd.it/brzqgqxn4nee1.jpeg,Slunix,,Peak MxC from the 90s along Snapcase and Integrity
+Banned by scammers #mxc #mxc_foundation,MXC,1i7p909,2025-01-22 18:25:44,0,0.13,5,https://i.redd.it/cdh4oi69qmee1.jpeg,AromaticEvidence1732,,Funny that I am banned and they are the scammers.   
+Collaboration Post - ,DarkKenny,1i6kqbc,2025-01-21 10:11:50,45,0.96,124,https://www.reddit.com/r/DarkKenny/comments/1i6kqbc/collaboration_post/,conceptuallyinept,HIGH QUALITY,"This post was a collaborative effort - We have tried to organize a running chat log in a way that can follow a very winding thread that was seeking to reveal or establish connections. A common link between someone or thing to a criminal activity does not automatically determine involvement. 
+
+We must evaluate any information with an open mind, but with critical thinking and discernment. 
+
+That said, we welcome you to question, critique, and offer insights of your own.
+
+# 1. Ryan Wedding former Olympian turned sinaloan drug lord
+
+ [https://www.npr.org/2024/10/18/g-s1-28859/canadian-olympic-snowboarder-wanted-drug-trafficking](https://www.npr.org/2024/10/18/g-s1-28859/canadian-olympic-snowboarder-wanted-drug-trafficking) 
+
+This article outlines his charges and establishes his connection to nahim jorge bonilla (restauranter and music exec), it also states semi trucks were used to distribute from southern California, miami and Canada from Mexico. Also important was his use of tracking via dollar bills and private third party messages. It also names his right hand man Andrew Clark. They intercepted several million in drugs cash and crypto also per this article
+
+[**Former Canadian Olympian is accused of being a fugitive drug lord**](https://www.npr.org/2024/10/18/g-s1-28859/canadian-olympic-snowboarder-wanted-drug-trafficking)
+
+Andrew and nahim were arrested in October 2024 while wedding remains a fugitive.
+
+[https://www.justice.gov/usao-cdca/pr/16-defendants-charged-superseding-indictment-alleging-bulk-shipments-cocaine-canada](https://www.justice.gov/usao-cdca/pr/16-defendants-charged-superseding-indictment-alleging-bulk-shipments-cocaine-canada)
+
+This is from the justice department which goes into more details and names two more men one of which is hardeep ratte and per this next article has deep ties in dubai
+
+
+
+[**16 Defendants Charged in Superseding Indictment Alleging Bulk Shipments of Cocaine to Canada, Four Murders**](https://www.justice.gov/usao-cdca/pr/16-defendants-charged-superseding-indictment-alleging-bulk-shipments-cocaine-canada)
+
+[**Alleged drug smuggler for Canadian ex-Olympian could flee if granted bail, prosecutors say | CBC News**](https://www.google.com/amp/s/www.cbc.ca/amp/1.7429946)
+
+Hardeep is described in this article as a toronto area man
+
+Also mentions second in command Andrew clark, who's in this next article as well and this article describes a long time associate of Wedding and Clark's set Clark up to be arrested and is now a ci. This also goes on to describe clark as a landlord via submission he put into a magazine which is linked in the article. Note the mention of him being a landlord [https://www.google.com/amp/s/www.cbc.ca/amp/1.736177](https://www.google.com/amp/s/www.cbc.ca/amp/1.7361772)
+
+Side bar.. this is everyone involved so far or at least on the wanted lost for operation slolam
+
+# 2. Now onto Nahim...
+
+some of the same articles I will re link to ack up what I'm trying to outline..
+
+[https://amp.miamiherald.com/news/local/crime/article294340314.html](https://amp.miamiherald.com/news/local/crime/article294340314.html)
+
+The article above describes Nahim bonilla as a restauranter (mandrake miami) and music exec (ruido callajero). It also goes on to state he was arrested at his mansion in Aventura, which was purchased from DJ Khaled in 2020
+
+The article also describes how bonilla go caught up with wedding by not paying for a shipment in full. The following article also describes the incident in more detail while also labeling nahim as a montreal bar owner and landlord who left Canada for America in 2019 just before he purchased khaleds home.
+
+[**Montreal landlord accused of shipping meth to repay fugitive ex-Olympian | CBC News**](https://www.google.com/amp/s/www.cbc.ca/amp/1.7392449)
+
+Also goes on to describe several shootings and parsons at his home in Quebec and how he refused to discuss them.
+
+Let's dive into who also purchased khaleds home with nahim.. Mr. Simon librati.. who according to this website purchased the home together via the prime med group business
+
+[https://traded.co/deals/florida/single-family-residence/sale/3914-island-estates-drive/#deal-comps](https://traded.co/deals/florida/single-family-residence/sale/3914-island-estates-drive/#deal-comps)
+
+[**Simon Librati & Nahim Jorge Bonilla Acquire DJ Khaled’s Aventura SFR For $4.8M | 3914 Island Estates Drive | Janet Ben Zvi, Caterine Gomez, Julian Johnston | Single Family Residence | Sale | Traded**](https://traded.co/deals/florida/single-family-residence/sale/3914-island-estates-drive/#deal-comps)
+
+# 4. Quick diversion into Mr. Librati
+
+ [https://x.com/Sweetcaligurl07/status/1846920502641938955](https://x.com/Sweetcaligurl07/status/1846920502641938955)
+
+And per this link and property shark it appears the Aventura property sold for $10 in 2022
+
+Per the first x article and this following article librati is a candian businessman/disgraced and apparently has a non profit that deals with children?
+
+Anyway so not only was he a disgraced day trader but also apparently owns and founded the miami yacht club via the fusion miami group [https://themiamibeachyachtclub.com/team/](https://themiamibeachyachtclub.com/team/)
+
+So now we're going to head on over to open corporates to dive into Mr libratis businesses
+
+[https://opencorporates.com/officers?utf8=%E2%9C%93&utf8=%E2%9C%93&q=Simon+librati&jurisdiction\_code=&type=officers](https://opencorporates.com/officers?utf8=%E2%9C%93&utf8=%E2%9C%93&q=Simon+librati&jurisdiction_code=&type=officers)
+
+But upon looking you find one named simon and nahim holdings
+
+Incorporated in August 2020 not long after the purchase of khaleds property
+
+You'll find other weird names and business that I'm sure are worth diving into but for the purpose of staying on track I will hold off however
+
+There's more business with nahim.. such as sea-era charters.. also started August 2020
+
+You'll also find the prime med group which supposedly states was he and nahims group that purchased khaleds home however he's not listed on this doc.. only an mxc But still incorporated before the purchase of khaleds home
+
+[https://opencorporates.com/officers?q=Nahim+bonilla&utf8=%E2%9C%93](https://opencorporates.com/officers?q=Nahim+bonilla&utf8=%E2%9C%93)
+
+Here he has the khaled home listed as an entity.. which also listing himself with different name variations
+
+This was established June 2020 at the time of the sale of khaleds home
+
+You'll also find his incorporation for Mandrake Miami, Ruido Cajallero and a funny looking one called Mr puffs holdings.. BTW sidebar, these three mentioned has what I'm assuming to be his wife Samantha granda who is a singer under the name mel granda.
+
+Mr. Puffs appears to be a dessert club started by a couple of Greek guys in Canada a while back and only recently started offering franchising and have them in Canada, Michigan I believe and Orlando.. so okay maybe nahims Mr. Puffs is for a franchise of this business right? However.. there's only one in florida.. 3 hours away in Orlando and the incorporation for that franchise was in 2019..before nahims in 2020.. again around the time of the khaled purchase
+
+Also want to note Nahims Mr. Puffs incorporation is in miami.. nowhere near a Mr. Puffs dessert club as far as I could find
+
+# 5. But what connection does nahim have to diddy?
+
+For one.. if you look at their insta and really dig into their stories and photos you'll find a lot of key players.. diddy, his son Justin, Cuba and I think claudine in the back ground, kd, khaled.. I'm sure there's more but you get the picture
+
+[https://www.instagram.com/mandrakemiami/?hl=en](https://www.instagram.com/mandrakemiami/?hl=en)
+
+Here's an article describing diddy throwing his sons 21st birthday at mandrake in 2019 which I think is before bonilla may have taken ownership on paper but has been there since via insta [https://pagesix.com/2019/04/02/diddys-son-christian-combs-goes-all-out-for-21st-birthday/](https://pagesix.com/2019/04/02/diddys-son-christian-combs-goes-all-out-for-21st-birthday/)
+
+Oh and the tea room may offer specialty drink specials.. hmm do she look good but she ain't got no taste??
+
+So yeah anyway diddy likes the place okay? Can't find drake anywhere near the place but you know who really really really loves it?
+
+Khaled
+
+[https://www.gettyimages.dk/detail/news-photo/khaled-and-nicky-jam-arrive-to-the-mandrake-miami-news-photo/1426220443](https://www.gettyimages.dk/detail/news-photo/khaled-and-nicky-jam-arrive-to-the-mandrake-miami-news-photo/1426220443)
+
+Check back to the insta too.. he was there a lot.. also important to note, the og dk post that started all this has a lot in the comments.. and someone stated this place closed down in like may
+
+Oh yeah and meek obviously been here too, the drink and this article.. and we all know who meek is tied to.. Mr kraft and Mr rubin [https://worldredeye.com/2019/01/meek-mill-fabolous-host-dusse-dinner-mandrake/](https://worldredeye.com/2019/01/meek-mill-fabolous-host-dusse-dinner-mandrake/)"
+How to get workshop repair kit?,ICARUS,1i6bqb2,2025-01-21 00:39:34,3,1.0,7,https://www.reddit.com/r/ICARUS/comments/1i6bqb2/how_to_get_workshop_repair_kit/,IamCanadian11,Discussion,"Just bought my first item from the orbital exchange interface, the mxc pickaxe. When I hover over the repair it says to repair I need a ""workshop repair kit"". How do I get one? And also is there anything that you would recommend to get from the oei that would help a lot in game? Thanks "
+Discotek Day January 2025 Announcement Round Up,discotekmedia,1i6alls,2025-01-20 23:32:45,98,0.98,49,https://www.reddit.com/gallery/1i6alls,MiaLeeSakura,,"Here's the full announcement thread:
+https://x.com/discotekmedia/status/1881519737202724969?t=1ETiAOuTmg2tAJCkqRCDXA&s=19"
+I finally did it,BasketballGM,1i63qv6,2025-01-20 17:56:28,16,0.94,1,https://www.reddit.com/gallery/1i63qv6,lopsidedBannana,Achievement,
+Who played worse?(No offence to them),Brawlstars,1i5x4zz,2025-01-20 13:28:46,1,0.66,2,https://i.redd.it/vd7mrm3gz6ee1.png,KaleidoscopeOk6063,Discussion,I was Lasered by the Mandy super 3 times from spanw
+"@LehighSports: RT @LehighMXC: Join us in welcoming back Kerem Ayhan '23 as our new volunteer assistant coach!Ayhan is a school record holder, former All…",LehighMountainHawks,1i5wwmw,2025-01-20 13:19:39,1,1.0,0,https://twitter.com/LehighSports/status/1881406151038001432,lemkowidmak,,
+NBD MXC6,eMountainBike,1i48xo3,2025-01-18 09:41:46,23,0.96,5,https://www.reddit.com/gallery/1i48xo3,amtworks,,Just picked this up. Rips. 
+What is this guy,BasketballGM,1i482f2,2025-01-18 08:58:09,0,0.5,2,https://i.redd.it/svn9ba0cdrde1.png,situmaimesdemain,Other,
+What happened to MXC? I've been under a rock the last couple years.,MXC_Foundation,1i463lb,2025-01-18 07:00:42,8,0.91,25,https://www.reddit.com/r/MXC_Foundation/comments/1i463lb/what_happened_to_mxc_ive_been_under_a_rock_the/,MFKNSorcerer,Question,I kinda forgot about my miner for a couple of years (life happens) but it has been plugged in the while time. So I didn't even realize the datadash app didn't work anymore and I'm having trouble finding info. Is there a way to access my mxc? Is it even still there? I joined the moonchain Telegram but they don't seem the most helpful. 
+6 flying geese.,CanadianCoins,1i32x6o,2025-01-16 18:46:35,111,1.0,18,https://www.reddit.com/gallery/1i32x6o,dfbshaw,,"Bought 6 1967 silver dollars from a  nice old fella on Kijiji in my town. He was asking for $180 CDN but he accepted $170. Im happy with the deal and ill look closer at them, with my daughters when I get home. 
+
+They are so pretty."
+Help! Error when using SharePoint List in Power Automate Approval Flow,MicrosoftFlow,1i2zicx,2025-01-16 16:12:29,1,1.0,3,https://www.reddit.com/r/MicrosoftFlow/comments/1i2zicx/help_error_when_using_sharepoint_list_in_power/,Interesting_Book_598,Cloud,"I am building a cloud approval flow where employees submit a request on a list in SharePoint, and based on a choice field in that list, I want it to route to different people for approval. 
+
+I scoured the internet and found several things saying to use a configuration list, also built in SharePoint. I built the second list and followed the instructions and built the flow, and I keep getting an error: 
+
+""Action 'Get\_items' failed""   
+""The expression ""Title eq 'MXC - (Men's Cross Country)'"" is not valid. Creating query failed.""
+
+In the list where they submit items, the internal column name is Team, and the internal column name in the configuration list is Title. I have single quotes around the value in the filter query line. 
+
+Here is one of the main blogs with info about creating a configuration list:
+
+ https://tomriha.com/use-configuration-lists-to-avoid-repeating-actions-in-power-automate/#:\~:text=Configuration%20list%20is%20a%20data,and%20the%20value%20to%20return."
+First haul of the new year! I seriously need to check dimensions going forward,MangaCollectors,1i2w11e,2025-01-16 13:44:19,176,0.98,25,https://www.reddit.com/gallery/1i2w11e,ConnorRG,Haul,I’m so excited about this haul so many things I have been waiting to finally get my hands on. I’m going into macross plus and ultra haven completely blind I will be watching/reading them tonight I can’t wait. I preordered set 2 of MXC it will be good to be able to watch this show again I miss watching it on twitch late at night. Lastly omg this LW&C gallery edition is so tall jesus idk where it’s going to go but man is it awesome I honestly thought it was oop but glad I was wrong. If you want more photos of anything just let me know!
+[Offer] Let Me Send You a Random Card [US to US],RandomActsofCards,1i2h6vi,2025-01-15 23:44:22,25,1.0,47,https://www.reddit.com/r/RandomActsofCards/comments/1i2h6vi/offer_let_me_send_you_a_random_card_us_to_us/,dropofpoison86,Fulfilled,"If you’d like a random card, please fill out my form, then leave a comment below naming something you collect. Thank you!
+
+My form: https://forms.gle/MXcDfPfmRvboBsoq6"
+"Free Books from Kenya Wright, Lucy Hawk, Serena Akeroyd, Kristina Cook, Heidi Rice, Serena Akeroyd, Rae Rivers, Gina Azzi, CiCi Cordelia, Sara R. Turnquist, Allison Underwood, A. Zavarelli, Ali Winters, Susan May Warren, Ophelia Bell, Stacy Claflin, Janna Klarmann,",FreeRomanceBooks,1i22umj,2025-01-15 12:35:25,23,1.0,4,https://www.reddit.com/r/FreeRomanceBooks/comments/1i22umj/free_books_from_kenya_wright_lucy_hawk_serena/,Zealousideal_Ad3872,,"* {Animus: An Erotic Dragon Shifter Romance (Sleeping Dragons Book 1) by Ophelia Bell} [Amazon](https://www.amazon.com/Animus-Shifter-Romance-Sleeping-Dragons-ebook/dp/B075VS27MW?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.2RijxwYYTqKBU58-oGP2GsKgoHdtnQHPl-XurDa05O_peZW6G__5NrhhoDOvI-KAjeOghy61cTR5gwQXj-1wwthaDxiZdszAC3_IqPAuhRQ5TCalzGz1W51rGwfKw2UaknHRpWwMRu2FfbXkQxFlEQbxi_agr0iPyQgmqXCAC6-0FvdvSRLJBxUvqRXXGEWzF8Ivg2ComhqrAiQFkQxWcyauJD221i_0sQITNyNllkc.FHIaa3Hy80vzwrz22wIZ764ig6CGmxMXcHAE1l2YUm4&dib_tag=AUTHOR) [Apple Books](https://books.apple.com/us/book/animus/id1180242226?at=10lmWQ&mt=11&ct=RFRemail&ls=1) [Kobo](https://www.kobo.com/us/en/ebook/animus-10) [Nook](https://www.barnesandnoble.com/w/animus-ophelia-bell/1141251446?cjdata=MXxOfDB8WXww&ean=2940148282877&st=AFF&SID=www.barnesandnoble.com&2sid=Written+Word+Media%2C+Inc_7992341_NA&sourceId=AFFWritten+Word+Media%2C+Inc&cjevent=6b538cd2d36211ef800ebecb0a82b821&dpid=tekz25v83)
+* {A Convenient Risk (Convenient Risk Series Book 1) by Sara R. Turnquist} [Amazon](https://www.amazon.com/Convenient-Risk-Book-ebook/dp/B071F96624?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.xTfIXR3LTt9SzLOJqoBCf349y6jPP9zVp316Tnk2pBsJvCTUwTyYRwOcSlJYBYes1AGdjrpKjOnIueXJKaGSquw9Ho8zMsfHe9c4Z3ZGjo1DgWj_fFWG4p7cIxkPztg161PuDmerIIHB2lCczMBnysP33am61-n17OsjFqmFiYgX4lagc4YaGnBAiZZ_IbgE5lIREKQmuau6MxAKEdVhZwPNWYTDSGduWCHe9OA9W2Y.7eF2DSNsdT3K_ubCAKfLbthjdq0I5hj-dhgRI6oDFRU&dib_tag=AUTHOR)
+* {Deception (The Transformed Series Book 1) by Stacy Claflin} [Amazon](https://www.amazon.com/Deception-Transformed-Book-Stacy-Claflin-ebook/dp/B00ADWBNDS?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.YpiMwTjBufxacsyAU7jyw-7g06grIkiLte5uagsBzUBJDxkmhh8uzLZi5uudTmPbWKt-u9qEo-v0bZIg_o-SEKahKIPs9suyOe9S4pXNIpGCnBFFCKX0D8hvYIqQAE_f99JCTgBkLjL5lYeRk4ysJcASEX5AJcBP7AxzGukKg6NSXf1q5BJlemKmdR-Ounl6CCo3XwVT9hI-MKuV5qFpQBiw110tkjdiHpAIEi2leoA.5XHBBNcJWr7F3TAXJCEMnMK9aQ5_aG4KBJtm8oRl8HM&dib_tag=AUTHOR)
+* {Faked and Fumbled: A Fake Dating Football Romance (Knoxville Coyotes Football Book 1) by Gina Azzi} [BookFunnel](https://dl.bookfunnel.com/22q2i9cqzb)
+* {Filthy Sinner: A Five Points' Mob & Dark & Dirty Sinners' MC Crossover (The Five Points' Mob Collection) by Serena Akeroyd} [Amazon](https://www.amazon.com/FILTHY-SINNER-Five-Points-Collection-ebook/dp/B09MLPRVBF?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.zHaBqPtMdk3LrGwG9_LFwGOmHlZSax1scRztGjNGpms3GZPlcxdjYjI-kNnPYsAjUxVjx-TFpX5-c30geczzm4iInOEtk3lEpSv90OobTAqI8sBAPznni00ITMcZjCWxTHQwCAcSMjYTVVAIWxRGn2o8SJR0DRwwYTEyq6ebB_vUh-xNBzTpEmow736jcYMTqY3g5Qs84XlcCaSJCeYZWqza9OHEHJSLtGLUVoObxAE.o_hSzbA5gXPOnfWVL73JtqTFCmlpqyWn6WjP_iBVf2Q&dib_tag=AUTHOR) [BookFunnel](https://dl.bookfunnel.com/axpxbh88gx)
+* {Flirting With Death: The Hunted Series: A short story by Ali Winters} [Amazon](https://www.amazon.com/Flirting-Death-Hunted-short-story-ebook/dp/B017I5UHFC?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.lrYJqz1wBy2k8sgwWSNgIJ3-E6L96C6Y_hrhqI20sqb8KrMSH2CG-Ts6deKFcxQzR0zh5gStjiGwAmOCLYYDlt_r4fdvcQ92mmyPCe9mLoDRIhSZNRMFimVp1U31_OOJ-ubUclSr5GMRoH5LRf68FmFFBQFvA6jHNeVvL0zz3fi0T0kQPqwvL5ZjnMlB8rz---_UcU-CzmFg1IWsd7f6RB1gwHdQjGeKlWFYa47GzL0.zhibIcYF1-bNVVQL4ngq1z8kQfhLOIUsPZVHmU23RA8&dib_tag=AUTHOR)
+* {Hope in Cripple Creek (Cripple Creek Series Book 1) by Sara R. Turnquist} [Amazon](https://www.amazon.com/Hope-Cripple-Creek-Book-ebook/dp/B08DNY12J7?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.xTfIXR3LTt9SzLOJqoBCf349y6jPP9zVp316Tnk2pBsJvCTUwTyYRwOcSlJYBYes1AGdjrpKjOnIueXJKaGSquw9Ho8zMsfHe9c4Z3ZGjo1DgWj_fFWG4p7cIxkPztg161PuDmerIIHB2lCczMBnysP33am61-n17OsjFqmFiYgX4lagc4YaGnBAiZZ_IbgE5lIREKQmuau6MxAKEdVhZwPNWYTDSGduWCHe9OA9W2Y.7eF2DSNsdT3K_ubCAKfLbthjdq0I5hj-dhgRI6oDFRU&dib_tag=AUTHOR)
+* {The Hunter's Girlfriend: She Fights Back by Janna Klarmann} [Amazon](https://www.amazon.com/Hunters-Girlfriend-She-Fights-Back-ebook/dp/B0DPHBLPP3?ref_=ast_author_dp)
+* {The Keepers: Sienna (Free Prequel) (The Keepers, Book 4) by Rae Rivers} [Amazon](https://www.amazon.com/Keepers-Sienna-Free-Prequel-Book-ebook/dp/B00ES2NPAS?ref_=ast_author_dp) [Apple Books](https://books.apple.com/us/book/the-keepers-sienna-free-prequel/id694459565?ign-itscg=30200&ign-itsct=books_box_link&mttnsubad=694459565)
+* {KINGDOM FALL by A. Zavarelli} [Amazon](https://www.amazon.com/KINGDOM-FALL-Underworld-Kings-Zavarelli-ebook/dp/B09L7RFT6Q?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.yU2BkToV8iow5XLBCwyTU-g17ggSvakKyo79-lUZAlle3y-R9XevbSvxhYrBZzgvai-tDJO20e_L9gnOsTBKZQLiZZxbypDKPyw2I5_CPQB-CDERcTpy6hGrfuzv5yhew70Vm5DXE1c3sy5t50cNI14tKfLzJoNu2n7fAnUJ4rRXzfA0KLmPfaELyP-WUZchR-rH6cUbhE928vJSQBf9-Ry2YlTO1hnYCCbpR4I8iEU.OK9M2FlnIxc-w12nlOUo7LcHYou7kM8X3Mh0FUFuDr4&dib_tag=AUTHOR)
+* {A Marietta Christmas: A Short Story (Men of Marietta Book 6) by Heidi Rice} [Amazon](https://www.amazon.com/Marietta-Christmas-Short-Story-Book-ebook/dp/B07LGSFZPM?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.OCYKyyyxHymV-Ss3REHckARd0FykPXP-Qd5UGXFyip4H-bdeahprze1kMv4ZTNxEFX4yIEvSD144itM_0iWXLanB5m2GwslOTIe3vMo0WDT0JUiIvLpdg-ompIFOz7dJylazx1kjIbaYlBR2dXBYfF3dfvebhbdHgG6Jvj_CJddSL6y6DWlCgmwPR1BY1rdDUucED5P9AmQV6Qc0sjRnDI16W8ToWssJAh-55WqCmIs.FPDZFPc5c9x8NE7mRuojqLG4EwUZ3pMZuI4W-9HVcz4&dib_tag=AUTHOR)
+* {A Midnight Clear by Kristina Cook, Kristi Astor} [Amazon](https://www.amazon.com/Midnight-Clear-Edwardian-Nights-Book-ebook/dp/B00WNG93PM?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.N5Mf2XGd87opAAz0F8Mw6IEaUaDnExy9g3zaNlTdWC8wskIvMZwQjhCY8wBWnoPN4DkS70MOQYJfps-jYXHqL_DaU9rH5G2VePkWMNP6ouPAscEUqmJaQKUC3N_esX25KPQLtb0cNVHuLDr9Hju7Uu6XOx4EBHMfi7E1kw5MmkfYDiTpqfKTSTAsU65Bde4ZLujIfZg4XtYUKcYDLRZ3RTqulUWT_8AxPCKAegjtdi0.v8YpoGHH11-qgcYv5S0d7ZorpkXsMGn4-GbQfwpGzKA&dib_tag=AUTHOR) 
+* {My Best Friend's Off-Limits Brother: A Billionaire Office Romance by Lucy Hawk} [Amazon](https://dl.bookfunnel.com/hwr7h10ayt)
+* {One Last Shot (Alaska Air One Rescue Book 1) by Susan May Warren} [Amazon](https://www.amazon.com/Last-Shot-Alaska-Rescue-Book-ebook/dp/B0CHPXNGXJ?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.251N74SUblHADV8q--aNAKnMsN3J7X4Fylgr4_MZogbdk4D1HUJPRLwA86Y90b71o_dZJiiv4BJSQNG1BS6tjQM0yEnQMyIxD79EC96s7cBRZvt7Cj5681j5VxpfULykwkrdJBHeZ_IKnD2QSSVO2gEuwY8L8dpDBaPYaje-QDiovBtxY44EK6pOOzaaIloWgjiAq7OSoWxS-xNCG2VREGFH2QWikUvc2RKeulghGl0.1Km3npG76tAfB4YOCtpoVz81GEc-D8Z_ws7lP2Q3Ns0&dib_tag=AUTHOR)
+* {Physical Therapy (an erotic journey through healing) by Allison Underwood} [Amazon](https://www.amazon.com/Physical-Therapy-journey-through-healing-ebook/dp/B0DNWQB2PG?ref_=ast_author_dp)
+* {The Substitute Wife (Brides of Little Creede Book 1) by CiCi Cordelia} [Amazon](https://www.amazon.com/Substitute-Wife-Brides-Little-Creede-ebook/dp/B0DJFN9WBV?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.oWQb7__rPpRSKSE9heVXaGtcuskY9QWEmXgeT5m4DxfYCyqmcRvSxbTLiRiyMok7casstizyksr2xOMkN543jBDvy6yCKQdbsRq_vkQVhDoQtngosmBEJhr-irs1FbGUENj3hdab7gepSUORWjrJ8DyovSuGiUlYXHv2bS4cyENJaqnrJfBAM8graIEpB1zl5DF9kZ51pp64vX_YppM6mA.UfO3iLl_wP8ms4rYSn30sEHXJrHeyG9gO819MO5Hy7E&dib_tag=AUTHOR)
+* {Unlaced (Ashton/Rosemoor series Book 1) by Kristina Cook} [Amazon](https://www.amazon.com/Unlaced-Ashton-Rosemoor-Book-1-ebook/dp/B00KAOO0CK?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.N5Mf2XGd87opAAz0F8Mw6IEaUaDnExy9g3zaNlTdWC8wskIvMZwQjhCY8wBWnoPN4DkS70MOQYJfps-jYXHqL_DaU9rH5G2VePkWMNP6ouPAscEUqmJaQKUC3N_esX25KPQLtb0cNVHuLDr9Hju7Uu6XOx4EBHMfi7E1kw5MmkfYDiTpqfKTSTAsU65Bde4ZLujIfZg4XtYUKcYDLRZ3RTqulUWT_8AxPCKAegjtdi0.v8YpoGHH11-qgcYv5S0d7ZorpkXsMGn4-GbQfwpGzKA&dib_tag=AUTHOR)
+* {The Vampire Debt: An enemies-to-lovers, gothic, paranormal, romantasy (Shadow World: The Vampire Debt Book 1) by Ali Winters} [Amazon](https://www.amazon.com/Vampire-Debt-Shadow-World-Book-ebook/dp/B07Z24D7PR?ref_=ast_author_dp_rw&dib=eyJ2IjoiMSJ9.lrYJqz1wBy2k8sgwWSNgIJ3-E6L96C6Y_hrhqI20sqb8KrMSH2CG-Ts6deKFcxQzR0zh5gStjiGwAmOCLYYDlt_r4fdvcQ92mmyPCe9mLoDRIhSZNRMFimVp1U31_OOJ-ubUclSr5GMRoH5LRf68FmFFBQFvA6jHNeVvL0zz3fi0T0kQPqwvL5ZjnMlB8rz---_UcU-CzmFg1IWsd7f6RB1gwHdQjGeKlWFYa47GzL0.zhibIcYF1-bNVVQL4ngq1z8kQfhLOIUsPZVHmU23RA8&dib_tag=AUTHOR)
+* {When the Smoke Clears (Bwwm Small-Town Firefighter Romance) (The Heart-Pounding Love Series) by Kenya Wright, Christine Rice} [Amazon](https://www.amazon.com/gp/product/B01D5CAQ1C/ref=ppx_yo_dt_b_d_asin_title_351_o00?ie=UTF8&psc=1)"
+"After being grounded in Jeddah for 174 Days, VT-MXC, 737-8 MAX of SpiceJet is expected to be ferried to India on 15 Jan 2025. With this SG will resume B737-8 ops, it was grounded in JED after a mid-air engine shutdown.",indianaviation,1i22lx4,2025-01-15 12:25:16,38,0.97,3,https://i.redd.it/vm9wofwgz6de1.png,Miserable-Fee6709,:Spice1: SpiceJet,
+My first Kumi doll :),Bratz,1i1kucb,2025-01-14 19:22:05,37,0.97,2,https://i.redd.it/z684cne0x1de1.jpeg,Rinz34,Collection,"I’m so happy about her, I"
+[USA-TX][H] Sapphire Nitro+ AMD RX 7900 XTX 24GB[W] Paypal,hardwareswap,1i1hrx2,2025-01-14 17:02:44,0,0.06,6,https://www.reddit.com/r/hardwareswap/comments/1i1hrx2/usatxh_sapphire_nitro_amd_rx_7900_xtx_24gbw_paypal/,oofggs,CLOSED,"EDIT #2 - Sold to u/Nodemms for $850
+
+Hey, I'm selling a Sapphire Nitro+ 7900 XTX that I didn't use. I did test it yesterday for a user, to show it does work. [Timestamps of that](https://imgur.com/a/u-oofggs-akXDgIK). I don't have the original box that it came with.
+
+[Timestamps](https://imgur.com/a/i75nMXc)
+
+   Contents
+- Sapphire Nitro+ 7900XTX
+- Mounting Bracket
+- Led Cable
+
+Asking $900 shipped
+
+I'll ship it either the same day or the next day
+
+Comment & PM if interested
+
+Edit - Changed price to $900 & removed the never used because a user wanted me to show that it fully works."
+Congratulations to the winner of Ultimate Singles at Afterburner 2025!,smashbros,1i02is0,2025-01-12 20:21:45,125,0.98,25,https://www.reddit.com/r/smashbros/comments/1i02is0/congratulations_to_the_winner_of_ultimate_singles/,itsIzumi,Ultimate,"---
+
+#*[Top 8 Bracket](https://www.start.gg/tournament/afterburner-2025/event/ultimate-singles-1-000-pot-bonus/brackets/1856502/2736295)*
+
+---
+
+#*[GFs Twitch VOD](https://www.twitch.tv/videos/2351801216?t=1h53m55s)*
+
+---
+
+Place | Player | Sent to Losers by | Eliminated by 
+---------|----------|----------|----------|----------
+**1st** | LG ∣ **Sonix** [(Sonic)](#U-Sonic) | --- | ---
+**2nd** | **Zomba** [(R.O.B.)](#U-ROB) | Sonix | Sonix
+**3rd** | **MuteAce** [(Peach)](#U-Peach) | Zomba | Zomba
+**4th** | MU ∣ **ApolloKage** [(Snake)](#U-Snake) | Sonix | MuteAce
+**5th** | FEAR ∣ **Geist** [(Bayonetta)](#U-Bayonetta) | Sonix | MuteAce
+**5th** | Citadel ∣ **Suspect** [](#U-Kazuya)[(Kazuya & Corrin)](#U-FemaleCorrin) | MuteAce | ApolloKage
+**7th** | MBS ∣ **Onin** [(Steve)](#U-Alex) | ApolloKage | Geist
+**7th** | **Dark Wizzy** [(Mario)](#U-Mario) | Skeleton | Suspect
+9th | FEAR ∣ **Doorstop** [(Zero Suit Samus)](#U-ZeroSuitSamus) | Onin | Geist
+9th | PAR ∣ **Scend** [(Ness)](#U-Ness) | Sonix | Onin
+9th | EDLN ∣ **Ravenking** [(Joker)](#U-Joker) | Zomba | Dark Wizzy
+9th | YES! ∣ **Woulphy** [(Sonic)](#U-Sonic) | MuteAce | Suspect
+13th | MG ∣ **Solarose** [(Zelda)](#U-Zelda) | Sonix | Doorstop
+13th | ZEN ∣ **JeJaJeJa** [(Kirby)](#U-Kirby) | Geist | Scend
+13th | LetMeFly ∣ **Rocke** [(Pac-Man)](#U-Pacman) | MuteAce | Dark Wizzy
+13th | Harmony ∣ **Skeleton** [(Kazuya)](#U-Kazuya) | Ravenking | Woulphy
+17th | RGES ∣ **BBBeans!** [(Pac-Man)](#U-Pacman) | JeJaJeJa | Doorstop
+17th | Hell Mode ∣ **Dufaux** [(Shulk)](#U-Shulk) | ApolloKage | Solarose
+17th | UGS ∣ **Sir Dank** [(Captain Falcon)](#U-CaptainFalcon) | Izaiah | JeJaJeJa
+17th | WPC ∣ GOCK IN MY RARI **fawn** [(Duck Hunt)](#U-DuckHunt) | Thorn | Scend
+17th | PAL ∣ **Monem** [(Sephiroth)](#U-Sephiroth) | Dark Wizzy | Rocke
+17th | AoC ∣ **comet** [(Fox)](#U-Fox) | Suspect | Dark Wizzy
+17th | NS ∣ **CaKe** [](#U-DuckHunt)[(Duck Hunt & Joker)](#U-Joker) | Rocke | Skeleton
+17th | UGS ∣ **IceKnight** [(Greninja)](#U-Greninja) | Zomba | Woulphy
+25th | MU ODSY ∣ **duck190** [(Diddy Kong)](#U-DiddyKong) | Scend | BBBeans!
+25th | **JAREDMAINSROY** [(Bayonetta)](#U-Bayonetta) | Scend | Solarose
+25th | PAL ∣ **ANJELLOH** [(Luigi)](#U-Luigi) | C@den | Sir Dank
+25th | MXC ∣ **C@den** [(Ridley)](#U-Ridley) | Onin | fawn
+25th | **locket** [(King Dedede)](#U-KingDedede) | Zomba | Monem
+25th | MSU ∣ **Drewish** [(Palutena)](#U-Palutena) | Case | Dark Wizzy
+25th | kjez ∣ **Hawk** [(R.O.B.)](#U-ROB) | Woulphy | CaKe
+25th | Basics ∣ **Rob Gucci** [(Snake)](#U-Snake) | Suspect | Woulphy
+
+---
+#Grand Finals
+
+**Carlos ""Sonix"" Perez** [W] // [Twitch](http://twitch.tv/SonixSC) | [Twitter](https://twitter.com/UltimateSonix) | [Wiki](https://liquipedia.net/smash/Sonix) | [Luminosity Gaming](https://luminosity.gg/)  
+***vs.***  
+**Salvatore ""Zomba"" DeSena** [L] // [Twitch](http://twitch.tv/ZombaSD) | [Twitter](https://twitter.com/ZombaSalvatore) | [Wiki](https://liquipedia.net/smash/Zomba)  
+
+[](#U-Sonic) Sonix | | 3 - 1 | | Zomba [](#U-ROB)
+---:|:--:|:--:|:--:|:---
+[1 stock](#U-Sonic) | `=` [Sonic](#U-Sonic) | Small Battlefield | [R.O.B.](#U-ROB) `=` | ---
+[1 stock](#U-Sonic) | `=` [Sonic](#U-Sonic) | Pokemon Stadium 2 | [R.O.B.](#U-ROB) `=` | ---
+--- | `=` [Sonic](#U-Sonic) | Small Battlefield | [R.O.B.](#U-ROB) `=` | [](#U-ROB)[2 stocks](#U-ROB)
+[1 stock](#U-Sonic) | `=` [Sonic](#U-Sonic) | Pokemon Stadium 2 | [R.O.B.](#U-ROB) `=` | ---
+
+*^^Generated ^^by [^^Tournament ^^Tabler](http://tournament-tabler.com/)*"
+"Ringworm - ""Take Back What's Ours"" [Birth Is Pain, 2001] (FFO: OG MxC bands]",Metalcore,1hzrflx,2025-01-12 12:12:07,13,0.83,0,https://youtu.be/A3UEvpOkfMU?si=tcV32rWQ28LOj2Jc,DamThatRiver22,,
+Dads old 95 Husky 250,Dirtbikes,1hzdtlg,2025-01-11 22:35:29,1,0.99,3,https://www.reddit.com/r/Dirtbikes/comments/1hzdtlg/dads_old_95_husky_250/,Sharp_Suggestion2602,,"So my dad, uncle and myself used to race NETRA harescrambles back in the day. Last bike I raced was a KTM 250 MXC, Pat Timothy’s spare race bike back in the early 2000s. If you know NETRA you know Pat. Anyways, my dad died back in 2018 and I kept his Harley and his 1995 Husky 250. I’ve had many medical issues myself since then but now I’m doing better and I’m looking to rebuild it. It hasn’t ran since 2018. Just sitting in the corner in the garage. Im a certified Harley mechanic so working on it isn’t a big deal BUT finding parts is. Does anyone know of any websites or anyone that has or specializes in older Husqvarna parts? Any leads would be very appreciated. "
+Holy. Fuck.,BasketballGM,1hyqz8y,2025-01-11 02:43:20,45,0.96,12,https://i.redd.it/1d31d853kbce1.jpeg,LC8902,Achievement,"Stacked draft. My two rookies, pick 3 and 6 end up being generational."
+Which Discotek titles include a content advisory?,discotekmedia,1hyias8,2025-01-10 18:33:23,14,0.94,14,https://www.reddit.com/r/discotekmedia/comments/1hyias8/which_discotek_titles_include_a_content_advisory/,Top-Annual8352,,"On some Discotek releases, such as Adventures of Sonic the Hedgehog (disc 2) and MXC Set 1, a content advisory is displayed warning the viewer that the program includes negative/culturally insensitive depictions of people. Someone working at/with Discotek also said on Twitter that it was also included on Angel Cop and one of the Lupin movies. What other releases of theirs include this content advisory?"
+"📢 Amazon is hiring a Software Development Engineer, Digital Payments and Emerging Markets!",jobboardsearch,1hxze9u,2025-01-10 02:48:09,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYW1hem9uLXNvZnR3YXJlLWRldmVsb3BtZW50LWVuZ2luZWVyLWRpZ2l0YWwtcGF5bWVudHMtYW5kLWVtZXJnaW5nLW1hcmtldHMtNzVxMXcvP3JlZj1qb2Jib2FyZHNlYXJjaA==,rrmdp,,"Company: Amazon
+
+Location: Mexico City, Mexico 📍
+
+Date Posted: January 10, 2025 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYW1hem9uLXNvZnR3YXJlLWRldmVsb3BtZW50LWVuZ2luZWVyLWRpZ2l0YWwtcGF5bWVudHMtYW5kLWVtZXJnaW5nLW1hcmtldHMtNzVxMXc="
+Best official United Center lot for parking,chicagobulls,1hxgtfv,2025-01-09 11:34:58,4,0.83,9,https://www.reddit.com/r/chicagobulls/comments/1hxgtfv/best_official_united_center_lot_for_parking/,silllky,Fluff,"Hi guys, I'm going to my first Bulls game tomorrow and got the official United Center parking on spothero when I bought tickets.  My question is what is the best lot to park in?  Or does it not matter?
+
+Lot A: 1899 W Washington Blvd  
+Lot B: 1900 W Warren Blvd  
+Lot D: 165 S Wood St  
+Lot F: 2013 W Madison St  
+Lot J: 1728 W Monroe St  
+MXC Garage: 241 S Wood St"
+Updated strap to Jubilee strap for Kohinoor,hmtwatches,1hwzu93,2025-01-08 19:31:04,25,1.0,5,https://www.reddit.com/gallery/1hwzu93,No-Floor-7085,,Just changed the strap to Jubilee watch strap. Love it so far. 
+Spots around the world,StreetviewCarSpotting,1hwxxk2,2025-01-08 18:11:06,11,0.93,0,https://www.reddit.com/r/StreetviewCarSpotting/comments/1hwxxk2/spots_around_the_world/,veyronphoto,,"**Atlanta:**
+
+Rolls-Royce Wraith & Bentley Bentayga: [https://maps.app.goo.gl/fk9iQ7UnwxUkjH3k9](https://maps.app.goo.gl/fk9iQ7UnwxUkjH3k9)
+
+Rolls-Royce Cullinan: [https://maps.app.goo.gl/MijjXFmYZqXa6pRU8](https://maps.app.goo.gl/MijjXFmYZqXa6pRU8)
+
+Alpina XB7: [https://maps.app.goo.gl/dUoZ9GQWTWqLbvqVA](https://maps.app.goo.gl/dUoZ9GQWTWqLbvqVA)
+
+Twilight Purple BMW M8 Convertible! [https://maps.app.goo.gl/da3U6kZyEtwtjnRm7](https://maps.app.goo.gl/da3U6kZyEtwtjnRm7)
+
+Mercedes-Maybach GLS & Bentley Continental GT II: [https://maps.app.goo.gl/VSuUjqAx9pPzyeHQA](https://maps.app.goo.gl/VSuUjqAx9pPzyeHQA)
+
+Mercedes-AMG G63: [https://maps.app.goo.gl/pYXrkEWrY2ngZMBY6](https://maps.app.goo.gl/pYXrkEWrY2ngZMBY6)
+
+BMW M2 G87: [https://maps.app.goo.gl/eqNuJ5mZF1exhhvu6](https://maps.app.goo.gl/eqNuJ5mZF1exhhvu6)
+
+Mercedes-AMG GT C Roadster: [https://maps.app.goo.gl/27qbWF3gj3475ReA8](https://maps.app.goo.gl/27qbWF3gj3475ReA8)
+
+Rolls-Royce Cullinan: [https://maps.app.goo.gl/yQbfNAXmGfCFq2Hx7](https://maps.app.goo.gl/yQbfNAXmGfCFq2Hx7)
+
+BMW i8: [https://maps.app.goo.gl/ixiaENzZyxPVqRgu9](https://maps.app.goo.gl/ixiaENzZyxPVqRgu9)
+
+Mercedes-Maybach GLS: [https://maps.app.goo.gl/R72SJ8ynBRxR5uY39](https://maps.app.goo.gl/R72SJ8ynBRxR5uY39)
+
+BMW M4 Competition G82: [https://maps.app.goo.gl/AU5gZ31gJbsPyHSH8](https://maps.app.goo.gl/AU5gZ31gJbsPyHSH8)
+
+BMW M2: [https://maps.app.goo.gl/tcQJpcaUhTLjKgMZ7](https://maps.app.goo.gl/tcQJpcaUhTLjKgMZ7)
+
+**Polestar 1!** [https://maps.app.goo.gl/fL2JabHvoe5NspnB8](https://maps.app.goo.gl/fL2JabHvoe5NspnB8)
+
+Mercedes-Maybach EQS: [https://maps.app.goo.gl/2FubCRsfzYdpcS6K6](https://maps.app.goo.gl/2FubCRsfzYdpcS6K6)
+
+BMW M4 Competition G82 LCI: [https://maps.app.goo.gl/PW9BKZheh1V9zUKc9](https://maps.app.goo.gl/PW9BKZheh1V9zUKc9)
+
+Mercedes-AMG G63 Brabus: [https://maps.app.goo.gl/nFKMrk5yd8ppwYnH9](https://maps.app.goo.gl/nFKMrk5yd8ppwYnH9)
+
+
+
+**San Francisco:**
+
+BMW M3 Sedan E90: [https://maps.app.goo.gl/7nnphUcAkMivdYrW8](https://maps.app.goo.gl/7nnphUcAkMivdYrW8)
+
+Audi TT-RS: [https://maps.app.goo.gl/6jCNkxpjeYQzHUoF6](https://maps.app.goo.gl/6jCNkxpjeYQzHUoF6)
+
+Maserati GranTurismo: [https://maps.app.goo.gl/uwkxojkLMMX3eFje7](https://maps.app.goo.gl/uwkxojkLMMX3eFje7)
+
+Mercedes-AMG GT53: [https://maps.app.goo.gl/Hk6o3MuxNufuVRWf6](https://maps.app.goo.gl/Hk6o3MuxNufuVRWf6)
+
+Mercedes E63 AMG (W212): [https://maps.app.goo.gl/rN7AvhQ13rgcxrLF8](https://maps.app.goo.gl/rN7AvhQ13rgcxrLF8)
+
+Nissan GT-R: [https://maps.app.goo.gl/KmRnMsrUXUdPemMs8](https://maps.app.goo.gl/KmRnMsrUXUdPemMs8)
+
+Maybe the same GT-R: [https://maps.app.goo.gl/hZGHuofXL3Je8DFH7](https://maps.app.goo.gl/hZGHuofXL3Je8DFH7)
+
+BMW M4 F82: [https://maps.app.goo.gl/M7N4qsadAaPcciDG7](https://maps.app.goo.gl/M7N4qsadAaPcciDG7)
+
+Audi RS5 Sportback: [https://maps.app.goo.gl/dtCVjTfeeGRvmiT56](https://maps.app.goo.gl/dtCVjTfeeGRvmiT56)
+
+Wingless Nissan GT-R: [https://maps.app.goo.gl/s2g6rn1YM3YErEcQ8](https://maps.app.goo.gl/s2g6rn1YM3YErEcQ8)
+
+Porsche 997.2 Turbo: [https://maps.app.goo.gl/qp2FvVa36kta698r6](https://maps.app.goo.gl/qp2FvVa36kta698r6)
+
+Dodge Challenger Hellcat: [https://maps.app.goo.gl/Uj6HQjkpfaGBMGNg7](https://maps.app.goo.gl/Uj6HQjkpfaGBMGNg7)
+
+Mercedes-AMG C63 S Coupe: [https://maps.app.goo.gl/bhByoWUUSpt5wV7C9](https://maps.app.goo.gl/bhByoWUUSpt5wV7C9)
+
+Dodge RAM SRT-10 Quad Cab: [https://maps.app.goo.gl/4qs25QNrNuWfjWbe6](https://maps.app.goo.gl/4qs25QNrNuWfjWbe6)
+
+Alpina B7: [https://maps.app.goo.gl/iiizCpChrMAKDpAVA](https://maps.app.goo.gl/iiizCpChrMAKDpAVA)
+
+Fisker Karma: [https://maps.app.goo.gl/42Nb7hkFPsQLVzxL8](https://maps.app.goo.gl/42Nb7hkFPsQLVzxL8)
+
+**Aston Martin DB9 & Alfa Romeo 4C Spider!** [https://maps.app.goo.gl/b77gqvociwse3LLT7](https://maps.app.goo.gl/b77gqvociwse3LLT7)
+
+**Alfa Romeo 4C Spider & Giulia Quadrifoglio:** [https://maps.app.goo.gl/gJSCrLMeVukTZmrV7](https://maps.app.goo.gl/gJSCrLMeVukTZmrV7)
+
+BMW i8: [https://maps.app.goo.gl/Jpu5JTcYHSmu52oD6](https://maps.app.goo.gl/Jpu5JTcYHSmu52oD6)
+
+Range Rover Sport SVR: [https://maps.app.goo.gl/mKAZu9rjEGsFaH347](https://maps.app.goo.gl/mKAZu9rjEGsFaH347)
+
+BMW M3 F80: [https://maps.app.goo.gl/rJCN35JknXfHcTbP8](https://maps.app.goo.gl/rJCN35JknXfHcTbP8)
+
+Tuned Audi RS5: [https://maps.app.goo.gl/ibJ3DY4JfJB4uWh16](https://maps.app.goo.gl/ibJ3DY4JfJB4uWh16)
+
+Nissan GT-R V-Spec II R32: [https://maps.app.goo.gl/Ag1GxA6HejgSB873A](https://maps.app.goo.gl/Ag1GxA6HejgSB873A)
+
+Mercedes-AMG GLE63 S Coupe, G63 & Porsche 992: [https://maps.app.goo.gl/anZYHAqzrM44v58z5](https://maps.app.goo.gl/anZYHAqzrM44v58z5)
+
+Worst spec Maserati GranTurismo: [https://maps.app.goo.gl/v51xAhqXFkiBSYW49](https://maps.app.goo.gl/v51xAhqXFkiBSYW49)
+
+Nissan GT-R Black Edition: [https://maps.app.goo.gl/jSqUgvQJLgxwNRuU7](https://maps.app.goo.gl/jSqUgvQJLgxwNRuU7)
+
+BMW M3 Sedan E90: [https://maps.app.goo.gl/XJDcWa6Fb4whiU9K7](https://maps.app.goo.gl/XJDcWa6Fb4whiU9K7)
+
+
+
+**Long Beach:**
+
+Porsche 996 Turbo Cabriolet: [https://maps.app.goo.gl/qGFUJ1XyrWpofEdF7](https://maps.app.goo.gl/qGFUJ1XyrWpofEdF7)
+
+Porsche 996 Turbo Cabriolet: [https://maps.app.goo.gl/RBzSTM9KvPAD2jTF9](https://maps.app.goo.gl/RBzSTM9KvPAD2jTF9)
+
+BMW M4 Competition G82: [https://maps.app.goo.gl/noGoAh6gtjS8X88PA](https://maps.app.goo.gl/noGoAh6gtjS8X88PA)
+
+Imola Red BMW M8: [https://maps.app.goo.gl/mjDPCpGo8PsScLiu6](https://maps.app.goo.gl/mjDPCpGo8PsScLiu6)
+
+Mercedes-AMG G63: [https://maps.app.goo.gl/pC7cuvYjnqN8ZdTh8](https://maps.app.goo.gl/pC7cuvYjnqN8ZdTh8)
+
+Mercedes-AMG GT63 & Porsche 964: [https://maps.app.goo.gl/kUqWtzqfLaKcDBkS6](https://maps.app.goo.gl/kUqWtzqfLaKcDBkS6)
+
+BMW X6M Competition F96: [https://maps.app.goo.gl/BgpdD1L3vmnqV5Yw7](https://maps.app.goo.gl/BgpdD1L3vmnqV5Yw7)
+
+Bentley Bentayga: [https://maps.app.goo.gl/Ad3i4TwFA64fTqWSA](https://maps.app.goo.gl/Ad3i4TwFA64fTqWSA)
+
+
+
+**Detroit:**
+
+Rolls-Royce Ghost III: [https://maps.app.goo.gl/fLDZq6hEuP5zwCT17](https://maps.app.goo.gl/fLDZq6hEuP5zwCT17)
+
+Lexus LC500: [https://maps.app.goo.gl/4WrdjHahemGT2AcA9](https://maps.app.goo.gl/4WrdjHahemGT2AcA9)
+
+Porsche 992 Cabriolet: [https://maps.app.goo.gl/zmHmzvskbeX9d8xx9](https://maps.app.goo.gl/zmHmzvskbeX9d8xx9)
+
+Bentley Bentayga II: [https://maps.app.goo.gl/5zWd9R4aCDnw6tpq5](https://maps.app.goo.gl/5zWd9R4aCDnw6tpq5)
+
+Lamborghini Urus: [https://maps.app.goo.gl/wijYszRRWEeeLkv68](https://maps.app.goo.gl/wijYszRRWEeeLkv68)
+
+Porsche 992 Turbo S & Range Rover Sport SVR: [https://maps.app.goo.gl/Vz8YXJ7Tuei22Hj48](https://maps.app.goo.gl/Vz8YXJ7Tuei22Hj48)
+
+Bentley Continental GTC III: [https://maps.app.goo.gl/G1L3JmCMxeJZWh1S6](https://maps.app.goo.gl/G1L3JmCMxeJZWh1S6)
+
+Porsche 992 Turbo S Cabriolet: [https://maps.app.goo.gl/cNgXWd1vXTAZKGLZ7](https://maps.app.goo.gl/cNgXWd1vXTAZKGLZ7)
+
+
+
+**Manchester:**
+
+BMW M2: [https://maps.app.goo.gl/6hc3mPLz2NpLdPf4A](https://maps.app.goo.gl/6hc3mPLz2NpLdPf4A)
+
+Mercedes-AMG S63 W222: [https://maps.app.goo.gl/vmZ65TUhbyt4bBMz7](https://maps.app.goo.gl/vmZ65TUhbyt4bBMz7)
+
+Range Rover Sport SVR: [https://maps.app.goo.gl/6VeLY4RWAuRhgHrA6](https://maps.app.goo.gl/6VeLY4RWAuRhgHrA6)
+
+Lamborghini Urus S: [https://maps.app.goo.gl/Kn2gde1M4kSoNGfw8](https://maps.app.goo.gl/Kn2gde1M4kSoNGfw8)
+
+Audi RS6 Avant C7 & RS4 Avant B9: [https://maps.app.goo.gl/ZEmY74VPDCKCVxAXA](https://maps.app.goo.gl/ZEmY74VPDCKCVxAXA)
+
+Audi RSQ8: [https://maps.app.goo.gl/jNRemZnw6HZ8mv176](https://maps.app.goo.gl/jNRemZnw6HZ8mv176)
+
+Porsche 992 Turbo S & Bentley Bentayga: [https://maps.app.goo.gl/W2gfqwTvvMB4Ssug9](https://maps.app.goo.gl/W2gfqwTvvMB4Ssug9)
+
+Maserati GranTurismo MC Stradale: [https://maps.app.goo.gl/QJ3N4VbrWAuBNkw86](https://maps.app.goo.gl/QJ3N4VbrWAuBNkw86)
+
+Bentley Continental Flying Spur: [https://maps.app.goo.gl/vrMU5WwK6nCPjv8Q8](https://maps.app.goo.gl/vrMU5WwK6nCPjv8Q8)
+
+BMW M3 Competition G80: [https://maps.app.goo.gl/HziaBZLPrJxEUXXi8](https://maps.app.goo.gl/HziaBZLPrJxEUXXi8)
+
+McLaren 570S Spider: [https://maps.app.goo.gl/1hb9AcPGT65mR6BP8](https://maps.app.goo.gl/1hb9AcPGT65mR6BP8)
+
+Tuned Bentley Continental GT: [https://maps.app.goo.gl/d7tXB5kTddKPp6Xm8](https://maps.app.goo.gl/d7tXB5kTddKPp6Xm8)
+
+BMW M5 Competition F90 LCI: [https://maps.app.goo.gl/9E5YxgE4recTErKN9](https://maps.app.goo.gl/9E5YxgE4recTErKN9)
+
+BMW M3 Competition G80: [https://maps.app.goo.gl/NU2zzh1KxqACr9Uc6](https://maps.app.goo.gl/NU2zzh1KxqACr9Uc6)
+
+
+
+**Sydney:**
+
+**Lamborghini Huracan Tecnica!** [https://maps.app.goo.gl/5WRQtUbqUooqeaAv5](https://maps.app.goo.gl/5WRQtUbqUooqeaAv5)
+
+Jaguar F-Pace SVR: [https://maps.app.goo.gl/yDY77DkMau7KNaPv6](https://maps.app.goo.gl/yDY77DkMau7KNaPv6)
+
+Mercedes-AMG GLC63: [https://maps.app.goo.gl/9Crm23gmQG54MZ6T9](https://maps.app.goo.gl/9Crm23gmQG54MZ6T9)
+
+Nissan GT-R: [https://maps.app.goo.gl/byER9ZZoWRfFKjAf8](https://maps.app.goo.gl/byER9ZZoWRfFKjAf8)
+
+BMW X3M Competition: [https://maps.app.goo.gl/bgkBU2WhvzNTU2zS9](https://maps.app.goo.gl/bgkBU2WhvzNTU2zS9)
+
+Jaguar E-Type: [https://maps.app.goo.gl/6Jx6CLwp2VrML4Mc6](https://maps.app.goo.gl/6Jx6CLwp2VrML4Mc6)
+
+Porsche 718 Cayman GTS 4.0: [https://maps.app.goo.gl/yAETR2tmMXcTRzeA8](https://maps.app.goo.gl/yAETR2tmMXcTRzeA8)
+
+Ford Mustang Mach 1: [https://maps.app.goo.gl/t3yeJVnFLkt7SXBVA](https://maps.app.goo.gl/t3yeJVnFLkt7SXBVA)
+
+BMW M2: [https://maps.app.goo.gl/UromNjZm8SwLYsKeA](https://maps.app.goo.gl/UromNjZm8SwLYsKeA)
+
+Audi RSQ3: [https://maps.app.goo.gl/TYD75rjSicU8z37k9](https://maps.app.goo.gl/TYD75rjSicU8z37k9)
+
+Mercedes C63 AMG Coupe W204: [https://maps.app.goo.gl/LJfmnDRWDj8yYcbW7](https://maps.app.goo.gl/LJfmnDRWDj8yYcbW7)
+
+BMW M2 Competition: [https://maps.app.goo.gl/oLnt2dPF5eRLKTBf9](https://maps.app.goo.gl/oLnt2dPF5eRLKTBf9)
+
+Porsche 992 Targa 4S: [https://maps.app.goo.gl/86o6XW2jfBVf4yTx8](https://maps.app.goo.gl/86o6XW2jfBVf4yTx8)
+
+Mercedes-AMG C63 S Coupe: [https://maps.app.goo.gl/CmyF5LNsneQPkWQX8](https://maps.app.goo.gl/CmyF5LNsneQPkWQX8)
+
+BMW M3 Competition F80: [https://maps.app.goo.gl/QrZhwmpKDN2R3H2LA](https://maps.app.goo.gl/QrZhwmpKDN2R3H2LA)
+
+BMW M2: [https://maps.app.goo.gl/8dzzRmDwWDAYet9q8](https://maps.app.goo.gl/8dzzRmDwWDAYet9q8)
+
+BMW M3 Competition G80: [https://maps.app.goo.gl/sXeSg71YP6toa9UG6](https://maps.app.goo.gl/sXeSg71YP6toa9UG6)
+
+  
+**Dublin:**
+
+Clean Mercedes 280SE W111 & Porsche 991.2: [https://maps.app.goo.gl/jEK7crC3wyYGJt9g9](https://maps.app.goo.gl/jEK7crC3wyYGJt9g9)
+
+Mercedes-AMG C63 S Cabriolet: [https://maps.app.goo.gl/bYTTxkptAzzQhbt2A](https://maps.app.goo.gl/bYTTxkptAzzQhbt2A)
+
+Audi R8: [https://maps.app.goo.gl/GP4AoFUcRWn61oVh9](https://maps.app.goo.gl/GP4AoFUcRWn61oVh9)
+
+Maserati GranTurismo: [https://maps.app.goo.gl/mMFH8savR5ezkwXg8](https://maps.app.goo.gl/mMFH8savR5ezkwXg8)
+
+Audi RS4 Avant B9: [https://maps.app.goo.gl/tGA1AzeusEriuUhv7](https://maps.app.goo.gl/tGA1AzeusEriuUhv7)
+
+Porsche 992 GTS: [https://maps.app.goo.gl/NzvFNrfg8kx7AfYu6](https://maps.app.goo.gl/NzvFNrfg8kx7AfYu6)
+
+Bentley Arnage: [https://maps.app.goo.gl/1p5zq7qTNwdkvpobA](https://maps.app.goo.gl/1p5zq7qTNwdkvpobA)
+
+Porsche 996 Turbo S Cabriolet: [https://maps.app.goo.gl/qCyQggRy1hRoQmTd6](https://maps.app.goo.gl/qCyQggRy1hRoQmTd6)
+
+Bentley Bentayga: [https://maps.app.goo.gl/7SLaSDh81fx6aqe66](https://maps.app.goo.gl/7SLaSDh81fx6aqe66)
+
+Porsche 991.2 GTS Cabriolet: [https://maps.app.goo.gl/o731bYjPmExjFVxE9](https://maps.app.goo.gl/o731bYjPmExjFVxE9)
+
+Lexus LC500: [https://maps.app.goo.gl/4eS6RuMxqCmKUYuK6](https://maps.app.goo.gl/4eS6RuMxqCmKUYuK6)
+
+"
+Define Jacket *Nulu - Black/Gold - 4 is in stock at Lululemon for $118.00 (MSRP),LululemonRestocks,1hwnko8,2025-01-08 11:03:58,1,1.0,0,https://www.reddit.com/r/LululemonRestocks/comments/1hwnko8/define_jacket_nulu_blackgold_4_is_in_stock_at/,TrackaLackerBot,,"View current status at [https://www.trackalacker.com/products/showcase/lululemon-define-jacket-nulu...](https://www.trackalacker.com/products/showcase/lululemon-define-jacket-nulu?notification_id=WI21RjuI%252Bl0Z1DtKI8N6smH6--2ft4k3hP6ifxzqwF--Q6EgMXcFcv28YCjmS1F6MQ%253D%253D&utm_campaign=stock-update&utm_medium=social&utm_source=reddit)
+
+
+
+As of 01/08/25 11:03 AM EST"
+Gönnt euch :),PokemonDe,1hwj264,2025-01-08 07:26:43,2,0.76,3,https://i.redd.it/x5qdl0pwjrbe1.jpeg,my_other_acc_got_ban,Bild/Screenshot,
+Just came across this...,imagican,1hw9ht4,2025-01-07 21:46:35,6,0.88,4,https://www.reddit.com/r/imagican/comments/1hw9ht4/just_came_across_this/,curious1playing,Indie,"Well.... I honestly don't know what to say....so I'll just let you decide what you think...
+
+Ren, [Hi Ren](https://youtu.be/s_nc1IVoMxc?si=OjIpiFsCynYft4Rr)
+
+
+
+Edit: The next morning. 
+
+After 4 or 5 more listening.
+
+Is it possible this is the most brilliantly crafted piece of a symbiotic music about someone baring for all the world to see his personal struggles with his mental health by a perfect matching of melody, lyrics and vocal performance ?
+
+I also must say that I have done an online search to get some background on Ren. I suppose that posting this song does not properly fit the philosophy of thie sub. I might have not heard of Ren or the song before but I learned it gained enough popularity to take it out of the obscure songs and artists the site is intended to highlight. My bad. But I'm not sorry. "
+A little better look at my goat who played 31 seasons ,BasketballGM,1hvxsg1,2025-01-07 13:11:21,56,0.98,13,https://www.reddit.com/gallery/1hvxsg1,RealGertle627,Rosters,"Just a follow up to my last post to show more in depth the crazy career that this dude had. I kinda miss him, ngl"
+Got the best breakdown ever,Hardcore,1hvx5xv,2025-01-07 12:46:06,12,0.88,0,https://youtu.be/kkEJSYJ8GSg?si=vX1JHuVEVQjPSfNh,xPowerOutagex,,The last minute is one of the best moments in mxc 
+Razer signature edition mouse- 300 bucks and no spare parts available from Razer!!,razer,1hvu69m,2025-01-07 10:41:09,0,0.5,8,https://www.reddit.com/r/razer/comments/1hvu69m/razer_signature_edition_mouse_300_bucks_and_no/,joverclock,Question,"So... I am one of the weirdo's who spent 300 dollars on a mouse directly from Razer. Amazing mouse but it did not include the wirless dongle it was supposed to. Finally reached out to Razer and they told me they have no spare parts and it should have been in the box. I still have the box and its still not in there... It has not been a year since purchase(close) and at 300 dollars you would think they would be able to support their product.  Anyone else deal with this sort of nonesense from Razer before? 
+
+Note : they still sell the mouse on their website
+
+[https://www.razer.com/gaming-mice/razer-viper-mini-signature-edition?srsltid=AfmBOoq0ASekWmfd2sa4J4ET1lS7ij-b3XLClzxRVMXc\_bDTNY8kJWQY](https://www.razer.com/gaming-mice/razer-viper-mini-signature-edition?srsltid=AfmBOoq0ASekWmfd2sa4J4ET1lS7ij-b3XLClzxRVMXc_bDTNY8kJWQY)
+
+and the dongle
+
+[https://www.razer.com/gaming-mice-accessories/Razer-HyperPolling-Wireless-Dongle/RC30-04410100-R3M1](https://www.razer.com/gaming-mice-accessories/Razer-HyperPolling-Wireless-Dongle/RC30-04410100-R3M1)
+
+  
+I even offered to purchase the dongle since it has been a bit since I first received the order.
+
+https://preview.redd.it/72781xpcdlbe1.png?width=855&format=png&auto=webp&s=193d8689dffc464dc006eb8e9d0be7ec30761130
+
+"
+Photo request for a coffee ☕️,PhotoshopRequest,1hv7y23,2025-01-06 14:49:51,2,1.0,10,https://i.redd.it/voc50ee5hfbe1.jpeg,Shoddy-Direction4111,Solved ✅,"anyone have the expertise to take away the cars on the flight hand side - 
+
+Happy with the car in the middle of the road . 
+
+Not got a lot of $ but happy to shout a coffee if anyone can make this happen . 
+
+
+Took this shot while on holiday - and i’m a huge oasis fan - would love to get it framed 
+
+
+thanks in advance 🤙🙏❤️"
+MXC - YYY,TheOverload,1hv2qtr,2025-01-06 11:18:13,3,0.81,1,https://www.youtube.com/watch?v=gutmfl0wFsw,dietpudding,,
+New Release Collected Editions Discussion for Week of 1/6. ,OmnibusCollectors,1huwz1c,2025-01-06 06:30:42,12,1.0,22,https://www.reddit.com/r/OmnibusCollectors/comments/1huwz1c/new_release_collected_editions_discussion_for/,csummerss,📚 Weekly Collected Edition Discussion 📚,"- [New Avengers Omnibus Vol. 1 (Overview)](https://youtu.be/dwwqlOEpYt4?si=C2Eb69bIzRGOmEhn)
+
+- [Star Wars Legends: The Empire Omnibus Vol. 3 (Overview)](https://youtu.be/WFL51vsxMXc?si=2IlKJokNYQl0HKhD)
+
+- [X-Men: Decimation Omnibus (Overview)](https://youtu.be/lrVxQCMLwt4?si=9X5ZaYNM1jsM-1bg)
+
+Share what you are picking up or would recommend to others.
+
+[Fairly comprehensive list that shows everything coming out this week.](https://cheapgraphicnovels.com/20250106/)
+
+"
+"2025 standings, if results were based on how close to the track the drivers were born",formuladank,1hulrr3,2025-01-05 19:18:19,38,0.88,6,https://www.reddit.com/r/formuladank/comments/1hulrr3/2025_standings_if_results_were_based_on_how_close/,Firm_Necessary1184,,"https://preview.redd.it/hhl8w2f3o9be1.png?width=1170&format=png&auto=webp&s=f5b4fe7fe3a7462fa7e80c05a38a441859dc0172
+
+"
+"Settling down, LatAm v Europe",digitalnomad,1huj6lh,2025-01-05 17:24:39,3,0.67,10,https://www.reddit.com/r/digitalnomad/comments/1huj6lh/settling_down_latam_v_europe/,BowtiedGypsy,Question,"Hi all, looking for some random opinions here. 
+
+Me and my soon to be wife have been traveling for 2+ years, largely between LatAm and Europe. We’ve been doing monthly Airbnbs and hopping to new places every month, which is honestly getting tiring. We’re hoping to settle down a bit more in the spring, not necessarily in the traditional sense but at least having a home base. 
+
+We’re pretty torn between two options and I’d love to get some opinions. 
+
+Option 1 is Budapest. We like Central Europe a lot, it’s pretty affordable and taxes aren’t too bad in terms of being in Europe. We love the idea of being able to cheaply (flights) travel Europe and not worry about Schengen rules (we’re American). The thing is, Hungary is slightly higher taxes than most LatAm countries + Hungary and the US technically just ended their double tax treaty. 
+
+The other major issue with Hungary, is that visas aren’t easy to get (or so it seems). We’ll need to establish a business there prior to even applying for the visa, funding a business account (+ paying loads of fees on the setup it seems). The visa process can be very lengthy, complicated and although we meet the requirements we’re not positive we’d get it. Citizenship is also very far away and requires learning Hungarian, which is supposed to be super difficult to learn. 
+
+Schengen rules also play into effect, as we can only legally enter Schengen for 5 days as of right now. We’re currently in Turkey and spending about 90 days out of Schengen, but we just left a few days ago - so we don’t get the full 90 days until July. We originally planned on my soon to be wife going for a family reunification visa instead of going for her own business visa thinking this would be simpler, but there’s no way we wouldn’t run out of Schengen days before mine came in - making things pretty complicated. 
+
+Option 2 is splitting time between 2 places in LatAm (and avoiding becoming tax residents). Thinking Playa Del Carmen + Medellin, or MXC + Lima. We love LatAm, would like to travel more adventurously there, love the weather and the cultures + Spanish is a language we already have decent grasps on and could probably be conversational within about six months. 
+
+Visas are much easier to get here, and Mexico is closer to home (Boston).
+
+Some info about us:
+
+We love traveling Europe and have spent a bit more time here than LatAm. We’d love to have a base and be able to take cheap flights or trains to travel on occasional weekends to other cities. We love the walk ability and public transportation, safety is never an issue (we know most of LatAm is safe, but it just doesn’t feel like the same level of safety as most of Europe if that makes sense). We love cafe lined streets, plenty of things to do in the area, and a great social scene. We’re fairly young (mid 20s) so nightlife and these things are important. 
+
+We’re a bit torn right now, and getting eventually dual citizenship is big. Paying less in taxes is also huge. Not sure which we should be more focused on - although if we chose the no tax option, I know we could get LatAm citizenship within 5 years, and then Spain citizenship 2 years after that - pretty close to the 8 year citizenship path in Hungary. 
+
+What do you guys think? Has anyone settled in these places and have an opinion? Should we focus more on paying less (close to 0) taxes, or focus on citizenship? 
+
+Any sort of thoughts people have would be greatly appreciated. "
+woaufhdhfhuhajushhff (idk if this is the right subreddit),boysarequirky,1hu7gnu,2025-01-05 08:50:53,731,0.96,51,https://i.redd.it/dfk60pw6k6be1.png,cheri_idk,...,
+"I made a visual tier list from the ""Every Gym Machine Ranked by Exercise Scientists""  ",rpdiet,1htlmuw,2025-01-04 14:04:42,3,1.0,0,https://www.reddit.com/r/rpdiet/comments/1htlmuw/i_made_a_visual_tier_list_from_the_every_gym/,L0D3,,"Might not have found all the exact machines Dr Mike and Dr Milo mention in this video: [https://youtu.be/5Npkcq3ghCY?si=dJOu3C4cbNpbPd0A](https://youtu.be/5Npkcq3ghCY?si=dJOu3C4cbNpbPd0A)  
+And I think they forgot to tier the hip abduction machine. I ran into the same issue that not all images are labeled in the tier list so it was about as usefull as the video if you don't know all the names of the machines. So here are my notes with the tiers and images:   
+[https://smallpdf.com/file#s=d02aafaa-62ae-443a-b282-0e04baa9eafc](https://smallpdf.com/file#s=d02aafaa-62ae-443a-b282-0e04baa9eafc)   
+And the tier list itself:   
+[https://www.opentierboy.com/rank?state=N4IgLglgpgTgziAXAbVBJ5owLQIDQgB2GAyiAWEqiOoiAGwBmAnIQAwDsAxgBwAe5EFwyMATIwCMbCQCM2M8TwAsAZlFKZjACaiAhvTk6lPHqK4qQAXzxoMzRgGsArHz6iAbgEdBwulracPMxsUCpsPDLGHMwyukoaXFAS6k5KXLqRVjY0GFoADu5YEABeSj4YChySzEpaTqI89Eq6ERFsjGz0UPT0PLrckaJZtnROAOYSTjBjUwA25XSiElrRUIwcPBxOjLUyEsxQSswqWjzbHJodusKWALrWI5iw2LqCxHQAgoKUKI8Q+XAwDBPGAAO4LEAZfy8JShNhaJo8KANZhNdL0dRcDj0JyxGTDHJ0DgqMZcGRwQjrCEnLS6aRcVIqa5KUSiFSmMxcWSyLQSXSiDESAm0EAcU5KeoAWyg4IIvhAThazB4Kjk7SqtTFEQkyKCuhUYScqqgbGFGDgxQArgB7AAW8HGEN0pycpy4oigXPUqkYPFO7Rxun1fokiR4ZroYFmYGKnnolp4QrlGBMagkJ0Y2xkqXozA4uk9jG0uORTigx36Vnu2RFkGe+II7xAACFvlRHmBeAArJSSmCeiGJ67HLQqKRcLS1CRBUSKmTI8tQcujpSmh6EkBjOAOZhaGQcMZQCG+se8rhk3RiDTdZgScew7pORqJ3ERkDFFSS615MZ8W0WZM6GYd0dQlI590iFVGH5KplBUTMtEYA0tnxdcRSSUEIAgFR3F0LsnUQyQ9hkGR6AkeIdDaOIVg4UQZDzZg4nzN9NhgW1LRgJQuy0CE6mCC4UgkXpVCOa5eR2UQan1ewdCFNCMGtQhrQnOB3BkHjAJAfYtC0LgQnoLhGCgOIDIaJw7z9VEJBYRh1KaN9mDGDYDJgS1GAhQzGjYUQOEmFQmiUeh-IOGQgh4RhzxYQ4zHcu55MjLBsGERsMAAYTbX4NzgDgOEtLR4EtARNP8qon00Vly1UNYWiLfklCqAVJBPN8VBgABPDEODYdwnGpXSkKCJgmA4NI9xMOl5BYeiyWSez4qECBJXSTCHGITT6C0bpsxiLRgK4CjaSXbYmQCaJllCMp5q0S0xltGQuElLRvE03cmTZAJmnTVcVlC2kuAMth7D0WJuDfW0HE8WZimtXRMIhJx6Gkewwj2HKJWdFpduCQ54V0JxglVN8JyUWYdVmBwiqEDBRE2rYfKgYlGJZA59GxJwuWkBn6no5g3wMwpQXcRneMM2yNCCA51FvaDfKcaRTCLZVQjUN9QTGPIYbGNl3AhMx-H8JlmigVJiUVcLYkklQuFRWI8bXGsMD0jg2rtUprQhcjsw6eq7xZeJ802PTNEBlR8ygHhOHoKt5rrHB3JSugABEMuoEVZjyPJQWCC1LQhTQYlkD1ERUcXmDL-0zHI45amCWKHboUFQSgdxGAgGBQXdzTJkB90GV8lZmlZZQkn3Ro+W4XRyKj+b9TavgwFtBH46puhy1kJwthUDf7CUWye9nWloi5fNtHaN8HERyUVAgWoIQM+juGxX1AYlcJdx0mQwlRepJOtm565AF+JwPZEJtXQOtX0oh5BJGVFyXeOJgLGmJLjSc3J7aPECnADWXYeCeBgBCKAkQDihzYLvdmsJZzqRqCYSI9RNjMFZKhABKg3KEAgJeLsncV4Kmtq6CUZg4i6AOAcZYTV1iBScGWJCE5o4AMtIQdIYAoBjGtDAEoUANJEAwCne4twKAQCjEeOgAACAAou4WAbVjEAHE2qSmMQAWWuLaCAhAoDGIAEq6EIA4DRxiZBWNMXwWAXAIBwHcSQUJUBCCQEBHAfxVjE4wAAHSOIgLMa0xjvFaGMUk1JDiIC+KsEAA](https://www.opentierboy.com/rank?state=N4IgLglgpgTgziAXAbVBJ5owLQIDQgB2GAyiAWEqiOoiAGwBmAnIQAwDsAxgBwAe5EFwyMATIwCMbCQCM2M8TwAsAZlFKZjACaiAhvTk6lPHqK4qQAXzxoMzRgGsArHz6iAbgEdBwulracPMxsUCpsPDLGHMwyukoaXFAS6k5KXLqRVjY0GFoADu5YEABeSj4YChySzEpaTqI89Eq6ERFsjGz0UPT0PLrckaJZtnROAOYSTjBjUwA25XSiElrRUIwcPBxOjLUyEsxQSswqWjzbHJodusKWALrWI5iw2LqCxHQAgoKUKI8Q+XAwDBPGAAO4LEAZfy8JShNhaJo8KANZhNdL0dRcDj0JyxGTDHJ0DgqMZcGRwQjrCEnLS6aRcVIqa5KUSiFSmMxcWSyLQSXSiDESAm0EAcU5KeoAWyg4IIvhAThazB4Kjk7SqtTFEQkyKCuhUYScqqgbGFGDgxQArgB7AAW8HGEN0pycpy4oigXPUqkYPFO7Rxun1fokiR4ZroYFmYGKnnolp4QrlGBMagkJ0Y2xkqXozA4uk9jG0uORTigx36Vnu2RFkGe+II7xAACFvlRHmBeAArJSSmCeiGJ67HLQqKRcLS1CRBUSKmTI8tQcujpSmh6EkBjOAOZhaGQcMZQCG+se8rhk3RiDTdZgScew7pORqJ3ERkDFFSS615MZ8W0WZM6GYd0dQlI590iFVGH5KplBUTMtEYA0tnxdcRSSUEIAgFR3F0LsnUQyQ9hkGR6AkeIdDaOIVg4UQZDzZg4nzN9NhgW1LRgJQuy0CE6mCC4UgkXpVCOa5eR2UQan1ewdCFNCMGtQhrQnOB3BkHjAJAfYtC0LgQnoLhGCgOIDIaJw7z9VEJBYRh1KaN9mDGDYDJgS1GAhQzGjYUQOEmFQmiUeh-IOGQgh4RhzxYQ4zHcu55MjLBsGERsMAAYTbX4NzgDgOEtLR4EtARNP8qon00Vly1UNYWiLfklCqAVJBPN8VBgABPDEODYdwnGpXSkKCJgmA4NI9xMOl5BYeiyWSez4qECBJXSTCHGITT6C0bpsxiLRgK4CjaSXbYmQCaJllCMp5q0S0xltGQuElLRvE03cmTZAJmnTVcVlC2kuAMth7D0WJuDfW0HE8WZimtXRMIhJx6Gkewwj2HKJWdFpduCQ54V0JxglVN8JyUWYdVmBwiqEDBRE2rYfKgYlGJZA59GxJwuWkBn6no5g3wMwpQXcRneMM2yNCCA51FvaDfKcaRTCLZVQjUN9QTGPIYbGNl3AhMx-H8JlmigVJiUVcLYkklQuFRWI8bXGsMD0jg2rtUprQhcjsw6eq7xZeJ802PTNEBlR8ygHhOHoKt5rrHB3JSugABEMuoEVZjyPJQWCC1LQhTQYlkD1ERUcXmDL-0zHI45amCWKHboUFQSgdxGAgGBQXdzTJkB90GV8lZmlZZQkn3Ro+W4XRyKj+b9TavgwFtBH46puhy1kJwthUDf7CUWye9nWloi5fNtHaN8HERyUVAgWoIQM+juGxX1AYlcJdx0mQwlRepJOtm565AF+JwPZEJtXQOtX0oh5BJGVFyXeOJgLGmJLjSc3J7aPECnADWXYeCeBgBCKAkQDihzYLvdmsJZzqRqCYSI9RNjMFZKhABKg3KEAgJeLsncV4Kmtq6CUZg4i6AOAcZYTV1iBScGWJCE5o4AMtIQdIYAoBjGtDAEoUANJEAwCne4twKAQCjEeOgAACAAou4WAbVjEAHE2qSmMQAWWuLaCAhAoDGIAEq6EIA4DRxiZBWNMXwWAXAIBwHcSQUJUBCCQEBHAfxVjE4wAAHSOIgLMa0xjvFaGMUk1JDiIC+KsEAA)"
+📢 ecobee is hiring a Director Mechanical Engineering!,jobboardsearch,1htes52,2025-01-04 08:51:36,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvZWNvYmVlLWRpcmVjdG9yLW1lY2hhbmljYWwtZW5naW5lZXJpbmctNmIxMXcvP3JlZj1qb2Jib2FyZHNlYXJjaA==,rrmdp,,"Company: ecobee
+
+Location: Canada 📍
+
+Date Posted: January 04, 2025 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvZWNvYmVlLWRpcmVjdG9yLW1lY2hhbmljYWwtZW5naW5lZXJpbmctNmIxMXc="
+How do I get the ladies into my truck?,GMT800,1hsrgj2,2025-01-03 12:14:05,137,0.89,441,https://i.redd.it/gthpfqcmatae1.jpeg,StrengthMost3357,,
+Hecate Location Wuthering Waves,ZafrostVideoGameGuide,1hskaqf,2025-01-03 06:18:57,1,1.0,0,https://www.reddit.com/r/ZafrostVideoGameGuide/comments/1hskaqf/hecate_location_wuthering_waves/,zafrostpet,,Made a new guide about Hecate Location Wuthering Waves: https://www.youtube.com/watch?v=UpUvCXNkMxc
+Discotek Pre-orders on MediaOCD site! 🙌🙌,AnimeCollectors,1hs84tr,2025-01-02 18:40:56,70,0.97,11,https://www.reddit.com/gallery/1hs84tr,MiaLeeSakura,News,"https://www.mediaocd.com/category/discotek?utm_source=facebook&utm_medium=stores.category-promoter&utm_campaign=c0e53289-a83e-40bc-9894-7e53d41641a2
+
+They said more to come too!! Hopefully at some point they'll offer the whole catalog 🙌🙌
+
+So glad to see another option fro Discotek past CR and Amazon. You can support them more directly though this storefront!"
+Crypto coins set to excel ,coinspotau,1hrmrpw,2025-01-02 00:37:56,0,0.15,10,https://i.redd.it/1g2i54lipiae1.jpeg,speakjustly,,
+Crypto coins set to excel ,GateioExchange,1hrmr5j,2025-01-02 00:36:57,0,0.5,2,https://i.redd.it/vhn8db6cpiae1.jpeg,speakjustly,General ,
+Ryderr Lyonel (sprites credit to FarragoFiction's DollSim),homestuck,1hrlam8,2025-01-01 23:11:31,7,1.0,0,https://www.reddit.com/gallery/1hrlam8,casualclassical,FANWORK ,
+Has anyone bought or seen this at Costco?,CostcoCanada,1hrcuxz,2025-01-01 16:21:30,17,0.84,21,https://i.redd.it/38yffh0w8gae1.png,calemcalem,,
+idk if i've ever been happier,BasketballGM,1hr9f5w,2025-01-01 13:48:43,4,0.83,5,https://www.reddit.com/r/BasketballGM/comments/1hr9f5w/idk_if_ive_ever_been_happier/,Houston_sports_fan_1,Meme,"https://preview.redd.it/lwj8zemlhfae1.png?width=960&format=png&auto=webp&s=3d823b3a0d8837b4a69170734af5db62770568fc
+
+"
+Most competitive conference I have ever been in.,BasketballGM,1hr5e6u,2025-01-01 10:45:24,11,0.79,11,https://www.reddit.com/gallery/1hr5e6u,carneythegoat,Other,
+2025 calendar,OnePiece,1hqgaa7,2024-12-31 09:55:03,139,0.98,32,https://www.reddit.com/gallery/1hqgaa7,agenmossad,Fanart,The first time I designed my own wall calendar. A friend at the print shop helped bring it to life.
+Who remembers this???,pcmasterrace,1hpqnn3,2024-12-30 11:13:48,71,0.9,21,https://i.redd.it/h8e9ui58g0ae1.jpeg,exudable,Game Image/Video,Found online I wish I still had mine 😭
+PMW Season 5 Episode Breakdown Discussion Hub,podmeetsworldpodcast,1hp5q7h,2024-12-29 16:01:37,13,0.93,0,https://www.reddit.com/r/podmeetsworldpodcast/comments/1hp5q7h/pmw_season_5_episode_breakdown_discussion_hub/,Sad-Significance4546,Discussion,"EPISODE BREAKDOWNS 
+S5xE01 “Brothers” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/SyU66GMRpb
+
+
+S5xE02 “Boy Meets Real World” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/Ej7XGMnSAm
+
+
+S5xE03 “It’s Not You…It’s me” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/v4fOY46KLv
+
+
+S5xE04 “Fraternity Row” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/QukYjyxz5t
+
+
+S5x05 “The Witches of Pennbrook” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/aiUiFlylUR
+
+
+S5x06 “No Guts, No Cory” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/VjXHfF798b
+
+
+S5xE07 “I Love You, Donna Karen” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/GWcZOXD6Dn
+
+
+S5xE08 “Chasing Angela” Discussion with Trina McGee
+https://www.reddit.com/r/podmeetsworldpodcast/s/4ThgpW5Bk4
+
+
+S5xE09 “How To Succeed in Business” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/ud4hdxZqtl
+
+
+S5xE10 “Last Tango in Philly” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/AsaDu20t9y
+
+
+S5xE11 “A Very Topanga Christmas” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/6kwBD8GCcG
+
+
+S5xE12 “Raging Cory” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/t4kSxbJHBV
+
+
+S5xE13 “The Eskimo” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/5J3LEVaAS1
+
+
+S5xE14 “Heartbreak Cory” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/4Sx0m2QT2v
+
+
+S5xE15 “First Girlfriends Club” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/j9LBEvOU7X
+
+
+S5xE16 “Torn Between Two Lovers (Feeling Like a Fool)”
+https://www.reddit.com/r/podmeetsworldpodcast/s/tHbWaHvsU8
+
+
+S5xE17 “And Then There Was Shawn” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/Y57BzHzvcp
+
+
+S5xE18 “If You Cant Be with the One You love” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/UVD1ZnmTA3
+
+
+S5xE19 “Eric Hollywood” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/u6Ni2LwLGL
+
+
+S5xE20 “Starry Night” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/ndsWYfz2As
+
+
+S5xE21 “Honesty Night” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/YRQO2QTrFK
+
+
+S5xE22 “Prom-ises, Prom-ises” Discussion
+https://www.reddit.com/r/podmeetsworldpodcast/s/BxEV31zxxD
+
+
+S5xE23 “Things Change” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/DjAx6eCaG7
+
+
+S5xE24 “Graduation” Discussion 
+https://www.reddit.com/r/podmeetsworldpodcast/s/D5OguK1UXg
+
+SEASON 5 INTERVIEWS 
+
+Judy Savage 
+https://www.reddit.com/r/podmeetsworldpodcast/s/Wobwd9IiB7
+
+
+Jonathan C. Kaplan 
+https://www.reddit.com/r/podmeetsworldpodcast/s/k1gnnS2vcR
+
+
+Russell Dague
+https://www.reddit.com/r/podmeetsworldpodcast/s/ihxVYCoy95
+
+
+Fans Meet World
+https://www.reddit.com/r/podmeetsworldpodcast/s/f105iKjan9
+
+
+Candace Cameron Bure
+https://www.reddit.com/r/podmeetsworldpodcast/s/u30QTXNFws
+
+
+Maggie Lawson
+https://www.reddit.com/r/podmeetsworldpodcast/s/2GrjuxQViN
+
+
+Montell Jordan 
+https://www.reddit.com/r/podmeetsworldpodcast/s/rzhlkMxcSB
+
+
+Kelly Packard
+https://www.reddit.com/r/podmeetsworldpodcast/s/yosSqkmc5v
+
+
+Matthew Lawrence 
+https://www.reddit.com/r/podmeetsworldpodcast/s/rTle7TdbkB
+
+
+Jonathan Del Arco 
+https://www.reddit.com/r/podmeetsworldpodcast/s/azVmMxGPte
+
+
+Lara Olsen
+https://www.reddit.com/r/podmeetsworldpodcast/s/vAdKeFW8SB
+
+
+Pod Meets World Film Festival 
+https://www.reddit.com/r/podmeetsworldpodcast/s/s5LD3gWWkw
+
+
+The Random Years Meets World 
+https://www.reddit.com/r/podmeetsworldpodcast/s/VuhEMpSquZ
+
+
+William “Rusty” Russ
+https://www.reddit.com/r/podmeetsworldpodcast/s/Wml1ANxVSD
+
+
+Prop Master David Glazer 
+https://www.reddit.com/r/podmeetsworldpodcast/s/8CYxNg5DGO
+
+
+Jeff McCracken: And then there was Shawn 
+https://www.reddit.com/r/podmeetsworldpodcast/s/4JMMtBBxAI
+
+
+Vanessa Evigan
+https://www.reddit.com/r/podmeetsworldpodcast/s/F7lNsXY4J9
+
+
+Andy Guerdat
+https://www.reddit.com/r/podmeetsworldpodcast/s/Qxt4NVUpcO
+
+
+Danica McKellar 
+https://www.reddit.com/r/podmeetsworldpodcast/s/wpgYNcVNyh
+
+
+Matt Kirkwood 
+https://www.reddit.com/r/podmeetsworldpodcast/s/iTNLK1ypGo
+
+
+John Beck 
+https://www.reddit.com/r/podmeetsworldpodcast/s/tLHgu21UQW
+
+
+TGIF Pod Swap part 1
+https://www.reddit.com/r/podmeetsworldpodcast/s/ZHOWKPjwyt
+
+
+Bruh Meets World Season 5 Recap 
+https://www.reddit.com/r/podmeetsworldpodcast/s/4ZdPGKt242
+
+
+SPECIAL EPISODES 
+
+Halloween week: Riders Office Hours: And Then There Was Horror 
+https://www.reddit.com/r/podmeetsworldpodcast/s/ybyX4LuGUP
+
+
+Halloween week: And Then There Was Jeff Menell
+https://www.reddit.com/r/podmeetsworldpodcast/s/HX1mwmjdOw
+
+
+From The Fans: Is It a Trap? 
+https://www.reddit.com/r/podmeetsworldpodcast/s/fHioggFIKX
+
+Pod Swap/What You Really Missed Part 1&2
+https://www.reddit.com/r/podmeetsworldpodcast/s/ONtXNbfauF
+
+
+https://www.reddit.com/r/podmeetsworldpodcast/s/R0PmUbrGki
+
+
+A Pod Meets World Thanksgiving 
+https://www.reddit.com/r/podmeetsworldpodcast/s/un9ig9lMfa
+
+
+Pod Meets Gift Guide w/ Bill Daniels and Bonnie Bartlett
+https://www.reddit.com/r/podmeetsworldpodcast/s/e4Y9yxvnCK
+
+
+From The Fans: The Drinking Episode 
+https://www.reddit.com/r/podmeetsworldpodcast/s/Jp8V8nXkmW
+
+
+TGIF Pod Swap Part 2 and 3 
+https://www.reddit.com/r/podmeetsworldpodcast/s/xgKHSseEMR
+
+
+https://www.reddit.com/r/podmeetsworldpodcast/s/EcOnwVoGHU
+
+
+The Night Before Christmas read by Bill Daniels 
+https://www.reddit.com/r/podmeetsworldpodcast/s/xip7NftKAb
+
+
+2025 Meets World 
+https://www.reddit.com/r/podmeetsworldpodcast/s/fEMkPBnAzf"
+"Today December 30th at 4pm Beijing time, the Miyoo Flip will go on sale",MiyooMiniStock,1hp2buu,2024-12-29 13:30:53,5,0.86,1,https://www.reddit.com/r/MiyooMiniStock/comments/1hp2buu/today_december_30th_at_4pm_beijing_time_the_miyoo/,Zealousideal_Long159,Stock Alert,"miyoo's twitter account has confirmed that the miyoo flip will go on sale on December 30th
+
+here is the original post: [https://x.com/miyoomini/status/1873436219797094745](https://x.com/miyoomini/status/1873436219797094745)
+
+https://preview.redd.it/oeot8wuqzt9e1.png?width=1141&format=png&auto=webp&s=5294644fdf467d2fa1eec9f492dbf03a7601002c
+
+https://preview.redd.it/vvkpzvuqzt9e1.png?width=1132&format=png&auto=webp&s=1aec19c340bde706ba9835e3833c174e8bbc7903
+
+https://preview.redd.it/e8na2wuqzt9e1.png?width=1141&format=png&auto=webp&s=a013092f082525d1739deec0a0723985adc01da9
+
+https://preview.redd.it/96rs1kvqzt9e1.png?width=1125&format=png&auto=webp&s=a4efd872c976bc718aebb6bd133844870df6e577
+
+"
+"Today December 30th at 4pm Beijing time, the Miyoo Flip will go on sale",MiyooMini,1hp2bu5,2024-12-29 13:30:52,91,0.95,39,https://www.reddit.com/r/MiyooMini/comments/1hp2bu5/today_december_30th_at_4pm_beijing_time_the_miyoo/,Zealousideal_Long159,Announcements,"miyoo's twitter account has confirmed that the miyoo flip will go on sale on December 30th
+
+here is the original post: [https://x.com/miyoomini/status/1873436219797094745](https://x.com/miyoomini/status/1873436219797094745)
+
+https://preview.redd.it/9nyddo3qzt9e1.png?width=1141&format=png&auto=webp&s=7fe61d2685eaed581f4d11d6cb1d1450091367c1
+
+https://preview.redd.it/galvvm3qzt9e1.png?width=1132&format=png&auto=webp&s=54867ab5ca263cbf9f12f9cd52fd8eee5a005b47
+
+https://preview.redd.it/nrc0kz3qzt9e1.png?width=1141&format=png&auto=webp&s=f582ed620d81707f9a2510d8d1d6f1a0bfad87be
+
+https://preview.redd.it/rv5oun3qzt9e1.png?width=1125&format=png&auto=webp&s=2c78c53f8776a641d2a4146cc53e7d925ec74416
+
+"
+"Today December 30th at 4pm Beijing time, the Miyoo Flip will go on sale",SBCGaming,1hp2bt3,2024-12-29 13:30:50,153,0.95,94,https://www.reddit.com/r/SBCGaming/comments/1hp2bt3/today_december_30th_at_4pm_beijing_time_the_miyoo/,Zealousideal_Long159,:News:News,"miyoo's twitter account has confirmed that the miyoo flip will go on sale on December 30th
+
+here is the original post: [https://x.com/miyoomini/status/1873436219797094745](https://x.com/miyoomini/status/1873436219797094745)
+
+https://preview.redd.it/9k0z9u7pzt9e1.png?width=1141&format=png&auto=webp&s=d0df29b081d4af28bb9b0bde32d452925cf223eb
+
+https://preview.redd.it/wupzfd7pzt9e1.png?width=1132&format=png&auto=webp&s=608c114cea44e6f9f8f2640b33df42f1fc474c4c
+
+https://preview.redd.it/fwwkid7pzt9e1.png?width=1141&format=png&auto=webp&s=709ff3628d85a9239faec10e85796f8487d88a3d
+
+https://preview.redd.it/tqpkue7pzt9e1.png?width=1125&format=png&auto=webp&s=39294a24ef5b71246505d5a5632cf2d1844bf91a
+
+"
+Everywhere Belt Bag Large 2L - Black/White - ONE SIZE is in stock at Lululemon for $48.00 (MSRP),LululemonRestocks,1hodge0,2024-12-28 14:41:10,1,1.0,0,https://www.reddit.com/r/LululemonRestocks/comments/1hodge0/everywhere_belt_bag_large_2l_blackwhite_one_size/,TrackaLackerBot,,"View current status at [https://www.trackalacker.com/products/showcase/lululemon-everywhere-belt-bag-large-2l...](https://www.trackalacker.com/products/showcase/lululemon-everywhere-belt-bag-large-2l?notification_id=tI88A%252F3kd3F38U25zRp7N6gu--MXcS2IxWykEcbQ4N--GRbYwevY9wLhd%252FrGdrj6Fg%253D%253D&utm_campaign=stock-update&utm_medium=social&utm_source=reddit)
+
+
+
+As of 12/28/24 02:41 PM EST"
+Which way to pay for flight,delta,1hnn18v,2024-12-27 14:41:02,0,0.33,7,https://www.reddit.com/r/delta/comments/1hnn18v/which_way_to_pay_for_flight/,Altruistic-Panda5754,Help/Advice,"Looking to fly SEA to MXC for two passengers.
+
+Below is for BOTH tickets:
+- Cash fare (Comfort+) on Delta is $1,785
+- AMEX points (Main) on Delta is 162,460MR
+- SkyMiles redemption for 124K and $266.80
+
+Looking to understand how to rank these in terms of value. Any insights would be appreciated. Thanks. 
+
+"
+Which way to pay for flights,AmexPlatinum,1hnn0qm,2024-12-27 14:40:25,1,1.0,0,https://www.reddit.com/r/AmexPlatinum/comments/1hnn0qm/which_way_to_pay_for_flights/,Altruistic-Panda5754,Using points,"Looking to fly SEA to MXC for two passengers.
+
+Below is for BOTH tickets:
+- Cash fare (Comfort+) on Delta is $1,785
+- AMEX points (Main) on Delta is 162,460MR
+- SkyMiles redemption for 124K and $266.80
+
+Looking to understand how to rank these in terms of value. Any insights would be appreciated. Thanks. 
+
+"
+Which way to pay for flight,pointsandmiles,1hnn00g,2024-12-27 14:39:31,1,1.0,0,https://www.reddit.com/r/pointsandmiles/comments/1hnn00g/which_way_to_pay_for_flight/,Altruistic-Panda5754,,"Looking to fly SEA to MXC for two passengers.
+
+Below is for BOTH tickets:
+- Cash fare (Comfort+) on Delta is $1,785
+- AMEX points (Main) on Delta is 162,460MR
+- SkyMiles redemption for 124K and $266.80
+
+Looking to understand how to rank these in terms of value. Any insights would be appreciated. Thanks. 
+
+"
+Spike TV,2000sNostalgia,1hn6033,2024-12-26 22:39:40,10,0.92,2,https://www.reddit.com/r/2000sNostalgia/comments/1hn6033/spike_tv/,ShamelessRage,,"Is there anywhere that someone has archived just hours of SpikeTV commercials and all? Would love to watch some VIP, MXC, King of the Hill, and PowerBlock? All mixed with some great Enzyte commercials? "
+KSI VINYL BOUGHT,ksi,1hn2m34,2024-12-26 19:41:08,529,0.9,47,https://www.reddit.com/gallery/1hn2m34,GameBoiBigDaddy,,I was in a random vinyl shop and I found dissimulation on vinyl and I bought it immediately 
+Favourite Takeshi Kitano film?,criterion,1hn21yf,2024-12-26 19:13:43,128,0.98,38,https://i.redd.it/zdiuylz07a9e1.jpeg,BluntChillin,,
+Most Extreme Elimination Challenge (2003-2007),ForgottenTV,1hn1oge,2024-12-26 18:55:55,2018,0.97,134,https://i.redd.it/zdiuylz07a9e1.jpeg,Moms__Spaghetti____,,Who else watched this hilarious and horribly dubbed show? 
+New laptop sticker,penguinz0,1hmyxxq,2024-12-26 16:46:45,77,0.95,13,https://i.redd.it/balrvzezj99e1.jpeg,asurrealentity,Just goofing around,Probably dumb post but I thought it looked cool.
+Click for click! ,tiktokshopreferrals,1hmwtsk,2024-12-26 15:11:14,1,1.0,0,https://www.reddit.com/r/tiktokshopreferrals/comments/1hmwtsk/click_for_click/,jackcrack2011,," https://www.tiktok.com/t/ZTYsTvMXc/
+
+Clicking all who respond till I run out! Thanks all. "
+📢 Ericsson is hiring a Transmission Support Engineer!,jobboardsearch,1hmprce,2024-12-26 09:47:05,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvZXJpY3Nzb24tdHJhbnNtaXNzaW9uLXN1cHBvcnQtZW5naW5lZXItYXcyMXcvP3JlZj1qb2Jib2FyZHNlYXJjaA==,rrmdp,,"Company: Ericsson
+
+Location: Nairobi, Kenya 📍
+
+Date Posted: December 26, 2024 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvZXJpY3Nzb24tdHJhbnNtaXNzaW9uLXN1cHBvcnQtZW5naW5lZXItYXcyMXc="
+Flash sale pack pulls,NHLHUT,1hm968a,2024-12-25 16:13:27,1,0.57,5,https://www.reddit.com/gallery/1hm968a,bud2790,Pack Pull,"I ripped 7 flash sale packs with the gift card I got for XMas. On my last pack I pulled McDavid and Gordie. I also pulled TOTW Point, Star of the Month Necas, TOTW Hagel, 2 x86, 2x85. I’m still in shock I pulled so much! I know unfortunately results will vary although there have been a lot of good pulls posted today"
+Help MatchX Pro 2 ,MXC_Foundation,1hllty1,2024-12-24 15:29:04,1,0.67,6,https://i.redd.it/6snzudtawu8e1.jpeg,Harciuborka-911,,"I bought a pro2 machine from a Slovak miner, but he claims that he logged out of the wallet but doesn't let me register, and support is not responding, what is the solution to this, or do you know a way to create terminal access, say with putty?"
+transmission ,q50,1hl0qzx,2024-12-23 18:49:24,2,1.0,7,https://i.redd.it/1argpom4ro8e1.jpeg,Real-Work-2494,Repair Question,i wanna get a transmission fluid flush on my q50. is this a good fluid to use?
+THE DELPHI MURDERS - EPISODE 37: CEMETRY PARTY (MINDSHOCK TRUE CRIME PODCAST),MINDSHOCK,1hkvaba,2024-12-23 14:26:19,2,0.75,0,https://www.reddit.com/r/MINDSHOCK/comments/1hkvaba/the_delphi_murders_episode_37_cemetry_party/,MindshockPod,,"  
+[https://www.youtube.com/watch?v=670qDOAmMXc](https://www.youtube.com/watch?v=670qDOAmMXc)"
+Been collecting pedals for my son’s Christmas present all year.,basspedals,1hkry5a,2024-12-23 11:53:37,1937,0.99,195,https://i.redd.it/h0c7iz5yom8e1.jpeg,FunComm,,"Decided to do a dream pedal board project for my son’s Christmas present. I’ve been collecting them for almost a year. I’m shaking with excitement for him. 
+
+(All pedals bought used, took time to find what I thought he wanted)"
+Bird Nerd Game #11,birdnerd,1hkr0xa,2024-12-23 11:11:14,7,1.0,1,https://www.reddit.com/r/birdnerd/comments/1hkr0xa/bird_nerd_game_11/,birdnerdgame,Difficulty: ⭐⭐⭐⭐,This post contains content not supported on old Reddit. [Click here to view the full post](https://sh.reddit.com/r/birdnerd/comments/1hkr0xa)
+RuPaul,MusicalGeniusShare,1hkob3a,2024-12-23 08:59:28,1,1.0,0,https://www.reddit.com/r/MusicalGeniusShare/comments/1hkob3a/rupaul/,Head-Staff-8189,,"Supermodel
+
+https://youtu.be/4nTl4Rmf6AI?si=3yMXc_C-2xDTyRJH"
+Delaware Blue Coats @blue_coats: after 3#GetYourCoatsOn | @qdoba https://t.co/jFOtQoMXcW,phillysports,1hk6yv7,2024-12-22 15:29:33,1,1.0,0,https://twitter.com/blue_coats/status/1870928725434638454,lemkowidmak,,
+What's the most players you've had in the Top Players category?,BasketballGM,1hk69dd,2024-12-22 14:55:33,7,0.77,4,https://i.redd.it/dfas5tthgg8e1.jpeg,NJNeal17,Rosters,And I just let go of Tevin O'Rourke last season
+📢 Oracle is hiring a OTM Functional Consultant!,jobboardsearch,1hk4sbp,2024-12-22 13:45:20,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2Ivb3JhY2xlLW90bS1mdW5jdGlvbmFsLWNvbnN1bHRhbnQtMnRqMXcvP3JlZj1qb2Jib2FyZHNlYXJjaA==,rrmdp,,"Company: Oracle
+
+Location: London, UK 📍
+
+Date Posted: December 22, 2024 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2Ivb3JhY2xlLW90bS1mdW5jdGlvbmFsLWNvbnN1bHRhbnQtMnRqMXc="
+Original Version of Hailey's Song (not officially released on The Eminem show or the Expanded Edition),Eminem,1hjh2tf,2024-12-21 14:23:44,8,0.91,14,https://i.redd.it/568orvlw598e1.jpeg,Milkweed1998,,"So something i just stumbled upon on YouTube last night was the original version Hailey's song from The Eminem Show in this version Em used a slightly different version of the instrumental along with slightly different vocals which is very very similar to the official album version I'll leave the 🔗 to video so you can check it out for your self https://youtu.be/rnUxnMxcOfE
+
+It seems to be a sample of George Harrison's While my guitar gently weeps and if im being honest i think i like this version better than the one he officially released i really wish he would have added this track to the expanded edition similar to Jimmy Brian & Mike a track he previously worked on but never released 
+
+"
+📢 Freshworks is hiring a Lead - Product Designer!,jobboardsearch,1hj4djp,2024-12-21 01:51:57,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvZnJlc2h3b3Jrcy1sZWFkLXByb2R1Y3QtZGVzaWduZXIteHdmMXcvP3JlZj1qb2Jib2FyZHNlYXJjaA==,rrmdp,,"Company: Freshworks
+
+Location: Bengaluru, India 📍
+
+Date Posted: December 21, 2024 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvZnJlc2h3b3Jrcy1sZWFkLXByb2R1Y3QtZGVzaWduZXIteHdmMXc="
+📢 AlertMedia is hiring a Implementation Manager (MXC)!,jobboardsearch,1hj3gmp,2024-12-21 00:49:00,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYWxlcnRtZWRpYS1pbXBsZW1lbnRhdGlvbi1tYW5hZ2VyLW14Yy00ZGtxdC8/cmVmPWpvYmJvYXJkc2VhcmNo,rrmdp,,"Company:  AlertMedia 
+
+Location: Mexico City, Mexico 📍
+
+Date Posted: December 21, 2024 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYWxlcnRtZWRpYS1pbXBsZW1lbnRhdGlvbi1tYW5hZ2VyLW14Yy00ZGtxdA=="
+"📢 Veeam Software is hiring a On-Prem to Cloud Transformation Specialist, Solution Engineer!",jobboardsearch,1hizrm2,2024-12-20 21:07:19,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvdmVlYW0tc29mdHdhcmUtb24tcHJlbS10by1jbG91ZC10cmFuc2Zvcm1hdGlvbi1zcGVjaWFsaXN0LXNvbHV0aW9uLWVuZ2luZWVyLWhsMXc1Lz9yZWY9am9iYm9hcmRzZWFyY2g=,rrmdp,,"Company: Veeam Software
+
+Location: Remote 📍
+
+Date Posted: December 21, 2024 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvdmVlYW0tc29mdHdhcmUtb24tcHJlbS10by1jbG91ZC10cmFuc2Zvcm1hdGlvbi1zcGVjaWFsaXN0LXNvbHV0aW9uLWVuZ2luZWVyLWhsMXc1"
+Such a throwback to Christmas 2005,nostalgia,1hivaib,2024-12-20 17:17:54,690,0.99,45,https://i.redd.it/lo0bdo92w28e1.jpeg,rear_flank,Nostalgia,"I took this photo of my family room on December 22, 2005 and it is such a throwback to that time. 
+
+32” Box TV, MXC airing on Spike, TV stand with CD racks, VCR and VHS tapes, home phone, Motorola Comcast cable box."
+HP BMW Power - Season 1 (1/4),F1Manager,1hiqb99,2024-12-20 13:30:02,4,0.84,1,https://www.reddit.com/gallery/1hiqb99,Whole_Judgment_5727,:race_car:  Career Mode Stories/Updates,
+2024 F1 Standings... in 1939,formula1,1hiji0a,2024-12-20 08:12:45,111,0.94,22,https://i.redd.it/mbiylo5p608e1.jpeg,gohumanity,:post-throwback: Throwback,
+📢 AlertMedia is hiring a Revenue Operations Coordinator (MXC)!,jobboardsearch,1hiac3x,2024-12-19 22:02:07,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYWxlcnRtZWRpYS1yZXZlbnVlLW9wZXJhdGlvbnMtY29vcmRpbmF0b3ItbXhjLWgzdWIzLz9yZWY9am9iYm9hcmRzZWFyY2g=,rrmdp,,"Company:  AlertMedia 
+
+Location: Austin, TX 📍
+
+Date Posted: December 20, 2024 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYWxlcnRtZWRpYS1yZXZlbnVlLW9wZXJhdGlvbnMtY29vcmRpbmF0b3ItbXhjLWgzdWIz"
+What's the difference between these two? Both seem to be biofuel.,ICARUS,1hi26nb,2024-12-19 15:25:16,12,1.0,6,https://i.redd.it/7rke4nx17v7e1.png,mbatistas,Discussion,
+Enough air holes for corn snakes?,snakes,1hhzmb9,2024-12-19 13:33:00,1,0.57,4,https://www.reddit.com/gallery/1hhzmb9,nirbyschreibt,General Question / Discussion,"I was fed up with the hideous shapes of most temporary reptile boxes on the market and decided to swap to IKEA SAMLA boxes. I got clips for the lids and they’re stackable.
+
+Obviously the SAMLA needs air holes for the snakes.
+
+So I drilled 3mm holes, 16 in the lid and 2 in the short and 4 in the long sides.
+
+Do you think that’s enough airflow?"
+Liam Lawson vs Yuki Tsunoda 2024 H2H ,formula1,1hhyoqx,2024-12-19 12:53:23,0,0.46,27,https://i.redd.it/okv1qijyfu7e1.jpeg,daddyfatsaxxx27,:post-statistics: Statistics,Food for thought. Keep seeing 6-0 bandied about when in reality it was close. 
+Are upgraded level 2 airports the same as a level 3 airport?,PocketPlanes,1hhyayw,2024-12-19 12:37:11,4,0.75,6,https://www.reddit.com/r/PocketPlanes/comments/1hhyayw/are_upgraded_level_2_airports_the_same_as_a_level/,ryan94z,Need Advice,"TLDR: Would a fully upgraded San Francisco airport provide me with the same volume of jobs as a base level (or upgraded) level 3 airport?
+
+Hi all. Level 24 player here with 14 planes and looking to expand. I am currently using Los Angeles as a hub and Mexico City as a spoke, with two Kangaroos supplying jobs for Tokyo and Seoul from MXC. With three seqouia's and enough parts for a 4th, I feel like I need some more jobs in LA to support them.
+
+I have upgraded Mexico City to max level. The next logical step in my mind would be to put one more Kangaroo going back and forth between San Francisco and LA to supply more jobs. Would I get enough jobs to Tokyo/Seoul if I fully upgraded San Francisco? "
+"📢 Agile Defense is hiring a Governance, Risk and Compliance Technical Lead!",jobboardsearch,1hhi1yi,2024-12-18 21:00:25,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYWdpbGUtZGVmZW5zZS1nb3Zlcm5hbmNlLXJpc2stYW5kLWNvbXBsaWFuY2UtdGVjaG5pY2FsLWxlYWQtdWRxMXcvP3JlZj1qb2Jib2FyZHNlYXJjaA==,rrmdp,,"Company: Agile Defense
+
+Location: Washington, D.C. 📍
+
+Date Posted: December 17, 2024 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYWdpbGUtZGVmZW5zZS1nb3Zlcm5hbmNlLXJpc2stYW5kLWNvbXBsaWFuY2UtdGVjaG5pY2FsLWxlYWQtdWRxMXc="
+📢 AlertMedia is hiring a Software Engineer II (MXC)!,jobboardsearch,1hgub1k,2024-12-18 00:01:02,1,1.0,0,https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYWxlcnRtZWRpYS1zb2Z0d2FyZS1lbmdpbmVlci1paS1teGMtcDNzam0vP3JlZj1qb2Jib2FyZHNlYXJjaA==,rrmdp,,"Company:  AlertMedia 
+
+Location: Mexico City, Mexico 📍
+
+Date Posted: December 17, 2024 📅
+
+
+
+
+Apply & Description 👉 https://jobboardsearch.com/redirect?utm_source=reddit&utm_medium=bot&utm_id=jobboarsearch&utm_term=echojobs.io&rurl=aHR0cHM6Ly9lY2hvam9icy5pby9qb2IvYWxlcnRtZWRpYS1zb2Z0d2FyZS1lbmdpbmVlci1paS1teGMtcDNzam0="
+Five seasons deep into my F1 2023 career ,F1Game,1hgpx36,2024-12-17 20:02:55,29,0.98,9,https://www.reddit.com/gallery/1hgpx36,blobfishy13,:video: Clip,

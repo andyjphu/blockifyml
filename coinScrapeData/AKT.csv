@@ -1,0 +1,1459 @@
+Post Title,Subreddit,Post ID,Created Time,Upvotes,Upvote Ratio,Comments Count,Post URL,Author,Flair,Post Text
+Questions about Akash Network,akashnetwork,1i9dqaz,2025-01-24 22:13:46,10,0.92,6,https://www.reddit.com/r/akashnetwork/comments/1i9dqaz/questions_about_akash_network/,Cool-Entrepreneur-68,,"Hello everyone, 
+
+I'm relatively new to this project and I have a few questions I would like to get answer to. Please note that I am not attempting the spread any FUD or cause concern; I'm just trying to learn and understand the project better. Thanks in advance!
+
+1. How does Akash plan to compete with entrenched giants like AWS, Google Cloud, and Microsoft, especially as the blockchain-based cloud computing space remains relatively niche?
+2. How does Akash ensure uptime and service reliability in a decentralized network, and what recourse does a user have in case of downtime or service issues?
+3. What steps is Akash taking to ensure the security of data hosted on its decentralized network, and has it had any significant breaches or vulnerabilities in the past?
+4. Given the fluctuating value of AKT, how can Akash ensure the long-term utility of its token for cloud services, and how does it mitigate volatility risks for users?
+5. What’s Akash’s strategy to scale its infrastructure and attract major enterprises or customers away from centralized cloud providers?
+6. How does Akash plan to address regulatory concerns in key markets as cloud services become more heavily scrutinized by governments?"
+Someone please explain what this means for my account ,Crypto_com,1i62yix,2025-01-20 17:23:19,1,1.0,1,https://i.redd.it/ed4pluja58ee1.png,Less-Anywhere-7732,Feature Request 📝,"Assuming everyonegot this notification.  What does this mean for my current allocations in my coins and futures money investment? Do I need to do something with the present money in coins and need to take any immediate action for the future?
+"
+Is this true or a fishing? ,Crypto_com,1i61knd,2025-01-20 16:26:08,5,0.61,12,https://i.redd.it/xxfweu73v7ee1.jpeg,Positive-Lab7485,General Discussion 💬,
+What does this mean ,Crypto_com,1i5uho0,2025-01-20 11:42:35,1,1.0,2,https://i.redd.it/x8auheyhg6ee1.jpeg,Aa12231,Crypto.com App 📱,I’m kinda confused on this what wallet is it talking about thanks in advance !
+I’m not entirely sure that I understand this,dogecoin,1i5t4q7,2025-01-20 10:46:56,0,0.5,4,https://i.redd.it/vziozfik66ee1.jpeg,jen_generally,,
+What does this email mean?,Crypto_com,1i5r1ig,2025-01-20 09:14:02,1,1.0,1,https://i.redd.it/rc5q3jzzp5ee1.jpeg,Durora,General Discussion 💬,Im new to crypto and im not sure what this email means. What should I do?
+The coins I do staking. I'm in the correct path? ,WallStreetBetsCrypto,1i4wpkc,2025-01-19 06:44:06,2,1.0,1,https://i.redd.it/hcgqp18cuxde1.png,Gus_810,YOLO,
+"DePin Case Studies - Geodnet, Helium, Akash",GeodNet,1i2im01,2025-01-16 01:13:45,2,1.0,4,https://www.reddit.com/r/GeodNet/comments/1i2im01/depin_case_studies_geodnet_helium_akash/,snowbounicorn,,"Decentralized Physical Infrastructure Networks or DePin for short, is the integration between blockchain and infrastructure networks. DePin currently exists in industries like energy, telecoms, storage, AI, and data collection.
+
+During the last crypto cycle, many projects rode the DePin hype by identifying problems that had large market opportunities but turned to crypto tokenomics when the core product failed to gain traction, in either demand and supply.
+
+However, to those that survived, many companies took the time to build out their infrastructure, to the point where many generate sustainable revenues by solving existing problems, even independent of tokenomic flywheels. Let’s go through some of them!
+
+# [Geodnet](https://geodnet.com/) (real-time kinematics)
+
+# Core Problem Being Solved
+
+Traditional GPS systems often lack the precision required for advanced applications which demand centimeter-level accuracy rather than meter-level precision. Geodnet’s solution improves positioning accuracy by up to 100x compared to conventional GPS technologies.
+
+# Target Customers
+
+Geodnet serves industries that depend on high-precision geospatial data, including:
+
+\- Autonomous Vehicles
+
+\- Agriculture
+
+\- Smart Cities
+
+\- Defense and Security
+
+\- Space Exploration
+
+# Revenue Model
+
+\- Data Licensing: Selling geospatial data to commercial clients.
+
+\- Node Participation Fees: Fees associated with miner installations and usage.
+
+\- Partnerships: Collaborating with industries such as agriculture and autonomous systems to integrate Geodnet services into existing workflows.
+
+In 2024, Geodnet reported revenue growth of over 500% YoY, reaching $1.7M with a run-rate exceeding $2.2M by the end of the year
+
+# Tokenomics
+
+Geodnet uses its native GEOD token to incentivize participants:
+
+\- Miners earn tokens based on data contribution and network uptime.
+
+\- Burn Mechanism: Tokens are burned during data transactions, adding deflationary pressure.
+
+\- Daily Earnings: Average daily earnings per miner are approximately $4.30, with an estimated payback period of 3-4 months.
+
+\- Circulation: Tokens are distributed to ensure liquidity while incentivizing early adopters.
+
+\- Token Utility: Used for payments, staking, and governance within the network.
+
+# Participation and Contribution
+
+1. Becoming a Miner:
+
+\- Purchase a [miner device](https://hyfix.ai/products/mobilecm-triple-band-gnss-base-station) (cost ranges from $500–$700).
+
+\- Set up and connect the miner to the network, uploading 20-40GB of data per month.
+
+2. Using the Network:
+
+\- Access RTK correction data through subscriptions or direct purchases.
+
+3. Developing Applications:
+
+\- Build software leveraging Geodnet’s data for specific industries.
+
+4. Governance:
+
+\- Participate in protocol governance by staking GEOD tokens and voting on proposals.
+
+# [Helium](https://www.helium.com/) (wireless infra)
+
+# Core Problem Being Solved
+
+Traditional mobile network operators (like T-Mobile) require massive capital expenditures to build cell towers, maintain infrastructure, and expand coverage. Helium solves this by creating a decentralized wireless network that leverages community-owned hotspots to provide affordable, scalable, and resilient connectivity for mobile and IoT devices.
+
+# Target Customers
+
+1. Consumers – Offers affordable mobile plans ($20/month) for unlimited data through its decentralized network.
+2. Telecom Providers – Enables WiFi offloading for major carriers, reducing their infrastructure costs.
+3. IoT Device Manufacturers – Provides connectivity for low-power IoT devices via LoRaWAN protocols.
+4. Businesses and Enterprises – Helps organizations deploy private wireless networks for asset tracking, sensors, and environmental monitoring.
+
+# Revenue Model
+
+Helium generates revenue through two primary streams:
+
+1. Direct-to-Consumer Mobile Plans:
+
+\- Offers $20/month unlimited plans using both Helium hotspots and partner networks (e.g., T-Mobile).
+
+2. Carrier WiFi Offloading Fees:
+
+\- Charges telecom providers $0.50/GB to offload data through Helium’s decentralized hotspots instead of traditional cell towers.
+
+# Financial Performance
+
+\- Subscribers: Over 100k direct mobile subscribers and 300k+ indirect WiFi offload users.
+
+\- Revenue: Generated seven-figure annualized on-chain revenues from mobile subscriptions and carrier offload fees.
+
+\- Projections: With carrier partnerships scaling, estimates suggest potential revenues exceeding $50M annually from WiFi offloading alone.
+
+# Tokenomics
+
+Helium’s HNT Token is central to its incentive and payment structure:
+
+1. Earning Rewards:
+
+\- Hotspot operators earn HNT for providing coverage and transferring data.
+
+2. Utility:
+
+\- Tokens are used for network transactions, payments for data usage, and governance proposals.
+
+3. Burn Mechanism:
+
+\- HNT tokens are burned when used to pay for network services, reducing supply and creating deflationary pressure.
+
+# How to Participate, Contribute, and Access Helium
+
+1. Hotspot Deployment:
+
+\- Purchase and set up Helium-compatible [hotspots](https://hellohelium.com/hotspot#hotspots) to provide network coverage and earn HNT rewards.
+
+\- Select from 16 approved hardware types designed for IoT or mobile offloading.
+
+2. Consumer Plans:
+
+\- Subscribe to Helium Mobile’s $20/month plans for affordable mobile data coverage.
+
+3. Carrier Partnerships:
+
+\- Telecom providers can integrate with Helium to offload data traffic, lowering operational costs.
+
+4. Governance and Staking:
+
+\- Stake HNT tokens to participate in network governance, propose upgrades, and vote on key changes.
+
+# [Akash](https://akash.network/) (compute)
+
+# Core Problem Being Solved
+
+Akash addresses the high costs, scalability limits, and centralization of traditional cloud computing providers like AWS, Google Cloud, and Microsoft Azure. Akash solves this by providing a decentralized cloud compute marketplace, which allows users to monetize idle machines while being lower cost.
+
+# Target Customers
+
+1. AI Developers – Require high-performance GPUs for training and deploying machine learning models.
+2. Startups and Enterprises – Need affordable and scalable cloud computing to support data processing, storage, and AI-driven applications.
+
+# Revenue Model
+
+Akash generates revenue through:
+
+1. Marketplace Fees – Charges transaction fees on compute leasing and payments processed through the network.
+2. Compute Resource Leasing – Earns a share of revenues generated from GPU and CPU rentals for AI training and workloads.
+3. Developer Tools – Monetizes API integrations and SDK licensing fees for developers using its compute infrastructure.
+4. Enterprise Partnerships – Collaborates with AI labs and decentralized platforms to scale computing capabilities.
+
+# Financial Performance
+
+\- Annual Revenue: Akash reported $2.5 million in 2024 from compute leasing and fees.
+
+\- Growth Rate: Experienced 33x growth in demand for GPU computing resources, driven by AI adoption.
+
+\- Network Scale: Supports 400+ GPUs
+
+# Tokenomics
+
+Akash uses the AKT token for payments, governance, and incentives.
+
+1. Utility:
+
+\- Payments – Buyers pay for compute resources using AKT tokens.
+
+\- Staking – Providers stake tokens to secure jobs and improve reputation.
+
+2. Incentives:
+
+\- Providers earn AKT tokens for supplying compute resources.
+
+\- Tokens are distributed based on uptime, performance, and job completion.
+
+3. Governance:
+
+\- Token holders can propose upgrades and vote on protocol changes.
+
+4. Burn Mechanism:
+
+\- Fees are burned, reducing token supply and adding deflationary pressure.
+
+# How to Participate, Contribute, and Access Akash
+
+1. As a Provider:
+
+\- Set up GPUs, CPUs, or storage servers on the Akash network.
+
+\- List resources, set prices, and start earning AKT tokens.
+
+2. As a Consumer:
+
+\- Use the Akash web interface or CLI to lease compute resources.
+
+\- Deploy AI training workloads, web services, and decentralized apps.
+
+3. As a Developer:
+
+\- Access APIs and SDKs to integrate Akash’s services into applications.
+
+\- Utilize GPU clusters for deep learning training or inference tasks.
+
+4. Governance Participation:
+
+\- Stake AKT tokens to vote on network upgrades and resource pricing policies.
+
+# Looking Forward
+
+The above was just a shortlist of projects that work and have sustainable revenues. The following months will undoubtedly see an increase in acceptance of DePin and produce more sustainable, scalable, and profitable companies.
+
+The list of companies were consumer-facing, but another aspect I am excited about is infrastructure. The underlying blockchain, oracle services, smart contract services, middleware, integrations, token launch services, and more, are a sector of companies that will benefit immensely from increased usage of DePin projects. Some examples include [Solana](https://solana.com/), [Peaq](https://www.peaq.network/), [Base](https://www.base.org/), [Story](https://www.story.foundation/), [Arweave](https://arweave.app/welcome), [Opacity Network](https://www.opacity.network/), and [DeForm](https://www.megaphone.xyz/).
+
+>"
+"🚀 Need some hints? Here is Grayscale’s Top 20 Crypto for Q1 2025 is here! Newcomers HYPE, ENA, VIRTUAL, JUP, JTO, and GRASS join the list. Spotlight shifts to DeFi, staking, decentralized AI tech, and Solana’s booming ecosystem.",WhiteRhinoM,1i2715h,2025-01-15 15:32:47,2,1.0,0,https://i.redd.it/itueeip8m7de1.png,MrsSOsbourne,market ,
+Memo Based Wallet Addresses,Crypto_com,1hvyh45,2025-01-07 13:39:48,11,0.87,7,https://i.redd.it/3vnvppfk9mbe1.jpeg,d_d0g,General Discussion 💬,"Multiple questions on what this means for our CRO and other coins. 
+- Should we move everything off CDC app and Defi Wallet until the transition is complete?
+- Does this affect Defi Wallet?
+- Is there any concern with CRO staked in Defi Wallet?
+- Should we be do anything at all to prepare for this other than use the new deposit addresses?"
+Is anybody else receiving this email from Crypto.com??,Crypto_com,1hvus9f,2025-01-07 11:07:28,5,1.0,7,https://www.reddit.com/r/Crypto_com/comments/1hvus9f/is_anybody_else_receiving_this_email_from/,No-Target-1476,Crypto.com App 📱,"Dear Valued Customer,
+
+Following the exciting milestone of our recently announced U.S. Trust Company, we will be transferring all U.S. and Canada users’ digital assets to this trust company for custody. As such, your memo based wallet addresses will be replaced with new ones over the next 2 weeks. Deposits into your retired wallet address(es) will no longer be available from January 31, 2025 onwards. Fund retrieval may incur fees or may not be possible in some cases.
+
+Please use your latest deposit addresses and memos/tags for the following cryptocurrencies:
+
+Akash Network (AKT)
+Archway (ARCH)
+Cosmos (ATOM)
+Axelar (AXL)
+Band Protocol (BAND)
+Cronos (CRO)
+EOS (EOS)
+Artificial Superintelligence Alliance (FET)
+Hedera (HBAR)
+Injective (INJ)
+IRISnet (IRIS)
+JUNO (JUNO)
+Kava (KAVA)
+Terra Classic (LUNA2)
+Luna Classic (LUNC)
+Neutron (NTRN)
+Oraichain Token (ORAI)
+Osmosis (OSMO)
+Polymesh (POLYX)
+Rune (RUNE)
+Sei (SEI)
+Stacks (STX)
+Celestia (TIA)
+Wax (WAXP)
+Stellar (XLM)
+XPLA (XPLA)
+Ripple (XRP)
+Kindly be reminded to always use your most recent deposit addresses and memos/tags. You can view them by going to Deposit > Crypto from the home screen and selecting the token.
+
+Please refrain from making deposits to your old wallet addresses and memos/tags after Jan 31, as fund retrieval may incur fees or may not be possible in some cases.
+
+If you have any questions, please contact us at chat.crypto.‌com. We’re here to help.
+
+Best regards,
+The Crypto.‌com Team
+
+"
+Can anyone explain this ? ,Crypto_com,1hvu9ah,2025-01-07 10:44:55,1,1.0,4,https://i.redd.it/uhc7v86delbe1.jpeg,acm1pt6-64,General Discussion 💬,I am little confused with what is going on if anyone can be so kind to explain to me like i am 5 years old thanks 🙏🏻 
+Memo Based Wallet Address,Crypto_com,1hvok42,2025-01-07 05:29:37,1,1.0,1,https://i.redd.it/cd7urmz3ujbe1.jpeg,Mammoth-Language-234,General Discussion 💬,"Hello all, could someone explain what’s this about? Looks like CDC is in the process of doing major changes."
+"ICP spotted in the latest Fireship video, a channel not dedicated to crypto",ICPTrader,1hssl7w,2025-01-03 13:00:40,21,0.97,3,https://i.redd.it/azualxutitae1.png,RDForTheWin,Discussion,
+Grass in Grayscale Top 20!,Grass_io,1hrrqcy,2025-01-02 06:31:19,17,1.0,1,https://i.redd.it/8al6435kgkae1.jpeg,Fragrant-Fee2067,,"Hi Guys, I'm pretty excited to see Grass in this list.
+It will be a fantastic 2025!
+What do you think about?
+"
+AKASH (AKT) Price Prediction 2025 - How High Will It Go?,u_Cheeky_Crypto,1hrm48e,2025-01-01 23:58:37,1,1.0,0,https://youtu.be/KGGG4neE-wc,Cheeky_Crypto,,
+Well this is very interesting ,Grass_io,1hq3n8r,2024-12-30 20:45:49,39,0.98,10,https://i.redd.it/0e08ys5aa3ae1.jpeg,Extreme-Tie9282,,"📊 BREAKING: Grayscale Research updates its top 20 crypto assets for Q1 2025, adding $HYPE, $ENA, $VIRTUAL, $JUP, $JTO, and $GRASS."
+New coins to add..,newtonco,1hkvf5t,2024-12-23 14:32:37,2,1.0,10,https://www.reddit.com/r/newtonco/comments/1hkvf5t/new_coins_to_add/,Savings-Albatross-19,,"I know Newton is working on adding more tokens, Ondo and ENA are signs that you're adding both quality and promising projects.
+
+But here is my wishlist for the near future...
+
+TAO - thee most important add I can think of even though it wouldn't be my personal top choice for my own bag.  But a good onramp for Canadians to easily get TAO.
+
+Kaspa - even though I see some real potential issues with it's emmission rate/price potentially risking losing miners if the price doesn't increase soon.  The tech is solid and the community is insane, so its a no brainer it needs to be added.
+
+Kadena - a longer-term investment play that will survice beyond this cycle and should be a safer bet with good long-term upside.
+
+Ather -  probably  better tech than Render, might not catch the same demand level but its quality will attract more enterprise level clients.  Could be interesting if an AI agent project uses Ather as its backbone.  Either way you need a second GPU distribution play, or three....
+
+AKT - Akash is another great AI GPU play with additional aspects.  If peoole wrap their minds around what this project offers it might expode.  GPU distribution is big now but if chip supply gets better GPU rental business might diminish so a project with addition use could be a beter investment choice.
+
+SEI, TON, VET, SFUND, AR, BEAM, SUPER, IMX, FET, CETUS, AERO, VELODROME, W (wormhole) are all projects that should be considered... and I think all should be added.  
+
+The sooner you get these added the better to allow your customers an opportunity to get in as early as possible.  As a more experienced user I can track down these projects and add them to my portfolio.  Still I like buying right from my bank account and if the project is native to Newton there's an even higher chance Ill add to my bag using Newton.  I do not know all of the criteria necessary to pass the bar and get added but I hope we see many of these get added ASAP.
+
+"
+Top AI Crypto Projects by Revenue 2024,CryptoCurrency,1hf5rlj,2024-12-15 18:44:59,31,0.76,34,https://www.reddit.com/r/CryptoCurrency/comments/1hf5rlj/top_ai_crypto_projects_by_revenue_2024/,snakeo087,DISCUSSION,"Not all AI crypto projects are created equal. Here's a breakdown of the top performers **ranked by revenue**, what they do, and the major players using them:
+
+📊 **Top AI Projects by Revenue**
+
+1️⃣ **NEAR Protocol (NEAR)**
+
+* **Revenue**: $6.08M | **Market Cap**: $8.3B
+* **What it does**: NEAR is a **Layer 1 blockchain** optimized for smart contracts and AI workloads, offering ultra-fast and scalable solutions. It supports **AI-driven dApps** (decentralized apps) across industries like gaming, DeFi, and digital ownership.
+* **Who uses it**: NEAR powers projects like **SWEAT Economy** and **Aurora**, making it a strong platform for Web3 and AI ecosystems.
+
+2️⃣ **OriginTrail (TRAC)**
+
+* **Revenue**: $5.55M | **Market Cap**: $460M
+* **What it does**: TRAC provides a **Decentralized Knowledge Graph (DKG)**, enabling businesses to organize, verify, and use data in AI-driven applications. Think **""Google-like search"" for supply chains, finance, and beyond.**
+* **Who uses it**: Major names like **Oracle, Walmart**, and **British Standards Institution (BSI)** rely on OriginTrail for trusted data verification and complex AI-powered solutions.
+
+3️⃣ **Internet Computer (ICP)**
+
+* **Revenue**: $2.22M | **Market Cap**: $6.2B
+* **What it does**: ICP is a blockchain-based **cloud infrastructure** that enables developers to build scalable AI and Web3 applications directly on-chain, eliminating central cloud dependencies like AWS.
+* **Who uses it**: AI developers, DeFi apps, and projects like **DFINITY** use ICP for decentralized storage and computation.
+
+4️⃣ **Render Network (RNDR)**
+
+* **Revenue**: $1.92M | **Market Cap**: $4.8B
+* **What it does**: RNDR enables GPU-based **distributed rendering**, allowing AI models, 3D artists, and creators to process high-power workloads for animations, graphics, and deep learning tasks.
+* **Who uses it**: Render partners with digital creators, visual effects studios, and **Hollywood filmmakers** who need decentralized GPU power for rendering large AI-driven projects.
+
+5️⃣ **The Graph (GRT)**
+
+* **Revenue**: $1.35M | **Market Cap**: $2.7B
+* **What it does**: GRT provides **indexing solutions** for decentralized networks, allowing dApps and AI projects to efficiently query blockchain data. Think of it as **“AI-powered search” for blockchains.**
+* **Who uses it**: Protocols like **Uniswap** and **Aave** rely on The Graph for fast and secure blockchain data queries.
+
+6️⃣ **Akash Network (AKT)**
+
+* **Revenue**: $1.05M | **Market Cap**: $962M
+* **What it does**: Akash is a decentralized **cloud computing platform** that lets developers, AI researchers, and enterprises deploy workloads faster and cheaper than traditional providers like AWS.
+* **Who uses it**: Developers building AI models and Web3 platforms looking for affordable, decentralized cloud solutions.
+
+7️⃣ **Livepeer (LPT)**
+
+* **Revenue**: $0.31M | **Market Cap**: $612M
+* **What it does**: LPT is a decentralized platform for **video transcoding**, helping projects stream videos securely and efficiently while integrating **AI-enhanced video delivery solutions**.
+* **Who uses it**: Web3 video platforms, livestreaming services, and AI-driven content creators use Livepeer for decentralized video streaming at scale.
+
+**Key Takeaways:**
+
+* 💡 **OriginTrail (TRAC)** stands out by delivering **$5.55M revenue** at a fraction of the market cap, powered by real adoption in supply chains and data integrity.
+* 🚀 Projects like NEAR and RNDR highlight how AI intersects with decentralized infrastructure, content creation, and compute power.
+* 📈 Each token solves critical AI or Web3 challenges, from **cloud alternatives** to **trusted data solutions.**
+
+Which of these AI tokens do you believe has the most upside potential? Let’s dive in. 🌌
+
+ 
+
+ 
+
+ "
+Liquidity Pool Advice,OsmosisLab,1h4jeyx,2024-12-01 20:32:33,2,1.0,1,https://www.reddit.com/r/OsmosisLab/comments/1h4jeyx/liquidity_pool_advice/,DespyHasNiceCans,Ecosystem :osmo:,"
+So I'm contemplating joining the Akash/USDC pool and while IL scares me, I know it's lessened with half the pair being stable. I have faith in Akash being a strong performer over time especially after looking at its chart over the year which means I know I won't get the full gains it could achieve, but I believe the APY could outpace the gains. 
+Playing with an APY calculator, the value of my investment should double over 3 months which I believe AKT could achieve on its own, but any time over that is where the pool will shine. The value should go up another 100% every month after that when compounding daily. 
+So I know factors like a market crash could effect things and I know APYs possibly fall over time, so my plan isn't guaranteed, but I'd like to know everyone's advice concerning this. Is a pool worth it? I love the fact that the pool has no lock-in period so I can jump whenever I want but I plan on being in it for at least six months and constantly readjusting the range due to market conditions. What y'all think, anything I'm overlooking?"
+📰 AI-curated Daily Crypto Digest - November 29,AIcuratedNewsBrief,1h2hijd,2024-11-29 03:44:06,1,1.0,0,https://www.reddit.com/r/AIcuratedNewsBrief/comments/1h2hijd/aicurated_daily_crypto_digest_november_29/,crypto_beholder,,"https://preview.redd.it/hyn5rnbpzs3e1.jpg?width=1792&format=pjpg&auto=webp&s=193b35df702f7b1df7add0f6ceecefb978919d5e
+
+📈 **Bitcoin price retains 8% gains as attention switches to Ethereum comeback**
+
+Bitcoin bulls avoid further retests of round-number levels as support as Ethereum finally wakes up. [Read more](https://cointelegraph.com/news/bitcoin-price-retains-gains-attention-ethereum-comeback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)
+
+
+
+🤖 **Delegated proof-of-stake (DPoS), explained**
+
+Discover the basics of DPoS, a consensus mechanism that balances efficiency, decentralization and security in blockchain networks. [Learn more](https://cointelegraph.com/explained/delegated-proof-of-stake-dpos-explained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)
+
+
+
+📊 **Base Network Surpasses Solana in Net Cash Flow: Ethereum Ecosystem Thrives**
+
+The Ethereum (ETH) network has remained the undisputed web3 leader, with over $69 billion in total value locked (TVL) and more than $103 billion in stablecoins market cap, majorly due to the significant development of its layer-two (L2) scaling solutions. Moreover, the Solana (SOL), and Tron (TRX) networks have threatened the Ethereum ecosystem with heightened … [More details](https://coinpedia.org/news/base-network-surpasses-solana-in-net-cash-flow-ethereum-ecosystem-thrives/)
+
+
+
+💲 **Crypto Loses in November 2024: A 79% Drop in Losses Compared to Last Year**
+
+The cryptocurrency sector recorded 26 hacking and rug pull incidents, which led to $71,021,500 in total losses in November 2024 according to the monthly report by ImmuneFi. This is the second lowest monthly loss YTD and is down 79% from November 2023, which lost a total of $343 million. [Explore further](https://coinpedia.org/news/crypto-loses-in-november-2024-a-79-drop-in-losses-compared-to-last-year/)
+
+
+
+📊 **AKT Price Analysis: Flag Breakout Run Targets $5.93**
+
+Akash Network is one of many top performers amid the broader market recovery. Crossing above the $4 barrier, the bullish trend aims to prolong the parabolic rally. [Learn more](https://coinpedia.org/price-analysis/akt-price-analysis-flag-breakout-run-targets-5-93/)
+
+
+
+📈 **Why Bitcoin Is Struggling to Cross $100K: Insights on Money Supply Trends**
+
+Over the past decade, the global money supply has surged by at least $50 trillion. The crypto market, especially Bitcoin, has benefited immensely from this rise, as BTC is generally considered as a hedge against inflation. [More details](https://coinpedia.org/news/why-bitcoin-is-struggling-to-cross-100k-insights-on-money-supply-trends/)
+
+
+
+🤖 **Is Now The Time To Buy Bitcoin? On-Chain Data Reveals Key Indicators**
+
+After briefly retreating to $90,000 earlier in the week, Bitcoin has rebounded strongly, climbing above the $95,000 price. Currently trading at $95,224, Bitcoin has recorded a 7% gain over the past two weeks, signaling renewed bullish momentum. [Read the full article](https://www.newsbtc.com/bitcoin-news/is-now-the-time-to-buy-bitcoin-on-chain-data-reveals-key-indicators/)
+
+  
+Telegram: [https://lnkd.in/dm584XSv](https://lnkd.in/dm584XSv)  
+Source: [https://lnkd.in/dqbiuDrW](https://lnkd.in/dqbiuDrW)"
+📰 AI-curated Daily Crypto Digest - November 26,AIcuratedNewsBrief,1h085k0,2024-11-26 04:42:46,1,1.0,0,https://www.reddit.com/r/AIcuratedNewsBrief/comments/1h085k0/aicurated_daily_crypto_digest_november_26/,crypto_beholder,,"https://preview.redd.it/elpnhg6ev73e1.jpg?width=1792&format=pjpg&auto=webp&s=eac90d43b6a4318dc5227ce05b37c4397d3ab646
+
+📰 **Arbitrum’s 91% Rally Targets $1: Next Stop at $1.86?**
+
+The ARB price trend maintains a bullish approach with the Bitcoin price dropping below the $95,000 mark. With a 26% surge over the last 7 days, the ARB has a market cap of $3.864 billion. [Learn more](https://coinpedia.org/price-analysis/arbitrums-91-rally-targets-1-next-stop-at-1-86/)
+
+
+
+👛 **OKX launches crypto trading platform and wallet in Belgium**
+
+OKX’s services in Belgium are offered through an EU-regulated entity as the exchange doesn’t have dedicated regulatory approval in the country. [Learn more](https://cointelegraph.com/news/okx-launches-crypto-services-belgium?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)
+
+
+
+🖼️ **How NFTs are Evolving to Add ‘Meaning and Story’: RARI Chain**
+
+Leading lights in the NFT space gathered in Bangkok to discuss the future of the technology and how creators are using it. [Learn more](https://decrypt.co/293022/how-nfts-are-evolving-to-add-meaning-and-story-rari-chain)
+
+
+
+🐶 **Shiba Inu: Will Burning 99% of SHIB Boost It to $1? Here’s What Shytoshi Kusama Says**
+
+Shiba Inu (SHIB), a cryptocurrency that originally gained attention as a meme coin, is slowly evolving into something much more. With a market cap of $15 billion and a massive surge in its burn rate, SHIB is gaining momentum. [Read more](https://coinpedia.org/news/will-burning-99-of-shib-take-it-to-1-or-destroy-the-ecosystem-heres-what-shytoshi-kusama-says/)
+
+
+
+📰 **Bullish Flag Breakout: Will AKT Price Trigger a New All-Time High?**
+
+Despite the border market witnessing a 500 million liquidation in the past 24 hours, the AKT price trend maintains a bullish approach. Over the past 24 hours, the Akash Network token price has maintained a bullish trend and has increased by 3.34%. [Explore further](https://coinpedia.org/price-analysis/bullish-flag-breakout-will-akt-price-trigger-a-new-all-time-high/)
+
+
+
+🔑 **XRP Holds Strong as Archax Unveils Tokenized Money Market Fund on XRP Ledger**
+
+Archax has provided access to Abrdn’s U.S. dollar Liquidity Fund (Lux) in tokenized form on XRPL.Ripple will allocate $5 million into tokens on Abrdn’s Lux fund, part of a larger allocation to real-world assets (RWAs) on the XRPL.XRP price jumped 6%, touching a high of $1.49 in the hours following the release, before paring gains in a market-wide drop. [More details](https://www.coindesk.com/markets/2024/11/26/xrp-holds-strong-as-archax-unveils-tokenized-money-market-fund-on-xrp-ledger)
+
+
+
+🔓 **DEXX Hackers Resume Operations: Stolen Funds Begin Laundering into SOL**
+
+The attackers who attacked the latest DEXX have been reactivated after a week of inactivity to change the stolen alt coins for Solana (SOL) in large amounts according to Mistract, cyber security. This comes after, decentralized exchange DEX platform was targeted and users and the platform woke up to hefty losses. [Read the full article](https://coinpedia.org/news/dexx-hackers-resume-operations-stolen-funds-begin-laundering-into-sol/)
+
+  
+Telegram: [https://lnkd.in/dm584XSv](https://lnkd.in/dm584XSv)  
+Source: [https://lnkd.in/dqbiuDrW](https://lnkd.in/dqbiuDrW)"
+SALLAR SOLANA $ALL DEPIN SOL,u_EitherProfessional92,1gzs4gk,2024-11-25 14:55:48,1,1.0,0,https://i.redd.it/2ji43vfxr33e1.jpeg,EitherProfessional92,,"Let’s take a closer look at #DePIN projects:
+
+• @rendernetwork $RENDER $3.9B
+• @opentensor $TAO $3.6B
+• @helium $HNT $1B
+• @akashnet_ $AKT $905M
+• @oceanprotocol $OCEAN $145M
+• @NetmindAi $NMT $80M
+
+The project with the highest potential for growth:
+
+• @sallar_io $ALL $3M
+
+👀 This list highlights some absolute giants in the #DePIN space, but @sallar_io $ALL stands out as the hidden gem! 🐍 With only a $3M market cap and a fully functional product already on the market, the growth potential here is unmatched. 
+While others are scaling, Sallar is perfectly positioned to explode as the market recognizes its AI-powered mobile distributed computing innovation on #Solana. 🚀 Undervalued + real-world utility = massive upside! 🔥 Definitely one to watch closely!
+#AI #DEFI #SOL #SOLANA #NFT"
+Old Wallet Addresses Have Been Retired,Crypto_com,1gzma62,2024-11-25 11:04:38,6,0.88,22,https://i.redd.it/jo5lcmmom23e1.jpeg,Jadaoba,General Discussion 💬,"I’ve got this email and I’m kind of lost here.
+Should I move my funds from Exchange, App and Onchain to a new address or will it be automatically moved?
+What should I do when I buy crypto? Where can I find the new addresses?"
+Email Question,Crypto_com,1gzldu3,2024-11-25 10:26:56,1,1.0,1,https://i.redd.it/6pt8bcmyf23e1.png,__sidious,General Discussion 💬,"Will this affect your holdings at all?
+
+Thanks! "
+Top 3 Artificial Intelligence (AI) Coins of the Third Week of November 2024,Blockmandev,1gy1xwn,2024-11-23 10:20:06,1,1.0,1,https://www.reddit.com/r/Blockmandev/comments/1gy1xwn/top_3_artificial_intelligence_ai_coins_of_the/,MammothBattle33,,"🚨 Crypto News: The AI narrative is taking over the crypto market, and three standout coins are leading the charge this week—TFUEL, ZIG, and AKT. Let’s break it down.  
+
+TFUEL, the operational token of the Theta Network, has seen an 18% surge over the past week, bringing its market cap close to $500 million. While still far from its 2021 all-time high, the recent rally highlights its potential for a comeback. Eyes are on the next resistance levels at $0.080 and $0.1, but if momentum dies down, it could test support around $0.054.
+
+ZIG, from the Zignaly platform, is embracing AI for crypto copy trading, which has fueled a 15% rally in the last seven days. With a $200 million market cap and growing interest, ZIG is nearing its all-time high of $0.19. A continued uptrend might push it there, but losing its support at $0.127 could drag it down to $0.081.
+
+Then there’s AKT, the AI-powered token from Akash Network, disrupting decentralized cloud computing. Up 22% this week, AKT is knocking on the door of a $1 billion market cap. With resistance at $4.71 and potential to blast past $5, market watchers are intrigued. However, failing to maintain its momentum could send AKT stumbling to $2.43.
+
+The fusion of AI and crypto is trending hard, and these projects show just how transformative this combo might be. #CryptoTrends #AIinCrypto #Blockchain"
+"🚨  New listing alert!🚨
+Trade BANUSDT and AKTUSDT on Toobit with up to 75X leverage! 
+",toobit,1gwxyye,2024-11-21 22:01:22,4,0.84,9,https://www.reddit.com/r/toobit/comments/1gwxyye/new_listing_alert_trade_banusdt_and_aktusdt_on/,steyMorgan,,"[Toobit new listing ](https://preview.redd.it/f2jkoo7kbd2e1.jpg?width=1920&format=pjpg&auto=webp&s=bfaaf2fe347481233611f58456f47d0f755e4f9e)
+
+  New listing alert!  
+Trade [\#BANUSDT](https://x.com/hashtag/BANUSDT?src=hashtag_click) and [\#AKTUSDT](https://x.com/hashtag/AKTUSDT?src=hashtag_click) on [\#Toobit](https://x.com/hashtag/Toobit?src=hashtag_click) with up to 75X leverage!   
+   
+Trade [\#BANUSDT](https://x.com/hashtag/BANUSDT?src=hashtag_click) [https://www.toobit.com/en-US/futures/BAN-SWAP-USDT](https://www.toobit.com/en-US/futures/BAN-SWAP-USDT)  
+Trade [\#AKTUSDT](https://x.com/hashtag/AKTUSDT?src=hashtag_click) [https://www.toobit.com/en-US/futures/AKT-SWAP-USDT](https://www.toobit.com/en-US/futures/AKT-SWAP-USDT)  
+  
+Learn More [https://support.toobit.com/hc/en-us/articles/40241199703321-Toobit-Listed-Multiple-Tokens-for-futures-Trading](https://support.toobit.com/hc/en-us/articles/40241199703321-Toobit-Listed-Multiple-Tokens-for-futures-Trading)"
+Top AI Projects By Annual Revenue,CryptoMoonShots,1gv9b9c,2024-11-19 17:03:08,12,1.0,5,https://www.reddit.com/r/CryptoMoonShots/comments/1gv9b9c/top_ai_projects_by_annual_revenue/,valcyclovir,Utility :wrench:,"I have gathered data of over 20 [\#AI](https://x.com/hashtag/AI?src=hashtag_click) projects, including [$TAO](https://x.com/search?q=%24TAO&src=cashtag_click) [$FET](https://x.com/search?q=%24FET&src=cashtag_click) [$GRASS](https://x.com/search?q=%24GRASS&src=cashtag_click) [$AKRM](https://x.com/search?q=%24AKRM&src=cashtag_click) [$GLM](https://x.com/search?q=%24GLM&src=cashtag_click) [$IO](https://x.com/search?q=%24IO&src=cashtag_click) [$NOS](https://x.com/search?q=%24NOS&src=cashtag_click) [$AGI](https://x.com/search?q=%24AGI&src=cashtag_click) [$FLUX](https://x.com/search?q=%24FLUX&src=cashtag_click) [$PAAL](https://x.com/search?q=%24PAAL&src=cashtag_click) [$ORAI](https://x.com/search?q=%24ORAI&src=cashtag_click) [$NMR](https://x.com/search?q=%24NMR&src=cashtag_click) [$AGI](https://x.com/search?q=%24AGI&src=cashtag_click) [$TRAC](https://x.com/search?q=%24TRAC&src=cashtag_click) [$LINK](https://x.com/search?q=%24LINK&src=cashtag_click) [$NEAR](https://x.com/search?q=%24NEAR&src=cashtag_click) [$AKT](https://x.com/search?q=%24AKT&src=cashtag_click) [$LPT](https://x.com/search?q=%24LPT&src=cashtag_click) [$ICP](https://x.com/search?q=%24ICP&src=cashtag_click) [$GRT](https://x.com/search?q=%24GRT&src=cashtag_click) [$RNDR](https://x.com/search?q=%24RNDR&src=cashtag_click) [$AIOZ](https://x.com/search?q=%24AIOZ&src=cashtag_click), and ranked them by annual revenue.
+
+For simplicity, only projects with verifiable revenue are included on this infographic. Time for fundamentals to make a comeback!
+
+Link: [https://x.com/otnoderunner/status/1858910277334339934](https://x.com/otnoderunner/status/1858910277334339934)
+
+Reference:
+
+Coinmarketcap for market cap +
+
+NEAR: [https://defillama.com/chain/Near](https://defillama.com/chain/Near)  
+TRAC: [https://othub.io/](https://othub.io/)  
+ICP: [https://tokenterminal.com/explorer?v=YmE2MWU5NjdiNTg5YjAwYzcwN2M0NTQx](https://tokenterminal.com/explorer?v=YmE2MWU5NjdiNTg5YjAwYzcwN2M0NTQx)  
+RNDR: [https://dune.com/tobiases/dollarrender-dashboard](https://dune.com/tobiases/dollarrender-dashboard)  
+GRT: [https://tokenterminal.com/explorer?v=YmE2MWU5NjdiNTg5YjAwYzcwN2M0NTQx](https://tokenterminal.com/explorer?v=YmE2MWU5NjdiNTg5YjAwYzcwN2M0NTQx)  
+AKT: [https://stats.akash.network/](https://stats.akash.network/)  
+LPT: [https://dune.com/stronk/livepeer-arbitrum?Time+Window+in+days\_efa4d6=365&Time+Window+in+days\_eab251=180&Time+Window+in+days\_eec59f=365](https://dune.com/stronk/livepeer-arbitrum?Time+Window+in+days_efa4d6=365&Time+Window+in+days_eab251=180&Time+Window+in+days_eec59f=365)"
+Top AI Projects By Annual Revenue,CryptoMarkets,1gv9abf,2024-11-19 17:02:03,4,0.84,1,https://www.reddit.com/r/CryptoMarkets/comments/1gv9abf/top_ai_projects_by_annual_revenue/,valcyclovir,FUNDAMENTALS,"I have gathered data of over 20 [\#AI](https://x.com/hashtag/AI?src=hashtag_click) projects, including [$TAO](https://x.com/search?q=%24TAO&src=cashtag_click) [$FET](https://x.com/search?q=%24FET&src=cashtag_click) [$GRASS](https://x.com/search?q=%24GRASS&src=cashtag_click) [$AKRM](https://x.com/search?q=%24AKRM&src=cashtag_click) [$GLM](https://x.com/search?q=%24GLM&src=cashtag_click) [$IO](https://x.com/search?q=%24IO&src=cashtag_click) [$NOS](https://x.com/search?q=%24NOS&src=cashtag_click) [$AGI](https://x.com/search?q=%24AGI&src=cashtag_click) [$FLUX](https://x.com/search?q=%24FLUX&src=cashtag_click) [$PAAL](https://x.com/search?q=%24PAAL&src=cashtag_click) [$ORAI](https://x.com/search?q=%24ORAI&src=cashtag_click) [$NMR](https://x.com/search?q=%24NMR&src=cashtag_click) [$AGI](https://x.com/search?q=%24AGI&src=cashtag_click) [$TRAC](https://x.com/search?q=%24TRAC&src=cashtag_click) [$LINK](https://x.com/search?q=%24LINK&src=cashtag_click) [$NEAR](https://x.com/search?q=%24NEAR&src=cashtag_click) [$AKT](https://x.com/search?q=%24AKT&src=cashtag_click) [$LPT](https://x.com/search?q=%24LPT&src=cashtag_click) [$ICP](https://x.com/search?q=%24ICP&src=cashtag_click) [$GRT](https://x.com/search?q=%24GRT&src=cashtag_click) [$RNDR](https://x.com/search?q=%24RNDR&src=cashtag_click) [$AIOZ](https://x.com/search?q=%24AIOZ&src=cashtag_click), and ranked them by annual revenue.
+
+For simplicity, only projects with verifiable revenue are included on this infographic. Time for fundamentals to make a comeback!
+
+Link: [https://x.com/otnoderunner/status/1858910277334339934](https://x.com/otnoderunner/status/1858910277334339934)
+
+Reference:
+
+Coinmarketcap for market cap +
+
+NEAR: [https://defillama.com/chain/Near](https://defillama.com/chain/Near)  
+TRAC: [https://othub.io/](https://othub.io/)  
+ICP: [https://tokenterminal.com/explorer?v=YmE2MWU5NjdiNTg5YjAwYzcwN2M0NTQx](https://tokenterminal.com/explorer?v=YmE2MWU5NjdiNTg5YjAwYzcwN2M0NTQx)  
+RNDR: [https://dune.com/tobiases/dollarrender-dashboard](https://dune.com/tobiases/dollarrender-dashboard)  
+GRT: [https://tokenterminal.com/explorer?v=YmE2MWU5NjdiNTg5YjAwYzcwN2M0NTQx](https://tokenterminal.com/explorer?v=YmE2MWU5NjdiNTg5YjAwYzcwN2M0NTQx)  
+AKT: [https://stats.akash.network/](https://stats.akash.network/)  
+LPT: [https://dune.com/stronk/livepeer-arbitrum?Time+Window+in+days\_efa4d6=365&Time+Window+in+days\_eab251=180&Time+Window+in+days\_eec59f=365](https://dune.com/stronk/livepeer-arbitrum?Time+Window+in+days_efa4d6=365&Time+Window+in+days_eab251=180&Time+Window+in+days_eec59f=365)"
+What is going to happen to my Tokens? ,Crypto_com,1guzcba,2024-11-19 10:10:39,1,1.0,1,https://i.redd.it/p2iqxtmjjv1e1.jpeg,Important_Signal_198,Crypto.com App 📱,Is this telling me I have till the 7th with these tokens to sell or move them? One of them is CRO and confused on why this is happening. Getting no help from support. Can someone help explain. Thanks 
+With address changing meaning what??? Wont be able to do anything with these tokens I’ve already bought after the 7th? ,Crypto_com,1guxy4z,2024-11-19 09:07:59,1,1.0,1,https://i.redd.it/hxo408ae8v1e1.jpeg,Important_Signal_198,Feature Request 📝,
+BitMart Will Relist Akash Network (AKT) -2024-11-19,BitMartExchange,1guth9b,2024-11-19 04:39:30,1,1.0,0,https://i.redd.it/cd0y865iwt1e1.png,RealFatherElijah1987,LISTING ,"Dear BitMart Users,
+
+BitMart is thrilled to announce the relisting of Akash Network (AKT) on Nov 19th, 2024. Please check out the details of listing below:
+
+Deposit feature:Available
+
+Trade feature: 11/19/2024 10:00 AM (UTC)
+
+Withdrawal feature: 11/19/2024 10:00 AM (UTC)
+
+Trading Pair: AKT/USDT 
+
+Trading Zone: Innovation/AI
+
+More details: https://support.bitmart.com/hc/en-us/articles/31060577980059"
+Akash Network token $AKT futures to be listed on Binance (x-post from /r/Cryptocurrency),CryptoCurrencyClassic,1gusjip,2024-11-19 03:25:59,1,1.0,0,https://www.reddit.com/r/CryptoCurrency/comments/1gub8xu/akash_network_token_akt_futures_to_be_listed_on/,ASICmachine,,
+#1 Top 100 Gainers,Hedera,1gujxfr,2024-11-18 19:13:41,46,0.99,0,https://i.redd.it/aoqrdb3k3r1e1.jpeg,theshonufff,ĦBAR,"Just getting started!  The world will be BUILT ON HEDERA!  Look at the VOLUME!
+"
+Akash Network token $AKT futures to be listed on Binance,CryptoCurrency,1gub8xu,2024-11-18 13:10:20,0,0.33,1,https://www.binance.com/en/support/announcement/binance-futures-will-launch-usd%E2%93%A2-margined-banusdt-and-aktusdt-perpetual-contracts-with-up-to-75x-leverage-f6577bdd30d542e0af4f76a14dfeb241,Jcook_14,EXCHANGES,"If your bullish on AI crypto tokens, $akt getting listed on Binance is really bullish news.
+
+For those who aren’t aware, Akash sells GPU compute using USDC as the payment currency. $Akt stakers earn rewards from the network revenue and network daily spend for compute has been hitting ATH’s for quite a while. It’s definitely a project worth looking at if you’re interested in the concept they’re working towards. "
+"I'm fed up with all the SC*M: Binance has launched futures on the memecoin BAN. Its creator was accused of insider trading. This kind of bullsh*t erodes any remaining faith in humanity. Yet, here you are trading it.",XGramatikInsights,1gu4xmz,2024-11-18 08:40:58,19,1.0,3,https://www.reddit.com/r/XGramatikInsights/comments/1gu4xmz/im_fed_up_with_all_the_scm_binance_has_launched/,XGramatik,CRYPTO,"The Binance exchange has introduced perpetual futures with up to 75x leverage on the **AKT** token from the DePin project Akash Network and on the memecoin **Comedian (BAN)**, which was created by **Michael Bouhanna**, head of the digital art department at Sotheby’s auction house.
+
+In October, analysts at **Lookonchain** accused him of insider trading on the token. They analyzed the activity of a wallet that Bouhanna previously identified as his own. The experts noted that he had been unsuccessfully trading various memecoins for some time before launching his own. According to their calculations, as **BAN's** price surged, Bouhanna started selling his own tokens, earning at least **$1 million**.
+
+Shortly before BAN’s listing on Binance, Bouhanna posted on **X** (formerly Twitter), denying involvement in those BAN sales. He insists that he created the token “without intending to attract attention” but shared the link with “a group of friends” during its launch.
+
+After the Binance listing announcement, the **BAN** token price suddenly doubled, only to drop back just as quickly.
+
+https://preview.redd.it/rri3cfejyn1e1.png?width=1280&format=png&auto=webp&s=9f78c7053a2a3a68213d9bb00449a69694d5d119
+
+  
+"
+🚀 24-Hour Trading Event: 0% Maker Fees & 50% Off Taker Fees! 🤑,Blofin,1gu2fcn,2024-11-18 06:14:19,1,1.0,0,https://www.reddit.com/r/Blofin/comments/1gu2fcn/24hour_trading_event_0_maker_fees_50_off_taker/,Alexander-305,,".Join us for BloFin's 24-hour trading event! ✅ 0% Maker Fees ✅ 50% off Taker Fees 🗓️ Nov 18, 11 AM UTC - Nov 19, 11 AM UTC Trade $AKT-USDT @akashnet\_ now! ⬇️ https://t.co/Wq0ODiu0FH https://t.co/FbpFR68E2o
+   
+ .#BloFinTradingEvent #CryptoSavings #TradeSmart #AkashNetwork #CryptoCommunity"
+Did anyone lost all of Akash Network AKT token in Bitmart.,akashnetwork,1gsfrpv,2024-11-15 23:48:57,4,0.75,6,https://www.reddit.com/r/akashnetwork/comments/1gsfrpv/did_anyone_lost_all_of_akash_network_akt_token_in/,journey_era,,"I logged in after long time and found out they delist the token and have not liquidated the akt price or have given option to transfer after delist. How do we trust such exchanges. 
+Did anyone found away to recover those coins."
+Akash Network ($AKT)  | Price Prediction 2025 🚀,CryptoMars,1grglgc,2024-11-14 17:03:47,1,1.0,0,https://youtube.com/watch?v=U6taC61dAkU&si=UkFyUKTCZF0sJLWI,CryptoForecast1,ALTCOIN,
+Akash Network ($AKT)  | Price Prediction 2025 🚀,cryptoloversclub,1grgl4h,2024-11-14 17:03:23,1,1.0,0,https://youtube.com/watch?v=U6taC61dAkU&si=UkFyUKTCZF0sJLWI,CryptoForecast1,Token,
+Akash Network ($AKT)  | Price Prediction 2025 🚀,Crypto_General,1grgkmn,2024-11-14 17:02:48,1,1.0,0,https://youtube.com/watch?v=U6taC61dAkU&si=UkFyUKTCZF0sJLWI,CryptoForecast1,My 2 Satoshi's ,
+Akash Network ($AKT)  | Price Prediction 2025 🚀,akashnetwork,1grgkb5,2024-11-14 17:02:26,3,0.71,5,https://youtube.com/watch?v=U6taC61dAkU&si=UkFyUKTCZF0sJLWI,CryptoForecast1,🌈 AKT,
+Akash Network ($AKT)  | Price Prediction 2025 🚀,u_CryptoForecast1,1grgjma,2024-11-14 17:01:35,1,1.0,0,https://youtube.com/watch?v=U6taC61dAkU&si=UkFyUKTCZF0sJLWI,CryptoForecast1,,
+(Virtual Hackathon) Akashathon 3: Open Source AI – $45k in Prizes | Nov 4 - Dec 1,hackathon,1ggqjqy,2024-10-31 18:13:27,2,1.0,1,https://www.reddit.com/r/hackathon/comments/1ggqjqy/virtual_hackathon_akashathon_3_open_source_ai_45k/,PuzzledSignal3350,,"https://preview.redd.it/7y2pzl0m16yd1.jpg?width=1200&format=pjpg&auto=webp&s=cbd90b1c3f0ded63743ca4ea5bd0d508e892fa45
+
+**🚀 Join Akashathon 3: Open Source AI!** 🌟
+
+Hey everyone!
+
+**Sign-ups are now open** for **Akashathon 3: Open Source AI**, a virtual hackathon powered by the Akash Network! This is your chance to dive into decentralized AI development while competing for **$45,000 USD (in AKT) prizes**! 🎉 Submissions are opening *soon* on November 4 at 12:00am UTC.
+
+# Hackathon Details:
+
+* **Info/Register:** [https://app.buidlbox.io/akash-network/akashathon-3](https://app.buidlbox.io/akash-network/akashathon-3)
+* **Prizes:** $45,000 in AKT
+* **Challenge Tracks:**
+   * Image Processing
+   * Natural Language Processing (NLP)
+   * Audio Processing
+   * General AI Model Deployment
+* **Submission Period:** November 4 – December 1
+* **Submission Deadline:** December 1 @ 11:59 PM PST
+
+# About Akash Network
+
+Akash Network is a decentralized cloud computing marketplace providing developers with affordable, scalable, and censorship-resistant infrastructure. With Akash, you can access GPU-powered resources for building and deploying AI projects without the constraints of traditional cloud providers.
+
+Ready to join? Sign up now at [https://app.buidlbox.io/akash-network/akashathon-3](https://app.buidlbox.io/akash-network/akashathon-3)"
+Virtual Hackathon: Akashathon 3 (Open Source AI) – $45k in Prizes!,hackathon,1ggqhrz,2024-10-31 18:10:51,2,1.0,1,https://www.reddit.com/r/hackathon/comments/1ggqhrz/virtual_hackathon_akashathon_3_open_source_ai_45k/,PuzzledSignal3350,,"**🚀 Join Akashathon 3: Open Source AI!** 🌟
+
+Hey everyone!
+
+We're thrilled to announce that **sign-ups are now open** for **Akashathon 3: Open Source AI**, a virtual hackathon powered by the Akash Network! This is your chance to dive into decentralized AI development while competing for **$45,000 USD (in AKT) prizes**! 🎉
+
+# Hackathon Details:
+
+* **Info/Register:** [https://app.buidlbox.io/akash-network/akashathon-3](https://app.buidlbox.io/akash-network/akashathon-3)
+* **Prizes:** $45,000 in AKT
+* **Challenge Tracks:**
+   * Image Processing
+   * Natural Language Processing (NLP)
+   * Audio Processing
+   * General AI Model Deployment
+* **Submission Period:** November 4 – December 1
+* **Submission Deadline:** December 1 @ 11:59 PM PST
+
+# About Akash Network
+
+Akash Network is a decentralized cloud computing marketplace providing developers with affordable, scalable, and censorship-resistant infrastructure. With Akash, you can access GPU-powered resources for building and deploying AI projects without the constraints of traditional cloud providers.
+
+Ready to join? Sign up now at [https://app.buidlbox.io/akash-network/akashathon-3](https://app.buidlbox.io/akash-network/akashathon-3)"
+Akashathon 3: OpenSource AI – $45k in Prizes 🚀,akashnetwork,1ggqfud,2024-10-31 18:08:19,7,1.0,3,https://www.reddit.com/r/akashnetwork/comments/1ggqfud/akashathon_3_opensource_ai_45k_in_prizes/,PuzzledSignal3350,👋 Community,"https://preview.redd.it/6m8nnz3r06yd1.jpg?width=1200&format=pjpg&auto=webp&s=361214c5a9b735e950b34c0cc6d3d79b769097bd
+
+**🚀 Join Akashathon 3: Open Source AI!** 🌟
+
+Hey everyone!
+
+We're thrilled to announce that **sign-ups are now open** for **Akashathon 3: Open Source AI**, a virtual hackathon powered by the Akash Network! This is your chance to dive into decentralized AI development while competing for **$45,000 USD (in AKT) prizes**! 🎉
+
+# Hackathon Details:
+
+* **Info/Register:** [https://app.buidlbox.io/akash-network/akashathon-3](https://app.buidlbox.io/akash-network/akashathon-3)
+* **Prizes:** $45,000 in AKT
+* **Challenge Tracks:**
+   * Image Processing
+   * Natural Language Processing (NLP)
+   * Audio Processing
+   * General AI Model Deployment
+* **Submission Period:** November 4 – December 1
+* **Submission Deadline:** December 1 @ 11:59 PM PST
+
+# About Akash Network
+
+Akash Network is a decentralized cloud computing marketplace providing developers with affordable, scalable, and censorship-resistant infrastructure. With Akash, you can access GPU-powered resources for building and deploying AI projects without the constraints of traditional cloud providers.
+
+Ready to join? Sign up now at [https://app.buidlbox.io/akash-network/akashathon-3](https://app.buidlbox.io/akash-network/akashathon-3)"
+New Virtual Hackathon – Akashathon 3: Open Source AI ($45k in Prizes),hackathon,1g9y175,2024-10-22 20:53:34,7,1.0,2,https://www.reddit.com/r/hackathon/comments/1g9y175/new_virtual_hackathon_akashathon_3_open_source_ai/,PuzzledSignal3350,,"**🚀 Join Akashathon 3: Open Source AI! 🌟**
+
+Hey everyone!
+
+We're thrilled to announce that **sign-ups are now open** for **Akashathon 3: Open Source AI**, a virtual hackathon powered by the Akash Network! This is your chance to dive into decentralized AI development while competing for **$45,000 USD (in AKT) prizes**! 🎉
+
+# Hackathon Details:
+
+* **Info/Register:** [https://app.buidlbox.io/akash-network/akashathon-3](https://app.buidlbox.io/akash-network/akashathon-3)
+* **Prizes:** $45,000 in AKT
+* **Challenge Tracks:**
+   * Image Processing
+   * Natural Language Processing (NLP)
+   * Audio Processing
+   * General AI Model Deployment
+* **Submission Period:** November 4 – December 1
+* **Submission Deadline:** December 1 @ 11:59 PM PST
+
+# Spaces Event!
+
+Join us on **Spaces** on **October 29 at 16:00 UTC** (9:00 AM PDT / 12:00 PM EDT) to learn more about the hackathon, explore the challenge tracks, and get insights to make the most of your participation! Here: [https://x.com/i/spaces/1LyxBgjjRVPKN](https://x.com/i/spaces/1LyxBgjjRVPKN)
+
+# About Akash Network
+
+Akash Network is a decentralized cloud computing marketplace providing developers with affordable, scalable, and censorship-resistant infrastructure. With Akash, you can access GPU-powered resources for building and deploying AI projects without the constraints of traditional cloud providers.
+
+Ready to join? Sign up now at [https://app.buidlbox.io/akash-network/akashathon-3](https://app.buidlbox.io/akash-network/akashathon-3)"
+From Privacy to Storage to Cloud Computing—These 5 DePINs Are Changing Crypto Infrastructure,DePINside,1g4tcdm,2024-10-16 02:56:28,11,1.0,24,https://www.reddit.com/r/DePINside/comments/1g4tcdm/from_privacy_to_storage_to_cloud_computingthese_5/,Future-Goose7,,"DePIN has been around for several market cycles, with early successes in networks like Helium and Golem. Fast forward a few years, and the momentum is building again, with new projects and dedicated funds making headlines. DePIN tokens are becoming increasingly the must-have tokens in the crypto space, particularly in decentralized solutions for traditional services like privacy, storage, and cloud computing. These 5 DePIN tokens—IOTA, BELDEX, Golem, Akash, and now Rivalz—address key challenges in decentralized infrastructure. Whether it's privacy, storage, or computation, these projects are leading the way toward a more decentralized, secure, and scalable infrastructure.
+
+Here’s a breakdown of these 5 tokens that are changing the game:
+
+**1. IOTA (IOTA): Pioneering the Internet of Things**
+
+IOTA stands out due to its unique distributed ledger technology, the Tangle, a directed acyclic graph. This structure allows for zero-fee payments and highly scalable performance, making it a fundamental component of IoT networks. IOTA’s technology opens doors for faster, cost-free transactions—essential for the growing number of IoT devices that need to communicate efficiently.
+
+**2. BELDEX (BDX): Enhancing Privacy in Decentralized Networks**
+
+Privacy is the focus of BELDEX, which is working on privacy-preserving solutions within the DePIN ecosystem. The project is building a decentralized network emphasizing user anonymity and data security. BELDEX enables private transactions and anonymous communications, making it a cornerstone for privacy-focused decentralized apps.
+
+**3. Golem (GLM): Decentralizing Computational Power**
+
+Golem is on a mission to create a globally distributed supercomputer by allowing users to share their unused computational power. This project decentralizes cloud computing, making it accessible to more people while posing a potential challenge to traditional centralized cloud providers. Golem’s efficient resource allocation model is paving the way for a more accessible computational infrastructure.
+
+**4. Akash (AKT): Redefining Cloud Computing**
+
+Akash is a decentralized alternative to the traditional cloud infrastructure market, enabling users to rent out unused computing resources. This decentralized cloud market offers cost optimization and increased flexibility compared to conventional solutions, positioning Akash as a formidable player in the cloud computing space.
+
+**5. Rivalz Network (RIZ): Building the Future of Private AI Infrastructure**
+
+Rivalz is the latest player in the DePIN space, taking decentralized infrastructure to the next level by creating an AI Intelligence Layer. Rivalz is focused on building a decentralized ecosystem of modular AI applications, powered by its zNodes and rClients. With over 220k+ participants in its testnet, 17M transactions, and 210 petabytes of available storage, Rivalz is on its way to redefining how decentralized AI systems operate.
+
+The Rivalz AI DePIN layer uses Dymension with Celestia and Eigen to operate a RollApp. rClients contribute storage from their devices, while zNodes act as validators, ensuring data flow integrity within the network. Recently, Rivalz secured $9M in funding, further solidifying its role as a leader in the DePIN space. Its focus on decentralized data storage, combined with a verifiable AI infrastructure, positions Rivalz as a key player in the future of decentralized AI. Rivalz zNode delegation is now live on NodeOps App and early activators will be rewarded starting October 20th, Keep an eye on it.
+
+What do you think? Will these DePIN tokens—like IOTA, BELDEX, Golem, Akash, and Rivalz—lead the charge in decentralized infrastructure, or is there something else on the way? Which project excites you the most?
+
+I edited the name of the Rivalz token."
+"Akash quest, staking quest?",CoinBase,1g1aj35,2024-10-11 10:02:27,0,0.5,1,https://www.reddit.com/r/CoinBase/comments/1g1aj35/akash_quest_staking_quest/,New-Independence2031,,"Hi,
+
+Has someone completed the Akash reward? Im stuck in the last step. I’ve stakes 1 AKT, but no reward has bren triggered. Any idea whats wrong?
+
+Thanks!"
+Am I not DEGEN,Altcoin_Investing,1fz2y8g,2024-10-08 11:44:52,3,0.81,7,https://i.redd.it/g7mvnuiezjtd1.png,davezilla99,,"not sure if I need more sauce for this bull run. 
+
+My portfolio is $10,000"
+New Blockchain Integrations: Akash (AKT) and Stride (STRD),Blockpit,1fv4s5r,2024-10-03 06:46:34,1,1.0,0,https://www.reddit.com/r/Blockpit/comments/1fv4s5r/new_blockchain_integrations_akash_akt_and_stride/,Blockpit,News,"Transactions of the following blockchains can now be automatically imported into your Blockpit account:
+
+[**🔗 Akash (AKT) Blockchain added 🔗**](https://help.blockpit.io/hc/en-us/articles/16170009155868-)
+
+[**🔗 Stride (STRD) Blockchain added 🔗**](https://help.blockpit.io/hc/en-us/articles/16170306764828)"
+Akash (akt),CoinbaseEarn,1fv3qzc,2024-10-03 05:30:22,2,0.75,15,https://www.reddit.com/gallery/1fv3qzc,Zealousideal-Ad-9164,Other,Hello some claim the akash offer? I need to chat with al i have write a message i get answer so what i do more to complet the task? 
+Akash Coinbase Quiz - rewards,CoinBase,1fud5nb,2024-10-02 06:43:14,5,0.86,25,https://www.reddit.com/r/CoinBase/comments/1fud5nb/akash_coinbase_quiz_rewards/,Radekkamfor,,"I received reawards for the Akash lessons, but, I didn't racived reward for staking AKT. 
+
+Is there a delay?"
+Earn Free $5 Akash Network Crypto | AKT Coinbase Task,extracrypto,1ftv1ui,2024-10-01 14:19:41,5,1.0,30,https://www.reddit.com/r/extracrypto/comments/1ftv1ui/earn_free_5_akash_network_crypto_akt_coinbase_task/,dkorecki,Learn & earn,"Video: https://www.youtube.com/watch?v=lCp5jKExJdU
+
+► Get FREE PayPal or Amazon or Stocks: https://linktr.ee/freemoneystocks
+
+-----------------------
+
+► SwagBucks: Get $5 PayPal or Amazon FREE: https://www.swagbucks.com/profile/r_153250679?rp=1
+
+► Robinhood: Get $5–$200 in stock FREE: https://join.robinhood.com/danielk-592e84
+
+► Webull: Get 6-12 stocks FREE: https://a.webull.com/gzxterxUts7TssZ89U"
+Earn Free $5 Akash Network Crypto | AKT Coinbase Task,akashnetwork,1ftv1g2,2024-10-01 14:19:14,4,0.83,0,https://www.youtube.com/watch?v=lCp5jKExJdU,dkorecki,👋 Community,
+Top 10 Promising Projects Under $800M Market Cap — $EOS Makes the list 👀,eos,1frjiv2,2024-09-28 13:32:19,9,0.92,2,https://i.redd.it/ktmhcocg5lrd1.jpeg,Samuelhorlla_,📰 EOS News,"EOS has been highlighted in a list of the top 10 promising projects with a market cap under $800 million.
+The list includes $CKB, $GALA, $EGLD, $AXS, $WLD, $ORDI, $CFX, $AKT, $SAND, and of course, $EOS!
+
+What’s your take on this lineup?"
+Hopium for holders,AerodromeFinance,1fra17t,2024-09-28 04:47:07,22,0.96,9,https://www.reddit.com/r/AerodromeFinance/comments/1fra17t/hopium_for_holders/,Vol1801,,"Today i read a report that Grayscale put our Aero to their top20. I think the best hasn't yet to come. This current pullback is a healthy correction. So turn off the chart, ignore the price until Aero get 5$
+
+https://preview.redd.it/3lwd097qjird1.jpg?width=2048&format=pjpg&auto=webp&s=fac91011d6230929bcdf252c812c76dbc8fad7ea
+
+"
+Like 30$ on coin base free,stakeus,1fqkbfj,2024-09-27 06:10:39,11,0.74,26,https://i.redd.it/v8gzzfxqtbrd1.jpeg,Upstairs_Magician_38,,Jus go to explore to the bottom and you just click thru the questions and then can transfer it to whatever crypto 
+"Desafio Akash - 14,31€ em AKT na Coinbase",BeermoneyTuga,1fq5bqw,2024-09-26 15:55:56,9,0.91,17,https://www.reddit.com/r/BeermoneyTuga/comments/1fq5bqw/desafio_akash_1431_em_akt_na_coinbase/,LeadRich4521,Crypto,"A Coinbase disponibilizou hoje mais uns quests supere simples que permitem em menos de 10 minutos obter 14,31€ em AKT, que podem vender e levantar de imediato 
+
+Como é hábito, este quest não está disponível para todos. Para verificarem se está disponível devem carregar no ícone do canto superior esquerdo -> Ganha mais -> Recompensas.
+
+Link: https://www.coinbase.com"
+A Cosmic Dive into Akash Network's (AKT) Stellar Voyage,jatslo,1fpetld,2024-09-25 16:44:26,1,1.0,0,https://www.reddit.com/r/jatslo/comments/1fpetld/a_cosmic_dive_into_akash_networks_akt_stellar/,jatslo,,"https://preview.redd.it/kivfvdhzo0rd1.jpg?width=900&format=pjpg&auto=webp&s=afbf53843d083b93eae10e0ba55bafa59b1b9998
+
+Section IV.M.2.a.xxii: Akash Network (AKT)  
+  
+A Cosmic Dive into Akash Network's (AKT) Stellar Voyage  
+  
+Abstract  
+  
+In the vast, ever-expanding universe of blockchain and decentralized systems, Akash Network (AKT) emerges as a celestial body worth observing. This abstract encapsulates an analysis that orbits around Akash Network's innovative approach to decentralized cloud computing, where it positions itself as the Airbnb of data centers. Utilizing a reverse auction model, Akash not only challenges the status quo of cloud monopolies but also ventures into the AI frontier by democratizing GPU access—an essential element for AI model training which, let's face it, is humanity's latest attempt to outsource thinking. This analysis explores AKT's tokenomics, its ecosystem's vibrancy, and its potential to harness the AI boom, all while navigating through the cosmic hazards of market volatility and technological adoption. We'll delve into how Akash not only aims to be a part of the cloud but to redefine how we compute in the cloud, possibly sparking a new era where data centers float not just in data clouds but perhaps in literal clouds. Join us on this journey through the stars of decentralized cloud computing with Akash Network, where every node might just lead to a new galaxy of possibilities.  
+  
+[https://algorithm.xiimm.net/phpbb/viewtopic.php?p=7773#p7773](https://algorithm.xiimm.net/phpbb/viewtopic.php?p=7773#p7773)"
+Guess which subreddit these 3 images are from! #6126,RedditIndiaGuesser,1fnu3r3,2024-09-23 16:10:43,1,1.0,4,https://www.reddit.com/gallery/1fnu3r3,RedditIndiaGuesser,,
+2024 Crypto Bull Run: Altcoins with 10–30X Potential in Web3,2024CryptoBullRun,1fnmg2i,2024-09-23 10:56:39,1,1.0,0,https://www.reddit.com/r/2024CryptoBullRun/comments/1fnmg2i/2024_crypto_bull_run_altcoins_with_1030x/,Significant_Touch692,,"# While Bitcoin and Ethereum continue to capture headlines, several emerging projects offer untapped potential for significant returns. This article delves into promising altcoins, including Mande Network, Akash Network, Osmosis, Celestia, Stellar, Cosmos (ATOM), SAGA, Solana, CUDOS, and Nolus, while addressing the limitations of DeFi and DePIN and emphasizing the lasting impact of blockchain technology.
+
+# The Limitations of DeFi and DePIN
+
+Decentralized Finance (DeFi) and Decentralized Physical Infrastructure Networks (DePIN) have gained traction as revolutionary concepts. However, their scalability and sustainability are often called into question. According to a report by Chainalysis, over $1 billion was lost to DeFi hacks in 2022, highlighting significant vulnerabilities in these ecosystems.
+
+The lack of robust service level agreements (SLAs) in DeFi protocols can lead to unreliable performance, while the decentralized nature makes accountability a challenge. Without clear liability, these platforms risk undermining user trust and operational integrity.
+
+# The Enduring Appeal of Crypto Technology
+
+Despite the challenges facing DeFi and DePIN, the fundamental technology of blockchain remains promising. According to a report by McKinsey, the global blockchain market could reach $1.4 trillion by 2030. The potential for transparency, security, and decentralization can revolutionize sectors like finance, healthcare, and logistics, driving the industry towards more sustainable and practical applications.
+
+# Tokenization: Bridging the Gap Between Web2 and Web3
+
+Tokenization represents a vital step in merging traditional finance (Web2) with blockchain innovations (Web3). By creating digital tokens for real-world assets — such as real estate, commodities, and intellectual property — new markets can emerge, increasing efficiency and transparency.
+
+One of the most promising applications is in credit scoring. Traditional credit scoring methods often exclude underserved populations. Blockchain-based credit scoring systems can provide a more comprehensive assessment, fostering financial inclusion.
+
+# Altcoins with Potential: A Closer Look
+
+The upcoming bull run is poised to be influenced by factors such as institutional adoption, favorable regulations, and increasing public interest. Here are several altcoins to watch closely:
+
+# Mande Network: A Hidden Gem with Exceptional Potential
+
+**Token Symbol:** MAND
+
+Mande Network is carving out its niche as a peer-to-peer credit scoring layer two solution, aiming to be the credibility hub for real-world applications in Web3. The project’s focus on organic growth, transparent engagement, and a highly experienced team enhances its appeal. With a low fully diluted valuation (FDV) and minimal exchange sprawl, Mande Network stands out as a compelling investment opportunity. It has the potential for 10–50X returns as it bridges the gap between digital identity and real-world applications.
+
+# Osmosis: A Decentralized Exchange with Potential
+
+**Token Symbol:** OSMO
+
+Osmosis operates as a decentralized exchange (DEX) within the Cosmos ecosystem. It enables liquidity aggregation and incentivized pools, attracting a strong community. With its innovative features, Osmosis is well-positioned to become a leading DEX. However, as the DEX landscape matures, returns may be capped around 5X.
+
+# Celestia: A Modular Blockchain Infrastructure
+
+**Token Symbol:** TIA
+
+Celestia is designed to improve scalability by separating consensus from application execution. This modular approach allows various decentralized applications to thrive without sacrificing security. While Celestia shows promise, its returns may also hover around the 5X mark as it works to establish itself.
+
+# Stellar: A Scalable Payment Network
+
+**Token Symbol:** XLM
+
+Stellar focuses on cross-border payments and financial inclusion, with low transaction fees and fast confirmation times. While it has the potential to disrupt traditional finance, its best growth days may be behind it, limiting returns to approximately 5X.
+
+# Cosmos (ATOM): A Network of Interconnected Blockchains
+
+**Token Symbol:** ATOM
+
+Cosmos aims to create an ecosystem of interconnected blockchains, fostering interoperability. However, concerns about its centralized decision-making and lack of community engagement have diminished its once-strong allure. Many analysts believe that Cosmos has lost its magic, making significant price appreciation unlikely in the near future.
+
+# Akash Network: A Decentralized Cloud Computing Platform
+
+**Token Symbol:** AKT
+
+Akash provides decentralized cloud computing services, leveraging GPU power to offer affordable resources. However, its reliance on the NVIDIA narrative and existing hardware limits its scalability. The long-term sustainability of this model raises doubts about its growth potential.
+
+# SAGA: A Blockchain Platform for Gaming
+
+**Token Symbol:** SAGA
+
+SAGA focuses on the gaming sector, but it suffers from a lack of solid fundamentals. While it could present opportunities for short sellers, those looking for long-term investment may find more promising options elsewhere.
+
+# Solana: A High-Performance Blockchain
+
+**Token Symbol:** SOL
+
+Solana has gained popularity for its high transaction speeds and low fees. However, it has faced numerous technical challenges and concerns over its long-term sustainability. Given the hype surrounding it, Solana is viewed as one of the riskier bets, with returns potentially limited to 5X.
+
+# CUDOS: A Decentralized Computing Network
+
+**Token Symbol:** CUDOS
+
+CUDOS aims to provide affordable cloud services through a decentralized network. While it has potential, its scalability and performance have yet to be fully tested. Investors should approach with caution, expecting moderate returns.
+
+# Nolus: A Blockchain Platform for Decentralized Applications
+
+**Token Symbol:** NLS
+
+Nolus focuses on decentralized applications but has faced stability issues, impacting user trust. The team’s intentions seem genuine, but the platform’s reliability remains questionable. If Nolus can regain user confidence, it could present a 10X opportunity, but this will require significant effort.
+
+# The Limitations of Bitcoin and Ethereum
+
+Bitcoin and Ethereum have established themselves as industry leaders, but their potential for explosive growth is diminishing. The increasing institutional involvement, including ETFs and derivatives, has shifted these assets into a more regulated and less speculative realm. Analysts predict that both Bitcoin and Ethereum will see a maximum of 5X returns, particularly as regulatory frameworks tighten.
+
+# The Decline of NFTs
+
+NFTs, once the darling of the crypto world, appear to be losing traction. As interest wanes and fatigue sets in, many projects lack the substance needed for long-term viability. The NFT craze, largely driven by speculative hype during the COVID era, has resulted in declining enthusiasm and a search for more meaningful applications of blockchain technology.
+
+# Conclusion
+
+The next bull run in cryptocurrency is poised to be defined by altcoins that offer real-world applications and sustainable business models. Mande Network emerges as a standout opportunity, while other projects like Osmosis, Stellar, and Celestia show promise despite challenges. Investors should approach Bitcoin and Ethereum with caution, as their days of explosive growth seem behind them. As the industry evolves, the focus will likely shift towards practical solutions that bridge Web2 and Web3, paving the way for a more stable and prosperous crypto landscape.
+
+Conduct thorough due diligence, assess the risks, and consider the transformative potential of these emerging technologies as you navigate the next phase of the cryptocurrency market."
+2024 Crypto Bull Run: Altcoins with 10–30X Potential in Web3,SatoshiStreetBets,1fnma7c,2024-09-23 10:49:52,6,1.0,6,https://www.reddit.com/r/SatoshiStreetBets/comments/1fnma7c/2024_crypto_bull_run_altcoins_with_1030x/,Significant_Touch692,Discussion 🦍,"# While Bitcoin and Ethereum continue to capture headlines, several emerging projects offer untapped potential for significant returns. This article delves into promising altcoins, including Mande Network, Akash Network, Osmosis, Celestia, Stellar, Cosmos (ATOM), SAGA, Solana, CUDOS, and Nolus, while addressing the limitations of DeFi and DePIN and emphasizing the lasting impact of blockchain technology.
+
+# The Limitations of DeFi and DePIN
+
+Decentralized Finance (DeFi) and Decentralized Physical Infrastructure Networks (DePIN) have gained traction as revolutionary concepts. However, their scalability and sustainability are often called into question. According to a report by Chainalysis, over $1 billion was lost to DeFi hacks in 2022, highlighting significant vulnerabilities in these ecosystems.
+
+The lack of robust service level agreements (SLAs) in DeFi protocols can lead to unreliable performance, while the decentralized nature makes accountability a challenge. Without clear liability, these platforms risk undermining user trust and operational integrity.
+
+# The Enduring Appeal of Crypto Technology
+
+Despite the challenges facing DeFi and DePIN, the fundamental technology of blockchain remains promising. According to a report by McKinsey, the global blockchain market could reach $1.4 trillion by 2030. The potential for transparency, security, and decentralization can revolutionize sectors like finance, healthcare, and logistics, driving the industry towards more sustainable and practical applications.
+
+# Tokenization: Bridging the Gap Between Web2 and Web3
+
+Tokenization represents a vital step in merging traditional finance (Web2) with blockchain innovations (Web3). By creating digital tokens for real-world assets — such as real estate, commodities, and intellectual property — new markets can emerge, increasing efficiency and transparency.
+
+One of the most promising applications is in credit scoring. Traditional credit scoring methods often exclude underserved populations. Blockchain-based credit scoring systems can provide a more comprehensive assessment, fostering financial inclusion.
+
+# Altcoins with Potential: A Closer Look
+
+The upcoming bull run is poised to be influenced by factors such as institutional adoption, favorable regulations, and increasing public interest. Here are several altcoins to watch closely:
+
+# Mande Network: A Hidden Gem with Exceptional Potential
+
+**Token Symbol:** MAND
+
+Mande Network is carving out its niche as a peer-to-peer credit scoring layer two solution, aiming to be the credibility hub for real-world applications in Web3. The project’s focus on organic growth, transparent engagement, and a highly experienced team enhances its appeal. With a low fully diluted valuation (FDV) and minimal exchange sprawl, Mande Network stands out as a compelling investment opportunity. It has the potential for 10–50X returns as it bridges the gap between digital identity and real-world applications.
+
+# Osmosis: A Decentralized Exchange with Potential
+
+**Token Symbol:** OSMO
+
+Osmosis operates as a decentralized exchange (DEX) within the Cosmos ecosystem. It enables liquidity aggregation and incentivized pools, attracting a strong community. With its innovative features, Osmosis is well-positioned to become a leading DEX. However, as the DEX landscape matures, returns may be capped around 5X.
+
+# Celestia: A Modular Blockchain Infrastructure
+
+**Token Symbol:** TIA
+
+Celestia is designed to improve scalability by separating consensus from application execution. This modular approach allows various decentralized applications to thrive without sacrificing security. While Celestia shows promise, its returns may also hover around the 5X mark as it works to establish itself.
+
+# Stellar: A Scalable Payment Network
+
+**Token Symbol:** XLM
+
+Stellar focuses on cross-border payments and financial inclusion, with low transaction fees and fast confirmation times. While it has the potential to disrupt traditional finance, its best growth days may be behind it, limiting returns to approximately 5X.
+
+# Cosmos (ATOM): A Network of Interconnected Blockchains
+
+**Token Symbol:** ATOM
+
+Cosmos aims to create an ecosystem of interconnected blockchains, fostering interoperability. However, concerns about its centralized decision-making and lack of community engagement have diminished its once-strong allure. Many analysts believe that Cosmos has lost its magic, making significant price appreciation unlikely in the near future.
+
+# Akash Network: A Decentralized Cloud Computing Platform
+
+**Token Symbol:** AKT
+
+Akash provides decentralized cloud computing services, leveraging GPU power to offer affordable resources. However, its reliance on the NVIDIA narrative and existing hardware limits its scalability. The long-term sustainability of this model raises doubts about its growth potential.
+
+# SAGA: A Blockchain Platform for Gaming
+
+**Token Symbol:** SAGA
+
+SAGA focuses on the gaming sector, but it suffers from a lack of solid fundamentals. While it could present opportunities for short sellers, those looking for long-term investment may find more promising options elsewhere.
+
+# Solana: A High-Performance Blockchain
+
+**Token Symbol:** SOL
+
+Solana has gained popularity for its high transaction speeds and low fees. However, it has faced numerous technical challenges and concerns over its long-term sustainability. Given the hype surrounding it, Solana is viewed as one of the riskier bets, with returns potentially limited to 5X.
+
+# CUDOS: A Decentralized Computing Network
+
+**Token Symbol:** CUDOS
+
+CUDOS aims to provide affordable cloud services through a decentralized network. While it has potential, its scalability and performance have yet to be fully tested. Investors should approach with caution, expecting moderate returns.
+
+# Nolus: A Blockchain Platform for Decentralized Applications
+
+**Token Symbol:** NLS
+
+Nolus focuses on decentralized applications but has faced stability issues, impacting user trust. The team’s intentions seem genuine, but the platform’s reliability remains questionable. If Nolus can regain user confidence, it could present a 10X opportunity, but this will require significant effort.
+
+# The Limitations of Bitcoin and Ethereum
+
+Bitcoin and Ethereum have established themselves as industry leaders, but their potential for explosive growth is diminishing. The increasing institutional involvement, including ETFs and derivatives, has shifted these assets into a more regulated and less speculative realm. Analysts predict that both Bitcoin and Ethereum will see a maximum of 5X returns, particularly as regulatory frameworks tighten.
+
+# The Decline of NFTs
+
+NFTs, once the darling of the crypto world, appear to be losing traction. As interest wanes and fatigue sets in, many projects lack the substance needed for long-term viability. The NFT craze, largely driven by speculative hype during the COVID era, has resulted in declining enthusiasm and a search for more meaningful applications of blockchain technology.
+
+# Conclusion
+
+The next bull run in cryptocurrency is poised to be defined by altcoins that offer real-world applications and sustainable business models. Mande Network emerges as a standout opportunity, while other projects like Osmosis, Stellar, and Celestia show promise despite challenges. Investors should approach Bitcoin and Ethereum with caution, as their days of explosive growth seem behind them. As the industry evolves, the focus will likely shift towards practical solutions that bridge Web2 and Web3, paving the way for a more stable and prosperous crypto landscape.
+
+Conduct thorough due diligence, assess the risks, and consider the transformative potential of these emerging technologies as you navigate the next phase of the cryptocurrency market."
+KRAKEN.com delists the following Coins for german customers,CryptoExchangeIssues,1fkgflb,2024-09-19 05:05:28,1,1.0,1,https://www.reddit.com/r/CryptoExchangeIssues/comments/1fkgflb/krakencom_delists_the_following_coins_for_german/,Feeling-Act8213,,"[Kraken.com](http://Kraken.com) continues to force to move its customers to other exchanges by delisting the following popular coins for its german customers.  This move is not understandable for [Kraken.com](http://Kraken.com) customers as kraken was listing much fewer assets than Binance! If you look to the long list of unsupported coins, [kraken.com](http://kraken.com) is looks to be not an option for many Crypto Traders. Here are the coins NO MORE supported for german customers.
+
+|||
+|:-|:-|
+|Unsupported Assets by Kraken|Ticker|
+|Acala Token|ACA|
+|Akash Network|AKT|
+|Altair|AIR|
+|Aptos|APT|
+|Astar|ASTR|
+|Aventus|AVT|
+|Basilisk|BSX|
+|Bifrost|BNC|
+|Bittensor|TAO|
+|Bricks|BRICK|
+|Centrifuge|CFG|
+|Crust Shadow|CSM|
+|Dash|DASH|
+|Dymension|DYM|
+|Echelon Prime|PRIME|
+|Energy Web Token|EWT|
+|Ethereum Classic|ETC|
+|EthereumPoW|ETHW|
+|[Fetch.ai](http://Fetch.ai)|FET|
+|Flare|FLR|
+|Filecoin|FIL|
+|Flow|FLOW|
+|Genshiro|GENS|
+|HydraDX|HDX|
+|ICON|ICX|
+|Integritee|TEER|
+|Interlay|INTR|
+|Internet Computer|ICP|
+|JUNO|JUNO|
+|Kamino|KMNO|
+|Karura|KAR|
+|Kava|KAVA|
+|KILT|KILT|
+|Kintsugi|KINT|
+|Kujira|KUJI|
+|Litentry|LIT|
+|Maple|MPL|
+|Memecoin|MEME|
+|Mina|MINA|
+|Mogcoin|MOG|
+|Monero|XMR|
+|Moonbeam|GLMR|
+|Moonriver|MOVR|
+|Moons|MOON|
+|Multivers X|EGLD|
+|Namecoin|NMC|
+|Nano|NANO|
+|Neutron|NTRN|
+|Nodle|NODL|
+|Nym|NYM|
+|Osmosis|OSMO|
+|OriginTrail|OTP|
+|OriginTrail|TRAC|
+|Parcl|PRCL|
+|Parallel Finance|PARA|
+|Pendle|PENDLE|
+|Picasso|PICA|
+|Polygon Ecosystem Token|POL|
+|Phala Network|PHA|
+|Qtum|QTUM|
+|Robonomics|XRT|
+|Sanctum|Cloud|
+|Saga|SAGA|
+|Secret Network|SCRT|
+|Sei|SEI|
+|Siacoin|SC|
+|Shiden|SDN|
+|Stride|STRD|
+|Sui|SUI|
+|Terra Classic|LUNA|
+|Token Starknet|STRK|
+|Zcash|ZEC|
+|Stacks|STX|
+|TRIBE|TRIBE|
+|TrueUSD|TUSD|
+|TerraUSD Classic|UST|
+|Waves|WAVES|
+|Zeta Markets|ZEX|
+|Zk Sync|ZK|
+
+  
+"
+"Top 10 DePin Coins Today By Market Cap. 🔥🏆 Which crypto will see major breakout this month?🚀
+",CryptoIndia,1fjr78e,2024-09-18 08:09:20,0,0.5,4,https://i.redd.it/h6k0gwoo6kpd1.png,CPMarkets,,
+AKASH integration in NVIDIA BREV (AI Cloud Service)!,akashnetwork,1f1t7z8,2024-08-26 12:58:28,39,0.96,5,https://i.redd.it/4195mexah1ld1.jpeg,Yougetwhat,📢 Announcements,
+"COSMOS CRYPTO NEWS: ATOM, AKT, DYDX, NAM, LAVA & MORE!!",cosmosnetwork,1ewy9et,2024-08-20 11:17:53,20,0.92,3,https://www.reddit.com/r/cosmosnetwork/comments/1ewy9et/cosmos_crypto_news_atom_akt_dydx_nam_lava_more/,CosmicValidator,,"Greetings, Cosmonauts!
+
+Welcome to the first August edition of Cosmos Crypto Ecosystem bi-weekly News! In this episode, we’re thrilled to spotlight:
+
+
+
+COSMOS HUB AND CONSUMER CHAINS: Keplr Wallet Expands EVM Support in Beta Version, Noble Introduces Noble Express For USDC Transfers Across Multiple Blockchains, Cosmos Hub Proposal for Permissionless Interchain Security, and more
+
+
+
+NAMADA: Namada Community Genesis Process, Cryptoeconomic Mechanisms, and Genesis Allocations
+
+
+
+DYDX v4: dYdX Chain Approves Season 5 Launch Incentives Distribution, dYdX Chain Protocol v5.2.0 Upgrade Passed
+
+
+
+OSMOSIS: Osmosis DeFi Hub Surpasses $35 Billion in Total Trading Volume
+
+
+
+KUJIRA: Kujira Comprehensive Recovery Plan to Address Operational Debt
+
+
+
+CELESTIA: Celestia and Stride Summer Light Node Challenge
+
+
+
+SEI: Second Round of Creator Fund for Media and IP Development
+
+
+
+PERSISTENCE: Bitcoin Layer-2s Vs SideChains
+
+
+
+SECRET NETWORK: Bull or Bear by Satoshi’s Palace is Now Live on Mainnet
+
+
+
+AKASH: AKT is Now Live on Uphold, Open-Source AI-Powered with Akash Supercloud
+
+
+
+OTHER ECOSYSTEM NEWS: Lava Network Public Mainnet, 50 Billion RPC Requests and Ecosystem Partnerships
+
+
+
+All this and much more. Let’s dive in and unpack the biggest news within Cosmos: [https://youtu.be/8h8y6hzN6qY](https://youtu.be/8h8y6hzN6qY)"
+"You can now stake your $AKT with CryptoCrew! Join us in securing the Akash supercloud and earn rewards while enabling a more open, efficient and cost-effective cloud for everyone!",akashnetwork,1ew563t,2024-08-19 11:46:43,4,0.83,6,https://i.redd.it/c8dgw9aiwmjd1.jpeg,crypto-crew,,
+"You can now stake your $AKT with CryptoCrew! Join us in securing the Akash supercloud and earn rewards while enabling a more open, efficient and cost-effective cloud for everyone!",cosmosnetwork,1ew54pd,2024-08-19 11:45:14,0,0.5,2,https://i.redd.it/c8dgw9aiwmjd1.jpeg,crypto-crew,,
+"You can now stake your $AKT with CryptoCrew! Join us in securing the Akash supercloud and earn rewards while enabling a more open, efficient and cost-effective cloud for everyone!",cryptocrewvalidators,1ew3uoy,2024-08-19 10:54:22,3,1.0,0,https://i.redd.it/c8dgw9aiwmjd1.jpeg,crypto-crew,,
+📣BREAKING NEWS: 🪙 MyCoinChange New Coin Listing 🪙,MyCoinChange,1eqxoy0,2024-08-12 23:19:26,3,0.81,1,https://i.redd.it/t9r8asycncid1.jpeg,Mycoinchange_co,,
+"Top 10 DePIN Coins By Market Cap! Which Altcoins are going to 100x this year? 👀🚀
+",Crypto_General,1eqaqy9,2024-08-12 07:02:30,2,1.0,12,https://www.reddit.com/r/Crypto_General/comments/1eqaqy9/top_10_depin_coins_by_market_cap_which_altcoins/,CPMarkets,Daily Discussion,"1. Filecoin ( $FIL): $2.06B
+
+2. Render ( $RNDR): $1.78B
+
+3. The Graph ( $GRT): $1.34B
+
+4. Arweave ( $AR): $1.33B
+
+5. Theta Network ( $THETA): $1.14B
+
+6. Helium ( $HNT): $1.06B
+
+7. JasmyCoin ( $JASMY): $993M
+
+8. BitTorrent ( $BTT): $714B
+
+9. Akash Network ( $AKT): $642M
+
+10. AIOZ Network ( $AIOZ): $519M
+
+[Top 10 DePIN Coins By Market Cap in August 2024](https://preview.redd.it/qzk4vt50t7id1.png?width=900&format=png&auto=webp&s=dfeaf203306ce6efb74a12f482cd3f492ed535d8)
+
+"
+"Akash Network (AKT) Price Moves Up 20%, Boosting Investor Confidence",CryptoBreakingDotCom,1epx345,2024-08-11 18:15:18,1,1.0,0,https://www.cryptobreaking.com/akash-network-akt-price-moves-up-20-boosting-investor-confidence/?feed_id=112183&_unique_id=66b937f52780a,vincenzost,,
+Calling all Akash community members!,akashnetwork,1elkjgo,2024-08-06 11:21:01,20,0.95,4,https://www.reddit.com/r/akashnetwork/comments/1elkjgo/calling_all_akash_community_members/,MasterWizardDelRey,👋 Community,"As you know, Akash Zealy Season 2 is ON!
+
+Share your ideas for innovative projects and skills you want to develop on Akash and help us create exciting new missions for you and the rest of the crypto world
+
+This is your opportunity to influence Akash's development, and potentially earn AKT rewards.
+
+Don't wait - share your suggestions now and be part of Akash's growth!"
+Akash Network ($AKT) | AI based Forecast 🚀,CryptoTradingFloor,1ek5e5l,2024-08-04 16:43:40,0,0.5,0,https://youtube.com/watch?v=UxYOvrI1UQY&si=k9j9MIa47hA2mHaB,CryptoForecast1,,
+Akash Network ($AKT) | AI based Forecast 🚀,cryptotrading,1ek5e03,2024-08-04 16:43:29,0,0.5,0,https://youtube.com/watch?v=UxYOvrI1UQY&si=k9j9MIa47hA2mHaB,CryptoForecast1,,
+Akash Network ($AKT) | AI based Forecast 🚀,CryptoMars,1ek5doy,2024-08-04 16:43:07,1,1.0,0,https://youtube.com/watch?v=UxYOvrI1UQY&si=k9j9MIa47hA2mHaB,CryptoForecast1,ALTCOIN,
+Akash Network ($AKT) | AI based Forecast 🚀,cryptoloversclub,1ek5dfa,2024-08-04 16:42:48,1,1.0,0,https://youtube.com/watch?v=UxYOvrI1UQY&si=k9j9MIa47hA2mHaB,CryptoForecast1,Token,
+Akash Network ($AKT) | AI based Forecast 🚀,CryptoCurrencyClassic,1ek5d6a,2024-08-04 16:42:30,1,1.0,0,https://youtube.com/watch?v=UxYOvrI1UQY&si=k9j9MIa47hA2mHaB,CryptoForecast1,,
+Akash Network ($AKT) | AI based Forecast 🚀,Crypto_General,1ek5d0k,2024-08-04 16:42:18,1,1.0,0,https://youtube.com/watch?v=UxYOvrI1UQY&si=k9j9MIa47hA2mHaB,CryptoForecast1,Daily Discussion,
+Akash Network ($AKT) | AI based Forecast 🚀,u_CryptoForecast1,1ek5azp,2024-08-04 16:39:54,1,1.0,0,https://youtube.com/watch?v=UxYOvrI1UQY&si=k9j9MIa47hA2mHaB,CryptoForecast1,,
+Top 5 CryptoMarket Updates To Watch Out Today 👀👇,CryptoIndia,1eh9rhj,2024-08-01 02:28:52,4,0.84,4,https://www.reddit.com/r/CryptoIndia/comments/1eh9rhj/top_5_cryptomarket_updates_to_watch_out_today/,CPMarkets,,"1.  Akash Network ( AKT ) surges 5.19% to $3.07, becoming top gainer today with Mc reaching $755M. 
+
+2. Despite being listed on ONUS exchange, SLERF drops 8% to $0.2258.
+
+3. KAS soars 2.8% to 0.2022 with volume rising 115% to$201M as open interest for  Kaspa rises 5% to $103M.
+
+4. PAJAMAS surges 10.28% to $0.01228 as trading volume rose 163% to $549M.
+
+5. DogWifHat (WIF) drops 11.93% to $2.05 with MC dropping to $2B, however volume is up 53% to $336M.
+
+The global cryptomarket is down 2.60% to $2.3T.
+
+Trading volume is at $78.74B, up 23.59%.
+
+Bitcoin at $64,9263, down 2.56%.
+
+Ethereum at $3,179, down 3.31%.
+
+[Top crypto market updates to watch out for ](https://preview.redd.it/py7w48d4yzfd1.png?width=900&format=png&auto=webp&s=7a9ba8e3d981b3c176104ca9dd34fd17cb32679c)
+
+"
+Akash only making ~$2000/day in revenue? Or am I missing something ,akashnetwork,1e9njia,2024-07-22 15:49:54,11,0.92,11,https://www.reddit.com/r/akashnetwork/comments/1e9njia/akash_only_making_2000day_in_revenue_or_am_i/,jaredj92,🌈 AKT,"
+According to Akash website and this tweet, akash is only making around $2000 per day in revenue. 
+
+https://x.com/flowslikeosmo/status/1815039249801953654?s=46
+
+Is this just from transaction fees? Is there another form of revenue as well?
+
+I ask because I am invested in AKT and just looking for transparency. 
+
+"
+Help? Newbie Metamask question ,CryptoHelp,1e3kt76,2024-07-14 23:22:24,2,1.0,3,https://www.reddit.com/r/CryptoHelp/comments/1e3kt76/help_newbie_metamask_question/,Ok_Examination8379,,"I have some Akash (AKT) on Ascendex and I can't log in to my account anymore due to an error. Customer service is telling me that I need to sync Metamask to the backend of AscendEX, and to do this I must transfer ETH (half the value of the AKT amount) onto Metamask then swap it to Akash, before I can retrieve AKT from my account.
+
+Does this sound right please?? I've never had to buy one crypto to retrieve another crypto before."
+"COSMOS CRYPTO NEWS: ATOM, TIA, DYDX, AKT & MORE!!
+",cosmosnetwork,1dxs20a,2024-07-07 17:53:11,1,1.0,1,https://www.reddit.com/r/cosmosnetwork/comments/1dxs20a/cosmos_crypto_news_atom_tia_dydx_akt_more/,CosmicValidator,,"Hello, Cosmonauts!   
+Get ready to zoom through the galaxy of crypto Cosmos with our sizzling second June edition of Cosmos Ecosystem News! In this episode, we’re diving into groundbreaking updates, fresh off the blockchain. From the thrilling integration of IBC with Cardano to the dynamic upgrades across the Interchain cosmos, we've got your ticket to the stars. So buckle up, hold onto your helmets, and let’s blast off into another exciting episode of celestial discoveries and interstellar breakthroughs. It’s time to get your crypto thrusters to full blast!  
+  
+COSMOS HUB AND CONSUMER CHAINS: Cardano integrates IBC, Permissionless ICS is set to launch, Slinky Oracle Module is live, Gaia v18 Upgrade, Elys Network Consumer Chain, Neutron V4 and Interchain Account on Neutron, and more  
+  
+NAMADA: Shielding Summit, Initial Parameters for Namada Mainnet Launch  
+  
+DYDX v4: dYdX v5.0 and Slinky integration  
+  
+OSMOSIS: Smart Accounts coming to Osmosis, nBTC Revenue Sharing with Nomic  
+  
+KUJIRA: Kujira Core v1.1.0 is live  
+  
+CELESTIA: Alt-DA Beta OP Stack Integration, Modular Summit 3.0 in Brussels, RISC Zero zkVM  
+  
+SEI: Stargate v2 integration  
+  
+PERSISTENCE: Skip API integration for cross-chain  
+  
+SECRET NETWORK: ALEXANDRIA upgrade, Confidential Computing Layer integration with Optimism  
+  
+AKASH: DePIN Summer event, AKT listed on Kado  
+  
+OTHER ECOSYSTEM NEWS: Berachain Proof of Liquidity, Penumbra's UM Airdrop, Synternet Mainnet  
+  
+All this and much more. Let’s dive in and unpack the biggest news within Cosmos:"
+Looks like Grayscale got in at 40 cents when fudders exited 🤘,AerodromeFinance,1dx254z,2024-07-06 19:03:14,20,0.9,10,https://i.redd.it/lg5eb8dxbzad1.jpeg,Latter-Explanation99,,
+HODL,AerodromeFinance,1dtpqvq,2024-07-02 12:15:22,23,0.91,2,https://i.redd.it/zqirv2lir4ad1.jpeg,Difficult-Sir-7634,,The $AERO reversal will be insane… just wait until Grayscale adds it to their portfolio. Already in Grayscales top 20 token list for Q3. Just wait until Trumps election completely changes the Crypto economy of America in November/December. 
+Web3 Projects,SJCcryptoclub,1dtnp0h,2024-07-02 10:50:11,1,1.0,0,https://www.reddit.com/r/SJCcryptoclub/comments/1dtnp0h/web3_projects/,ButterscotchLarge416,,"Web3 is a decentralized web where participants (we) can interact with protocols without any third party to manage the computing power, storage options, networking, database management, analytics, machine learning, artificial intelligence, security, and more. These are often called the ""picks and shovels"" or ""infra"" (short for infrastructure) of web3. The most significant advantages of web3 projects are security, scalability, and cost.
+
+Get ready. Here are long lists of some these projects maybe worth a look (meaning look into tokenomics, team, partnerships, etc.) It may be easier to use [Coingecko.com](http://Coingecko.com) categories (that's where I got them):
+
+# AI:
+
+||
+||
+|[NEAR Protocol NEAR](https://www.coingecko.com/en/coins/near)|
+|[Internet Computer ICP](https://www.coingecko.com/en/coins/internet-computer)|
+|[Artificial Superintelligence Alliance FET](https://www.coingecko.com/en/coins/artificial-superintelligence-alliance)|
+|[Render RNDR](https://www.coingecko.com/en/coins/render)|
+|[The Graph GRT](https://www.coingecko.com/en/coins/the-graph)|
+|[Bittensor TAO](https://www.coingecko.com/en/coins/bittensor)|
+|[Akash Network AKT](https://www.coingecko.com/en/coins/akash-network)|
+|[SingularityNET AGIX](https://www.coingecko.com/en/coins/singularitynet)|
+|[AIOZ Network AIOZ](https://www.coingecko.com/en/coins/aioz-network)|
+|[Arkham ARKM](https://www.coingecko.com/en/coins/arkham)|
+|[Ocean Protocol OCEAN](https://www.coingecko.com/en/coins/ocean-protocol)|
+|[Golem GLM](https://www.coingecko.com/en/coins/golem)|
+|[OriginTrail TRAC](https://www.coingecko.com/en/coins/origintrail)|
+|[Nosana NOS](https://www.coingecko.com/en/coins/nosana)|
+|[PAAL AI PAAL](https://www.coingecko.com/en/coins/paal-ai)|
+|[NetMind Token NMT](https://www.coingecko.com/en/coins/netmind-token)|
+|[Delysium AGI](https://www.coingecko.com/en/coins/delysium)|
+|[0x0.ai: AI Smart Contract 0X0](https://www.coingecko.com/en/coins/0x0-ai-ai-smart-contract)|
+|[Zignaly ZIG](https://www.coingecko.com/en/coins/zignaly)|
+|[Marlin POND](https://www.coingecko.com/en/coins/marlin)|
+|[iExec RLC RLC](https://www.coingecko.com/en/coins/iexec-rlc)|
+|[Oraichain ORAI](https://www.coingecko.com/en/coins/oraichain-token)|
+|[RSS3 RSS3](https://www.coingecko.com/en/coins/rss3)|
+|[TokenFi TOKEN](https://www.coingecko.com/en/coins/tokenfi)|
+|[Covalent CQT](https://www.coingecko.com/en/coins/covalent)|
+|[Numeraire NMR](https://www.coingecko.com/en/coins/numeraire)|
+|[PHALA PHA](https://www.coingecko.com/en/coins/phala-network)|
+|[IQ IQ](https://www.coingecko.com/en/coins/iq)|
+|[LimeWire LMWR](https://www.coingecko.com/en/coins/limewire)|
+|[Phoenix PHB](https://www.coingecko.com/en/coins/phoenix)|
+|[Solidus Ai Tech AITECH](https://www.coingecko.com/en/coins/solidus-ai-tech)|
+|[Cudos CUDOS](https://www.coingecko.com/en/coins/cudos)|
+|[Sleepless AI AI](https://www.coingecko.com/en/coins/sleepless-ai)|
+|[Humans.ai HEART](https://www.coingecko.com/en/coins/humans-ai)|
+|[Forta FORT](https://www.coingecko.com/en/coins/forta)|
+|[Spectral SPEC](https://www.coingecko.com/en/coins/spectral)|
+|[ChainGPT CGPT](https://www.coingecko.com/en/coins/chaingpt)|
+|[NodeAI GPU](https://www.coingecko.com/en/coins/nodeai)|
+|[Autonolas OLAS](https://www.coingecko.com/en/coins/autonolas)|
+|[Dynex DNX](https://www.coingecko.com/en/coins/dynex)|
+|[OctaSpace OCTA](https://www.coingecko.com/en/coins/octaspace)|
+|[TriasLab TRIAS](https://www.coingecko.com/en/coins/trias-token)|
+|[Artificial Liquid Intelligence ALI](https://www.coingecko.com/en/coins/artificial-liquid-intelligence)|
+|[Agoras: Currency of Tau AGRS](https://www.coingecko.com/en/coins/agoras-currency-of-tau)|
+|[Aleph.im ALEPH](https://www.coingecko.com/en/coins/aleph-im)|
+|[Clore.ai CLORE](https://www.coingecko.com/en/coins/clore-ai)|
+|[SingularityDAO SDAO](https://www.coingecko.com/en/coins/singularitydao)|
+|[Vaiot VAI](https://www.coingecko.com/en/coins/vaiot)|
+|[SelfKey KEY](https://www.coingecko.com/en/coins/selfkey)|
+|[Numbers Protocol NUM](https://www.coingecko.com/en/coins/numbers-protocol)|
+|[Commune AI COMAI](https://www.coingecko.com/en/coins/commune-ai)|
+|[Arc ARC](https://www.coingecko.com/en/coins/arc)|
+|[Botto BOTTO](https://www.coingecko.com/en/coins/botto)|
+|[PaLM AI PALM](https://www.coingecko.com/en/coins/palm-ai)|
+|[Jackal Protocol JKL](https://www.coingecko.com/en/coins/jackal-protocol)|
+|[Virtuals Protocol VIRTUAL](https://www.coingecko.com/en/coins/virtual-protocol)|
+|[GraphLinq Chain GLQ](https://www.coingecko.com/en/coins/graphlinq-protocol)|
+|[Cere Network CERE](https://www.coingecko.com/en/coins/cere-network)|
+|[Zero1 Labs DEAI](https://www.coingecko.com/en/coins/zero1-labs)|
+|[Atlas Navi NAVI](https://www.coingecko.com/en/coins/atlas-navi)|
+|[OORT OORT](https://www.coingecko.com/en/coins/oort)|
+|[HyperGPT HGPT](https://www.coingecko.com/en/coins/hypergpt)|
+|[TARS Protocol TAI](https://www.coingecko.com/en/coins/tars-protocol)|
+|[Matrix AI Network MAN](https://www.coingecko.com/en/coins/matrix-ai-network)|
+|[Optimus AI OPTI](https://www.coingecko.com/en/coins/optimus-ai)|
+|[enqAI ENQAI](https://www.coingecko.com/en/coins/enqai)|
+|[Vectorspace AI VXV](https://www.coingecko.com/en/coins/vectorspace-ai)|
+|[DexCheck AI DCK](https://www.coingecko.com/en/coins/dexcheck)|
+|[Spectre AI SPECTRE](https://www.coingecko.com/en/coins/spectre-ai)|
+|[Openfabric AI OFN](https://www.coingecko.com/en/coins/openfabric)|
+|[Bad Idea AI BAD](https://www.coingecko.com/en/coins/bad-idea-ai)|
+|[Altered State Machine ASTO](https://www.coingecko.com/en/coins/altered-state-token)|
+|[TRVL TRVL](https://www.coingecko.com/en/coins/trvl)|
+|[DeepBrain Chain DBC](https://www.coingecko.com/en/coins/deepbrain-chain)|
+|[Carbon Browser CSIX](https://www.coingecko.com/en/coins/carbon-browser)|
+|[Thought THT](https://www.coingecko.com/en/coins/thought)|
+|[Image Generation AI IMGNAI](https://www.coingecko.com/en/coins/image-generation-ai)|
+|[Kizuna KIZUNA](https://www.coingecko.com/en/coins/kizuna)|
+|[Arbius AIUS](https://www.coingecko.com/en/coins/arbius)|
+|[bitsCrunch Token BCUT](https://www.coingecko.com/en/coins/bitscrunch-token)|
+|[Hera Finance HERA](https://www.coingecko.com/en/coins/hera-finance)|
+|[Synesis One SNS](https://www.coingecko.com/en/coins/synesis-one)|
+|[Phantasma SOUL](https://www.coingecko.com/en/coins/phantasma)|
+|[Ta-da TADA](https://www.coingecko.com/en/coins/ta-da)|
+|[Bostrom BOOT](https://www.coingecko.com/en/coins/bostrom)|
+|[Presearch PRE](https://www.coingecko.com/en/coins/presearch)|
+|[Sensay SNSY](https://www.coingecko.com/en/coins/sensay)|
+|[Nuklai NAI](https://www.coingecko.com/en/coins/nuklai)|
+|[AIT Protocol AIT](https://www.coingecko.com/en/coins/ait-protocol)|
+|[GT-Protocol GTAI](https://www.coingecko.com/en/coins/gt-protocol)|
+|[GameSwift GSWIFT](https://www.coingecko.com/en/coins/gameswift)|
+|[Edge Matrix Computing EMC](https://www.coingecko.com/en/coins/edge-matrix-computing)|
+|[Orbofi AI OBI](https://www.coingecko.com/en/coins/orbofi-ai)|
+|[Chirpley CHRP](https://www.coingecko.com/en/coins/chirpley)|
+|[Precipitate.ai RAIN](https://www.coingecko.com/en/coins/precipitate-ai)|
+|[Bridge Oracle BRG](https://www.coingecko.com/en/coins/bridge-oracle)|
+|[Roko Network ROKO](https://www.coingecko.com/en/coins/roko-network)|
+|[LayerAI LAI](https://www.coingecko.com/en/coins/layerai)|
+|[Chappyz CHAPZ](https://www.coingecko.com/en/coins/chappyz)|
+|[Ispolink ISP](https://www.coingecko.com/en/coins/ispolink)|
+
+# Storage:
+
+||
+||
+|[Internet Computer ICP](https://www.coingecko.com/en/coins/internet-computer)|
+|[Filecoin FIL](https://www.coingecko.com/en/coins/filecoin)|
+|[Arweave AR](https://www.coingecko.com/en/coins/arweave)|
+|[BitTorrent BTT](https://www.coingecko.com/en/coins/bittorrent)|
+|[AIOZ Network AIOZ](https://www.coingecko.com/en/coins/aioz-network)|
+|[Ocean Protocol OCEAN](https://www.coingecko.com/en/coins/ocean-protocol)|
+|[Holo HOT](https://www.coingecko.com/en/coins/holo)|
+|[Siacoin SC](https://www.coingecko.com/en/coins/siacoin)|
+|[RSS3 RSS3](https://www.coingecko.com/en/coins/rss3)|
+|[Shadow Token SHDW](https://www.coingecko.com/en/coins/genesysgo-shadow)|
+|[Bluzelle BLZ](https://www.coingecko.com/en/coins/bluzelle)|
+|[Storj STORJ](https://www.coingecko.com/en/coins/storj)|
+|[Aleph.im ALEPH](https://www.coingecko.com/en/coins/aleph-im)|
+|[Stratos STOS](https://www.coingecko.com/en/coins/stratos)|
+|[Jackal Protocol JKL](https://www.coingecko.com/en/coins/jackal-protocol)|
+|[Iagon IAG](https://www.coingecko.com/en/coins/iagon)|
+|[Cere Network CERE](https://www.coingecko.com/en/coins/cere-network)|
+|[Swarm BZZ](https://www.coingecko.com/en/coins/swarm)|
+|[StorX SRX](https://www.coingecko.com/en/coins/storx)|
+|[Crust Network CRU](https://www.coingecko.com/en/coins/crust-network)|
+|[OORT OORT](https://www.coingecko.com/en/coins/oort)|
+|[MaidSafeCoin EMAID](https://www.coingecko.com/en/coins/maidsafecoin)|
+|[Phantasma SOUL](https://www.coingecko.com/en/coins/phantasma)|
+|[ScPrime SCP](https://www.coingecko.com/en/coins/scprime)|
+|[Lambda LAMB](https://www.coingecko.com/en/coins/lambda)|
+|[WeSendit WSI](https://www.coingecko.com/en/coins/wesendit)|
+|[Sirius Chain XPX](https://www.coingecko.com/en/coins/sirius-chain)|
+|[Zus ZCN](https://www.coingecko.com/en/coins/0chain)|
+|[Big Data Protocol BDP](https://www.coingecko.com/en/coins/big-data-protocol)|
+|[Verida VDA](https://www.coingecko.com/en/coins/verida)|
+|[Coldstack CLS](https://www.coingecko.com/en/coins/coldstack)|
+|[Certicos CERT](https://www.coingecko.com/en/coins/certicos)|
+|[Serenity Shield SERSH](https://www.coingecko.com/en/coins/serenity-shield)|
+|[PAC Protocol PAC](https://www.coingecko.com/en/coins/pac-protocol)|
+|[Opacity OPCT](https://www.coingecko.com/en/coins/opacity)|
+|[SONM SNM](https://www.coingecko.com/en/coins/sonm)|
+|[BitTorrent \[OLD\] BTTOLD](https://www.coingecko.com/en/coins/bittorrent-old)|
+|[Binance-Peg Filecoin FIL](https://www.coingecko.com/en/coins/binance-peg-filecoin)|
+|[ThreeFold TFT](https://www.coingecko.com/en/coins/threefold)|
+|[Denet File Token DE](https://www.coingecko.com/en/coins/denet-file-token)|
+
+# DePIN (Decentralized Physical Infrastructure Networks)
+
+Render RNDR
+
+Filecoin FIL
+
+Graph GRT
+
+Arweave AR
+
+THETA
+
+JASMY
+
+Akash AKT
+
+BitTorrent BTT
+
+AIOZ
+
+Helium
+
+IOTA
+
+Livepeer LPT
+
+IoTex IOTX
+
+OCEAN
+
+Golem GLM
+
+OriginTrail TRAC
+
+Holo HOT
+
+ANKR
+
+[Io.net](http://Io.net) IO
+
+Nosana NOS
+
+Aethir ATH
+
+Beldex BDX
+
+Chia XCH
+
+FLUX
+
+Helium MOBILE"
+"Our Top 10 Altcoins Watchlist For Next Week! 🔥🚀
+",Crypto_General,1dr9vgi,2024-06-29 08:14:00,17,1.0,26,https://www.reddit.com/r/Crypto_General/comments/1dr9vgi/our_top_10_altcoins_watchlist_for_next_week/,CPMarkets,Daily Discussion,"1. Kaspa (KAS)  
+2. Brett (BRETT)  
+3. Akash Network (AKT)  
+4. Mog Coin (MOG)  
+5. Hedera (HBAR)  
+6. Ponke (PONKE)  
+7. Peipei (PEIPEI)  
+8. Quant (QNT)  
+9. GameStop (GME)  
+10. Kendu Inu (KENDU)
+
+Check out here: [https://x.com/MarketCoinpedia/status/1807020905106669759](https://x.com/MarketCoinpedia/status/1807020905106669759)
+
+[Top 10 Altcoins Watchlist For Next Week](https://preview.redd.it/mizd1zdi5i9d1.png?width=900&format=png&auto=webp&s=f15c97eb3e729de3d49e77bd16151bcaf3f99509)
+
+"
+👀 ,AerodromeFinance,1dpzc5l,2024-06-27 15:07:33,31,0.97,5,https://i.redd.it/61i4r8cox59d1.jpeg,Latter-Explanation99,,"https://www.grayscale.com/research/market-commentary/grayscale-research-insights-crypto-sectors-in-q3-2024
+"
+Just In: SUI Becomes The Top Fourth Trending Crypto On CoinpediaMarkets! 🔥,sui,1dk62oz,2024-06-20 03:47:05,13,0.94,9,https://i.redd.it/zg56x3sulo7d1.png,CPMarkets,Crypto,
+Just In: Akash Network Becomes The Top 2nd Trending Crypto On CoinpediaMarkets! 🔥,akashnetwork,1dk624b,2024-06-20 03:45:50,14,0.89,4,https://i.redd.it/stgo2ugnlo7d1.png,CPMarkets,🌈 AKT,
+Just In: NEAR Becomes The Top Third Trending Crypto On CoinpediaMarkets! 🔥🚀,nearprotocol,1dk61k9,2024-06-20 03:44:42,12,0.88,1,https://i.redd.it/p2bt2muflo7d1.png,CPMarkets,GENERAL,
+"Lots of talk about lying, could someone please get me up to date? What happened?",akashnetwork,1divu08,2024-06-18 13:08:10,3,0.67,3,https://www.reddit.com/r/akashnetwork/comments/1divu08/lots_of_talk_about_lying_could_someone_please_get/,Working_Amoeba_8405,,"Link to the coinmarketcap community: [Akash Network price today, AKT to USD live price, marketcap and chart | CoinMarketCap](https://coinmarketcap.com/currencies/akash-network/)
+
+  
+Lots of people talking about Greg lying, what happened??"
+Akash Network ($AKT) | AI based Forecast 🚀,CryptoCurrencyClassic,1di5sgp,2024-06-17 14:53:05,1,1.0,0,https://youtu.be/OynFGugz6Bg,CryptoForecast1,discussion,
+Akash Network ($AKT) | AI based Forecast 🚀,Crypto_General,1di5rru,2024-06-17 14:52:18,1,1.0,1,https://youtu.be/OynFGugz6Bg,CryptoForecast1,My 2 Satoshi's ,
+Akash Network ($AKT) | AI based Forecast 🚀,akashnetwork,1di5rcr,2024-06-17 14:51:50,5,0.86,0,https://youtu.be/OynFGugz6Bg,CryptoForecast1,🌈 AKT,
+Akash Network ($AKT) | AI based Forecast 🚀,u_CryptoForecast1,1di5qll,2024-06-17 14:50:59,1,1.0,0,https://youtu.be/OynFGugz6Bg,CryptoForecast1,,
+"Daily Market Review: BTC, ETH, AKT, GNO, INJ
+",altcoin_news,1ddavl9,2024-06-11 06:30:59,2,1.0,2,https://www.reddit.com/r/altcoin_news/comments/1ddavl9/daily_market_review_btc_eth_akt_gno_inj/,humbagas,Discussion,"**Akash Price Review**
+
+Akash (AKT) is another gainer in today’s session, as seen from its price movements. An in-depth analysis shows that Akash Network has shown a significant recent uptick in its last candle. However, the trend is generally bearish, as the price trading below the SuperTrend indicator indicates.
+
+On the other hand, the RSI has spiked to 63, which reflects increasing bullish momentum in the short term and potentially signals a trend reversal or pullback. As of press time, the Akash price stood at $4.43, representing a 5.9% jump from its previous 24-hour price.
+
+https://preview.redd.it/v4gx90iw6x5d1.png?width=1600&format=png&auto=webp&s=399e66ede26bfea3ef5eb7e6be28cb248bdd0a85
+
+[https://blockchainreporter.net/daily-market-review-btc-eth-akt-gno-inj/](https://blockchainreporter.net/daily-market-review-btc-eth-akt-gno-inj/)"
+Just In: Injective (INJ) Becomes the Top Third Crypto Gainer Today on CoinpediaMarkets! 🚀,injective,1dd7w9n,2024-06-11 02:57:51,4,0.75,10,https://i.redd.it/y5k4gdlu4w5d1.png,CPMarkets,,

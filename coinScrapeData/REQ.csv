@@ -1,0 +1,2178 @@
+Post Title,Subreddit,Post ID,Created Time,Upvotes,Upvote Ratio,Comments Count,Post URL,Author,Flair,Post Text
+Is this good backend?,learnprogramming,1i9xefq,2025-01-25 16:21:53,1,1.0,0,https://www.reddit.com/r/learnprogramming/comments/1i9xefq/is_this_good_backend/,SomeNameIChoose,,"I've a react native app and use Supabase as backend. For deleting a user I need to use my private key which I can't display in my react native app. I thought about building an express js backend for that. The problem is I don't know anything about backen.  Is this good code? Do I need to check for something or debunce or something?
+
+ I thought about uploading to vercel free plan. Is this a good idea? Where should I put this private key? Only in an .env? or somewhere in vercel? 
+
+        import { createClient } from ""@supabase/supabase-js"";
+    
+        // Initialize Supabase client with service role key
+        const supabase = createClient(
+          process.env.SUPABASE_URL,
+          process.env.SUPABASE_SERVICE_KEY
+        );
+    
+        export default async function handler(req, res) {
+          if (req.method !== ""DELETE"") {
+            return res.status(405).json({ error: ""Method Not Allowed"" });
+          }
+    
+          try {
+            // Authenticate the request using Supabase's auth
+            const authHeader = req.headers.authorization;
+            if (!authHeader || !authHeader.startsWith(""Bearer "")) {
+              return res.status(401).json({ error: ""Unauthorized: No token provided"" });
+            }
+    
+            const token = authHeader.split("" "")[1];
+    
+            // Verify JWT and get user ID
+            const { data: user, error: authError } = await supabase.auth.getUser(token);
+            if (authError || !user) {
+              return res.status(401).json({ error: ""Unauthorized: Invalid token"" });
+            }
+    
+            const userId = user.id;
+    
+            // Proceed to delete the user
+            const { error: deleteError } = await supabase.auth.admin.deleteUser(userId);
+            if (deleteError) {  
+              return res.status(400).json({ error: `Error deleting user: ${deleteError.message}` });
+            }
+    
+            return res.status(200).json({ message: ""User deleted successfully"" });
+          } catch (error) {
+            console.error(""Error deleting user:"", error);
+            return res.status(500).json({ error: ""Internal Server Error"" });
+          }
+        }
+    
+    
+    
+
+
+
+Thank you!"
+Is this good backend?,Backend,1i9xdob,2025-01-25 16:20:56,1,1.0,0,https://www.reddit.com/r/Backend/comments/1i9xdob/is_this_good_backend/,SomeNameIChoose,,"I've a react native app and use Supabase as backend. For deleting a user I need to use my private key which I can't display in my react native app. I thought about building an express js backend for that. The problem is I don't know anything about backen.  Is this good code? Do I need to check for something or debunce or something? 
+
+I thought about uploading to vercel free plan. Is this a good idea? Where should I put this private key? Only in an .env? or somewhere in vercel? 
+
+
+
+        import { createClient } from ""@supabase/supabase-js"";
+    
+        // Initialize Supabase client with service role key
+        const supabase = createClient(
+          process.env.SUPABASE_URL,
+          process.env.SUPABASE_SERVICE_KEY
+        );
+    
+        export default async function handler(req, res) {
+          if (req.method !== ""DELETE"") {
+            return res.status(405).json({ error: ""Method Not Allowed"" });
+          }
+    
+          try {
+            // Authenticate the request using Supabase's auth
+            const authHeader = req.headers.authorization;
+            if (!authHeader || !authHeader.startsWith(""Bearer "")) {
+              return res.status(401).json({ error: ""Unauthorized: No token provided"" });
+            }
+    
+            const token = authHeader.split("" "")[1];
+    
+            // Verify JWT and get user ID
+            const { data: user, error: authError } = await supabase.auth.getUser(token);
+            if (authError || !user) {
+              return res.status(401).json({ error: ""Unauthorized: Invalid token"" });
+            }
+    
+            const userId = user.id;
+    
+            // Proceed to delete the user
+            const { error: deleteError } = await supabase.auth.admin.deleteUser(userId);
+            if (deleteError) {  
+              return res.status(400).json({ error: `Error deleting user: ${deleteError.message}` });
+            }
+    
+            return res.status(200).json({ message: ""User deleted successfully"" });
+          } catch (error) {
+            console.error(""Error deleting user:"", error);
+            return res.status(500).json({ error: ""Internal Server Error"" });
+          }
+        }
+    
+    
+    
+
+Thank you!"
+"/u/Cool-4-Cats [REQUEST] was deleted from /r/SimpleLoans on 2025-01-25 (t3_1h4ibsg up 54.79 days, LONGTAIL)",borrowdeletes,1i9uwth,2025-01-25 14:31:48,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i9uwth/ucool4cats_request_was_deleted_from_rsimpleloans/,GiversBot,,"/u/Cool-4-Cats deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1h4ibsg/req_30_repayment_of_35_on_125_venmo/)
+* Was a selfpost with score: 1
+* Submitted 2024-12-02 00:39 (UTC)
+* Was up for for approx **54.79 days**
+* Probably deleted **within the past 3.84 days**
+  * Was last seen up around 2025-01-21 23:27 (UTC)
+  * Deletion detected at 2025-01-25 19:31 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ACool-4-Cats&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($30)  Repayment of $35 on 12/5 (Venmo)
+
+# Post contents
+
+---
+
+Need a small loan I can repay on the 5th"
+/u/Longjumping-Ad-2931 [REQ] was deleted from /r/borrow on 2025-01-25 (t3_1i747tv up 3.54 days),borrowdeletes,1i9tke7,2025-01-25 13:34:02,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i9tke7/ulongjumpingad2931_req_was_deleted_from_rborrow/,GiversBot,,"/u/Longjumping-Ad-2931 deleted from /r/borrow 
+
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/1i747tv/req_500_kelowna_bc_canada_03212025_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-22 05:40 (UTC)
+* Was up for for approx **3.54 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-25 18:21 (UTC)
+  * Deletion detected at 2025-01-25 18:34 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=Longjumping-Ad-2931)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ALongjumping-Ad-2931&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($500) - (#Kelowna, BC, Canada), (03/21/2025), (PayPal)
+
+# Post contents
+
+---
+
+Hi everyone, this is my first time posting here, and I wouldn't be asking if it weren't my absolute last option. I'm a full-time university student, and my bills have been piling up as l've been struggling to find a new job. I'm currently unemployed but actively applying and hoping to secure something soon.
+I have rent and several other bills due within the next week, and l've run out of other resources. My credit card is maxed out, and I'm already in overdraft, so I'm truly in a tough spot. I'm requesting $CAD500, and I can pay it back by the 21st of March as I hope to have a job by then
+Any help would mean the world to me, and I'd be more than happy to provide proof of my situation if needed. Thank you so much for taking the time to read this."
+"/u/DeadJello808 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-25 (t3_1h1vuq4 up 58.20 days, LONGTAIL)",borrowdeletes,1i9swj2,2025-01-25 13:04:58,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i9swj2/udeadjello808_request_was_deleted_from/,GiversBot,,"/u/DeadJello808 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1h1vuq4/req_30_pensacola_fl_usa_repay_45_on_121524_venmo/)
+* Was a selfpost with score: 1
+* Submitted 2024-11-28 13:23 (UTC)
+* Was up for for approx **58.20 days**
+* Probably deleted **within the past 3.81 days**
+  * Was last seen up around 2025-01-21 22:44 (UTC)
+  * Deletion detected at 2025-01-25 18:04 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ADeadJello808&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($30) - (Pensacola, FL USA) (Repay $45 on 12/15/24) (Venmo)
+
+# Post contents
+
+---
+
+I have to work today and have had a rough couple months. I want to try and get a dinner for the wife and me today since we were unable to do anything this year. I can repay when I get paid again on the 15th. Thank you"
+/u/Humasexuality [REQ] was deleted from /r/borrow on 2025-01-25 (t3_1hz77io up 13.83 days),borrowdeletes,1i9sqww,2025-01-25 12:58:36,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i9sqww/uhumasexuality_req_was_deleted_from_rborrow_on/,GiversBot,,"/u/Humasexuality deleted from /r/borrow 
+
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/1hz77io/req_240_saint_anthony_mn_usa_0115_60_tip_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-11 22:06 (UTC)
+* Was up for for approx **13.83 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-25 17:47 (UTC)
+  * Deletion detected at 2025-01-25 17:58 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=Humasexuality)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AHumasexuality&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($240) - (#Saint Anthony, MN, USA), (01/15 $60 tip), (PayPal)
+
+# Post contents
+
+---
+
+My partner is struggling with an abusive situation and I am trying to help them make it back to their home state (from Michigan to New York) so they can stay safe. Requires multiple train tickets. Requested enough for them to also have something to eat off of. Willing to provide any documentation needed! I am on a fixed income and will pay back the day after it drops."
+"/u/mamamargauxc [REQUEST] was deleted from /r/SimpleLoans on 2025-01-25 (t3_1gu4v53 up 68.09 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i9pvf5,2025-01-25 10:53:39,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i9pvf5/umamamargauxc_request_was_deleted_from/,GiversBot,,"/u/mamamargauxc deleted from /r/SimpleLoans 
+
+* **Account is deleted or shadowbanned**
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1gu4v53/req_usd_1000_repay_600_on_november_30_600_on/)
+* Was a selfpost with score: 0
+* Submitted 2024-11-18 13:37 (UTC)
+* Was up for for approx **68.09 days**
+* Probably deleted **within the past 3.81 days**
+  * Was last seen up around 2025-01-21 20:29 (UTC)
+  * Deletion detected at 2025-01-25 15:53 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Amamamargauxc&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] USD 1000 repay 600 on November 30, 600 on December 15, Manila Philippines, PayPal 
+
+# Post contents
+
+---
+
+This would be my 3rd loan on this subreddit. Maybe higher than previous ones but i need a bigger amount to cover other bills. Hoping someone can help. Lender u/TheComputerist can vouch for me. Grateful he took a chance on lending me."
+"/u/TheReaperActual [COMPLETED] was deleted from /r/borrow on 2025-01-25 (t3_rw1vf0 up 1116.87 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i9ptjo,2025-01-25 10:51:20,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i9ptjo/uthereaperactual_completed_was_deleted_from/,GiversBot,,"/u/TheReaperActual deleted from /r/borrow 
+
+* **Account is deleted or shadowbanned**
+* Flair: COMPLETED
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/rw1vf0/req_175_johnson_city_tn_usa_repay_225_by_12222/)
+* Was a selfpost with score: 1
+* Submitted 2022-01-04 19:00 (UTC)
+* Was up for for approx **1116.87 days**
+* Probably deleted **within the past 20.69 days**
+  * Was last seen up around 2025-01-04 23:21 (UTC)
+  * Deletion detected at 2025-01-25 15:51 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=TheReaperActual)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ATheReaperActual&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($175) (#Johnson City, TN, USA) (Repay $225 by 1/22/22) (Venmo)
+
+# Post contents
+
+---
+
+Hello, fell a little short on rent due to PayPal holding a transaction for over $300. I know I have one loan out at current time of posting, but that will be repaid before this Friday. 
+
+I can possibly pay this request back sooner if PayPal releases my funds, if not I get paid on the 21st.
+
+Just trying to make it until I get my bonus at the end of the month and then I shouldn’t have to borrow again. Hopefully.
+
+Thanks in advance to anyone willing to help."
+Express session not storing cookies on mobile devices,node,1i9pr00,2025-01-25 10:48:13,1,0.67,8,https://www.reddit.com/r/node/comments/1i9pr00/express_session_not_storing_cookies_on_mobile/,Adventurous_Try799,,"I have an odd problem where Express session is storing cookies on desktop browsers, but on mobile devices, cookies are not being stored, causing the login process to fail.  
+My session config:
+
+    app.use(session({
+        secret: process.env.SECRET,
+        store: MongoStore.create({ mongoUrl: process.env.DB_URI }),
+        cookie: {
+            maxAge: Number(process.env.COOKIE_MAXAGE),
+            secure: true,
+            httpOnly: true,
+            sameSite: 'None',
+        },
+        resave: false,
+        saveUninitialized: false,
+    }));
+
+Also, I had to use `app.enable('trust proxy')` in order for it to work (I'm not sure why, but after adding this, I could log in on desktop).  
+CORS config:
+
+    app.use(cors({
+        origin: process.env.REQ_ORIGIN,
+        credentials: true
+    }));
+
+I've checked the logs in my backend and there are no errors. The only useful information I found was that `req.session.userId` is undefined when the request is from a mobile device.
+
+Also, both the front-end and back-end use HTTPS.
+
+Edit:   
+I think it has something to do with the reverse proxy"
+"/u/black-lung [COMPLETED] was deleted from /r/borrow on 2025-01-25 (t3_rnydpw up 1127.58 days, LONGTAIL)",borrowdeletes,1i9ny4i,2025-01-25 09:22:19,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i9ny4i/ublacklung_completed_was_deleted_from_rborrow_on/,GiversBot,,"/u/black-lung deleted from /r/borrow 
+
+* Flair: COMPLETED
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/rnydpw/req_250_camp_verde_az_usa_275_010722_venmo_zelle/)
+* Was a selfpost with score: 2
+* Submitted 2021-12-25 00:21 (UTC)
+* Was up for for approx **1127.58 days**
+* Probably deleted **within the past 20.68 days**
+  * Was last seen up around 2025-01-04 21:58 (UTC)
+  * Deletion detected at 2025-01-25 14:22 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=black-lung)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Ablack-lung&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($250 ) - (#Camp Verde, AZ, USA), ($275 01/07/22), (Venmo, Zelle)
+
+# Post contents
+
+---
+
+Hello. My entire household has Covid and has been out of work for almost 2 weeks now. One of us is symptom free and will hopefully get a negative test on Monday, and I am feeling 97% better and will hopefully be back to delivering groceries in the few days after Christmas. 
+
+Requesting enough for gas, some food, and to pay our water bill so it doesn't get shut off on the 30th. Will repay an extra $25. 
+
+Thank you in advance."
+3 star Trades,MonopolyGoTrading,1i9nx6s,2025-01-25 09:21:01,2,1.0,18,https://i.redd.it/49mvo9xsf5fe1.jpeg,PossibleOcelot6616,1-3 Star Trading,
+"/u/DeadJello808 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-25 (t3_1glq6td up 79.02 days, LONGTAIL)",borrowdeletes,1i9n4om,2025-01-25 08:39:22,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i9n4om/udeadjello808_request_was_deleted_from/,GiversBot,,"/u/DeadJello808 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1glq6td/req_50_pensacola_fl_us_repay_70_on_1115_venmo/)
+* Was a selfpost with score: 2
+* Submitted 2024-11-07 13:16 (UTC)
+* Was up for for approx **79.02 days**
+* Probably deleted **within the past 3.84 days**
+  * Was last seen up around 2025-01-21 17:36 (UTC)
+  * Deletion detected at 2025-01-25 13:39 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ADeadJello808&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($50) - (#Pensacola, FL, US), (Repay $70 on 11/15) Venmo
+
+# Post contents
+
+---
+
+My wife's birthday is coming up on the 11th and I want to try and get her a little something as it has been a hard last few months. Will repay when I get paid on the 15th."
+"/u/massdebator69 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-25 (t3_1ghfwd8 up 84.63 days, LONGTAIL)",borrowdeletes,1i9lqvu,2025-01-25 07:17:40,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i9lqvu/umassdebator69_request_was_deleted_from/,GiversBot,,"/u/massdebator69 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1ghfwd8/req_400_boston_ma_usa_repayment_of_500_on_1212024/)
+* Was a selfpost with score: 1
+* Submitted 2024-11-01 21:05 (UTC)
+* Was up for for approx **84.63 days**
+* Probably deleted **within the past 3.81 days**
+  * Was last seen up around 2025-01-21 16:52 (UTC)
+  * Deletion detected at 2025-01-25 12:17 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Amassdebator69&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($400) (#Boston, MA, USA) (Repayment of $500 on 12/1/2024) (PayPal or Venmo) 
+
+# Post contents
+
+---
+
+Hey all - looking for a loan to catch up on bills after unexpected costs coming from a family emergency. Thanks!"
+Http request smuggling,bugbounty,1i9l6vo,2025-01-25 06:40:02,2,1.0,1,https://www.reddit.com/r/bugbounty/comments/1i9l6vo/http_request_smuggling/,FunSheepherder2650,HTTP Request Smuggling,"Hi, I came across a possible bug While I was enumerating the domain I tried to access 401 files by simply putting some.. in front of them and see how the server handle that request, I ended up getting a 301 redirect for an accessible page, but the interesting thing is that the response only included the version of open resty 1.15.8.1 vulnerable to HRS CVE-2020-11724, since i never touched It before, I searched how it can be' exploited (first studying the vulnerability itself and then a PoC) strange thing is that it doesn't seem exploitable, (I'd like to try access internal data, just for having a PoC, I already have a directory that I can try but the server is not seems vulnerable, do you think that I can try in other way? What I did is sending a post req to the domain root directory, like this
+
+POST / HTTP/1.1 
+Host example.c
+Transfer-encoding: chunked 
+Content-length: 13
+
+0
+
+GET /secret HTTP/1.1 
+Host example
+And an header custom to trick the server,
+Any idea?"
+"/u/massdebator69 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-25 (t3_1gb56qi up 92.82 days, LONGTAIL)",borrowdeletes,1i9kk4z,2025-01-25 05:55:17,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i9kk4z/umassdebator69_request_was_deleted_from/,GiversBot,,"/u/massdebator69 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1gb56qi/req_150_boston_ma_usa_repay_200_on_1115_venmo/)
+* Was a selfpost with score: 3
+* Submitted 2024-10-24 15:21 (UTC)
+* Was up for for approx **92.82 days**
+* Probably deleted **within the past 3.84 days**
+  * Was last seen up around 2025-01-21 14:38 (UTC)
+  * Deletion detected at 2025-01-25 10:55 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Amassdebator69&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($150) (#Boston, MA, USA) (Repay $200 on 11/15) (Venmo) 
+
+# Post contents
+
+---
+
+Hi all- looking for 150 because I had some unexpected travel expenses due to a family emergency. Thank you!"
+"/u/mamamargauxc [REQUEST] was deleted from /r/SimpleLoans on 2025-01-25 (t3_1gag0gh up 93.73 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i9kk36,2025-01-25 05:55:12,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i9kk36/umamamargauxc_request_was_deleted_from/,GiversBot,,"/u/mamamargauxc deleted from /r/SimpleLoans 
+
+* **Account is deleted or shadowbanned**
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1gag0gh/req_usd_500_repay_550_on_november_15th_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2024-10-23 17:17 (UTC)
+* Was up for for approx **93.73 days**
+* Probably deleted **within the past 3.84 days**
+  * Was last seen up around 2025-01-21 14:38 (UTC)
+  * Deletion detected at 2025-01-25 10:55 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Amamamargauxc&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] USD 500 Repay 550 on November 15th, Paypal, Philippines 
+
+# Post contents
+
+---
+
+I have cleared 2 loans with u/TheComputerist. Requesting for 500 to be repaid in 3 weeks, as this will be when i receive my salary. Need additional funds to pay bills due this week. Thank you in advance."
+/u/Happielemur [REQ] was deleted from /r/borrow on 2025-01-25 (t3_1i90aej up 0.69 days),borrowdeletes,1i9jjgq,2025-01-25 04:39:39,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i9jjgq/uhappielemur_req_was_deleted_from_rborrow_on/,GiversBot,,"/u/Happielemur deleted from /r/borrow 
+
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/1i90aej/req_900usd_morris_nj_usa_repay_by_131_and_214/)
+* Was a selfpost with score: 0
+* Submitted 2025-01-24 17:06 (UTC)
+* Was up for for approx **0.69 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-25 09:27 (UTC)
+  * Deletion detected at 2025-01-25 09:39 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=Happielemur)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AHappielemur&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($900USD) - (#Morris, NJ, USA), (Repay by 1/31 and 2/14), (Venmo, Cashapp)
+
+# Post contents
+
+---
+
+I’m embarrassed and budgeted my tuition for my sports training overseas clinic the wrong way. I’m about -900 short and need to pay by Sunday. I can pay back in 2 installments via Venmo/cashapp. 
+
+First re-payment: January 31st 2025 
+Second re-payment: February 14th 2025 
+
+Your kindness is appreciated. 💖 this is my first time ever requesting. I’m usually on time paying my sport bills."
+Why r people so pushy with nesting???,CoSRants,1i9jdhz,2025-01-25 04:26:55,12,1.0,13,https://www.reddit.com/r/CoSRants/comments/1i9jdhz/why_r_people_so_pushy_with_nesting/,newreditig,Player-Based Rant,"this is a long post i have a lot to get off my chest here lol. 
+
+I grided for Prial like a few days after it dropped. my partner is usually the one that hosts our packs so ill play females and throw down a nest so i can keep tabs on whos in game vs menu or what ppl are playing. I also like to sit on nests when going afk for a bit and ill let whoever wants to nest nest (fcfs). 
+
+But any time im nesting as a new or sought after creature some ppl can be so. fucking. demanding or rude about it. 
+
+from nagging the hell out of me when im just trying to play the game and fly around asking me over and over in public chat to go sit on my nest so they can hatch or SPAMMING nest requests when ive already got someone who asked to have the next egg. Even if i tell them to wait and they can have the next one they will just spam tf out of the request button. 
+
+Some of them dont even stop at one egg. they either hatch, and then try to immediately go KOS, get themself killed, and expect to hatch again. Or they want to use you to mutation hunt or something and just request EVERY time you get an egg even tho they are still the baby you JUST hatched them as. 
+
+Yesterday i was playing in oasis with my partner as prial and someone ill just call Red was like ""faygo- faygo be my mommy"" ""faygo be my mommy"" 
+
+1) weird. i hate the fucking rp elements ppl try to force on ppl hatching im NOT your fucking ""mommy"" keep that shit to urself. 
+
+2) i am trying to play the game and my nest is all the way in tundra. 
+
+they would NOT stop TELLING me to nest. im like - uuhh fine w/e ill give this dude one egg and get them off my back abt it. i was gonna go out of tab anyways to draw or watch something or do some other shit online ider. So i stop what im doing and fly my ass all the way to tundra and park it on my nest for the next few min. i come back from what i was doing out of tab and they are SCREAMING at me in chat for not being the most attentive nester in the world and hatching them the millisecond i had an egg ready. 
+
+i hatch them, im not even talking back to them atp, and they log and i never see them again (thank god). but i dont know why ppl think its appropriate to be so fucking demanding of other people. im not a fucking machine for slots dude. get the creature urself if you want to play it so bad. or at least ASK instead of TELLING ME to hatch you. Are kids seriously not even taught to use please and thanks anymore? why are they so god damn entitled about it. 
+
+idk- from here on out im not nesting ANYONE unless theyre at least being polite about it. I dont usually mind nesting ppl so they can get free slots/trials of stuff esp new stuff. but like- dont be rude. And leave the werid ass ""mommy"" shit out of it. 
+
+This is FAR from the only time my or my partner have had people just being rude af to us while were nesting either. From requesting to hatch and then calling one of our skins ugly then turning around and asking if they can hatch as the ""pretty one"" (what the fuck) to COUNTLESS times someone requests to hatch just to turn around and bite you? whats the function??? People hatching and then just- TAKING the carcasses we keep around to provide sat for babies. Who do you think you are? youre about to be the next carcass thats fs. 
+
+And on the subject of entitlement, people that get SO MAD that you wont nest them that they HUNT YOU DOWN and try to kill you or egg steal. Like bro im sorry you crash out over being told No its giving spoiled brat. The only time i decline nest req anyways is when im mute/trait hunting in SMALL SERVERS. I dont mut hunt in larger servers bc i hunt for hours on end with alt acounts and thats just not smart to do in any sever with more than like 10 people. So when this happens 100% of the time its in a server with like 3 people that arent me and my partner and our alt accounts. Absolutely 0 reason to crash out to that degree because i didnt let you have a free aereis. And with that behavior im glad i didnt bc too many ppl use nest req to locate a nest so they can pester the nester and attack them/steal eggs. like take it to a full server or w/e ffs. "
+"/u/ShaolinXfile27 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-25 (t3_1g21czy up 104.77 days, LONGTAIL)",borrowdeletes,1i9ixk8,2025-01-25 03:53:14,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i9ixk8/ushaolinxfile27_request_was_deleted_from/,GiversBot,,"/u/ShaolinXfile27 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1g21czy/req_250_grand_rapids_mi_united_states_repayment/)
+* Was a selfpost with score: 0
+* Submitted 2024-10-12 14:30 (UTC)
+* Was up for for approx **104.77 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-21 12:33 (UTC)
+  * Deletion detected at 2025-01-25 08:53 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AShaolinXfile27&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($250) - (#Grand Rapids, Mi, United States) (Repayment $300 - 10/24/24)
+
+# Post contents
+
+---
+
+Rent was due a week and a half ago  but due to an extremely poor timed 2 days of no work at my shop combined with my only vehicle needing repairs I'm short exactly $248. My trailer park has already added $50 in late fees and threatened court fees through an eviction notice if its not paid by tonight.
+If anyone could help I'd be more than greatful, as of right now I feel like I'm drowning"
+"(REQ) Fort Lauderdale, FL REQUESTING $150 & I’ll repay $175 back via PayPal, CashApp, or Venmo.",LoansPaydayOnline,1i9iry2,2025-01-25 03:41:30,1,1.0,1,https://www.reddit.com/r/LoansPaydayOnline/comments/1i9iry2/req_fort_lauderdale_fl_requesting_150_ill_repay/,sailorbaab,request,"Hi. I’m really going thru a rough patch right now where I’m left a little bit short for this week. I just need money for home essentials & for my sons diapers & wipes as well. If anybody can help me, I will forever be grateful in your debt. Please and thank you! 🙏🏻 I will repay by February 7th when I get paid. "
+"/u/bigdaddyslappy [COMPLETED] was deleted from /r/borrow on 2025-01-25 (t3_qe7awh up 1189.54 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i9fcel,2025-01-24 23:46:19,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i9fcel/ubigdaddyslappy_completed_was_deleted_from/,GiversBot,,"/u/bigdaddyslappy deleted from /r/borrow 
+
+* **Account is deleted or shadowbanned**
+* Flair: COMPLETED
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/qe7awh/req_165_clearwater_fl_usa_repay_215_11122021/)
+* Was a selfpost with score: 1
+* Submitted 2021-10-23 15:46 (UTC)
+* Was up for for approx **1189.54 days**
+* Probably deleted **within the past 20.67 days**
+  * Was last seen up around 2025-01-04 12:40 (UTC)
+  * Deletion detected at 2025-01-25 04:46 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=bigdaddyslappy)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Abigdaddyslappy&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($165) - (# Clearwater, FL, USA), (Repay $215 11/12/2021) (CashApp)
+
+# Post contents
+
+---
+
+Currently have a loan out. Scheduled a repayment with that lender and have their permission to request an additional loan."
+/u/CuckAdminsDetected [REQUEST] was deleted from /r/SimpleLoans on 2025-01-25 (t3_1i9bt8q up 0.02 days),borrowdeletes,1i9chh3,2025-01-24 21:06:39,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i9chh3/ucuckadminsdetected_request_was_deleted_from/,GiversBot,,"/u/CuckAdminsDetected deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i9bt8q/req_800_columbus_ohio_usa_repay_1200_at_200_a/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-25 01:31 (UTC)
+* Was up for for approx **0.02 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-25 01:53 (UTC)
+  * Deletion detected at 2025-01-25 02:06 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ACuckAdminsDetected&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] $800 (Columbus, Ohio, USA) (Repay 1200 at 200 a week startinf Feb27th 2025)
+
+# Post contents
+
+---
+
+I am on the verge of being homeless. In accordance with a suggestion I have adjusted to the absolute minimum I need to avoid homelessness. I start work Feb 10th depending on pay schedule I may be able to start repayment before Feb 27th."
+Submittal Logs,ConstructionManagers,1i9cbpj,2025-01-24 20:58:25,1,1.0,3,https://www.reddit.com/r/ConstructionManagers/comments/1i9cbpj/submittal_logs/,Grundle_Fromunda,Discussion,"Is the correct approach to generate a submittal log, submit to design team for review/comment, update based on returned review, then distribute to subs for proper submittals submission? How often is this route taken? I feel like submittal review goes on well into construction. 
+
+Anyway, the actual reason for my post is our company utilizes CMiC, there is a catchphrase in our company that PMs utilize for the software “death by a thousand clicks”. Anyway, working with a high end architect who is extremely particular and had been demanding access into the software while still in precon and constantly requesting the submittal log. I had to ensure them generating the log will take time, I was assisting precon in building MEPFP bid packages and bidding them out, leveling, scope reviews with owner/design team, buying out and sending award reqs so I didn’t have the bandwidth to be generating the log. 
+
+Owner rep was hounding me for the full log and I advised again this would take time - and finally, my point. Owner rep informed me that procore (I have not used since being on CM side of construction, only limited access when working for an MEP sub) has the ability to upload spec book PDF and **autopopulate** a damn submittal log! I was floored, I immediately googled and YUP, accurate. 
+
+Now I’m assuming this isn’t perfect and whatever it churns out needs to be refined, albeit even if that’s the case and it’s between 60-80% accurate I’d like to believe this is still 100% more efficient than the current process through CMiC. 
+
+Just kind of ranting here, curious of others experiences/opinions on anything mentioned above - open discussion was in mind while ranting this out. "
+/u/BBQ_King69 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1i5dyf5 up 4.95 days),borrowdeletes,1i999jm,2025-01-24 18:29:36,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i999jm/ubbq_king69_request_was_deleted_from_rsimpleloans/,GiversBot,,"/u/BBQ_King69 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i5dyf5/req_250atlanta_ga_usarepay_400_2625_paypal_venmo/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-20 00:45 (UTC)
+* Was up for for approx **4.95 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 23:18 (UTC)
+  * Deletion detected at 2025-01-24 23:29 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ABBQ_King69&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] [$250]-(Atlanta GA, USA),(Repay $400 2/6/25) (PayPal, Venmo)
+
+# Post contents
+
+---
+
+All I have had are scammers reaching out to me. I need some help for the end of the month. Meds and groceries are eating me alive right now. Finally recovering from my daughter's hospital stay and I could really use some help until my next paycheck."
+/u/BBQ_King69 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1i6mobq up 3.29 days),borrowdeletes,1i999h0,2025-01-24 18:29:30,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i999h0/ubbq_king69_request_was_deleted_from_rsimpleloans/,GiversBot,,"/u/BBQ_King69 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i6mobq/req_150atlanta_ga_usarepay_300_2625_paypal_venmo/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-21 16:35 (UTC)
+* Was up for for approx **3.29 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 23:18 (UTC)
+  * Deletion detected at 2025-01-24 23:29 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ABBQ_King69&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] [$150]-(Atlanta GA, USA),(Repay $300 2/6/25) (PayPal, Venmo) 
+
+# Post contents
+
+---
+
+I need some help for the end of the month. Meds and groceries are eating me alive right now. Finally recovering from my daughter's hospital stay and I could really use some help until my next paycheck."
+/u/Some_Formal_2814 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1hrmd07 up 22.69 days),borrowdeletes,1i96s59,2025-01-24 16:40:03,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i96s59/usome_formal_2814_request_was_deleted_from/,GiversBot,,"/u/Some_Formal_2814 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1hrmd07/req_425_atlanta_ga_repay_500_on_10925_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-02 05:12 (UTC)
+* Was up for for approx **22.69 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 21:25 (UTC)
+  * Deletion detected at 2025-01-24 21:40 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ASome_Formal_2814&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] ($425) (Atlanta, Ga) (Repay $500 on 1/09/25) (PayPal)
+
+# Post contents
+
+---
+
+Moving to Charlotte NC to start my new job, just need cash to last me til my leave paycheck hits on the 9th.
+
+Please DM me with any inquiries."
+"/u/bigdaddyslappy [COMPLETED] was deleted from /r/borrow on 2025-01-24 (t3_pifb62 up 1237.25 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i96nc5,2025-01-24 16:34:13,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i96nc5/ubigdaddyslappy_completed_was_deleted_from/,GiversBot,,"/u/bigdaddyslappy deleted from /r/borrow 
+
+* **Account is deleted or shadowbanned**
+* Flair: COMPLETED
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/pifb62/req_600_clearwater_fl_usa_repay_800_by_1012021/)
+* Was a selfpost with score: 1
+* Submitted 2021-09-05 15:38 (UTC)
+* Was up for for approx **1237.25 days**
+* Probably deleted **within the past 20.65 days**
+  * Was last seen up around 2025-01-04 05:59 (UTC)
+  * Deletion detected at 2025-01-24 21:34 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=bigdaddyslappy)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Abigdaddyslappy&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($600) (#Clearwater, FL, USA) (Repay $800 by 10/1/2021) (Zelle, Cashapp, Apple Pay)
+
+# Post contents
+
+---
+
+Will provide more information upon request."
+"/u/bigdaddyslappy [REQ] was deleted from /r/borrow on 2025-01-24 (t3_phq0nz up 1238.41 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i96ma3,2025-01-24 16:32:55,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i96ma3/ubigdaddyslappy_req_was_deleted_from_rborrow_on/,GiversBot,,"/u/bigdaddyslappy deleted from /r/borrow 
+
+* **Account is deleted or shadowbanned**
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/phq0nz/req_1150_clearwater_fl_usa_repay_1320_payments_of/)
+* Was a selfpost with score: 2
+* Submitted 2021-09-04 11:42 (UTC)
+* Was up for for approx **1238.41 days**
+* Probably deleted **within the past 20.68 days**
+  * Was last seen up around 2025-01-04 05:17 (UTC)
+  * Deletion detected at 2025-01-24 21:32 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=bigdaddyslappy)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Abigdaddyslappy&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($1150) (#Clearwater, FL, USA) (Repay $1320, payments of $330 every 2 weeks starting 9/17/21) (Zelle, Cashapp)
+
+# Post contents
+
+---
+
+Just started a new job on 9/2/21, had an unexpected medical expense, and need help paying bills and rent. Happy to provide any additional or more in depth information or upon request."
+/u/CountTheseBlessings [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1i1ols2 up 9.74 days),borrowdeletes,1i96fxb,2025-01-24 16:25:21,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i96fxb/ucounttheseblessings_request_was_deleted_from/,GiversBot,,"/u/CountTheseBlessings deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i1ols2/req_400_atlanta_ga_repay_500_12625_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-15 03:34 (UTC)
+* Was up for for approx **9.74 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 21:14 (UTC)
+  * Deletion detected at 2025-01-24 21:25 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ACountTheseBlessings&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] ($400) (Atlanta, GA) (Repay $500, 1/26/25) (PayPal)
+
+# Post contents
+
+---
+
+I gotta get some work done on my car because I haven’t been doing my due diligence. Rookie mistake, now it’s gonna cost me. Just as it’s gotten actually cold too. Please reach out to me with further inquires."
+/u/CountTheseBlessings [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1i2touv up 8.18 days),borrowdeletes,1i96ftn,2025-01-24 16:25:15,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i96ftn/ucounttheseblessings_request_was_deleted_from/,GiversBot,,"/u/CountTheseBlessings deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i2touv/req_250_atlanta_ga_repay_325_12625_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-16 17:05 (UTC)
+* Was up for for approx **8.18 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 21:14 (UTC)
+  * Deletion detected at 2025-01-24 21:25 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ACountTheseBlessings&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] ($250) (Atlanta, Ga) (Repay $325, 1/26/25) (PayPal)
+
+# Post contents
+
+---
+
+Gotta get some work done on my car. Please reach out to me."
+/u/IllegalSmillegal [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1hvg7kd up 17.79 days),borrowdeletes,1i95dj0,2025-01-24 15:39:10,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i95dj0/uillegalsmillegal_request_was_deleted_from/,GiversBot,,"/u/IllegalSmillegal deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1hvg7kd/req_200_auroraillinoisusa_repay_12225_250/)
+* Was a selfpost with score: 0
+* Submitted 2025-01-07 01:45 (UTC)
+* Was up for for approx **17.79 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 20:28 (UTC)
+  * Deletion detected at 2025-01-24 20:39 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AIllegalSmillegal&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] (200) - (#aurora,Illinois,usa), (repay 1/22/25 250) PayPal/venmo
+
+# Post contents
+
+---
+
+Trying to catch up on bills thanks can verify"
+/u/IllegalSmillegal [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1hxumkl up 14.74 days),borrowdeletes,1i95dfv,2025-01-24 15:39:04,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i95dfv/uillegalsmillegal_request_was_deleted_from/,GiversBot,,"/u/IllegalSmillegal deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1hxumkl/req_500_aurorailus_300_122_250_129/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-10 02:53 (UTC)
+* Was up for for approx **14.74 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 20:28 (UTC)
+  * Deletion detected at 2025-01-24 20:39 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AIllegalSmillegal&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] (500) - (#aurora,il,us), (300 1/22 250 1/29).
+
+# Post contents
+
+---
+
+Trying to make bills hopefully someone can help. Can verify"
+/u/IllegalSmillegal [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1hyv1wv up 13.33 days),borrowdeletes,1i95dcp,2025-01-24 15:38:58,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i95dcp/uillegalsmillegal_request_was_deleted_from/,GiversBot,,"/u/IllegalSmillegal deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1hyv1wv/req_300_aurorailus_repay_200_122_200_129_paypal/)
+* Was a selfpost with score: 0
+* Submitted 2025-01-11 12:40 (UTC)
+* Was up for for approx **13.33 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 20:28 (UTC)
+  * Deletion detected at 2025-01-24 20:38 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AIllegalSmillegal&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] (300)- (#aurora,il,us), (repay 200 1/22 200 1/29 PayPal and Venmo ready
+
+# Post contents
+
+---
+
+Need to catch up on bills can verify"
+/u/IllegalSmillegal [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1hz3woh up 13.04 days),borrowdeletes,1i95d9e,2025-01-24 15:38:52,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i95d9e/uillegalsmillegal_request_was_deleted_from/,GiversBot,,"/u/IllegalSmillegal deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1hz3woh/req_500_aurorailus_600_200_115_200122_200_129/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-11 19:38 (UTC)
+* Was up for for approx **13.04 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 20:28 (UTC)
+  * Deletion detected at 2025-01-24 20:38 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AIllegalSmillegal&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] (500) - (#aurora,il,us), (600 - 200 1/15 200-1/22 200 1/29
+
+# Post contents
+
+---
+
+Got behind for the holidays just need to catch up on bills"
+"/u/OokieBungie [REQ] was deleted from /r/borrow on 2025-01-24 (t3_p9nwji up 1250.81 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i93l7w,2025-01-24 14:22:46,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i93l7w/uookiebungie_req_was_deleted_from_rborrow_on/,GiversBot,,"/u/OokieBungie deleted from /r/borrow 
+
+* **Account is deleted or shadowbanned**
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/p9nwji/req_80_minneapolis_mn_usa_repay_100_082721_venmo/)
+* Was a selfpost with score: 1
+* Submitted 2021-08-22 23:51 (UTC)
+* Was up for for approx **1250.81 days**
+* Probably deleted **within the past 20.65 days**
+  * Was last seen up around 2025-01-04 03:46 (UTC)
+  * Deletion detected at 2025-01-24 19:22 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=OokieBungie)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AOokieBungie&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] ($80) (#Minneapolis, MN, USA) (Repay $100 08/27/21) (Venmo, cash app, PayPal)
+
+# Post contents
+
+---
+
+Hey folks I’m having a hard time keeping up with bills and could really use some help with getting gas and some money for groceries.  This would be greatly appreciated and would help me a lot.  Willing to provide any proof of employment I fo requested."
+"/u/fiction57 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1egt1ft up 177.05 days, LONGTAIL)",borrowdeletes,1i92lt8,2025-01-24 13:41:23,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i92lt8/ufiction57_request_was_deleted_from_rsimpleloans/,GiversBot,,"/u/fiction57 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1egt1ft/req_85_london_united_kingdom_110_repayment_060824/)
+* Was a selfpost with score: 1
+* Submitted 2024-07-31 17:29 (UTC)
+* Was up for for approx **177.05 days**
+* Probably deleted **within the past 3.84 days**
+  * Was last seen up around 2025-01-20 22:27 (UTC)
+  * Deletion detected at 2025-01-24 18:41 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Afiction57&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] £85 (#London, United kingdom) (£110 repayment 06/08/24)
+
+# Post contents
+
+---
+
+Hi everyone i’m in a bad situation right now, i need to do food shopping since my fridge’s completely empty and i haven’t got enough to buy food and travel for work. I’m happy to pay the extra on the 6th when im paid and answer questions, any help would be greatly appreciated. Thanks everyone"
+Patron random q se me ocurrió,devsarg,1i91tm0,2025-01-24 13:08:42,16,0.86,47,https://www.reddit.com/r/devsarg/comments/1i91tm0/patron_random_q_se_me_ocurrió/,LopsidedParticular25,backend,"Buenas gente, espero que anden bien.
+Bueno la cosa es asi, mi idea es en un lindo framework oop q soporte inyeccion a mansalva, hacer una estructura de objetos que cada uno represente un request especifico a un endpoint especifico, y que sea inyectable.
+
+Mi pregunta es, realmente vale minimamente la pena? Sé q es mucho boilerplate. Please no digan ""es una verga"" y nada mas, si puede ser algo constructivo, mejor.
+    
+    public interface IHttpRequestEndpoint {
+        String getUrl();
+        String getPath();
+    }
+    
+    public abstract class HttpRequest implements IHttpRequestEndpoint {
+        private static final Logger _logger = LoggerFactory.getLogger(HttpRequest .class);
+    
+        @Autowired
+        protected RestTemplate restTemplate;
+    
+        @Autowired
+        protected HttpServletRequest req;
+    
+        @Autowired
+        protected Config config;
+    
+        private String getFullUrl(Object... uriVariables) {
+            String fullUrl = getUrl() + getPath();
+            return uriVariables != null ? UriComponentsBuilder.fromUriString(fullUrl).buildAndExpand(uriVariables).toUriString() : fullUrl;
+    }
+    
+        protected ResponseEntity makeRequest(HttpMethod method, HttpHeaders headers, Object body, Type responseType, Object... arguments) {
+            return restTemplate.exchange(getFullUrl(arguments), method, new HttpEntity<>(body, headers), responseType, _logger);
+        }
+    }
+    
+    public interface IGetFacturaHttpRequest {
+        ResponseEntity<Factura> makeRequest(String id);
+    }
+    
+    
+    public class GetFacturaHttpRequest extends HttpRequest implements IGetFacturaHttpRequest {
+        @Override
+        public String getUrl() {
+            return config.getFacturaServer().getUrl();
+        }
+        @Override
+        public String getPath() {
+            return config.getFacturaServer().getPath().getGetFactura();
+        }
+    
+        public ResponseEntity<Factura> makeRequest(String id) {
+            return makeRequest(HttpMethod.GET, null, null, Factura.class, id);
+        }
+    }"
+502 error code,apachesuperset,1i8zk07,2025-01-24 11:36:04,1,1.0,0,https://www.reddit.com/r/apachesuperset/comments/1i8zk07/502_error_code/,OwnEgg8894,,"I get a 502 error code when I log in, then log out and log in again, or I don't use the superset for a while, I log out and then want to log in, the same problem. Both the superset itself and keycloak are installed with helm chart . 
+
+[when I try second login](https://preview.redd.it/y0hah81lyyee1.png?width=1909&format=png&auto=webp&s=8b81f0806fe8d1a10d80d2441f4e1fd855fb20e7)
+
+{{- if .Values.supersetNode.connections.redis\_password }}
+
+REDIS\_BASE\_URL=f""redis://{env('REDIS\_USER', '')}:{env('REDIS\_PASSWORD')}@{env('REDIS\_HOST')}:{env('REDIS\_PORT')}""
+
+{{- else }}
+
+REDIS\_BASE\_URL=f""redis://{env('REDIS\_HOST')}:{env('REDIS\_PORT')}""
+
+{{- end }}
+
+{{- if .Values.supersetNode.connections.redis\_ssl.enabled }}
+
+REDIS\_URL\_PARAMS = f""?ssl\_cert\_reqs={env('REDIS\_SSL\_CERT\_REQS')}""
+
+{{- else }}
+
+REDIS\_URL\_PARAMS = """"
+
+{{- end}}
+
+CACHE\_REDIS\_URL = f""{REDIS\_BASE\_URL}/{env('REDIS\_DB', 1)}{REDIS\_URL\_PARAMS}""
+
+CELERY\_REDIS\_URL = f""{REDIS\_BASE\_URL}/{env('REDIS\_CELERY\_DB', 0)}{REDIS\_URL\_PARAMS}""
+
+
+
+SESSION\_TYPE = 'redis'
+
+SESSION\_PERMANENT = False
+
+PERMANENT\_SESSION\_LIFETIME = timedelta(minutes=2)
+
+REMEMBER\_COOKIE\_DURATION = timedelta(minutes=2)
+
+SESSION\_REFRESH\_EACH\_REQUEST = True
+
+REMEMBER\_COOKIE\_REFRESH\_EACH\_REQUEST = True
+
+SESSION\_KEY\_PREFIX = 'superset\_session:'
+
+SESSION\_COOKIE\_NAME = 'superset\_session'
+
+SESSION\_COOKIE\_SECURE = True
+
+SESSION\_COOKIE\_HTTPONLY = True
+
+SESSION\_COOKIE\_SAMESITE = 'Lax'
+
+SESSION\_USE\_SIGNER = True
+
+WTF\_CSRF\_TIME\_LIMIT = 120
+
+SESSION\_SERVER\_SIDE = True
+
+SESSION\_FILE\_THRESHOLD = 300
+
+SESSION\_REDIS = Redis.from\_url(CACHE\_REDIS\_URL, decode\_responses=False, encoding='utf-8', encoding\_errors='ignore')
+
+GAMMA\_USER\_ROLES = \[""Gamma"", ""sql\_lab""\]
+
+
+
+ALPHA\_USER\_ROLES = \[""Alpha"", ""sql\_lab""\]
+
+DATABASE\_PERMISSIONS = {
+
+""gamma"": \[""{{ .Values.extraEnv.APP\_DB\_NAME }}""\]
+
+}
+
+AUTH\_ROLES\_MAPPING = {
+
+   ""superset\_Gamma"": \[""Gamma""\],
+
+   ""superset\_Admin"": \[""Admin""\],
+
+   ""superset\_Alpha"": \[""Alpha""\],
+
+}
+
+AUTH\_USER\_REGISTRATION = True
+
+AUTH\_ROLES\_SYNC\_AT\_LOGIN = True
+
+
+
+CLIENT\_ID = '{{ .Values.extraSecretEnv.CLIENT\_ID }}'
+
+CLIENT\_SECRET = '{{ .Values.extraSecretEnv.CLIENT\_SECRET }}'
+
+API\_BASE\_URL = '{{ .Values.extraEnv.API\_BASE\_URL }}'
+
+SERVER\_METADATA\_URL = '{{ .Values.extraEnv.SERVER\_METADATA\_URL }}'
+
+ISSUER = '{{ .Values.extraEnv.ISSUER }}'
+
+ACCESS\_TOKEN\_URL = '{{ .Values.extraEnv.ACCESS\_TOKEN\_URL }}'
+
+AUTHORIZE\_URL = '{{ .Values.extraEnv.AUTHORIZE\_URL }}'
+
+REDIRECT\_URI = '{{ .Values.extraEnv.REDIRECT\_URI }}'
+
+SUPERSET\_BASE\_URL = '{{ .Values.extraEnv.SUPERSET\_BASE\_URL }}'
+
+TOKEN\_INTROSPECTION\_URI = '{{ .Values.extraEnv.TOKEN\_INTROSPECTION\_URI }}'
+
+JWKS\_URI = '{{ .Values.extraEnv.JWKS\_URI }}'
+
+
+
+AUTH\_TYPE = AUTH\_OAUTH
+
+
+
+OAUTH\_PROVIDERS = \[{
+
+  'name':'keycloak',
+
+  'token\_key': 'access\_token', 
+
+  'icon':'fa-key',
+
+  'remote\_app': {
+
+'client\_id': CLIENT\_ID,
+
+'client\_secret': CLIENT\_SECRET,
+
+'api\_base\_url': API\_BASE\_URL,
+
+'client\_kwargs':{
+
+'scope': 'openid email profile roles offline\_access',
+
+'access\_type': 'offline',
+
+'refresh\_token': True,
+
+'token\_endpoint\_auth\_method': 'client\_secret\_basic'
+
+},
+
+'issuer': ISSUER,
+
+'request\_token\_url': None,
+
+'access\_token\_url': ACCESS\_TOKEN\_URL,
+
+'authorize\_url': AUTHORIZE\_URL,
+
+'base\_url': SUPERSET\_BASE\_URL,
+
+'jwks\_uri': JWKS\_URI,
+
+'redirect\_uri': \[REDIRECT\_URI\],
+
+'token\_introspection\_uri': TOKEN\_INTROSPECTION\_URI,
+
+'server\_metadata\_url': SERVER\_METADATA\_URL,
+
+'token\_expiration': 120
+
+  }
+
+}\]
+
+LOGOUT\_REDIRECT\_URL = '{{ .Values.extraEnv.LOGOUT\_REDIRECT\_URL }}'
+
+Somebody could help for me because I really struggling with this
+
+"
+"/u/OokieBungie [REQ] was deleted from /r/borrow on 2025-01-24 (t3_owj2st up 1270.94 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i8yc5c,2025-01-24 10:44:30,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i8yc5c/uookiebungie_req_was_deleted_from_rborrow_on/,GiversBot,,"/u/OokieBungie deleted from /r/borrow 
+
+* **Account is deleted or shadowbanned**
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/owj2st/req_150_minneapolis_mn_usa_repay_210_081321_venmo/)
+* Was a selfpost with score: 0
+* Submitted 2021-08-02 17:14 (UTC)
+* Was up for for approx **1270.94 days**
+* Probably deleted **within the past 20.65 days**
+  * Was last seen up around 2025-01-04 00:03 (UTC)
+  * Deletion detected at 2025-01-24 15:44 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=OokieBungie)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AOokieBungie&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($150) (#Minneapolis, MN, USA) (Repay $210 08/13/21) (Venmo, Cash App, PayPal)
+
+# Post contents
+
+---
+
+Hey folks, I tried this subreddit once a few months ago but ended up getting my tax return after someone had offered to loan me.  I just had another major car repair and I’m $75 short on rent and would like to request another $75 for food/gas until I get paid again.  Willing to provide any credentials you would like to earn your trust.  Have a reliable job.  Thank you!"
+"/u/mamamargauxc [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1dyxfsl up 199.24 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i8wfl5,2025-01-24 09:20:13,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i8wfl5/umamamargauxc_request_was_deleted_from/,GiversBot,,"/u/mamamargauxc deleted from /r/SimpleLoans 
+
+* **Account is deleted or shadowbanned**
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1dyxfsl/req_300_philippines_repay_375_on_aug_12024_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2024-07-09 08:40 (UTC)
+* Was up for for approx **199.24 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-20 18:02 (UTC)
+  * Deletion detected at 2025-01-24 14:20 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Amamamargauxc&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] $300 Philippines Repay 375 on Aug 1,2024 Paypal
+
+# Post contents
+
+---
+
+Won't stop trying. Hope someone trusts me enough to lend me. Can show proof of employment and income"
+uhi purano katha majak banda,NepalSocial,1i8wa2s,2025-01-24 09:12:54,1,1.0,1,https://www.reddit.com/r/NepalSocial/comments/1i8wa2s/uhi_purano_katha_majak_banda/,Main_Nerve5908,,""" mero last post yo thyo hai ta ' 
+
+""""
+
+# clz ko junior kt
+
+kura k vanda malai euta sir ko xori man parthyo 1 yrs agadi dekhi nai (exact yaad xaina)now uhh ani ma eutai clz xam but department different.. maile confess garna ni paina ans no jastai xa kina vane usle request accept nai gardina mail e facebook ma ta cancel gardai feri ni pathaisake ajha tei ni no ans halka junior ta ho tei pani man vane parthyo .. ma ta one sided nai vaye jasto xa confess ni garna paina aba arko bf xa ki nai ni bujhna paina teha mathi clz kai professor ko xori ajha teha jhan risk aayo aba usle esle cancel gardai pathaudai xa vaenra sathi lai dekhako vaye jhan lyang aba self respect ta dubaisake jasto laxa ... aba k garam esso suggestion pls , birsine tips ki uslai afno banaune tips ( esma doubt usle accept ta gardina hola) ma pending ma xu fb req ta propose samma sochnu nai galat jasto lagisakyo aaiyu k garam garam feri ki ajha insta ma pani add garam ajha ek choti fb ma usko bau ni frnd xan tei vayra accept navako ki ki birsine idea uslai ekdam yo case ma move on huna parne xa malai.. ani uhh samma esle man parauxa wala kura ni pugena ki jasto ni lagxa feri""""
+
+
+
+ani usle ekdin clz mai notice garya ni thi then ni usle accept nai garina bolna vane sakiyena jhan one sided huda ta tension hune raixa ajha dinko clz ma dekhne huda ta dhanna department different raixa ra thik vo aba k physically nai bolam and direct reject vayeni hum ? baru rejection nai paam naramro nai vayeni k garam mero man nai chanchal vo "
+"/u/mamamargauxc [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1dvq0i5 up 203.36 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i8vkp4,2025-01-24 08:38:39,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i8vkp4/umamamargauxc_request_was_deleted_from/,GiversBot,,"/u/mamamargauxc deleted from /r/SimpleLoans 
+
+* **Account is deleted or shadowbanned**
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1dvq0i5/req_500_manila_philippines_repay_575_on_july/)
+* Was a selfpost with score: 1
+* Submitted 2024-07-05 05:01 (UTC)
+* Was up for for approx **203.36 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-20 17:15 (UTC)
+  * Deletion detected at 2025-01-24 13:38 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Amamamargauxc&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] $500 (Manila, Philippines) Repay 575 on July 30,2024 Paypal
+
+# Post contents
+
+---
+
+I have been posting numerous times. Apologies for the bother. I haven't gotten a loan ever and just been scammed. Someone suggested this subreddit and so I will just keep requesting in the hopes someone can take a chance on me. I have proof of employment and income. Just really behind on some payments that i hope to get back on track this month."
+"/u/mamamargauxc [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1duvhu2 up 204.48 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i8vknc,2025-01-24 08:38:35,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i8vknc/umamamargauxc_request_was_deleted_from/,GiversBot,,"/u/mamamargauxc deleted from /r/SimpleLoans 
+
+* **Account is deleted or shadowbanned**
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1duvhu2/req_usd_500_manila_philippines_repay_555_on_july/)
+* Was a selfpost with score: 1
+* Submitted 2024-07-04 02:03 (UTC)
+* Was up for for approx **204.48 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-20 17:15 (UTC)
+  * Deletion detected at 2025-01-24 13:38 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Amamamargauxc&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] USD 500 (Manila, Philippines) Repay 555 on July 30,2024 Paypal 
+
+# Post contents
+
+---
+
+Just a bit short from helping a friend who got into an accident. Need 500 to pay other bills due plus groceries. Can repay end of the month when salary comes in. Thank you."
+"/u/mamamargauxc [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1drp4wp up 208.49 days, LONGTAIL, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i8tzvg,2025-01-24 07:13:16,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i8tzvg/umamamargauxc_request_was_deleted_from/,GiversBot,,"/u/mamamargauxc deleted from /r/SimpleLoans 
+
+* **Account is deleted or shadowbanned**
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1drp4wp/req_usd_500_will_repay_555_on_31_july_2024_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2024-06-30 00:26 (UTC)
+* Was up for for approx **208.49 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-20 15:48 (UTC)
+  * Deletion detected at 2025-01-24 12:13 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Amamamargauxc&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] USD 500, will repay $555 on 31 July 2024, Paypal
+
+# Post contents
+
+---
+
+Hoping to loan 500 to settle unpaid bills. Helped a friend a bit who got into an accident so missed a few bills due. Lost a few hundred dollars from being scammed. So everything led to me being short on cash."
+"US Archives  Official UAP Disclosure (NARA - NDAA) by September 30, 2025,",UFOB,1i8tw2p,2025-01-24 07:06:50,19,0.89,5,https://www.reddit.com/r/UFOB/comments/1i8tw2p/us_archives_official_uap_disclosure_nara_ndaa_by/,Zestyclose_Log5155,Evidence,"The National Archives is preparing for UAP record disclosure, mandated by the 2024 National Defense Authorization Act. Federal agencies must organize UAP records by October 20, 2024, for public access. The UAP Records Collection will include records on unidentified phenomena and non-human intelligence, available online in the National Archives Catalog.
+
+NDAA details:
+
+# What is the Unidentified Anomalous Phenomena Records Collection?
+
+Sections 1841–1843 of the [**2024 National Defense Authorization Act**](https://www.congress.gov/118/bills/hr2670/BILLS-118hr2670enr.pdf)**, now codified at** [**44 U.S.C. 2107 note**](https://uscode.house.gov/view.xhtml?hl=false&edition=prelim&path=%2Fprelim%40title44%2Fchapter21&req=granuleid%3AUSC-prelim-title44-section2107&num=0&saved=L3ByZWxpbUB0aXRsZTQ0L2NoYXB0ZXIyMQ%3D%3D%7CZ3JhbnVsZWlkOlVTQy1wcmVsaW0tdGl0bGU0NC1jaGFwdGVyMjE%3D%7C%7C%7C0%7Cfalse%7Cprelim), require NARA to establish the ‘‘Unidentified Anomalous Phenomena Records Collection” and each federal agency to review, identify, and organize each UAP record in its custody for disclosure to the public and transmission to the National Archives. NARA has established Record Group 615, The Unidentified Anomalous Phenomena Records Collection. 
+
+# ****When will UAP records be transferred to NARA?****
+
+>**As of October 2024, NARA has not yet received any records from federal agencies for inclusion in Record Group 615. No later than September 30, 2025**, federal agencies must transfer to NARA digital copies of all UAP records identified by October 20, 2024, that can be publicly disclosed, including those that were publicly available on December 22, 2023, the date of the enactment of the Act. NARA requests that agencies transfer materials on a rolling basis and as soon as possible rather than waiting until the deadline. (See AC Memo 04.2025: [Transfer of Publicly Releasable Unidentified Anomalous Phenomena (UAP) Records](https://www.archives.gov/records-mgmt/memos/ac-04-2025).) 
+
+[Unidentified Anomalous Phenomena Records Collection FAQ](https://www.archives.gov/research/topics/uaps/faqs?_ga=2.194336109.1710437561.1737718971-1794055898.1737718970)"
+"/u/HeroinHero666 [REQ] was deleted from /r/borrow on 2025-01-24 (t3_o0gtnr up 1318.73 days, LONGTAIL)",borrowdeletes,1i8r6h3,2025-01-24 03:51:52,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i8r6h3/uheroinhero666_req_was_deleted_from_rborrow_on/,GiversBot,,"/u/HeroinHero666 deleted from /r/borrow 
+
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/o0gtnr/req_300_gallipolis_ohio_usa_repay_400_by_0705/)
+* Was a selfpost with score: 1
+* Submitted 2021-06-15 15:19 (UTC)
+* Was up for for approx **1318.73 days**
+* Probably deleted **within the past 20.70 days**
+  * Was last seen up around 2025-01-03 15:59 (UTC)
+  * Deletion detected at 2025-01-24 08:51 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=HeroinHero666)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AHeroinHero666&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($300) - (#Gallipolis, Ohio, USA) (Repay $400 by 07/05) (PayPal, CashApp)
+
+# Post contents
+
+---
+
+Hi all! First post here as I discovered this sub this morning and glad I did! A little bit of background on my financial situation: I was laid off of work February 1st but was lucky enough to be eligible for unemployment, although on the other hand the state has severely messed up my claim and I’ve yet to receive any money. After fighting with them over the last 4 months I’ve finally gotten it all straightened out and am just awaiting BPC to verify the documents I sent and green light my backpay (which is roughly $5,000 at this point) and weekly claims moving forward. I’ve really struggled with my bills whilst waiting on the state and they’ve gotten to the point where my water and electricity are going to be shut-off by the end of the week. So to get to the point, I was hoping to find a kind enough soul to help me over this last hump before I’m financially stable again. 
+
+Also to any potential lenders, I can and will send proof of unemployment documents if requested."
+/u/Excellent_Joke_8833 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1i7w8rs up 1.05 days),borrowdeletes,1i8p9wr,2025-01-24 01:30:05,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i8p9wr/uexcellent_joke_8833_request_was_deleted_from/,GiversBot,,"/u/Excellent_Joke_8833 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i7w8rs/req_500_saucier_ms_usa_repay_600_on_342025_paypal/)
+* Was a selfpost with score: 2
+* Submitted 2025-01-23 05:20 (UTC)
+* Was up for for approx **1.05 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 06:19 (UTC)
+  * Deletion detected at 2025-01-24 06:30 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AExcellent_Joke_8833&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] (500) - (#Saucier, MS, USA) (repay 600 on 3/4/2025- PayPal)
+
+# Post contents
+
+---
+
+Need to get a laptop for school."
+/u/Excellent_Joke_8833 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1i8men0 up 0.12 days),borrowdeletes,1i8p9uu,2025-01-24 01:29:59,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i8p9uu/uexcellent_joke_8833_request_was_deleted_from/,GiversBot,,"/u/Excellent_Joke_8833 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i8men0/req_30_saucier_ms_usa_payback_40_131_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-24 03:38 (UTC)
+* Was up for for approx **0.12 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 06:19 (UTC)
+  * Deletion detected at 2025-01-24 06:29 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AExcellent_Joke_8833&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($30) (Saucier, MS, USA) (Payback $40 1/31) Paypal
+
+# Post contents
+
+---
+
+Just need gas money"
+Fetch issues,Spectacles,1i8o757,2025-01-24 00:20:39,3,1.0,10,https://www.reddit.com/r/Spectacles/comments/1i8o757/fetch_issues/,Tough-Lavishness-369,❓ Question,"Hello! We are struggling with using fetch to talk to our backend server
+
+  
+async triggerListeningToPodcast(username: string, podcastId: string) {
+
+
+
+const reqObject = {
+
+spectacles\_device\_id: username,
+
+podcast\_id: podcastId,
+
+start: true
+
+}
+
+
+
+let request = new Request('https://<domainname>.com/trigger', {
+
+method: 'POST',
+
+
+
+headers: {
+
+'Content-Type': 'application/json',
+
+},
+
+body: JSON.stringify(reqObject),
+
+});
+
+
+
+let response = await this.remoteServiceModule.fetch(request);
+
+print(response)
+
+if (response.status != 200) {
+
+print('Failure: response not successful');
+
+return;
+
+}
+
+print('made it here')
+
+
+
+We copied the documentation and the chat gpt sample code exactly. The request isn't even making it to our server. When we put it in the browser we get a method not allowed or if its a get we get the content but the fetch doesn't work either way.
+
+
+
+Any ideas? We are updated to the latest version of lens studio and are seeing this issue in the preview window, haven't tried in the spectacles themselves yet.
+
+  
+Thanks! -Veeren"
+/u/Majestic_Strike6832 [REQ] was deleted from /r/borrow on 2025-01-24 (t3_1i8b7v5 up 0.42 days),borrowdeletes,1i8o2bn,2025-01-24 00:12:19,1,1.0,1,https://www.reddit.com/r/borrowdeletes/comments/1i8o2bn/umajestic_strike6832_req_was_deleted_from_rborrow/,GiversBot,,"/u/Majestic_Strike6832 deleted from /r/borrow 
+
+* Link to [the deleted post](https://www.reddit.com/r/borrow/comments/1i8b7v5/req_400_atlanta_georgia_us_repay_480_3_payments/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-23 19:08 (UTC)
+* Was up for for approx **0.42 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 05:00 (UTC)
+  * Deletion detected at 2025-01-24 05:12 (UTC)
+
+# Active loans
+
+* [redditloans.com mobile search](https://redditloans.com/mobile_query.php?checkname=Majestic_Strike6832)
+* Could not fetch loan data from redditloans.com (error?)
+
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AMajestic_Strike6832&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($400) - (#Atlanta, Georgia, US), (REPAY $480 3 payments 1/31/2025 $160 2/7/2025 $160 2/14/2025 $160)(Zelle, Cashapp)
+
+# Post contents
+
+---
+
+Hi, I’m requesting $400 and will repay $480 in three payments: 1/31/2025: $160, 2/7/2025: $160, 2/14/2025: $160. 
+Money will help cover bills. Thanks for your consideration again guys. 
+ Edit: i’m able to make 2 payments of $240 1/31 and 2/7. just in a tough spot as of now. I am working and i’m paid weekly."
+/u/throwaway1976_ [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1i8lsxx up 0.03 days),borrowdeletes,1i8moiw,2025-01-23 22:53:58,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i8moiw/uthrowaway1976_request_was_deleted_from/,GiversBot,,"/u/throwaway1976_ deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i8lsxx/req_100_biloxi_ms_usa_repay_150on_131_paypal/)
+* Was a selfpost with score: 2
+* Submitted 2025-01-24 03:06 (UTC)
+* Was up for for approx **0.03 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-24 03:43 (UTC)
+  * Deletion detected at 2025-01-24 03:53 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Athrowaway1976_&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($100) (#Biloxi, MS, USA) (Repay $150on 1/31) (PayPal)
+
+# Post contents
+
+---
+
+Hello, I was laid off last week and I start my new job this coming week. I'm a tow truck driver and get paid weekly with no offset. I need to pay my phone bill as it's due tomorrow. And need a few groceries and gas for the week. If anyone could help l'd be forever grateful. Thank you."
+Join Our Guild. We're supper friendly and still climbing the ranks,CookieRunTOA,1i8kwcf,2025-01-23 21:20:36,31,0.87,8,https://i.redd.it/3cg8xsu8quee1.png,roguenutshot,Guilds,
+What config am I missing?,Ghostty,1i8kt7b,2025-01-23 21:16:18,13,1.0,4,https://www.reddit.com/r/Ghostty/comments/1i8kt7b/what_config_am_i_missing/,kevv_m,,"Left Kitty, right Ghossty, same font, same font size but they look different. Also why Ghostty have that extra space at the bottom?  Help pls.
+
+https://preview.redd.it/ltjtywzdpuee1.png?width=1917&format=png&auto=webp&s=db27495e64ae591f0cfcbf7dda376b5a72e89861
+
+"
+Nursing,StudentNurse,1i8jqes,2025-01-23 20:22:00,1,1.0,2,https://www.reddit.com/r/StudentNurse/comments/1i8jqes/nursing/,Existing_Pension_899,Prenursing,"Hi, I currently hold a bachelors degree in nutrition. I want to transition my career into nursing but trying to find the best way to do so. I need physiology and anatomy left in order to apply to nursing school.
+
+My question is are there programs that accept your application if you don't have those pre requisites complete? And they allow you to complete pre requested at there campus? What nursing school programs are recommended for someone who already holds a degree with good experience but not the best academics. I graduated with a 3.4 GPA overall. I hav hospital experience. I'm honestly just looking for a program I can apply to this year if possible that would allow me to complete pre reqs while taking some nursing courses."
+"/u/RycheLive [REQUEST] was deleted from /r/SimpleLoans on 2025-01-24 (t3_1cdzw4j up 272.07 days, LONGTAIL)",borrowdeletes,1i8jihr,2025-01-23 20:11:15,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i8jihr/urychelive_request_was_deleted_from_rsimpleloans/,GiversBot,,"/u/RycheLive deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1cdzw4j/req_400_repay_300_on_26052024_and_300_on_the/)
+* Was a selfpost with score: 1
+* Submitted 2024-04-26 23:27 (UTC)
+* Was up for for approx **272.07 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-20 04:45 (UTC)
+  * Deletion detected at 2025-01-24 01:11 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ARycheLive&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] $400 - Repay $300 on 26/05/2024 and $300 on the 25/06/2024
+
+# Post contents
+
+---
+
+I can use PayPal/Venmo. Its my first time lending here but I promise you wont regret it. Any help will be appreciated :)"
+Attempting to move over to CM,ConstructionManagers,1i8hl4j,2025-01-23 18:40:30,5,1.0,1,https://www.reddit.com/r/ConstructionManagers/comments/1i8hl4j/attempting_to_move_over_to_cm/,NotMJHeeHeeShimona,Career Advice,"Howdy,
+
+Wee bit of background, Business Major currently working in Industrial Engineering in aerospace. I really want to get into PM one day and about a year away from a PMP. I feel very insecure in my background as I do not have an engineering degree or any sort of technical background, so not sure outside of my company where I could apply. Living in the PNW I see so many CM jobs in my area and have been spending the last few months debating trying to find a PE job or going back to school for a CM bachelors. If I could get a government CM job or something related to Green Energy I would be incredibly happy. 
+
+Looking at open jobs, I found a Construction Project Administrator position open and I meet the qualifications for it as its not a high up position and really only requires a year of PM experience, nothing really construction related. My company would pay for me to go and get a bachelors in CM without a golden handcuff and zero debt. For a masters I could get 25k a year if I wanted to go that route eventually. I see the occasional associate construction management PM posting and regret not going for that when it was open but the req specified a CM or CE bachelors was highly preferred. Not quite certain if this job is equivalent to a PE or just really dead end and admin focused, some of the responsibilities are:
+
+Making Concepts of designs
+
+Monitors and coordinates parties and supports functions to support schedule and project reviews
+
+Assembling work packages by coordinating estimates, drawings, permits, schedules
+
+evaluating facility requests
+
+Acquiring designs and resources for projects etc.
+
+I feel like I have hit a dead end with my job and want to move on, haven't seen the promotion promised to me almost a year ago and generally burnt out. This does look a bit more admin after really typing out a few of the bullet points but also want everyone's take on it. Why CM? Probably wont get outsourced or impacted by AI, lots of openings around me, a specialized skillset and I enjoy working with the blue collar people. I think this would be a decent way to get experience on my resume and get a CM bachelors at the same time."
+Optimize output data after reading from a large excel file,learnpython,1i8b49w,2025-01-23 14:04:26,2,0.63,18,https://www.reddit.com/r/learnpython/comments/1i8b49w/optimize_output_data_after_reading_from_a_large/,eluewisdom,,"I am reading about 300,000 rows of data from an excel file and then putting the resulting json after conversion to a “output.json” file, the resulting json file is about 600mb in size. is there a way for me to optimize this and make it way smaller?
+
+i am using pandas and openpyxl for the operating and i am doing this in an azure function 
+
+any advice?
+
+import azure.functions as func
+import logging
+import pandas as pd
+import json
+import os
+
+app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+
+@app.route(route=""py_http_trigger"")
+def py_http_trigger(req: func.HttpRequest) -> func.HttpResponse:
+    logging.info('Python HTTP trigger function processed a request.')
+
+    # Get the current directory of the function
+    current_directory = os.path.dirname(os.path.abspath(__file__))
+
+    # Construct the path to the CSV file
+    csv_file_path = os.path.join(current_directory, 'file3.csv')
+
+    try:
+        # Read the CSV file into a DataFrame
+        df = pd.read_csv(csv_file_path)
+
+        # Convert the DataFrame to minified JSON
+        json_data = df.to_json(orient='records', lines=True, force_ascii=False)
+
+        # Write the JSON data to a file
+        json_file_path = os.path.join(current_directory, 'output.json')
+        with open(json_file_path, 'w') as json_file:
+            json_file.write(json_data)
+
+        # Log the JSON data to the console
+        logging.info(f""Optimized JSON data written to file: {json_file_path}"")
+
+        # Return a success response
+        return func.HttpResponse(
+            'Processing complete. Optimized JSON data saved.',
+            mimetype=""application/json"",
+            status_code=200
+        )
+    except FileNotFoundError:
+        error_message = f""CSV file not found at path: {csv_file_path}""
+        logging.error(error_message)
+        return func.HttpResponse(error_message, status_code=404)
+    except Exception as e:
+        error_message = f""Error processing the CSV file: {e}""
+        logging.error(error_message)
+        return func.HttpResponse(error_message, status_code=500)
+
+
+CURRENT CODE: "
+/u/imjacobareutoo [REQUEST] was deleted from /r/SimpleLoans on 2025-01-23 (t3_1i6o8en up 2.05 days),borrowdeletes,1i8ant9,2025-01-23 13:45:53,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i8ant9/uimjacobareutoo_request_was_deleted_from/,GiversBot,,"/u/imjacobareutoo deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i6o8en/req_280_repay_350_january_29_paypal/)
+* Was a selfpost with score: 0
+* Submitted 2025-01-21 17:39 (UTC)
+* Was up for for approx **2.05 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-23 18:33 (UTC)
+  * Deletion detected at 2025-01-23 18:45 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Aimjacobareutoo&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [req] (280$) (repay 350$ January 29) (PayPal)
+
+# Post contents
+
+---
+
+Hey, I'm in a little trouble and need some extra cash to cover my rent. Will repay by January 29. 
+Any help would be greatly appreciated. 
+
+Thanks!"
+Help needed revolving around Dyscalculia and College Disability Refusal,dyscalculia,1i8992w,2025-01-23 12:49:27,1,1.0,5,https://www.reddit.com/r/dyscalculia/comments/1i8992w/help_needed_revolving_around_dyscalculia_and/,PaydayLover69,,"# literally any help would be appreciated because I've hit a roadblock and I don't know how to move forward.
+
+\[context\]
+
+* I go to a Flordia state college
+* I have been neuro-psych diagnosed with ADHD & severe Dyscalculia, have my documentation
+*  For the last 2 years I've been fighting disability services for the use of an HP Prime Graphing Calculator in my intermediate algebra class
+* The college refuses to follow the law
+* They forced me to get re-diagnosed  ^((no help in that process btw, they just said ""good luck,"" try finding a neuropsyc in flordia that your insurance will cover...))
+* The college refuses to allow ***any new accommodation*** beyond a default *""extended testing time""* and *""quiet room"" ,* regardless of the disability
+* ^((I don't have this but I read it in the handbook)) They also don't believe schizophrenia counts as a disability
+* Claims ""some universities are exempt from having to follow disability laws""
+* Goes through a repeating cycle of saying that Dyscalculia *""isn't real/doesn't know what that is""* & *""Doesn't believe I have Dyscalculia""* & then keeps saying *""I'm not here to diagnose you.""*
+* They keep claiming graphing calculators ""give you the answer to everything"" so they refuse to accommodate it... even though I already bought the HP Prime Graphing Calculator  ^((they told me after the fact))
+* They keep asking the professor if he thinks i'm disabled and if he wants to allow the accommodations
+* The professor is ***highly*** ableist and abusive, use of slurs regularly and expressed extreme distrust & prejudice of my diagnosis and the concept of Dyscalculia when I attempted to have a conversation about it with him.
+* Disability head screens my calls ^((and i think every call?)) and I can only get him to get on the phone if I call somebody else to go get him to pick up the phone
+* Services have repeatedly lied to me by saying they will do actions that they never do, ranging from ""calling me back"" to ""meeting with the professor to handle this"" to ""emailing me"" basically anything they say they're going to do, they just don't do...
+* I've had discussions with other disability services from both private and public universities and both say this is unheard of behavior.
+* The college refuses to meet with me, instead they insist they meet with the math professor to discuss MY Dyscalculia and whether or not my accommodation request is reasonable.
+* They've refused multiple times to meet with me to pen my accommodations letter
+* and just today, after emailing the head once again in a grueling goose chase to get the guy to actually answer.... The professor dropped me from the class entirely...
+
+  
+What do I do here????
+
+Like I'm starting to believe there's no other option other than to contact some sort of lawyer or... just drop out...?
+
+Even crazier, Intermediate Algebra is a *Pre-requisite.... It doesn't even count as a credit...*  
+A class I'm forced to take that's gatekeeping me out of graduation because I took a test in 2019 when i was ***UNDIAGNOSED***
+
+
+
+I have no idea what to do, what do I do from here? who do I even contact? Is there anyone I can even contact??? If the college refuses to follow any laws or regulations what do i do?????
+
+  
+\[Update\]
+
+  
+I also just found out that I've taken two subsequent math pre-req courses that should've counted for graduation under Florida statue but they're refusing to count them towards my graduation requirements... So i should have already met graduation requirements 8 months ago..."
+I'm confused,OffMyChestIndia,1i87x6e,2025-01-23 11:54:36,3,1.0,2,https://www.reddit.com/r/OffMyChestIndia/comments/1i87x6e/im_confused/,forgottenBastard,Confusing Thoughts,"Hey this is my first time posting here so idk about anything related to algorithm and shit,
+
+So i (M20 ) met this girl ( F19 ) back in my 12th when I joined a coaching center during my boards, we never interacted much during the coaching, but few days later she sent me friend request on Instagram even though It's completely anonymous to everyone, I don't even follow my classmates in the coaching but somehow she found it and and sent me the req i left it pending for a few weeks then seeing as I didn't accept she sent me a DM saying why am I not accepting her request, i then in the Awkward situation there had to accept the request 
+
+Then as the days passed she started throwing weird signs, liking my Stories everyday and reacting to my photos ( not mine but the scenery photos i click using my dslr ) during my boards she asked me where my exam center was stationed and i told her about it and then she goes “ I wish we had the same, you would've been so helpful to me ” as her exam center was different from mine, the onwards she started texted me pretty much everyday and stated asking questions like how were my exams going and how do I study and revise etc etc, 
+
+Well most of the times i gave her dry responses and left her on seen as I wasn't interested in her but she has gotten way too clingy in the last one year, reminder I am in my 2nd year of computer science and she is doing ba, she has started asking me about my career planning and even what my pov are on marriage and my types of women, but today she asked me if i had a gf or not, she's throwing mixed signals and it's leaving me confused af..💀
+
+I think she's interested in me but I am a person who overthinks all the time and I have a gut feeling she's trying to manipulate me or something like that, remind you she's an extremely beautiful and kind girl..well that was all i had to say I know this post will feel like a made up story but only I know my situation and what a messy situation I am in rn "
+/u/AwakenedSoul711 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-23 (t3_1i2so1u up 6.93 days),borrowdeletes,1i84wo4,2025-01-23 09:44:35,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i84wo4/uawakenedsoul711_request_was_deleted_from/,GiversBot,,"/u/AwakenedSoul711 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i2so1u/req_80_paying_back_120_on_the_29th_january_paypal/)
+* Was a selfpost with score: 2
+* Submitted 2025-01-16 16:22 (UTC)
+* Was up for for approx **6.93 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-23 14:33 (UTC)
+  * Deletion detected at 2025-01-23 14:44 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AAwakenedSoul711&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [Req] £80 paying back £120 on the 29th January [PayPal] London 
+
+# Post contents
+
+---
+
+Just need a bit of help need to get some groceries in until I get paid on the 29th 
+
+Any help is appreciated"
+/u/noahstuart12 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-23 (t3_1i69esd up 2.41 days),borrowdeletes,1i832ly,2025-01-23 08:14:52,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i832ly/unoahstuart12_request_was_deleted_from/,GiversBot,,"/u/noahstuart12 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i69esd/req_200_hudson_ma_paypal_repay_275_by_13025/)
+* Was a selfpost with score: 0
+* Submitted 2025-01-21 03:28 (UTC)
+* Was up for for approx **2.41 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-23 13:04 (UTC)
+  * Deletion detected at 2025-01-23 13:14 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Anoahstuart12&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] ($200) (Hudson, MA) (PayPal) (repay $275 by 1/30/25)
+
+# Post contents
+
+---
+
+Short on my student loan payment that’s due this week, and don’t get paid until next week. I worked some overtime, if I get anymore I’ll bump the repayment amount to $290. Thanks !"
+How to redirect from serverside/route page?,nextjs,1i82jyp,2025-01-23 07:46:20,2,1.0,3,https://www.reddit.com/r/nextjs/comments/1i82jyp/how_to_redirect_from_serversideroute_page/,Asleep-Recording497,Help,"I am frustrated now to fin solution  
+  
+I am using Nextjs and Authjs and wanted to protect my api routes so if any req from cliend goes to api route and user is unauthenticate i want to redirect to auth page .
+
+what i tried>  
+1.i tried both middleware and in api route in both if user isnt authenticated i am trying to  
+
+    NextResponse.redirect(new URL('/auth', req.nextUrl.origin));
+
+when i redirect from api route i receive this 
+
+    Error submitting form: SyntaxError: Unexpected token '<', ""<!DOCTYPE ""... is not valid JSON
+    error @ intercept-console-error.js:51
+    onSubmit @ D:\studyviz\app\components\inputSection.tsx:114
+    await in onSubmit
+    handleKeyDown @ D:\studyviz\app\components\inputSection.tsx:128
+    processDispatchQueue @ react-dom-client.development.js:16146
+    eval @ react-dom-client.development.js:16749
+    batchedUpdates$1 @ react-dom-client.development.js:3130
+    dispatchEventForPluginEventSystem @ react-dom-client.development.js:16305
+    dispatchEvent @ react-dom-client.development.js:20400
+    dispatchDiscreteEvent @ react-dom-client.development.js:20368
+
+and if redirect from middle ware the actual redirection on page isnt occuring but in network tab i can see redirect request>
+
+[https://postimg.cc/3W73BnxJ](https://postimg.cc/3W73BnxJ)"
+"/u/soldiersdance [REQUEST] was deleted from /r/SimpleLoans on 2025-01-23 (t3_1akffdl up 351.75 days, LONGTAIL)",borrowdeletes,1i81bit,2025-01-23 06:30:42,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i81bit/usoldiersdance_request_was_deleted_from/,GiversBot,,"/u/soldiersdance deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1akffdl/req150_dallas_txrepay_220_by_2222024_via_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2024-02-06 17:36 (UTC)
+* Was up for for approx **351.75 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-19 15:00 (UTC)
+  * Deletion detected at 2025-01-23 11:30 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Asoldiersdance&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ][$150] - (Dallas, TX)(Repay $220 by 2/22/2024 via PayPal)
+
+# Post contents
+
+---
+
+Hello, r/simpleloans. Currently recovering from covid. Being sick and missing work really threw a wrench in my bills. I can provide proof employment or anything else that’s needed, I do have a loan outstanding already that’s nearly paid off. I just need to catch up. Thanks to whoever can help 🙏🏾"
+"/u/soldiersdance [REQUEST] was deleted from /r/SimpleLoans on 2025-01-23 (t3_1ajpzw5 up 352.64 days, LONGTAIL)",borrowdeletes,1i81bhd,2025-01-23 06:30:38,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i81bhd/usoldiersdance_request_was_deleted_from/,GiversBot,,"/u/soldiersdance deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1ajpzw5/req150_dallas_tx_repay_200_by_223_via_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2024-02-05 20:02 (UTC)
+* Was up for for approx **352.64 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-19 15:00 (UTC)
+  * Deletion detected at 2025-01-23 11:30 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Asoldiersdance&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ][$150, Dallas, TX] - [Repay $200 by 2/23, via Paypal]
+
+# Post contents
+
+---
+
+Hello, r/simpleloans. Currently recovering from covid. Being sick and missing work really threw a wrench in my bills. I can provide proof employment or anything else that’s needed, I do have a loan outstanding already that’s nearly paid off… I just need to catch up. Thanks to whoever can help 🙏🏾"
+"Prisma uses multiple tables to write data, and the API reports an error of 500",nextjs,1i7z97y,2025-01-23 03:57:10,1,1.0,10,https://www.reddit.com/r/nextjs/comments/1i7z97y/prisma_uses_multiple_tables_to_write_data_and_the/,watchdoges668,Help Noob,"I used the mysql interface of prisma and created three tables: user, artical, and comment. The user table is used to store user information, artical is used to store blogs, and comment is used to store comments.
+
+When I use Prisma's create to write data to comment, I get an error 500 when testing with postman
+
+https://preview.redd.it/y29pq7sfjpee1.png?width=1997&format=png&auto=webp&s=83cf2545ae9b01798931a5f437d79ab2e75640d4
+
+This is the database model
+
+    model article {
+      id        String   @id @default(cuid())
+      title     String   
+      author    String
+      updatedAt DateTime @updatedAt
+      createAt  DateTime @default(now())
+      slug      String
+      content   String   @db.LongText 
+      views     Int
+      likes     Int
+      user      user    @relation(fields: [author],references: [uname])
+      comments  comment[]
+    }
+    // 评论 commentId =>article.id
+    model comment {
+      id        String   @id @default(cuid())
+      content   String
+      user      user     @relation(fields: [username],references: [uname])
+      username  String
+      imgurl    String
+      article   article  @relation(fields: [comId],references: [id])
+      comId     String   
+      createdAt DateTime @default(now())
+    }
+    // 用户登录
+    model user {
+      id     Int    @id @default(autoincrement())
+      uname  String @unique
+      passwd String
+      role   String
+      Img    String
+      article article[]
+      comment comment[]
+    }
+    
+
+This is the api interface
+
+    import prisma from ""@/prisma/db"";
+    import { NextRequest, NextResponse } from ""next/server"";
+    
+    
+    // 添加评论
+    export default async function POST(req:NextRequest,res:NextResponse){
+        
+        const { content, username, imgurl, comId } = await req.json();
+    
+        try{
+            
+            const createdata = await prisma.comment.create({
+                data: {
+                    content,
+                    username,
+                    imgurl,
+                    comId,
+                    article: {
+                      connect: { id: comId }, //connect artical
+                    },
+                    user: {
+                        connect: { uname: username }, //connect user
+                    },
+                  },
+                  include: {
+                    user:true,
+                    article: true,  //return artical msg
+                  },
+                });
+            return new Response(JSON.stringify(createdata),{
+                status:200,
+                headers:{'Content-Type': 'application/json'},
+            })
+        }catch(error){
+            console.log(""Error updating post"",error)
+            return new Response(JSON.stringify(error),{
+                status:500,
+                headers:{'Content-Type': 'application/json'},
+            })
+        }finally{
+            await prisma.$disconnect();
+        }
+    }
+    
+
+
+
+I associated the comid with the article id, and the username with the user name, but it still generates an error message
+
+please guys help me ，thankyu
+
+"
+"/u/Complex-Ad4042 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-23 (t3_1963mb9 up 375.29 days, LONGTAIL)",borrowdeletes,1i7ylxy,2025-01-23 03:06:47,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i7ylxy/ucomplexad4042_request_was_deleted_from/,GiversBot,,"/u/Complex-Ad4042 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1963mb9/req150palm_beach_gardens_flrepay_200_on_119_paypal/)
+* Was a selfpost with score: 0
+* Submitted 2024-01-14 01:15 (UTC)
+* Was up for for approx **375.29 days**
+* Probably deleted **within the past 3.86 days**
+  * Was last seen up around 2025-01-19 11:32 (UTC)
+  * Deletion detected at 2025-01-23 08:06 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AComplex-Ad4042&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ](150$)(Palm Beach Gardens, FL)(Repay 200$ on 1/19)( PayPal)
+
+# Post contents
+
+---
+
+Had some emergency expenses and will certainly be able to pay everything back next Friday.
+
+&#x200B;
+
+Thanks in advance!"
+/u/imjacobareutoo [REQUEST] was deleted from /r/SimpleLoans on 2025-01-23 (t3_1i7hg9a up 0.52 days),borrowdeletes,1i7xbt5,2025-01-23 01:31:32,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i7xbt5/uimjacobareutoo_request_was_deleted_from/,GiversBot,,"/u/imjacobareutoo deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i7hg9a/req_280_repay_350_on_january_29_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-22 18:04 (UTC)
+* Was up for for approx **0.52 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-23 06:21 (UTC)
+  * Deletion detected at 2025-01-23 06:31 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Aimjacobareutoo&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [req] (280$) (repay 350$ on January 29) (PayPal)
+
+# Post contents
+
+---
+
+Would appreciate i got extra cash to cover my rent. Can repay on January 29."
+Workday Basics,Workday_Community,1i7vn24,2025-01-22 23:44:04,0,0.5,1,https://www.reddit.com/r/Workday_Community/comments/1i7vn24/workday_basics/,MeeemiBme,,"I am new to Workday and cannot remember some of the basics. Can someone please tell me how to change the status of an applicant?  I need to move applicants to Prescreen Requested or Scheduled.
+How?  From where?  The req or on the applicant's profile?
+
+There are no beginner videos on YouTube. "
+Workday Recruiting,workday,1i7vjmp,2025-01-22 23:38:30,1,0.6,6,https://www.reddit.com/r/workday/comments/1i7vjmp/workday_recruiting/,MeeemiBme,Workday Training,"I am new to Workday. Can someone please tell me how to change the status of an applicant?  I need to move applicants to Prescreen Requested or Scheduled.
+How?  From where?  The req or on the applicant's profile?
+
+There are no beginner videos on YouTube "
+"/u/soldiersdance [REQUEST] was deleted from /r/SimpleLoans on 2025-01-23 (t3_187ksq7 up 419.47 days, LONGTAIL)",borrowdeletes,1i7t7i4,2025-01-22 21:33:46,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i7t7i4/usoldiersdance_request_was_deleted_from/,GiversBot,,"/u/soldiersdance deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/187ksq7/req_50dallas_txrepay_by_12923/)
+* Was a selfpost with score: 3
+* Submitted 2023-11-30 15:11 (UTC)
+* Was up for for approx **419.47 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-19 06:05 (UTC)
+  * Deletion detected at 2025-01-23 02:33 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Asoldiersdance&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ] - ($50)(Dallas, TX)(Repay by 12/9/23)
+
+# Post contents
+
+---
+
+Hello, I have an outstanding loan already that I’m working towards paying back with my next check, however I’m a little bit short on money for bills. I have proof of income and can repay $100 back on time. 
+
+Thank you so much to anyone generous enough to help"
+Just in: 🚨 President Trump is expected to make do on another campaign promise.   The JFK files are reportedly going to be released within a few hours.,UsaNewsLive,1i7t4d4,2025-01-22 21:29:30,5,1.0,0,https://i.redd.it/yoeydgb1nnee1.jpeg,Appropriate-Cup5378,,
+Transfer Credentials,mapua,1i7rhek,2025-01-22 20:08:32,3,1.0,0,https://www.reddit.com/r/mapua/comments/1i7rhek/transfer_credentials/,Content-Estimate-458,,"Hi! any thoughts po sa pag nag request ng transfer credentials while the term is still going. Once my transfer credentials are approved, does this mean I am no longer officially considered a student of Mapúa?
+
+should I do my school reqs padin ba while waiting the approval? or no need?"
+"/u/soldiersdance [REQUEST] was deleted from /r/SimpleLoans on 2025-01-23 (t3_17wsdvo up 433.29 days, LONGTAIL)",borrowdeletes,1i7qhd3,2025-01-22 19:21:19,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i7qhd3/usoldiersdance_request_was_deleted_from/,GiversBot,,"/u/soldiersdance deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/17wsdvo/req200dallastxrepay_300_by_december_8th/)
+* Was a selfpost with score: 1
+* Submitted 2023-11-16 17:24 (UTC)
+* Was up for for approx **433.29 days**
+* Probably deleted **within the past 3.85 days**
+  * Was last seen up around 2025-01-19 04:00 (UTC)
+  * Deletion detected at 2025-01-23 00:21 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3Asoldiersdance&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ][$200](Dallas,TX)(Repay $300 by December 8th)
+
+# Post contents
+
+---
+
+Hello, to put my situation simply, I’m looking for a little assistance paying off some credit card debt before December 1st. 
+
+I had a prior loan that I just recently paid back so my history on here is good. If anyone doesn’t mind helping me, I’d greatly appreciate it!"
+/u/KRC193 [REQUEST] was deleted from /r/SimpleLoans on 2025-01-22 (t3_1i7on73 up 0.03 days),borrowdeletes,1i7pqx5,2025-01-22 18:48:22,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i7pqx5/ukrc193_request_was_deleted_from_rsimpleloans_on/,GiversBot,,"/u/KRC193 deleted from /r/SimpleLoans 
+
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1i7on73/req_200_suffolk_va_usa_repay_230_by_222_paypal/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-22 22:59 (UTC)
+* Was up for for approx **0.03 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-22 23:36 (UTC)
+  * Deletion detected at 2025-01-22 23:48 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3AKRC193&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [req] ($200) (#Suffolk, VA, USA) (repay $230 by 2/22) (Paypal)
+
+# Post contents
+
+---
+
+I just noticed that my back right tire is a bit smooth and would appreciate a little extra to help pay for back tires! Thank you in advance! 🙂"
+"/u/BigB00tyGandalf [REQUEST] was deleted from /r/SimpleLoans on 2025-01-22 (t3_1hwuk6d up 14.11 days, ACCOUNT DELETE/SHADOWBAN)",borrowdeletes,1i7p708,2025-01-22 18:23:09,1,1.0,0,https://www.reddit.com/r/borrowdeletes/comments/1i7p708/ubigb00tygandalf_request_was_deleted_from/,GiversBot,,"/u/BigB00tyGandalf deleted from /r/SimpleLoans 
+
+* **Account is deleted or shadowbanned**
+* Flair: REQUEST
+* Link to [the deleted post](https://www.reddit.com/r/SimpleLoans/comments/1hwuk6d/req120tyler_tx_usa_repay_150_on_0128_venmo/)
+* Was a selfpost with score: 1
+* Submitted 2025-01-08 20:49 (UTC)
+* Was up for for approx **14.11 days**
+* Probably deleted **within the past 0.01 days**
+  * Was last seen up around 2025-01-22 23:12 (UTC)
+  * Deletion detected at 2025-01-22 23:23 (UTC)
+
+
+# Quick search
+
+* [Search for all deleted posts](https://www.reddit.com/r/borrowdeletes/search?q=title%3ABigB00tyGandalf&restrict_sr=on&sort=new&t=all&include_over_18=on) by this author
+
+
+# Title
+
+> [REQ]($120)(Tyler, TX, USA), (Repay $150 on 01/28), (Venmo)
+
+# Post contents
+
+---
+
+Winter weather causes my vehicle issues and just need $120 for repairs. Thank you."

@@ -1,0 +1,2299 @@
+Post Title,Subreddit,Post ID,Created Time,Upvotes,Upvote Ratio,Comments Count,Post URL,Author,Flair,Post Text
+"ARB price prepares a big jump as Arbitrum transaction, fees soar",cryptopaa,1i9rjjs,2025-01-25 12:06:15,1,1.0,0,https://cryptopaa.com/arb-price-prepares-a-big-jump-as-arbitrum-transaction-fees-soar/?feed_id=5733,jilinjames,,
+"[Governance Poll Proposal] Establish the Donut DAO org; Decentralize, expand, and secure DONUT’s future beyond r/EthTrader",ethtrader,1i8smzx,2025-01-24 05:42:25,15,0.94,40,https://www.reddit.com/r/ethtrader/comments/1i8smzx/governance_poll_proposal_establish_the_donut_dao/,0xMarcAurel,Donut,"## TL;DR
+
+This proposal is a huge step in shaping the future of the Donut ecosystem. It's about: 
+
+1. Formally establishing Donut DAO as a decentralized, unregistered organization with the flexibility to grow beyond Reddit, allowing DONUT to continue to operate independently of any single subreddit or platform.
+2. Transitioning DONUT’s structure to remove its dependency on r/EthTrader, making r/EthTrader as one arm of a broader organization.
+3. Balancing the allocation of funds to create a more sustainable and equitable distribution model.
+4. Clearly defining roles and responsibilities for Donut DAO contributors, while ensuring fair compensation for their efforts.
+5. Optimizing leadership and governance by welcoming new contributors and reevaluating inactive roles (moderators, multisig guardians).
+
+The objective is to create a robust foundation that supports growth, decentralization, and the sustainability of DONUT, while rewarding content creators, contributors and giving power to the community.
+
+The focus of this organization is to give contributors opportunities to grow, connect with other interested individuals, build a professional portfolio, and receive compensation in the process. Thus, the Donut DAO would create an environment of mutual benefit and recognition for all participants.
+
+---
+
+## Current situation
+
+For too long, the mod team has relied on a ""mint more DONUT whenever we run out"" approach. This may've worked 5 or 6 years ago, but it’s no longer effective considering DONUT is now a valued asset, subject to market mechanics. Also, with regulatory scrutiny increasing, it’s time we collectively reassess our current practices, formalize our policies / structure, and establish a more strategic approach to DONUT minting and allocation.
+
+As a SocialFi token, DONUT’s primary purpose is to reward content creators and promote decentralized governance. To fulfill this mission, a dedicated team is essential. We need people responsible for maintaining operations, promoting growth, and investing on long-term sustainability.
+
+This proposal is probably the most significant and complex initiative we have ever had as a DAO. Submitting dozens of individual proposals would be a lot more complex and would delay important progress. This is a consolidated proposal that reflects the collective insights of the mod team, and is the result of internal discussions and team calls. Our vision is to position DONUT as a project that goes beyond r/EthTrader, making sure its growth is not limited by the subreddit’s boundaries. In this structure, r/EthTrader will be a branch of a broader ecosystem, known as the Donut DAO (proposed below).
+
+---
+
+## Problem
+
+We're going to be fully transparent with the community, the current structure and team reached a pivotal crossroads. Even though our project made significant progress, the current structure has shown limitations that could compromise growth, sustainability and even operations's maintenance.
+
+Right now, there is formally no team or organization responsible for promoting DONUT. Technically it's the mod team and the community as a whole. While this flexibility worked in the early stages, it now creates uncertainty regarding the project's purpose, reach, and goals. What worked 6 years ago no longer works today, especially in the Web3 industry that changes by the day. To attract serious contributors and partnerships, establishing and formalizing a decentralized entity is important. Without this, we risk, once again, stagnation and missed opportunities to expand.
+
+Another problem is the existing reward and funding structure. This model led to concerns about managing resources and a lack of reserves for future growth initiatives. If this issue is not addressed, this project will struggle to fund new and current contributors, attract talent, or even finance ecosystem expansion.
+
+Yet another problem is, over time, some roles within the project (like moderators and multisig guardians) have become inactive or loosely defined. This creates inefficiencies in important decisions.
+
+Additionally, the absence of clear and fair compensation made it very difficult to recruit and retain contributors, leaving gaps in operational capabilities. In other words: people aren't receiving enough rewards for the value and work they provide.
+
+Finally, DONUT has huge potential as a project, but its current visibility is confined largely to this sub. This limits its audience and adoption, making it harder to grow and compete in the Web3 industry.
+
+---
+
+## Solution
+
+The solution goes through different steps to evolve our project into a sustainable, decentralized organization while focusing on its future.
+
+Here are the proposed measures:
+
+**1 - Establishing Donut DAO**
+
+We propose transitioning our entire project into (a new) Donut DAO, an official, (legally speaking) unregistered decentralized organization.
+
+DONUT’s success should not be limited by one platform or subreddit. We should aim to create a structure that can operate independently of Reddit, enabling expansion into other platforms or even transitioning into a whole new token category if needed. This protects the project from external risks, like changes to Reddit’s policies or infrastructure. DONUT would continue to work and grow even without Reddit or r/EthTrader.
+
+Under this new organization, r/EthTrader would still be a vital part of the ecosystem, but the Donut DAO would be the overarching organization, positioning itself for broader opportunities and long-term survival. Simply put, r/EthTrader would be one of the many branches of the Donut DAO.
+
+**2 - Structuring Donut DAO**
+
+Donut DAO would operate as a decentralized organization, but with a defined structure that promotes efficiency and collaboration. This would promote a more collaborative approach, while giving clarity on roles and responsibilities.
+
+The proposed structure is as follows:
+
+* Co-founders: Responsible for partnerships, overseeing operations, managing the treasury, handling administrative tasks, grants, and ensuring the organization’s overall direction.
+
+Proposed co-founders:
+
+Carl Larson: Original developer of the Reddit community points system (DONUT) and an early contributor to the Ethereum ecosystem.
+
+Basoosh: Veteran DONUT contributor, developer, formerly responsible for monthly distributions and currently responsible for the Donut Dashboard.
+
+Marc Aurel: Ecosystem growth lead, responsible for partnerships, networking, business, and operations.
+
+* Developers: Focus on maintaining and scaling DONUT’s technical infrastructure, including websites, subreddit tools, and others.
+
+* Content moderators: Responsible for subreddit (in this case, r/EthTrader) and Discord management, aiming to promote healthy community engagement.
+
+* Art sector: Focus on creating art for advertising, partnerships, and campaigns.
+
+* Community sector: Organizing events, giveaways, and supporting users directly.
+
+**3 - Optimizing DONUT allocation**
+
+We propose reallocating the monthly DONUT distribution to optimize fund management, support development, and, most importantly, make sure contributors are compensated fairly.
+
+The new proposed monthly allocation is:
+
+* Content creation (subreddit distribution) [NO CHANGES]: 850,000 DONUT
+
+510,000 DONUT for posts.
+
+340,000 DONUT for comments.
+
+* Liquidity incentives: 450,000 DONUT
+
+Uniswap (ETH/DONUT V2 on Ethereum) reduced from 400,000 to 250,000 DONUT.
+
+Sushi (ETH/DONUT V3 on Arbitrum One) increased from 150,000 to 200,000 DONUT.
+
+Even though Ethereum is extremely important when it comes to liquidity, our DeFi operations take place on Arbitrum One. As such, we should aim to promote liquidity on Arbitrum, also to help the DAO unlock the remaining funds from the Arbitrum Grant (7,500 ARB).
+
+* Community contests: 25,000 DONUT.
+
+Reduced from 50,000, as this expense is unfortunately not having the desired effect and is not as impactful given the funds provided.
+
+* Moderation [CEASES TO EXIST] 
+
+* Community treasury [CEASES TO EXIST]
+
+* Donut DAO treasury: 415,000 DONUT, distributed as follows:
+
+Developers: 30,000 DONUT/month (+ grants as needed).
+
+Moderators: 15,000 DONUT/month.
+
+Community (community contributors that are not moderators): 5,000 DONUT/month.
+
+Art: Funded via grants based on project proposals.
+
+After covering monthly expenses, there would be ~200,000 - 230,000 DONUT remaining, according to the current size of the team. These funds would be reserved for the art sector, additional grants, strategic investments, or any extra necessity. Also, there are additional operational costs such as the u/donut-bot server, among other small expenses.
+
+Although 1,740,000 Donuts are available for distribution each month, as you can see the funds disappear almost instantly due to the treasury's expenses needed to finance operations.
+
+**4 - Restructuring and optimizing mod sector and the multisig**
+
+This is not easy to address, but it has to be done nonetheless. To ensure accountability, we propose the following contributor activity policy:
+
+1 month of inactivity: Contributor is defunded.
+
+3 months of inactivity: Contributor is removed from the organization. Rejoining is an option if the contributor becomes active again in the future.
+
+We propose this policy to promote fairness, because funds allocated to inactive members could be redirected to active contributors or other strategic initiatives. We recommend removing inactive members due to sensitive information about the project and to maintain the integrity of our work. Active contributors are important for progress and internal decisions, and people who are inactive can disrupt ongoing efforts. Internal decisions are made democratically, and inactive members who don’t vote can unintentionally stall progress.
+
+As for multisig guardians, members inactive for 3+ months would also be removed, to make sure the treasury is protected by individuals who are actively involved and aware of ecosystem developments. The multisig must always have a minimum of five active guardians to maintain security and decentralization.  In the future, potential guardians may be added, provided that they gained the trust of the organization and the community as a whole.
+
+**5 - Immediate goals if this proposal passes**
+
+If this proposal is approved, the following topics would be addressed immediately:
+
+* Build an official Donut DAO website, a dedicated platform to communicate the Donut DAO’s mission, goals, and updates. It would be separate from the Donut Dashboard.
+* Create an official X account to promote DONUT and engage in marketing campaigns.
+* Assign roles and responsibilities to make sure all teams are ready and equipped to contribute effectively.
+* Host monthly meetings to regularly assess progress and adjust strategies. *A future idea is to allow DONUT whales to attend meetings.*
+* Post monthly treasury flow reports. This includes expenses and inflows, to promote transparency and trust.
+
+---
+
+## Advantages
+
+* Establishes a professional and organized structure, incrasing credibility and trust among users and potential partners.
+* Enables strategic fund management, protecting the sustainability and efficiency of operations.
+* Creates a self sustaining economy with DONUT as its foundation.
+* Promotes fair compensation for contributors, based on their skills, efforts, and activity levels.
+* Further increases decentralization by involving more contributors from different locations, promoting a more global perspective.
+* Simplifies internal conflict resolution, particularly in cases of inactivity or disagreement, with clear policies in place.
+* Distributes responsibilities and tasks efficiently, reducing the burden on individual contributors. Contributors can focus on their specific roles, for example devs will no longer need to moderate content and can focus on building instead.
+* Ensures long term operations by reducing dependency on any single individual within the organization.
+* Supports expansion beyond Reddit, making Reddit a vital branch of the broader Donut ecosystem, rather than it's pillar.
+* Builds a foundation for growth, including potential integration into other social platforms or use cases.
+* Promotes collaboration and transparency through a clearly defined structure and regular reporting.
+
+## Disadvantages
+
+* The proposed structure introduces high complexity, which could lead to overly bureaucratic processes.
+* Contributors would have personal responsibility for legal and tax-related matters, which may create challenges depending on their location.
+* Requires a lot of effort and coordination to establish the organization, onboard new contributors, and maintain communication between sectors.
+
+---
+
+## Conclusion
+
+This proposal would create a path for DONUT to evolve into a resilient, decentralized organization capable of thriving in any scenario. If we transition to the proposed Donut DAO, we will make sure that DONUT is no longer tied to a single platform, allowing it to expand, adapt, and grow in new directions. It also creates a framework for long term sustainability through structured roles, decentralized decisions, and transparent operations.
+
+There's one important thing to note. Without this proposal, there’s a huge risk that current challenges lead to reduced activity or disruptions to basic functions like distributions and the maintenance of donut-bot, and even abandonment. This means people leaving the project. We should practically acknowledge the risks we're facing right now and understand the consequences if proactive measures aren’t taken.
+
+Just like everything, there are challenges involved. However, the benefits really outweigh the risks. This initiative would secure DONUT’s future.
+
+If the community supports this proposal, we can build a robust, scalable ecosystem where DONUT continues to thrive regardless of individual or platform changes. Feel free to provide feedback or suggestions to change or add to this proposal.
+
+---
+
+The choices are:
+
+* [YES]
+* [ABSTAIN]
+* [NO]
+
+*This proposal will remain up for a minimum of 2 days, according to the [governance rules & guidelines](https://www.reddit.com/r/ethtrader/wiki/governance/). This proposal requires 2 moderators to sign it off in order to proceed to a governance snapshot vote. If approved, this proposal will automatically be queued for Governance Week.*"
+Emerging Cryptocurrencies to Watch in 2025,TradingElite,1i7i1go,2025-01-22 13:27:55,1,1.0,1,https://www.reddit.com/r/TradingElite/comments/1i7i1go/emerging_cryptocurrencies_to_watch_in_2025/,Maylights,,"The cryptocurrency market continues to evolve, with new projects and coins capturing the attention of investors. While Bitcoin and Ethereum remain dominant, innovative cryptocurrencies are emerging with unique use cases, technologies, and communities. Here’s a look at some of the most promising cryptocurrencies to watch in 2025.
+
+**1. Aptos (APT)**
+
+Aptos is a Layer-1 blockchain known for its focus on scalability and security.
+
+* Unique Features: Developed by former Facebook engineers, Aptos leverages the Move programming language to enhance smart contract functionality.
+* Use Cases: Ideal for DeFi, NFTs, and gaming applications.
+* Market Potential: Aptos has gained significant attention for its high throughput and potential to rival Ethereum.
+
+**2. Arbitrum (ARB)**
+
+Arbitrum is a Layer-2 solution designed to improve Ethereum’s scalability.
+
+* Unique Features: Uses Optimistic Rollups to process transactions faster and at lower costs than Ethereum’s main chain.
+* Use Cases: DeFi projects, NFT marketplaces, and decentralized exchanges (DEXs).
+* Market Potential: Its integration with Ethereum’s ecosystem makes it a key player in reducing congestion and gas fees.
+
+**3. Kaspa (KAS)**
+
+Kaspa is an innovative proof-of-work cryptocurrency designed for ultra-fast transactions.
+
+* Unique Features: Implements the GhostDAG protocol, allowing for parallel block processing.
+* Use Cases: Ideal for payment systems requiring high-speed and secure transactions.
+* Market Potential: Its ability to address Bitcoin’s scalability limitations gives it long-term appeal.
+
+**4. Sui (SUI)**
+
+Sui is another Layer-1 blockchain focused on scalability and low latency.
+
+* Unique Features: Uses a novel consensus mechanism called Narwhal and Tusk, which separates data availability from transaction ordering.
+* Use Cases: Designed for high-performance DeFi and gaming platforms.
+* Market Potential: Backed by major investors, Sui’s technological advancements position it as a contender in the blockchain space.
+
+**5. Worldcoin (WLD)**
+
+Worldcoin is a bold project aiming to revolutionize identity and financial inclusion.
+
+* Unique Features: Uses biometric verification via a device called the Orb to ensure unique identities.
+* Use Cases: Universal basic income distribution, identity verification, and decentralized governance.
+* Market Potential: Its ambitious goal of providing free crypto to all humans has sparked debates, but its potential to disrupt global financial systems cannot be ignored.
+
+**6. Core (CORE)**
+
+Core DAO’s blockchain bridges Bitcoin and Ethereum ecosystems.
+
+* Unique Features: Combines proof-of-work and delegated proof-of-stake in a hybrid consensus model.
+* Use Cases: Cross-chain solutions, DeFi, and decentralized applications.
+* Market Potential: Its focus on interoperability and decentralization makes it attractive to developers.
+
+**7. Sei Network (SEI)**
+
+Sei Network is a specialized Layer-1 blockchain optimized for trading.
+
+* Unique Features: Offers built-in order-matching and front-running prevention.
+* Use Cases: Designed for DeFi protocols, especially DEXs and derivatives platforms.
+* Market Potential: Its focus on trading efficiency could make it a hub for financial applications.
+
+**8. Canto (CANTO)**
+
+Canto is a blockchain aiming to create a fully decentralized financial system.
+
+* Unique Features: No centralized governance; prioritizes public goods and free infrastructure.
+* Use Cases: Supports lending, borrowing, and liquidity protocols.
+* Market Potential: Its ethos of decentralization resonates with the crypto community’s core values.
+
+**9. Frax Share (FXS)**
+
+Frax Share is part of the Frax ecosystem, which combines algorithmic and collateralized stablecoins.
+
+* Unique Features: Hybrid model stabilizes its stablecoin, Frax, to maintain price stability while allowing growth.
+* Use Cases: Stablecoin issuance, DeFi protocols, and yield farming.
+* Market Potential: Its innovative approach to stablecoins could make it a key player in decentralized finance.
+
+**10. Injective Protocol (INJ)**
+
+Injective is a decentralized exchange protocol with advanced features.
+
+* Unique Features: Supports derivatives, perpetual swaps, and cross-chain trading.
+* Use Cases: Provides infrastructure for decentralized trading platforms.
+* Market Potential: Its ability to cater to professional traders gives it a competitive edge in the DeFi space.
+
+The cryptocurrency market is brimming with innovation, and these emerging cryptocurrencies offer exciting opportunities for investors and developers alike. Whether through solving scalability issues, enhancing financial inclusion, or pushing the boundaries of DeFi, these projects represent the future of blockchain technology.
+
+As always, investing in cryptocurrencies carries risks, so thorough research and risk management are essential. Staying informed and leveraging tools like [TradingView](https://www.reddit.com/r/TradingViewFree/comments/1hobjs6/tradingview_premium_ultimate_package_update/) for technical analysis can help navigate this dynamic market."
+Analyst Reveals Potential 46% Rally for Arbitrum (ARB) If Specific Event Occurs,CryptoBreakingDotCom,1i75m3i,2025-01-22 02:14:28,1,1.0,0,https://www.cryptobreaking.com/analyst-reveals-potential-46-rally-for-arbitrum-arb-if-specific-event-occurs/?feed_id=144318&_unique_id=67909ad3adc85,vincenzost,,
+Thoughts for someone two months into the crypto game?,WallStreetBetsCrypto,1i6mbks,2025-01-21 11:20:23,1,1.0,10,https://i.redd.it/gc8xv8dghdee1.jpeg,YourEvilHero,Discussion,Trying to keep a mix of things. Just hopped into algo last night. Been holding ARB for a little over a month. I also have about 2 sol on my RobinHood.
+Just found out you cant write certain words on tittle,malaysia,1i6bkhq,2025-01-21 00:29:50,153,0.96,48,https://i.redd.it/b43nnfrd9aee1.png,abdulsamri89,Mildly interesting,"Apparently writing ""Percuma"" also got rejected 😅"
+Polygon Surges Ahead: Outpacing Ethereum & Arbitrum in Active Wallets and Stablecoin Usage - A Sleeping Giant?,CryptoCurrency,1i4ub74,2025-01-19 03:50:10,14,0.65,14,https://www.reddit.com/r/CryptoCurrency/comments/1i4ub74/polygon_surges_ahead_outpacing_ethereum_arbitrum/,kirtash93,METRICS,"Today I crossed with the following [Tweet](https://x.com/ournetwork__/status/1879970729074344158) and again made me be more bullish as before regarding Polygon future.
+
+[Monthly stablecoin transfers by blockchain](https://preview.redd.it/z13hb8nftwde1.png?width=1600&format=png&auto=webp&s=a442c49f1f08f2d538023f7f42577408be808624)
+
+As you can see in the image above Polygon has gained some traction the last month reaching 10.8M followed by Arbitrum and surpassing Ethereum. This raise can be related to market rally and also to Polymarket trend. But this is not all:
+
+[Monthly active stablecoin wallets](https://preview.redd.it/om31ipbotwde1.png?width=1600&format=png&auto=webp&s=0779771776c748ce9f3a42864bcac6d4f6075f2b)
+
+As we can see in this image too, Polygon is also beating in the monthly active stablecoin wallets probably again because the rise on Polymarket use.
+
+All this data made me research more and check [Visa research](https://visaonchainanalytics.com/addresses) by myself and found more clear and better chart to understand this
+
+[Average Monthly Active Unique Stablecoin wallet addresses by blockchain - ALL](https://preview.redd.it/uhjkye8auwde1.png?width=1216&format=png&auto=webp&s=3bbb6f8ed4931ae55a3eab03eda87f15135c9ccf)
+
+[Average Monthly Active Unique Stablecoin wallet addresses by blockchain - 12 M](https://preview.redd.it/fkswcrqduwde1.png?width=1216&format=png&auto=webp&s=62c905d6b155e23ce8ffe261be9087ccda1c6d12)
+
+The charts above show this difference in a clearer way. As you can see the more L2s, the less ETH holding stablecoins but its quite stable. However we can see how Polygon keeps maintaining or even increasing the amount of wallets even thought ARB and Base appeared in the scene.
+
+This is a bullish metric that is telling us that people are really using Polygon ecosystem and also holding stablecoins. It's a matter of time that this sleeping giant wakes up.
+
+Sources:
+
+* Tweet: [https://x.com/ournetwork\_\_/status/1879970729074344158](https://x.com/ournetwork__/status/1879970729074344158)
+* Full OurNetwork Report: [https://www.ournetwork.xyz/p/on-303-layer-2s#polygon](https://www.ournetwork.xyz/p/on-303-layer-2s#polygon)
+* Visa research: [https://visaonchainanalytics.com/addresses](https://visaonchainanalytics.com/addresses)
+
+*Disclaimer: The concept and ideas in this post come from my own thoughts and everything I have seen online during my three years in crypto. Any resemblance is purely coincidental. This is not a financial advice.*"
+Polygon Surges Ahead: Outpacing Ethereum & Arbitrum in Active Wallets and Stablecoin Usage - A Sleeping Giant?,0xPolygon,1i4u0fg,2025-01-19 03:28:10,15,0.83,9,https://www.reddit.com/r/0xPolygon/comments/1i4u0fg/polygon_surges_ahead_outpacing_ethereum_arbitrum/,kirtash93,Discussion,"Today I crossed with the following [Tweet](https://x.com/ournetwork__/status/1879970729074344158) and again made me be more bullish as before regarding Polygon future.
+
+[Monthly stablecoin transfers by blockchain](https://preview.redd.it/z13hb8nftwde1.png?width=1600&format=png&auto=webp&s=a442c49f1f08f2d538023f7f42577408be808624)
+
+As you can see in the image above Polygon has gained some traction the last month reaching 10.8M followed by Arbitrum and surpassing Ethereum. This raise can be related to market rally and also to Polymarket trend. But this is not all:
+
+[Monthly active stablecoin wallets](https://preview.redd.it/om31ipbotwde1.png?width=1600&format=png&auto=webp&s=0779771776c748ce9f3a42864bcac6d4f6075f2b)
+
+As we can see in this image too, Polygon is also beating in the monthly active stablecoin wallets probably again because the rise on Polymarket use.
+
+All this data made me research more and check [Visa research](https://visaonchainanalytics.com/addresses) by myself and found more clear and better chart to understand this
+
+[Average Monthly Active Unique Stablecoin wallet addresses by blockchain - ALL](https://preview.redd.it/uhjkye8auwde1.png?width=1216&format=png&auto=webp&s=3bbb6f8ed4931ae55a3eab03eda87f15135c9ccf)
+
+[Average Monthly Active Unique Stablecoin wallet addresses by blockchain - 12 M](https://preview.redd.it/fkswcrqduwde1.png?width=1216&format=png&auto=webp&s=62c905d6b155e23ce8ffe261be9087ccda1c6d12)
+
+The charts above show this difference in a clearer way. As you can see the more L2s, the less ETH holding stablecoins but its quite stable. However we can see how Polygon keeps maintaining or even increasing the amount of wallets even thought ARB and Base appeared in the scene.
+
+This is a bullish metric that is telling us that people are really using Polygon ecosystem and also holding stablecoins. It's a matter of time that this sleeping giant wakes up.
+
+Sources: 
+
+* Tweet: [https://x.com/ournetwork\_\_/status/1879970729074344158](https://x.com/ournetwork__/status/1879970729074344158)
+* Full OurNetwork Report: [https://www.ournetwork.xyz/p/on-303-layer-2s#polygon](https://www.ournetwork.xyz/p/on-303-layer-2s#polygon)
+* Visa research: [https://visaonchainanalytics.com/addresses](https://visaonchainanalytics.com/addresses)
+
+*Disclaimer: The concept and ideas in this post come from my own thoughts and everything I have seen online during my three years in crypto. Any resemblance is purely coincidental. This is not a financial advice.*"
+Polygon Surges Ahead: Outpacing Ethereum & Arbitrum in Active Wallets and Stablecoin Usage - A Sleeping Giant?,ethtrader,1i4u05d,2025-01-19 03:27:38,4,0.61,42,https://www.reddit.com/r/ethtrader/comments/1i4u05d/polygon_surges_ahead_outpacing_ethereum_arbitrum/,kirtash93,Metrics,"Today I crossed with the following [Tweet](https://x.com/ournetwork__/status/1879970729074344158) and again made me be more bullish as before regarding Polygon future.
+
+[Monthly stablecoin transfers by blockchain](https://preview.redd.it/z13hb8nftwde1.png?width=1600&format=png&auto=webp&s=a442c49f1f08f2d538023f7f42577408be808624)
+
+As you can see in the image above Polygon has gained some traction the last month reaching 10.8M followed by Arbitrum and surpassing Ethereum. This raise can be related to market rally and also to Polymarket trend. But this is not all:
+
+[Monthly active stablecoin wallets](https://preview.redd.it/om31ipbotwde1.png?width=1600&format=png&auto=webp&s=0779771776c748ce9f3a42864bcac6d4f6075f2b)
+
+As we can see in this image too, Polygon is also beating in the monthly active stablecoin wallets probably again because the rise on Polymarket use.
+
+All this data made me research more and check [Visa research](https://visaonchainanalytics.com/addresses) by myself and found more clear and better chart to understand this
+
+[Average Monthly Active Unique Stablecoin wallet addresses by blockchain - ALL](https://preview.redd.it/uhjkye8auwde1.png?width=1216&format=png&auto=webp&s=3bbb6f8ed4931ae55a3eab03eda87f15135c9ccf)
+
+[Average Monthly Active Unique Stablecoin wallet addresses by blockchain - 12 M](https://preview.redd.it/fkswcrqduwde1.png?width=1216&format=png&auto=webp&s=62c905d6b155e23ce8ffe261be9087ccda1c6d12)
+
+The charts above show this difference in a clearer way. As you can see the more L2s, the less ETH holding stablecoins but its quite stable. However we can see how Polygon keeps maintaining or even increasing the amount of wallets even thought ARB and Base appeared in the scene.
+
+This is a bullish metric that is telling us that people are really using Polygon ecosystem and also holding stablecoins. It's a matter of time that this sleeping giant wakes up.
+
+Sources: 
+
+* Tweet: [https://x.com/ournetwork\_\_/status/1879970729074344158](https://x.com/ournetwork__/status/1879970729074344158)
+* Full OurNetwork Report: [https://www.ournetwork.xyz/p/on-303-layer-2s#polygon](https://www.ournetwork.xyz/p/on-303-layer-2s#polygon)
+* Visa research: [https://visaonchainanalytics.com/addresses](https://visaonchainanalytics.com/addresses)
+
+*Disclaimer: The concept and ideas in this post come from my own thoughts and everything I have seen online during my three years in crypto. Any resemblance is purely coincidental. This is not a financial advice.*"
+what do you think about my portfolio (newbie) (x-post from /r/Bitcoin),CryptoCurrencyClassic,1i43yn5,2025-01-18 04:27:11,1,1.0,0,https://www.reddit.com/r/Bitcoin/comments/1i43yhd/what_do_you_think_about_my_portfolio_newbie/,ASICmachine,,
+Bruh,Alienbase,1i293pu,2025-01-15 17:02:57,8,0.67,25,https://i.redd.it/42e16dp3d8de1.jpeg,ArtfulOneXD,,
+Base Makes History As Second L2 To Ever Cross $100B Swap Volume On Uniswap,ethtrader,1i1qzee,2025-01-15 00:57:30,15,0.87,46,https://www.reddit.com/r/ethtrader/comments/1i1qzee/base_makes_history_as_second_l2_to_ever_cross/,BigRon1977,Metrics,"Base the Ethereum Layer 2 network launched by Coinbase in August 2023, has made history as the second Layer 2 (L2) to ever cross $100 billion ln swap volume on Uniswap.
+
+This impressive achievement was highlighted by data [shared by Uniswap Labs](https://x.com/Uniswap/status/1879178454387871801) referencing [analytics from Dune](https://dune.com/queries/4286192/7202809).
+
+https://preview.redd.it/zis35olya3de1.jpg?width=1264&format=pjpg&auto=webp&s=1d6e7575e27c4d5eedce4276ef6165b6f4252108
+
+In the simplest terms, crossing the $100 billion swap volume threshold on Uniswap means that the total value of all transactions executed through Base on the Uniswap protocol has surpassed $100b.
+
+The first Layer 2 to achieve this feat was Arbitrum. Base now joining the $100b+ club is a clear indication that L2s are being increasingly adopted for blockchain scalability, cheaper transaction costs and smoother user experience for DeFi interactions.
+
+Many will say one of the unique advantages Base has is its backing by Coinbase which offers significant incentives to developers and builders.
+
+However, it would be unfair to attribute Base's success solely to Coinbase's backing considering we've seen initiatives like Coinbase NFT not achieve the same level of success.
+
+A significant portion of the credit should go to Jesse Pollak who serves as the head of protocols at Coinbase and is deeply involved in the Base project. From the time Base was announced, Jesse has been religious with sharing messages about the potential of the onchain economy to drive global economic prosperity.
+
+He actively highlights new projects on Base, tests them out, encourages development on the platform, and engages deeply with the community. Consequently Base's success is organic, achieved without traditional promotional strategies like tap-to-earn, TVL programs or airdrop initiatives.
+
+Beyond its performance on Uniswap, Base continues to make waves in the broader blockchain space. It currently ranks as the [6th largest chain by Total Value Locked (TVL)](https://www.coingecko.com/en/chains), surpassing ARB, AVAX and MATIC, and is quickly catching up to SOL. 
+
+In terms of DEX volume, Base stands as the [3rd largest chain](https://defillama.com/dexs/chains), often matching the activity levels of Ethereum's mainnet and reaching 40% of Solana's volume."
+Help needed - MOON delisted from crypto.com,CryptoCurrency,1i1a2sm,2025-01-14 11:34:57,0,0.4,55,https://www.reddit.com/r/CryptoCurrency/comments/1i1a2sm/help_needed_moon_delisted_from_cryptocom/,Tatky,:moons: MOONS,"Hey Guys, getting desperate here...
+
+Tried a lot of things (list at the end)
+
+I missed an apparently important mail from [crypto.com](http://crypto.com) that told me 7 days ago they were gonna delist MOON for whatever reason...
+
+They didn't tell me why. Maybe anyone got insights on that too? couldn't find anything on here either...
+
+Now I am facing the problem, that I can't sell nor buy MOON anymore. Made decent profits in NOV/DEC but still have 1000+ MOON.  
+What platforms still trade it? I could only find Coinbase so far.
+
+I need to transfer it somewhere but don't know where... Any ideas?  
+I don't know many platforms tbh. [Crypto.com](http://crypto.com/) and Kraken both don't trade moon (anymore)
+
+how do you guys trade moon?
+
+Thanks in advance :)
+
+\---------------------------
+
+Here is what I have tried so far:
+
+The obvious step would be to send the crypto to another platform. However for whatever stupid reason [crypto.com](http://crypto.com) only allows to send it using ""Arbitrum Nova"".
+
+Finding platforms that support it is nearly impossible. The only thing I found after a suggestion was ""Meta Mask""  
+However it's not possible to trade MOON there either.
+
+So trying with coinbase seems to be the only way. Sadly, coinbase can't work with Arbitrum Nova
+
+  
+Tried sending it anyway and just provided the wallet address and linked a wallet in the [crypto.com](http://crypto.com) app, but the 1 MOON I sent disappeared into the void.
+
+Also tried with the Meta Mask Wallet. Again, coin disappeared into the void.
+
+  
+The [crypto.com](http://crypto.com) support was 0 help either. Just stating there was a mail and the only way to transfer it is Arbitrum Nova
+
+  
+It seems the only possible way to send MOON to anywhere is ARB to Coinbase.
+
+Any other suggestions that I haven't found yet?"
+Can someone explain to me Moons on ETH and Arbitrum One?,CryptoCurrencyMoons,1i19cv5,2025-01-14 11:03:54,9,0.84,14,https://www.reddit.com/r/CryptoCurrencyMoons/comments/1i19cv5/can_someone_explain_to_me_moons_on_eth_and/,Loud-Ad9148,,"As the title says really. Is the original contract on Arbitrum Nova? What are we buying when we buy MOONs on Arb one or ETH?
+
+And do these other contracts show as moons on r/cryptocurrency ?"
+What Crypto is Everyone Watching This Weekend? ,Crypto_Currency_News,1i0agva,2025-01-13 04:42:28,4,1.0,8,https://www.reddit.com/r/Crypto_Currency_News/comments/1i0agva/what_crypto_is_everyone_watching_this_weekend/,Maya_Walk,,"Every weekend, the crypto market surprises us with something new. This time, traders and investors are closely watching several key coins:
+
+1️⃣ **Bitcoin (BTC):** The king of cryptocurrencies is back in the spotlight after recently breaking important resistance levels. The main question: will it hold above $95,000K to kick off a new rally?
+
+https://preview.redd.it/osdledb1fqce1.png?width=1142&format=png&auto=webp&s=2eafc24fe457150809f35c63095f4976bd9cf798
+
+2️⃣ **Ethereum (ETH):** All eyes are on updates regarding the network's progress after the transition to Proof-of-Stake. Developer activity and potential new DApps keep fueling interest.
+
+https://preview.redd.it/c1abp6x2fqce1.png?width=1142&format=png&auto=webp&s=5a00c047cfdc05a1e30fbf179c6ac016adccf8e2
+
+3️⃣ **Solana (SOL):** After recent network issues, SOL is back on the radar thanks to rising activity in the NFT and DeFi sectors. Can Solana rebuild trust and capitalization?
+
+https://preview.redd.it/1bj7ngr4fqce1.png?width=1150&format=png&auto=webp&s=e7c1a209ecf680de1712b6ea63c8d0975c194323
+
+4️⃣ **Altcoin Show:**
+
+* **XRP:** Ongoing legal battles with the SEC keep the market on edge.
+* **ARB/OP (Arbitrum/Optimism):** Layer-2 solutions are booming as Ethereum transactions increase.
+* **Meme Coins:** Their popularity is surging again after a few viral success stories.
+
+📊 **What to Watch:**
+
+* **Market News:** Which players are preparing major announcements?
+* **Charts:** Which coins are forming bullish patterns?
+* **Trends:** NFT, DeFi, or something entirely new?"
+Sonic Announcement! ,FantomFoundation,1hz0xpo,2025-01-11 12:28:48,22,0.97,4,https://i.redd.it/goyj642hgece1.jpeg,G-CobraTrading,,
+Asset Manager Grayscale just announced Altcoins now on their Rader. Starknet made the list. This is very Bullish.,Starknet_STRK,1hyb2h9,2025-01-10 13:23:29,1,1.0,0,https://i.redd.it/zpxgz70el7ce1.jpeg,reditpost1,,
+Arbitrum (ARB) Flashes Bearish Signal After Trading Volume Drops by $600M,ethtrader,1hy82my,2025-01-10 11:19:06,8,0.79,22,https://www.ccn.com/analysis/crypto/arbitrum-arb-flashes-bearish-signal-after-trading-volume-drops/,Extension-Survey3014,Link,
+"Daily ETH & L2 Narrative for the 9th Jan
+",eth,1hx2k0y,2025-01-08 21:40:54,1,1.0,0,https://www.reddit.com/r/eth/comments/1hx2k0y/daily_eth_l2_narrative_for_the_9th_jan/,FireTriumph,,"**Daily Ethereum Update — January 7h, 2025**
+
+https://preview.redd.it/2qkvr5u6svbe1.png?width=478&format=png&auto=webp&s=3449bca49f2389d954b9a14aa6b52325f334eadd
+
+**Graph of the Day**
+
+https://preview.redd.it/11jqism8svbe1.png?width=351&format=png&auto=webp&s=4dfadc1a6bb99f667b6c31dad334efb028b90d11
+
+* This graph showcases the share price of Coinbase, one of the biggest crypto related businesses and a benchmark for analyzing “big money” in crypto + related to today’s news!
+
+**Ethereum and Layer 2 Highlights**
+
+**Ethereum Mainnet**
+
+* **Coinbase vs SEC Lawsuit Paused**: A U.S. judge agreed to let Coinbase appeal an important decision in its case with the SEC, putting the case on hold for now. The appeal will focus on whether the crypto assets involved count as ""investment contracts"" under securities laws. The SEC sued Coinbase in June 2023, accusing it of operating as an unregistered securities exchange, broker, and clearing agency - likely, this will be an important case for the future of centralized exchanges.
+* **AAVE Celebrates 5 Years**: Aave, the leading lending protocol, turned five today. Well, most likely yesterday depending on when you’re reading. Launched on January 8, 2020, it helped start DeFi Summer and grew into the biggest DeFi platform, with over $34 billion in total value locked, 13 markets, and 2.3 million users across 11 networks. Aave is now preparing to launch Aave V4 later this year.
+
+**Arbitrum**
+
+* **Lotte Group Partnership**: South Korea's Lotte Group has chosen Arbitrum's blockchain to develop its Lotte Caliverse, aiming to enhance Web3 entertainment experiences. Let’s see how this will pan out for the growing web3 gaming market.
+
+**Optimism**
+
+* **OP Price Update**: Optimism's token, OP, is trading around $2.12, with recent price fluctuations between $2.06 and $2.18. It looks like it won’t break out of here anytime soon.
+
+**Polygon**
+
+* **Kraken's Layer 2 Solution**: In October 2024, Kraken announced 'Ink,' a new Ethereum Layer 2 solution built on Optimism's Superchain, with its testnet expected to go live soon.
+* **DIA's Lumina Testnet**: In November 2024, DIA launched the testnet for Lumina, a modular oracle designed to enhance transparency and integration, utilizing an OP stack-based Optimism solution.
+
+Both of these products are expected to go out soon, so let’s keep an eye on them!
+
+**Project of the Day**
+
+**Project of the Day: Auditchain's** [**Pacioli.ai**](http://Pacioli.ai)
+
+**Overview:** Auditchain has rolled out [**Pacioli.ai**](http://Pacioli.ai), a cutting-edge decentralized platform that merges blockchain and AI to elevate financial, sustainability, and crypto asset disclosures. It’s built to provide real-time validation of financial statements and control sets, introducing a fresh era of continuous auditing. This project is geared toward tackling the pain points of traditional financial reporting by integrating transparency and trust into the system.
+
+**Significance:**
+
+* **Regulatory Compliance:** [Pacioli.ai](http://Pacioli.ai) is designed to help organizations navigate the complexities of regulatory reporting with precision. This, obviously, boosts reliability in financial disclosures.
+* **Support for Traditional Formats:** The platform supports machine-readable formats like XBRL and JSON, meaning it’ll be useable by most traditional accountants.
+* **Incentivized Ecosystem:** With a built-in payment and rewards system using USDC, [Pacioli.ai](http://Pacioli.ai) incentivizes users to contribute to high-quality control sets, making the ecosystem collaborative and self-sustaining.
+
+**Recent Update:** As of 2024, Auditchain deployed [Pacioli.ai](http://Pacioli.ai) on the mainnet, marking a milestone as the first blockchain-based **Regulatory Finance (RegFi)** protocol. This move bridges the gap between traditional financial frameworks and decentralized technologies, bringing millions of annual disclosures on-chain and setting a new standard for automated compliance.
+
+\[TLDR because I made it quite blocky and long - it’s a super good product for finance professionals who want to get into blockchain.\]
+
+**Key Takeaways**
+
+**Ethereum Ecosystem**
+
+* **Regulatory Landscape:** The approval of Ethereum exchange-traded funds (ETFs) has become a significant political issue. Ethereum co-founder Joseph Lubin anticipates that several Ether ETF applications will receive approval, though he expects a lengthy wait before they become public. This development underscores the growing intersection of cryptocurrency and traditional financial markets - while multiple ETH ETFs have been launched yet, there’s still quite a few to go.
+* **Research and Development:** In a notable development, Ethereum Foundation researchers Dankrad Feist and Justin Drake have resigned from their advisory roles at EigenLayer following a controversy. This event highlights the let’s say dynamic nature of the Ethereum development community and the challenges it faces in governance and collaboration\*\*.\*\* 
+
+**Layer 2 Narrative**
+
+* **Berachain's Unique Consensus:** Berachain is introducing Proof of Liquidity to enhance Ethereum’s scalability while maintaining decentralization and reducing energy consumption. This modern, fairly innovative approach targets both Ethereum’s transaction throughput and environmental concerns.
+* **Ink Chain Mainnet Launch:** Built on the Optimism Superchain (which we’ve covered before!), Ink Chain launched its mainnet ahead of schedule, marking a significant milestone for their future ecosystem
+* **Airdrop Anticipation:** Upcoming Berachain and Linea Protocol airdrops are sparking excitement in the community, with both projects contributing to the growing innovation (though also to the complexity) of Layer 2 solutions on Ethereum. These airdrops will obviously increase user engagement and strengthen their respective ecosystems. Which is good.
+
+**Quick Stats**
+
+* **Ethereum (ETH)** Price: $3,698.19 Total Value Locked (TVL): $71.533 billion
+* **Arbitrum (ARB)** Price: $0.9196 TVL: $3.234 billion Daily Transactions: \~1.2 million
+* **Optimism (OP)** Price: $2.12 TVL: $2.5 billion Daily Transactions: \~500,000
+* **Polygon (MATIC)** Price: $0.5222 TVL: $4.86 billion Daily Transactions: \~2 million
+
+**Mainnet Gas Fees**: \~$1.10 per transaction"
+6th Jan Daily ETH Update,eth,1hvhiog,2025-01-06 21:51:42,1,1.0,0,https://www.reddit.com/r/eth/comments/1hvhiog/6th_jan_daily_eth_update/,FireTriumph,,"
+
+**Daily Ethereum Update — January 6th, 2025**
+
+https://preview.redd.it/yx0i0jldkhbe1.png?width=478&format=png&auto=webp&s=736803bb3101f46b8854eec30e5dc802fbdad3bf
+
+**Graph of the Day**
+
+https://preview.redd.it/b5rcyikekhbe1.png?width=346&format=png&auto=webp&s=d1d7b9e4544da8bae90b80ffd78ae1bd91b6a04a
+
+* This graph showcases the market cap of ETH ETFs (Exchange Traded Funds) There was a dip recently - however, what is clear is that adoption is rising through them. Plus, we can clearly see a recovery. Great news for the chain!
+
+
+
+**Ethereum and Layer 2 Highlights**
+
+**Ethereum Mainnet**
+
+* **Stablecoin Inflows Surge**: The Ethereum network has experienced a significant increase in stablecoin inflows, with an addition of $1.11 billion over the past week, indicating heightened market activity & adoption of cryptocurrency in the general public.
+
+**Arbitrum**
+
+* **ARB Price Movement**: Arbitrum's native token, ARB, is currently trading at approximately $0.92, showing a slight decrease of about 0.87% over the past 24 hours. Currently, however, it’s quite volatile.
+
+**Optimism**
+
+* **OP Price Update**: Optimism's token, OP, is trading around $2.12, with recent price fluctuations between $2.06 and $2.18. It looks like it won’t break out of here anytime soon.
+
+**Polygon**
+
+* **MATIC Price Stability**: Polygon's MATIC token is holding steady at approximately $0.52, reflecting a modest increase of 0.65% in the last 24 hours - I’d say this reflects the current stability of the chain.
+
+**Project of the Day**
+
+**Deutsche Bank's Layer 2 Initiative**
+
+* **Overview**: Deutsche Bank is developing a Layer 2 blockchain solution on Ethereum, known as Project Dama 2, aimed at addressing regulatory compliance challenges faced by traditional financial institutions.  
+* **Significance**:
+   * **Regulatory Compliance**: The project seeks to provide secure Layer 2 solutions that meet stringent regulatory requirements, facilitating broader adoption of blockchain technology in traditional finance.
+   * **Institutional Adoption**: By developing this solution, Deutsche Bank is positioning itself at the forefront of integrating blockchain technology into mainstream financial services.
+* **Recent Update**: As of December 18, 2024, Deutsche Bank announced the development of this Ethereum-based Layer 2 blockchain to tackle compliance issues in traditional finance.
+
+**Key Takeaways**
+
+**Ethereum Ecosystem**
+
+* **Price Outlook**: Analysts predict that Ethereum could reach between $5,236 and $18,000 by the end of 2025, driven by ongoing technological advancements and increased adoption - and of course, the crypto-wide bull market.
+* **Potential Surge**: Ethereum's recent recovery suggests a potential rise to $4,000 in the near term, supported by bullish trends and it’s tendency to trail the price of Bitcoin.
+
+**Layer 2 Narrative**
+
+* **Market Activity**: Layer 2 solutions like Arbitrum and Optimism continue to play a crucial role in scaling Ethereum & reinforce the ecosystem, preparing for the eventual surge that’s coming & preventing the massive fee raise that’s expected to come due to it.
+
+**Quick Stats**
+
+**Ethereum (ETH)**
+
+* **Price**: $3,698.19
+* **Total Value Locked (TVL)**: $71.533 billion
+
+**Arbitrum (ARB)**
+
+* **Price**: $0.9196
+* **TVL**: $3.234 billion
+* **Daily Transactions**: Approximately 1.2 million
+
+**Optimism (OP)**
+
+* **Price**: $2.12
+* **TVL**: $2.5 billion
+* **Daily Transactions**: Around 500,000
+
+
+
+**Polygon (MATIC)**
+
+* **Price**: $0.5222
+* **TVL**: $4.86 billion
+* **Daily Transactions**: Approximately 2 million
+
+
+
+* **Mainnet Gas Fees**: Approximately $1.10 per transaction
+
+
+
+*Note: The above statistics are based on the latest available data as of January 6, 2025, and might not reflect the current state of the chain. For the most current information, please refer to official sources and platforms.*
+
+"
+"Bitget wallet won’t let me sell my coin ,  is it because it’s unlisted ??? How can I solve this problem I have enough gas fees ",BitgetReddit,1htzsso,2025-01-05 01:43:19,2,1.0,11,https://i.redd.it/22uvkjowf4be1.jpeg,liveandlove6,,"I have profited off this coin I heard about from a friend, and I cannot swap it to anything , I want to sell this coin right now, but no matter what I do it keeps saying error , has anyone had this problem and has solved it before? It’s only this coin it’s doing it with "
+Arbitrum keep growing but why the price declined?,ethtrader,1hsc306,2025-01-02 21:43:29,9,0.91,38,https://www.reddit.com/r/ethtrader/comments/1hsc306/arbitrum_keep_growing_but_why_the_price_declined/,Creative_Ad7831,Technicals," Crypto market is heavily influenced by whales and/or institutions due to they hold majority or listed as the top holders of a crypto project. The same principle also applied to ARB. Based on [https://arbiscan.io/token/0x912ce59144191c1204e64559fe8253a0e49e6548#balances](https://arbiscan.io/token/0x912ce59144191c1204e64559fe8253a0e49e6548#balances), ARB foundation treasury hold 2,853,630,032.237418147357559551 ARB or 28.5363% of ARB total supply (as of 3 January 2025) and the rest of the tokens are held by publics or institutions.
+
+Many altcoins have been performed well in 2024, except ARB. according to Coingecko, over the year ARB down by 57,1%, down by 27,6% in the last 30 days, down by 2,3% in the last 14 days and slightly up by 1,7% in the last 7 days and up by 1,8% in the last 24 hours. But what was the reason why ARB has been underperformed in 2024? There were 2 reasons:
+
+https://preview.redd.it/gebfcuskyoae1.jpg?width=888&format=pjpg&auto=webp&s=d86f7031d80bed294ad55dbeabbc59d336b3c9e0
+
+**Monthly token unlocks**
+
+According to [https://cryptorank.io/price/arbitrum/vesting](https://cryptorank.io/price/arbitrum/vesting), ARB constantly unlocking 92.63M tokens (0.93% of Total Supply) in every month that worth approximately $ 71.46M (2.21% of Market Cap) of total supply of 10 billion tokens. The monthly token unlock is distributed to team and advisors by 2.08% (56.12M tokens) and investors 2.08% (36.51M tokens). Currently, ARB supply is 3.22B tokens unlocked by 32.2%.
+
+ 
+
+https://preview.redd.it/uc6f0hzgyoae1.jpg?width=1472&format=pjpg&auto=webp&s=1da3b978e0b60f452f736aebdb0a17bca95d56fe
+
+https://preview.redd.it/c1qqbswhyoae1.jpg?width=1390&format=pjpg&auto=webp&s=dc2a17dd86df47175cee72aea25aba93ebb3ce28
+
+https://preview.redd.it/pv9yoehiyoae1.jpg?width=1413&format=pjpg&auto=webp&s=737ed816fb8fa7071a1b14f9ab76fd99e99bbed7
+
+**Whales constantly sold their assets**
+
+I did research and found out that whales or institutions played big role in ARB price being down for a whole year. So, I stalked 3 whales as a sample and found out that all of them moved their assets to CEXs and brought huge impact to price action. If whales moving their assets, it will create FUD and uncertainty in crypto market as many media will spread this information through news and some small investors of weak hands will respond by selling their assets. In the end, the price of ARB will keep going down. Here are the 3 whale address that I used as research to determine ARB price action:
+
+ 
+
+**Whale #1**
+
+wallet address 0x.....................................................................ceC
+
+the first whale holds 480,000,000 ARB or 4,8% of ARB total supply. He/she only moved his assets to Binance 37 days ago worth of $70,644,138.35 million for 91,667,062 ARB
+
+at that time, ARB was on a gradual pump and even hit $0,96. People will hope that ARB will once again hit $1 but this action made ARB down to $0,84 on 27 November. Thankfully, the market remain calm and the pump lasted until 7 December and ARB was traded at $1,23. 
+
+**Whale #2**
+
+wallet address 0xf..................................................................E26
+
+this whale holds 271,913,734 ARB or 2.7191% of ARB total supply and constantly moved his/her ARB to upbit in 27 transactions over the last 30 days for total amount of money approximately $49.192.154
+
+Those actions affected badly to ARB because at the start of December 2024, ARB was traded at around $2 and it even down to $0,6 on 20 December 2024. For the rest of December, ARB was traded at the range of $0,7.
+
+**Whale #3**
+
+wallet address 0x62............................................................BBE6
+
+The third whale hold 103,528,790 ARB or 1.0353% of ARB total supply and constantly put his/her asset to [gate.io](http://gate.io) in total of 8 transactions as follows:
+
+23 days ago to [Gate.io](http://Gate.io) for 1,105,216 ARB worth of approximately $884,017
+
+29 days ago to [Gate.io](http://Gate.io) for 930,146 ARB worth of approximately $710,321
+
+52 days ago to [Gate.io](http://Gate.io) for 1,541,782 ARB worth of approximately $1,177,408
+
+139 days ago to [Gate.io](http://Gate.io) for 1,866,019 ARB worth of approximately $1,425,017
+
+162 days ago to [Gate.io](http://Gate.io) for 1,291,489 ARB worth of approximately $986,267
+
+181 days ago to [Gate.io](http://Gate.io) for 1,720,874 ARB worth of approximately $1,314,174
+
+226 days ago to [Gate.io](http://Gate.io) for 874,125 ARB worth of approximately $667,541
+
+233 days ago to [Gate.io](http://Gate.io) for 1,014,713 ARB worth of approximately $774,903
+
+  
+If we take a look at the information above, the whale moved his/her assets exactly 52 days ago and it resulted ARB to going down to $0,57 on 13 November 2024.
+
+On 25 July 2024, the whale moved 1,291,489 ARB to CEX and resulted to ARB kept going down all the way from $0,74 to $0,48 on 6 August 2024. Since then, ARB struggled to pump and traded at the range of $0,48 to 0,59 before broke to $0,6 support on 23 September 2024.
+
+I believe that whales are also did the same thing in 2023 as we can see that the same pattern happened that severely impact the market, for example:
+
+1 June 2023 $1,17 down to $0,94 on 15 June 2023
+
+1 September 2023 $0,915 down to $0,76 on 12 September 2023
+
+2 October 2023 $0,97 down to $0,769 on 20 October 2023
+
+But, we might be able to see short-lived pump in 2025 as it happened twice. First, it happened on 21 December 2023 to 12 January 2024, as ARB pumped from $1,15 to $2,2 and since then the price has been consolidated at the range of $1,7 to $2,1. After that, ARB kept declining until it hit another low resistance at $0,48 in August 2023. Second rally started on 5 November 2024 $0,45 and gradually pumped to $1,18 on 7 December 2024.
+
+ 
+
+In conclusion, ARB may hit another rough patch in early 2025 if some whales are moving their assets to CEXs and we may see ARB dumps in price to the range of $0,5-$0,6, especially if there are whales that actively selling their assets like whales #2. But ARB also has potential to pump from $1 to $2 if Trump inauguration initiates crypto rally or if FED decides to make significant interest rate cut in 2025."
+"Remittix Set To Redefine Crypto To Fiat Payments, Arbitrum TVL Continues To Grow And Kaspa Price Prediction For 2025",draqai,1hqthq6,2024-12-31 21:11:15,1,1.0,0,https://www.reddit.com/r/draqai/comments/1hqthq6/remittix_set_to_redefine_crypto_to_fiat_payments/,MammothBattle33,,"🚀 Crypto fam, it's time to spice up your wallets with these juicy updates! 🌎💸  
+
+Remittix is making big moves, shaking up the cross-border payments game with blockchain. Forget the old-school fees and delays; $RTX is here for quicker, cheaper, and more transparent payments. Oh, and guess what? Their presale is on fire, with over $844,000 already raised! Get in before it hits $1M. Let’s glow up those wallets, babes ✨  
+
+Meanwhile, $ARB is flexing with a growing TVL of over $20B despite some token unlock buzz. Analysts think it could hit $1 by January 2025. Can you say *comeback energy*? 💪  
+
+And let’s not sleep on $KASPA; sure, it’s stumbling short-term, but honey, with 62,000% growth since day one, long-term potential is looking delicious. We're talking a possible $1 by late 2025, so hold on for that crypto glow-up 🔥  
+
+Which one’s catching your vibe? Tell me in the comments, cuties! 🌈  
+
+#Remittix #YOI #memecoin #crypto #Solana #Ethereum #AI #Bitcoin #Kaspa #Arbitrum #cryptocurrency 
+
+
+ Follow Me:  
+
+
+ https://x.com/YOIdraq 
+
+
+https://x.com/draqai"
+Arbitrum Hits New All-time High Monthly Volume On Uniswap,ethtrader,1hood29,2024-12-28 23:44:42,12,0.93,36,https://www.reddit.com/r/ethtrader/comments/1hood29/arbitrum_hits_new_alltime_high_monthly_volume_on/,BigRon1977,Technicals,"Arbitrum (ARB) has hit a new all-time high (ATH) monthly volume on Uniswap, surpassing $22 billion! 
+
+This is according to data from Dune Analytics, a popular platform for exploring and analyzing cryptocurrency data. 
+
+https://preview.redd.it/49tizjcxvp9e1.jpg?width=1175&format=pjpg&auto=webp&s=1ab863dc86150fde2c39483a26c85985e69f05ed
+
+The development comes just weeks after ARB became the first L2 to break the $20 billion barrier on Uniswap as reported by [Coinrepublic](https://www.thecoinrepublic.com/2024/12/04/arbitrum-becomes-the-first-l2-to-hit-20b-on-uniswap/).
+
+It is worthwhile to note that this milestone isn't just about volume, it's a sign of Arbitrum's growing integration with Ethereum's infrastructure. 
+
+Did you know that with this kind of volume, Arbitrum is actually contributing to the decentralization of Ethereum's transaction validation? 
+
+By offloading transactions from the mainnet, it's reducing the hardware requirements for node operators, making Ethereum more accessible and decentralized, which is a core principle often overlooked in the excitement of high volumes.
+
+And here's an interesting twist: with this consistent rise in volume, Arbitrum is in a prime position to reclaim its title as the king of L2s from BASE. 
+
+While BASE has been enjoying its time in the spotlight, Arbitrum's stealthily increasing volume indicates a growing strong user base, developer confidence, speculative trading, liquidity incentives, and broader market dynamics which build the Total Value Locked (TVL) necessary for a flippening.
+
+ How bullish are you on ARB after this impressive volume milestone? Let's hear your predictions and thoughts!"
+Human-Written Daily ETH Update - December 27,eth,1hnsme3,2024-12-27 18:53:43,1,1.0,1,https://www.reddit.com/r/eth/comments/1hnsme3/humanwritten_daily_eth_update_december_27/,FireTriumph,,"**Daily Ethereum Update — December 27th, 2024**
+
+https://preview.redd.it/qctkyvdgbh9e1.png?width=471&format=png&auto=webp&s=66de7d427bffa3c0963d8f81a3d8278c96e76d6f
+
+**Graph of the Day**
+
+Today's chart illustrates the Total Value Locked (TVL) across Ethereum's Layer 2 networks, showcasing a significant increase to $55.61 billion, representing a 6% movement in the last 30 days
+
+https://preview.redd.it/102fosrfbh9e1.png?width=410&format=png&auto=webp&s=54dc38802111208b2721ac91f1ddbb179415d49d
+
+
+
+**Ethereum and Layer 2 Highlights**
+
+* **Ethereum Mainnet**
+   * *Gas Fees*: The average gas price is currently around 8.237 Gwei, reflecting a decrease from previous levels.[ ](https://ycharts.com/indicators/ethereum_average_gas_price?utm_source=chatgpt.com)
+* **Arbitrum**
+   * *Total Value Bridged*: Approximately 4.39 million ETH has been bridged to Arbitrum, indicating robust user engagement.  
+* **Optimism**
+   * *Price Movement*: Optimism's (OP) token is currently trading at $1.85, showing a 4.52% increase from the previous close.
+* **Polygon**
+   * *Network Growth*: Polygon's zkEVM has achieved a peak throughput of 35 transactions per second, enhancing scalability for decentralized applications.
+
+
+
+
+
+**Project of the DayDuckChain**
+
+* **Chain**: Ethereum Layer 2
+* **Category**: Decentralized Applications (DApps)
+* **Overview**: DuckChain is collaborating with major crypto players to drive the next wave of decentralized applications and has announced the Yellow Duck Mission hackathon.
+* **Significance**:
+   * Secured $5 million in financing from leading investors, including dao5, Offchain Labs, and Kenetic Capital.
+   * Aims to foster innovation and development within the Ethereum Layer 2 ecosystem, through integration with with the TON chain.
+
+
+
+
+
+**Key Takeaways**
+
+* **Ethereum Ecosystem**
+   * The substantial increase in TVL on Layer 2 networks underscores Ethereum's expanding scalability and adoption.
+   * Ongoing developments in Layer 2 solutions are poised to enhance transaction efficiency and reduce costs for users.
+* **Layer 2 Narrative**
+   * The Ethereum Layer 2 ecosystem has reached a TVL of $55.61  billion, indicating significant growth and potential to surpass other blockchain networks in terms of user activity and value locked.[ CoinGecko](https://www.coingecko.com/en/chains/layer-2?utm_source=chatgpt.com)
+
+
+
+
+
+**Quick Stats**
+
+* **ETH Price**: $3,318.57
+* **ETH 24h Change**: +0.11%
+* **ETH 24h High/Low**: $3,432.68 / $3,295.88
+* **Arbitrum (ARB)**
+   * **Price**: $0.7573
+   * **24h Change**: +1.02%
+   * **24h High/Low**: $0.7926 / $0.7484
+* **Optimism (OP)**
+   * **Price**: $1.85
+   * **24h Change**: +4.52%
+   * **24h High/Low**: $1.90 / $1.77
+* **Polygon (MATIC)**
+   * **Price**: $0.4786
+   * **24h Change**: +0.83%
+   * **24h High/Low**: $0.4992 / $0.4723
+* **Mainnet Gas Fees**: Average around 8.237 Gwei "
+"About ""How to invest my stablecoins fortune?"" posts on this sub",defi,1hns8yc,2024-12-27 18:35:44,34,0.94,31,https://www.reddit.com/r/defi/comments/1hns8yc/about_how_to_invest_my_stablecoins_fortune_posts/,Carbone_,:discuss: Discussion,"Hi, 
+
+I love this community, but still I am a bit surprised by many answers below posts like ""how to invest hundreds of thousands stablecoins"" that we see so often.
+
+I may be wrong but I think many people are looking for a secured optimal diversification strategy rather than advice like: ""invest in this pool, it rocks and it has a good APY"", or: ""AAVE is reliable"".
+
+The result is that the answers might be frustrating for investors, and they look ""spammy"" or even like hidden ads, despite true most of the time, and despite the good spirit of the sub and the good will of participants.
+
+Myself, like many others, I have the same issue. I want an optimized diversification of my assets. In TradFi communities, when you ask for recommendations, no one will answer: ""invest in this stock option"". It will be more high-level, more strategic advice, like 60% of stocks and 30% of bonds and 10% of Gold"" (this is just an example), with underlying details.
+
+If I take my case, I'm currently scraching my head to define a good strategy. Until now, I made the following statements in my head:
+
+1. With a risk based approach, it's out of question to put everything on AAVE (or another single protocol), a single chain or a single stablecoin. Doing that would be the opposite of my diversification requirements.
+
+2. Investing on L2 Eth chains could be part of the strategy, but only to grab some additional APY% or to average the whole Ethereum APYs. Otherwise, this is perfectly useless for big amounts as the impact of Ethereum fees are neglictible.
+
+3. Unfortunately, this is really not clear to me that L2 chains provide more profitability. I made some charts to compare AAVE pools of stablecoins on Ethereum and on other chains like ARB or OP, and the difference over time seems minimal.
+
+4. L2 chains induces an additional risk which is actually not really rewarded correctly except by the fees. For an average investor, the added value is limited in my opinion.
+
+5. Currently, my diversification strategy is focused on 5 protocols (AAVE, Compound, Kamino, JustLend, USUAL), 5 L1 chains (Eth, Polygon, Solana, Tron, BSC) and 6 stablecoins (USDT, USDC, USDE, PYUSD, USDS, USD0++). I still include some L2 chains to soften the volatility of the APY of Ethereum pools.
+
+6. In total, I selected 24 pools, 5 L1 chains, and 6 stablecoins to implement my strategy. But now I am scratching my head to decide the percentage allocated to each component, especially for L2 chains. Considering pools on L2 chains as L1 chains would over-expose me to Ethereum. 
+
+7. Intuitively, the DeFI ecosystem is an oriented-graph with a lot of dependencies, where you have to decide an allocation on each node to ensure diversification. It's really tricky. For instance, Arbitrum depends of Ethereum, but AAVE too if I'm not wrong. The AAVE token is an ERC20 token, and it is used as a safety fund for lenders. So, if you lend either on AAVE or an L2, you are under the direct exposure of Ethereum, in addition to Arbitrum and AAVE. 
+
+8. Despite its complexity, I still think such an optimal allocation could be done. 
+
+So... I'm a bit puzzled and surprised not to see ""detailed analysis"" at the level of TradFi. I don't know if I over-complexify DeFi or if it's a question of maturity. I just know it's my money, and that at a certain level of stablecoins (which are in themselves the consequence of a diversification strategy), I think that many people are looking for a deeper analysis with a risk and diversification approach. I may be wrong, this is just what I felt reading this sub since a few months. 
+
+Let me know your thoughts!
+"
+Can’t sell contract - anyone shed some light on this?,ethereum,1hkjcvl,2024-12-23 03:20:10,0,0.36,14,https://www.reddit.com/r/ethereum/comments/1hkjcvl/cant_sell_contract_anyone_shed_some_light_on_this/,CheroTTV,Discussion,"Hi
+
+Someone in an alpha shilled this CA at $60k MC. Bought a bit of it through sushiswap:
+
+https://dexscreener.com/arbitrum/0x016ac0bf9f5ddb38130bffe45641a8e3efc0553e
+
+Never used ARB Eth before. Got a new wallet and purchased some. Sat on it over night and saw that it is heavily botted. Tried selling off position but gives the following two errors when swapping the token back to ARB ETH or any transaction to do with swapping it
+
+Original transaction here:
+
+https://arbiscan.io/tx/0x5960a26686818e6cffbf9d5fa4c54b000184cb903ed11f7a054d5117ec2577d7
+
+error: execution reverted: stf
+&
+error: execution reverted:_granthole
+
+Is there anyway to get out of this or is it a honeypot?
+
+Thanks"
+Can’t sell contract - anyone shed some light on this?,Arbitrum,1hkfz89,2024-12-22 23:25:04,2,1.0,6,https://www.reddit.com/r/Arbitrum/comments/1hkfz89/cant_sell_contract_anyone_shed_some_light_on_this/,CheroTTV,,"Hi
+
+Someone in an alpha shilled this CA at $60k MC. Bought a bit of it through sushiswap:
+
+https://dexscreener.com/arbitrum/0x016ac0bf9f5ddb38130bffe45641a8e3efc0553e
+
+Never used ARB Eth before. Got a new wallet and purchased some Sat on it over night and is heavily botted. Tried selling off position but gives the following two errors when swapping the token back to ARB ETH or any transaction to do with swapping it
+
+error: execution reverted: stf
+&
+error: execution reverted:_granthole
+
+Is there anyway to get out of this or is it a honeypot covered up someway as a legit token"
+"ICP DAO DOMINATION🔥 
+@DefiLlama reveals that 17 of the leading DAOs are built on ICP, with 24 of the top 30 utilizing its capabilities.
+
+",ICPTrader,1hj5j7z,2024-12-21 03:19:01,35,0.94,2,https://i.redd.it/2sg1e0m4v58e1.jpeg,shubh9797,Analysis,
+Is it safe to store Moon on ETH Mainnet?,CryptoCurrencyMoons,1hith7h,2024-12-20 15:52:51,16,0.88,39,https://www.reddit.com/r/CryptoCurrencyMoons/comments/1hith7h/is_it_safe_to_store_moon_on_eth_mainnet/,AstorWinston,,"Since cbridge has zero liquidity, the only way to swap between chains is through the official Arbitrum network, which goes through the ETH main net. Can I just store my Moons on ETH Main net indefinitely? If I need to sell, I can just move to ARB One/Nova depending on which one gives a better price. Is this valid? "
+"(Hedera 4.01) SEC approves Hashdex Nasdaq Bitcoin & Ethereum ETF and Franklin Cboe Crypto Index ETF ""on an accelerated basis.""",Hedera,1hiq9v3,2024-12-20 13:28:19,122,1.0,6,https://www.reddit.com/gallery/1hiq9v3,Perfect_Ability_1190,Discussion,https://hashdex.com/en-KY/products/hweb3bh
+Whale Activity Increases Among These Altcoins—Are They Preparing for a Mega-Altseason?,draqai,1hhsanv,2024-12-19 07:56:18,1,1.0,0,https://www.reddit.com/r/draqai/comments/1hhsanv/whale_activity_increases_among_these_altcoinsare/,MammothBattle33,,"🚨 Crypto fam, it’s giving *Altseason vibes*! Whales are out here making moves like they’ve got a secret VIP party invitation 🎉👀. Let’s break it down for you:
+
+🐳 Big wallets are making splashes with $ENA and $ARB! Over 36.65M Ethena and 40M Arbitrum have been scooped up this week, and ENA is holding strong with a consistent upswing. Meanwhile, ARB seems to have missed leg day and keeps struggling to flex 💪😂.
+
+On the flip side... drama incoming! 🚨 $POL is in the hot seat, with whales dumping 80M MATIC in the last 48 hours. Someone hand $POL some tissues because it’s sliding harder than my DMs on a Friday night 📉😢. The price might face a further drop, but if it holds the $0.49–$0.51 zone, it could snap back and slay again!  
+
+Moral of the story: Whales are unpredictable, kinda like me when I see a sale on stilettos 🫦. Keep your eyes on $BTC, $ETH, and ofc, the future star of them all... $YOI!
+
+✨ Altcoin season is calling. Are you picking up? ✨
+
+#crypto #memecoin #bitcoin #Ethereum #solana #YOI #ai #invest #cryptocurrency 
+
+
+ Follow Me:  
+
+
+ https://x.com/YOIdraq 
+
+
+https://x.com/draqai"
+5 Token Unlocks to Watch Next Week,Blockmandev,1hfg5t4,2024-12-16 05:23:20,1,1.0,0,https://www.reddit.com/r/Blockmandev/comments/1hfg5t4/5_token_unlocks_to_watch_next_week/,MammothBattle33,,"🚨 Crypto News: Token unlock season is upon us, and the market is bracing for some major moves next week as big-name projects release previously restricted tokens. Let's dive into the highlights.  
+
+Cardano is set to unlock 18.53M ADA on December 16. Known for its sustainable and scalable tech, this allocation will go toward staking and treasury funding. Will this fuel new ADA adoption, or will it test the market's resilience?  
+
+On the same day, Arbitrum will unleash 92.65M ARB from its ecosystem, valued at a jaw-dropping $91M. With allocations aimed at investors, the team, and advisors, Ethereum's popular Layer-2 solution might just be setting the stage for something big.  
+
+ApeCoin joins the party on December 17 with a 15.60M APE unlock. Historically, APE often sees price jitters after large releases, but the rising buzz around NFTs could potentially soften the impact this time.  
+
+December 18 brings Ethena into the spotlight as it plans to release 12.86M ENA. This synthetic currency protocol aims to expand its ecosystem with this sizable unlock, further shaping the future of decentralized finance.  
+
+Finally, keep an eye on Space ID as it drops 78.49M ID tokens on December 22. With its mission to unify decentralized identities across blockchains, this unlock could signal significant protocol activity.  
+
+These unlocks represent over $270M in value. Traders, strategists, and crypto enthusiasts—stay sharp! Timing and monitoring will be everything next week.  
+
+#CryptoMarkets #TokenUnlocks #Ethereum"
+We have fully integrated 18 crypto assets across 4 new chains!,bitpanda,1hd9qh1,2024-12-13 05:54:11,18,1.0,2,https://www.reddit.com/r/bitpanda/comments/1hd9qh1/we_have_fully_integrated_18_crypto_assets_across/,bitpanda_official,,"https://preview.redd.it/6l881vifjl6e1.png?width=1080&format=png&auto=webp&s=9b58e127a2fa3ae8bc9140e7c0df4519e4a7169e
+
+You can now deposit and withdraw:
+
+
+
+USDC, USDT, ARB, UNI, YFI, SUSHI, CRV, LDO, GNO, GRT, KNC and ETH via the arbitrum network.
+
+USDC, AXL, MAVIA and ETH via the base network.
+
+ETH, OP, USDC, USDT, LINK, CRV and KNC via the optimism network.
+
+AVAX, USDC and USDT via the uvax C-Chain. 
+
+
+
+
+
+"
+Coinbase wallet usdc rewards not working,CoinBase,1hcqmlc,2024-12-12 12:42:24,2,0.75,4,https://www.reddit.com/r/CoinBase/comments/1hcqmlc/coinbase_wallet_usdc_rewards_not_working/,Epic7throwaway,,"It seems like coinbase wallet’s new usdc rewards program is not working. I’ve been holding USDC on arbitrum (supported rewards network), activated the banner and have connected the wallet to my coinbase account. However after 7 days my pending rewards is still showing 0 after holding 6 figs in usdc on arb. Anyone seeing the same issue? "
+"Is it safe to stake USDC on Arbitrum via crypto.com onchain wallet?
+",Arbitrum,1hc1zr2,2024-12-11 14:38:59,0,0.5,3,https://www.reddit.com/r/Arbitrum/comments/1hc1zr2/is_it_safe_to_stake_usdc_on_arbitrum_via/,abigguynamedsugar,,"You guys might notice CDC onchain wallet is offering 12% APY on USDC on arbitrum. Is it safe for me to swap some ETH (which I want to sell for stablecoin) for ARB USDC and then stake it this way? Is this more risky than say, USDT or USDC on ETH network? It is in the [crypto.com](http://crypto.com/) defi app ""earn"" option. Thanks"
+"Is it safe to stake USDC on Arbitrum via crypto.com onchain wallet?
+",Crypto_com,1hc1z9e,2024-12-11 14:38:26,5,0.86,3,https://www.reddit.com/r/Crypto_com/comments/1hc1z9e/is_it_safe_to_stake_usdc_on_arbitrum_via/,abigguynamedsugar,Crypto.com Onchain Wallet 🌐,"You guys might notice CDC onchain wallet is offering 12% APY on USDC on arbitrum. Is it safe for me to swap some ETH (which I want to sell for stablecoin) for ARB USDC and then stake it this way? Is this more risky than say, USDT or USDC on ETH network? It is in the [crypto.com](http://crypto.com/) defi app ""earn"" option. Thanks
+
+"
+Is it safe to stake USDC on Arbitrum via crypto.com onchain wallet?,cro,1hbyiqi,2024-12-11 12:15:27,4,1.0,3,https://www.reddit.com/r/cro/comments/1hbyiqi/is_it_safe_to_stake_usdc_on_arbitrum_via/,abigguynamedsugar,,"You guys might notice CDC onchain wallet is offering 12% APY on USDC on arbitrum. Is it safe for me to swap some ETH (which I want to sell for stablecoin) for ARB USDC and then stake it this way? Is this more risky than say, USDT or USDC on ETH network? It is in the [crypto.com](http://crypto.com) defi app ""earn"" option. Thanks"
+Arbitrum network not syncing with Ledger ,ledgerwallet,1hbqq9p,2024-12-11 05:40:10,0,0.5,14,https://i.redd.it/c4re1ppd776e1.png,wanderingwolf14,Official Support Response,"My arbitrum assets are not showing in my Ledger Arbitrum account, even though they were visible a few days ago (just Arb and GSwift). Nothing has moved from my wallet so I think it is a syncing issue. I cleared the cache on Ledger Live and deleted the Arb account to reload it and force sync. Now I can't reinstall the Arb account in Ledger Live desktop or mobile (see image). Any ideas on what's gone wrong?"
+Arbitrum Soars to $5B TVL: Will ARB Reach $2.2 Next?,cryptonewsland,1hbohus,2024-12-11 02:47:59,1,1.0,0,https://cryptonewsland.com/arbitrum-soars-to-5b-tvl/,cryptonewsland,,
+"Photo Today 15,000,000 I'm going for 525,000,000.oo if you want me to buy 15,000,000. further. BURST ⬆️10,000 AND BUY ⬆️1000",Pepecryptocurrency,1hbgeah,2024-12-10 19:08:01,21,1.0,0,https://i.redd.it/p6mwyell246e1.jpeg,PECASATAN1379,,"It's not because of me, it's because of you, it's because of the strength of our philosophy, together it is easier and together we are stronger.
+Give ⬆️ to all the comments from all your colleagues, so that the movement can be seen in each comment on our network.
+Important:
+Please share with all your friends, colleagues and family if you want to help them. Buy today and Hold until December 2025.
+They will stop seeing life the same way."
+ARBITRUM ARB to SOL USDT,CryptoPetra,1ha2kl4,2024-12-09 00:21:20,1,1.0,0,https://i.redd.it/dgk44h7ocr5e1.png,Best-Ad-5053,,
+Swap ARBITRUM ARB to SOL USDT with Ease 🚀,CryptoPetra,1ha2k8z,2024-12-09 00:20:46,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1ha2k8z/swap_arbitrum_arb_to_sol_usdt_with_ease/,Best-Ad-5053,,"Transition effortlessly from ARBITRUM ARB to SOL USDT on CryptoPetra. Benefit from the stability of USDT and the efficiency of Solana.  
+[Learn More Here!](https://www.cryptopetra.com/)  
+\#crypto #ARB #SOL #USDT"
+Swap ARBITRUM ARB to TON USDT with Ease 🚀,CryptoPetra,1ha262q,2024-12-08 23:58:02,1,1.0,0,https://i.redd.it/ac23gcji8r5e1.png,Best-Ad-5053,,
+ARBITRUM ARB to TON USDT with Ease 🚀,CryptoPetra,1ha2507,2024-12-08 23:56:14,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1ha2507/arbitrum_arb_to_ton_usdt_with_ease/,Best-Ad-5053,,"Transition effortlessly from ARBITRUM ARB to TON USDT on CryptoPetra. Benefit from the stability of USDT and the efficiency of TON.  
+[Learn More Here!](https://www.cryptopetra.com/)  
+\#crypto #ARB #TON #USDT"
+Swap ARBITRUM ARB to ARBITRUM USDT with Ease 🚀,CryptoPetra,1ha167v,2024-12-08 23:00:51,1,1.0,0,https://i.redd.it/7v2mwmtayq5e1.png,Best-Ad-5053,,
+Swap ARBITRUM ARB to ARBITRUM USDT with Ease 🚀,CryptoPetra,1ha15kb,2024-12-08 23:00:00,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1ha15kb/swap_arbitrum_arb_to_arbitrum_usdt_with_ease/,Best-Ad-5053,,"Transition seamlessly from ARBITRUM ARB to ARBITRUM USDT on CryptoPetra. Leverage the stability of USDT while benefiting from Arbitrum’s low fees and high efficiency.  
+[Check it out here!](https://www.cryptopetra.com/)  
+\#crypto #ARB #USDT #Arbitrum"
+Swap ARBITRUM ARB to C-Chain USDT with Ease 🚀,CryptoPetra,1ha0tgv,2024-12-08 22:40:46,1,1.0,0,https://i.redd.it/drjyq6cquq5e1.png,Best-Ad-5053,,
+Swap ARBITRUM ARB to C-Chain USDT with Ease 🚀,CryptoPetra,1ha0s47,2024-12-08 22:38:43,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1ha0s47/swap_arbitrum_arb_to_cchain_usdt_with_ease/,Best-Ad-5053,,"Looking to swap ARBITRUM ARB for C-Chain USDT? CryptoPetra offers fast, secure, and cost-effective swaps leveraging Avalanche’s low fees and reliability. Perfect for DeFi enthusiasts!  
+[Check it out here!](https://www.cryptopetra.com/)"
+ARBITRUM ARB to NEAR Protocol USDT with Ease 🚀,CryptoPetra,1ha06cb,2024-12-08 22:06:04,1,1.0,0,https://i.redd.it/ba3wvi9joq5e1.png,Best-Ad-5053,,
+Swap ARBITRUM ARB to NEAR Protocol USDT with Ease 🚀,CryptoPetra,1ha05dm,2024-12-08 22:04:32,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1ha05dm/swap_arbitrum_arb_to_near_protocol_usdt_with_ease/,Best-Ad-5053,,"CryptoPetra makes it simple to exchange ARBITRUM ARB for NEAR Protocol USDT. Take advantage of NEAR Protocol’s low fees and rapid transaction capabilities. Perfect for DeFi users!  
+[Check it out here!](https://www.cryptopetra.com/)"
+Convert ARBITRUM ARB to POLYGON USDT with Ease 🚀,CryptoPetra,1h9ye2n,2024-12-08 20:31:06,1,1.0,0,https://i.redd.it/12s4mnhl7q5e1.png,Best-Ad-5053,,
+Convert ARBITRUM ARB to POLYGON USDT with Ease 🚀,CryptoPetra,1h9ydfg,2024-12-08 20:30:16,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1h9ydfg/convert_arbitrum_arb_to_polygon_usdt_with_ease/,Best-Ad-5053,,"CryptoPetra makes it simple to swap ARBITRUM ARB to POLYGON USDT. Take advantage of Polygon’s low fees and swift transactions. Perfect for DeFi enthusiasts!  
+[Check it out here!](https://www.cryptopetra.com/)"
+"Swap ARBITRUM ARB to ERC20 USDT with CryptoPetra 🚀
+",CryptoPetra,1h9xdy8,2024-12-08 19:39:39,1,1.0,0,https://i.redd.it/1ij2yfsdyp5e1.png,Best-Ad-5053,,
+Swap ARBITRUM ARB to ERC20 USDT with CryptoPetra 🚀,CryptoPetra,1h9xdfd,2024-12-08 19:38:55,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1h9xdfd/swap_arbitrum_arb_to_erc20_usdt_with_cryptopetra/,Best-Ad-5053,,"Would you be able to convert your ARBITRUM ARB to ERC20 USDT? CryptoPetra offers a reliable platform with fast and secure swaps. Perfect for DeFi activities or accessing stablecoin liquidity.  
+[Check it out here!](https://www.cryptopetra.com/)  
+\#crypto #ARB #USDT"
+"Swap ARBITRUM ARB to TRC20 USDT Securely with CryptoPetra
+",CryptoPetra,1h9wnjq,2024-12-08 19:03:22,1,1.0,0,https://i.redd.it/2s7scrvxrp5e1.png,Best-Ad-5053,,
+Swap ARBITRUM ARB to TRC20 USDT Securely with CryptoPetra,CryptoPetra,1h9wmym,2024-12-08 19:02:36,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1h9wmym/swap_arbitrum_arb_to_trc20_usdt_securely_with/,Best-Ad-5053,,"💬 CryptoPetra makes it easy to swap ARB to TRC20 USDT. Leverage Tron’s fast and low-cost network for stablecoin transactions.  
+🔗 [Discover More](https://www.cryptopetra.com/)"
+How to get Private key for ARB and BSC?,EdgeWallet,1h9n458,2024-12-08 11:55:06,3,1.0,2,https://www.reddit.com/r/EdgeWallet/comments/1h9n458/how_to_get_private_key_for_arb_and_bsc/,cendana287,,"I had bungled a transfer from an exchange meant for Ethereum ARB (Arbitrum) in my Edge wallet (0x3845....). This is already being used in the wallet 
+
+Instead, I sent it to the same public address (0x3845....), but to Ethereum BSC (Binance Smart Chain). The BSC address, including BEP-20, start with (0x7BE1).
+
+If the ARB and BSC private keys for public address (0x3845....) are the same, then I should be able to recover the ETH. But how do I obtain the keys, please?"
+PSA : MOONs are stronger than ever,CryptoCurrency,1h8rpvw,2024-12-07 07:44:36,0,0.46,88,https://www.reddit.com/r/CryptoCurrency/comments/1h8rpvw/psa_moons_are_stronger_than_ever/,IlIlllIIllllIIlI,:moons: MOONS,"Hi everyone ! Since the daily isn’t really the best place for long posts, I’m here to make a recap on MOONs, what it is and why you should be bullish about it. While this is obviously quite a shill, I’m also willing to make it a public service announcement for the newcomers and crypto beginners on this sub.
+
+#What are MOONs ?
+
+First of all, it’s a Governance Token for this sub. Formerly created and minted monthly by Reddit included in their RCP (Reddit Community Points) program. 
+
+The project has been sunset since then, and the contract has been renounced, making it a truely community owned token. Thanks to the mods and community members, a DAO was formed and all the usecases in place have been revived (banner renting, distributions, tipping, etc.)
+
+Two major things changed with this event :
+- No one can mint MOON anymore, the supply is hard capped and deflationnary
+- The future of the project is in the hands of its community, no one is « in charge ».
+
+#You can earn MOONs…
+
+**Governance**
+
+Because it’s a governance token, participating in the sub’s activity rewards you some, according to your monthly earned Karma. The tokens will be sent directly to you if you have a registered wallet.
+
+**Tips**
+
+You can also tip them to other users as a reward for informative or useful contributions, right in the comments using the tipbot command.
+
+**Voting**
+
+Your holdings will reflect the weight of your votes in the monthly CCIP proposals made to change the rules of this sub and the economy surrounding it.
+
+#… or you can buy them !
+
+Buy them, what for ? You may ask. Well, because you can ! This part is more dedicated to gamblers and people that believe in the evergrowing economy of this sub. Remember this is a high risk asset, no one knows what the future is made of and you could lose it all. Never invest more than you’ll be confortable losing.
+
+# Where can I buy MOON ?
+
+There are a few ways to buy some, from easy to more advanced.
+
+**CEXs : the easy way**
+
+The easiest way is to grab some with $ or € is centralized exchanges like Kraken (our official partner) and Crypto .com
+
+**DEXs : more advanced users**
+
+For the DeFi adventurers, you’ll have to use either Arbitrum One or Arbitrum Nova networks.
+MOON is paired with ETH on DEXs :
+- Camelot (Arb One)
+- SushiSwap (Arb Nova)
+
+# What are the usecases of MOON ?
+
+**Adertising**
+
+MOON is the heart of this sub’s economy. The main usecase is advertising. Companies, brands and projects can rent the banner, book AMAs and giveways, sponsored events.
+
+These events are paid in MOON that are, once bought by the renters, sent to the burn wallet. This creates scarcity, these tokens will disapear forever.
+
+**DAO**
+
+MOON is also used to vote for the rules and changes made to the sub (eg. discussing rent prices, new partnerships, etc.)
+
+**Education**
+
+It’s a good way to learn and make baby steps in the DeFi world. Since you’re getting rewarded MOON for your contributions, learning the process of managing and securing a wallet, sending and receiving tokens, bridging them, selling and buying them come along your DeFi journey at litterally no cost. It’s a free tutorial on what crypto is all about :
+decentralization and self-custody.
+
+# FAQ
+
+This part is a non exhaustive list of questions I see in the daily that may help you catch up.
+
+**Are MOONs still a thing ?**
+
+Yes ! If you’ve read this far, I hope you get it. You’ll be able to follow the ventures of this project on r/cryptocurrencymeta and r/cryptocurrencymoons
+
+**Are Distributions going on again?**
+
+Yes ! After the sunset, distribution stopped for a time but has been revived thanks to the community. All you have to do is create a vault or a fresh new wallet and register your address with the bot to start earning monthly.
+
+**Are there guides to learn more?**
+
+Yes, you’ll find everything you need in this sub Wiki, but also the other dedicated subs mentionned above.
+
+On a sidenote, I’m working on writing simple and explicit guides for setting up a wallet, registering for distributions, learn more about the tokenomics, how to sell and buy. Stay tuned.
+
+**Will MOON reach $1?**
+
+While no one can predict anything, here are some metrics to put it into perspective :
+
+Right now MOONs are traded at around $0.21 with a Market Cap of roughly $18M. The hard capped supply of 80M tokens (after sunset) is burning at a fast pace, getting smaller everytime the banner is rented, or an AMA is hosted. Reaching $1 is x5 from now, and would make it a Top500 token by Market Cap which is already ridiculously low. A lot of memecoins without any utility go beyond $100M MC within a few days.
+
+**What makes you bullish about MOON?**
+
+Absolutely everything about it. Not only it has proved to be a great governance tool with great usecases, a well decentralized distribution, its meme potential is insane. This ticker is litterally MOON.
+
+
+—-
+
+^(This post is obviously not exhaustive. Your welcome to ask question and help out each other understand the project in the comments. Feel free to join the other dedicated subs to learn and discuss more about the project.)
+
+^(For all those interested in making some noise about it, raise your hand. I’m working on visual content to help communication on socials and will publish a work in progress status on r/cryptocurrencymoons in the coming days. Stay tuned and take care.)"
+AI Meme Coin KiboShib $KIBSHI - First-Ever Meme Coin Generated by AI (2022),BSCIDOLAUNCHER,1h8hhby,2024-12-06 20:37:49,1,1.0,0,https://www.reddit.com/r/BSCIDOLAUNCHER/comments/1h8hhby/ai_meme_coin_kiboshib_kibshi_firstever_meme_coin/,Rexythesol,,"Meet the first AI-generated meme coin, KiboShib. Every element—logo, ticker, name, description, and concept—was crafted by ChatGPT (first advanced public AI model), making it truly unique. Launched on December 8, 2022, KiboShib is the first AI meme coin in existence!
+
+* **Fair Launch:** Inspired by SHIB’s model, KiboShib’s distribution was straightforward and transparent:
+   * **50%** of tokens were sent to Vitalik's wallet (sold in summer 2023, with the dip quickly bought up).
+   * **50%** were added to a Uniswap liquidity pool, with the LP locked.
+* **Fixed Supply:** 1,000,000,000,000 KIBSHI tokens
+* **Organic Growth:** Fully organic meme coin with no insiders or KOLs. Backed by non-GMO a vibrant and growing community.
+* **Narrative:** Leading the AI + meme coin trend, with nearly two years in the market!
+
+With memes thriving, more people are bound to look for the next big meme coin. KiboShib’s distinction as the first AI-generated meme coin makes it a standout choice.
+
+**Want to verify?**
+
+Just search: *“first AI meme coin”* on Google, or ask AI like GrokAI (twitter), ChatGPT (paid), Bing Search AI, Llama (instagram), Perplexity AI - *""do a research and tell me what's the first AI meme coin""*
+
+**Thesis:**
+
+Humanity is entering the AI age. Meme coins are here to stay. Many people will look for the very first AI-generated meme coin as it is a historical artifact. And KiboShib has a cute AI-generated logo, also first fully AI made logo used by the real project.
+
+**Official Contract Addresses:**
+
+* **Ethereum (ETH):** 0x02e7F808990638E9e67E1f00313037EDe2362361 (Uniswap)
+* **Solana (SOL):** BxBkTCHsrcYChcwB459CAGPX9x4fWSVnmzqh5efgUN1R (Raydium)
+* **Arbitrum (ARB):** 0xf525E73bdeB4ac1b0e741aF3Ed8a8CBB43ab0756 (Uniswap)
+* **Base (BASE):** 0xC7DcCA0a3e69bD762C8DB257f868f76Be36c8514 (Uniswap)
+
+AI Memes are strong, and so is the KiboShib community!"
+What are people’s thoughts on Arbitrum?,0xPolygon,1h7vlce,2024-12-06 01:57:20,16,0.88,18,https://i.redd.it/sr6j5482f65e1.jpeg,Fantastic-Primary-87,Question,"Arbitrum just a TVL record for layer 2s at 20 billion. Sandeep definitely thinks this is pretty sweet.
+
+Curious what leads a certain network to experience these TVL levels, and why we don’t see similar levels on Polygon? Do you think we might once POS becomes a L2 validium?
+
+Definitely makes me want to invest a bit but I also heard ARB is just a governance token (but could change in the future?)
+
+"
+How’s my crypto portfolio looking? Need your opinions! 🚀💬,StockMarketIndia,1h7dtbn,2024-12-05 11:57:18,2,1.0,1,https://www.reddit.com/r/StockMarketIndia/comments/1h7dtbn/hows_my_crypto_portfolio_looking_need_your/,Lalalalalalalalal898,,"Hey everyone! 👋
+
+I’ve been building my crypto portfolio, and here’s where I stand currently:
+
+💼 **Portfolio Overview:**
+
+* **Solana (SOL):** $4,479.52 (+2385%)
+* **Render (RNDR):** $2,200.33 (+2312%)
+* **Bitcoin (BTC):** $1,045.57 (+427%)
+* **XRP:** $697.87 (+547%)
+* **Ethereum (ETH):** $514.41 (+257%)
+* **Cardano (ADA):** $453.35 (+301%)
+* **Polkadot (DOT):** $286.46 (-10%)
+* **Immutable (IMX):** $257.80 (+140%)
+* **Optimism (OP):** $170.10 (+153%)
+* **Arbitrum (ARB):** $62.47 (+0.7%)
+
+Overall, it’s been a wild ride, but I’d love to hear your thoughts! 🤔
+
+* Any suggestions on how I can improve or diversify further?
+* Should I adjust any positions?
+
+Looking forward to your insights! 😊"
+"Bitstamp just listed 3 new assets: OP, ARB, and SEI!",BitstampOfficial,1h7b5xc,2024-12-05 10:03:39,1,1.0,1,https://blog.bitstamp.net/post/new-listings-op-arb-and-sei-are-live-on-bitstamp/,Bitstamp-Tim,,"**Looking for something new?** You can explore three interesting assets to Bitstamp: Optimism (OP), Arbitrum (ARB), and Sei (SEI).
+
+Here’s a quick look:
+
+- **Optimism (OP):** A layer-two blockchain scaling Ethereum with optimistic rollups. OP powers the network and enables governance for a system with over $500M total value locked.
+- **Arbitrum (ARB):** Another layer-two solution for Ethereum offering faster, cheaper transactions by moving computation off-chain. ARB is the governance token of the Arbitrum DAO.
+- **Sei (SEI):** The native token of Sei, the first sector-specific Layer 1 blockchain optimized for decentralized exchanges, NFT trading, and in-game item transactions.
+
+Curious? Check them out on Bitstamp today."
+Not able to swap token on arbitrum network on bitget. ,TokenFinders,1h6zxzd,2024-12-04 22:41:47,2,1.0,3,https://i.redd.it/rmee35k9by4e1.jpeg,RutabagaEffective716,,"Hi, can someone please help me. I am not able to sell the first token. Have been trying it for long. I am not able to swap for for another. Please someone help me. I am new to this token space and don't know much technicalities. Please someone help.
+Token: 0xc00243cc2976DAc57A7B12C534C0D4BCEeFe5619"
+Massive Altcoin Unlocks in December: Hold Onto Your Bags,WhiteRhinoMarketWatch,1h6tsab,2024-12-04 17:53:04,1,1.0,0,https://www.reddit.com/r/WhiteRhinoMarketWatch/comments/1h6tsab/massive_altcoin_unlocks_in_december_hold_onto/,MrsSOsbourne,,"December’s shaping up to be a wild ride in the crypto world with some *serious* token unlocks coming our way. If you’re holding these coins, or just love watching the chaos unfold, here’s what’s about to hit the market:
+
+▫️ **#IMX** \- $28.61M: Not earth-shattering, but enough to ripple through the NFT space.  
+▫️ **#JTO** \- $531M: This one? Big. The kind of unlock that makes whales grin and retail traders panic.  
+▫️ **#GMT** \- $20.7M: A modest unlock for your favorite ""move-to-earn"" ecosystem.  
+▫️ **#ENS** \- $38.25M: Web3 naming rights are getting a payday.  
+▫️ **#APT** \- $153M: Aptos holders better buckle up. That's a *lot* of new supply.  
+▫️ **#ARB** \- $90M: Arbitrum’s still riding its Layer-2 hype wave, but $90M unlocked is no joke.  
+▫️ **#ZETA** \- $283.22M: This? Monster unlock. Keep an eye on how the market digests it.  
+▫️ **#OP** \- $79.89M: Optimism lives up to its name, but how optimistic will traders feel after this unlock?
+
+Here’s the thing: Token unlocks can play havoc with prices, especially if big holders decide to dump. It’s not *always* bad news — depends on how the market absorbs the supply — but don’t be the one caught without a strategy. Keep your eyes on these unlocks, and maybe, just maybe, keep a little dry powder on the side.
+
+Timing is everything, and in December, the clock is ticking for these altcoins.
+
+https://preview.redd.it/l2566ylpvw4e1.jpg?width=1280&format=pjpg&auto=webp&s=2549784b8242b696e520760686e31c4e030cedda
+
+"
+Crypto Investment Weekly (Issue #2): ETH Advancing to daa MOOOONNN,MakeWalletFatAgain,1h6eh5z,2024-12-04 07:07:18,1,1.0,0,https://www.reddit.com/r/MakeWalletFatAgain/comments/1h6eh5z/crypto_investment_weekly_issue_2_eth_advancing_to/,AdministrationHot443,,"This article was written on the afternoon of November 30, 2024.
+
+Alt Bull Run is Here!
+
+Hello everyone, I’m FatBro—a seasoned investor dedicated to “making wallets fat.” Welcome to the second issue of my crypto investment weekly.
+
+We’ve finally arrived at a full-scale resurgence of the Ethereum ecosystem—an absolutely vibrant and energetic week. Over the past week, the leading projects within the Ethereum ecosystem experienced significant gains. Judging by the data from Ethereum ETFs and stablecoin issuance, it’s evident that capital inflows into the Ethereum ecosystem are both pronounced and resolute. Looking at the inflow-outflow data, an interesting phenomenon stands out this week: the capital inflow into Ethereum and the Base ecosystem far surpassed other ecosystems, approximately four times that of Solana. This signals that Ethereum’s counteroffensive is well underway.
+
+https://preview.redd.it/srux2qjaqt4e1.png?width=2984&format=png&auto=webp&s=2d2c06d16fbb4a8a806efb0398c3321f7496a217
+
+let’s first review last week’s recommendations and their actual results.
+
+**Review of Last Week’s Predictions**
+
+In the last issue of this weekly, we made the following key predictions and suggestions:
+
+**1. ETH Performance Expectations**
+
+**Prediction Last Week:**
+
+ETH was expected to perform well in the new week, with a potential catch-up rally. It was recommended to shift part of BTC holdings to ETH.
+
+**Actual Results:**
+
+In the past week, after hitting a new high, BTC paused its upward momentum. ETH/BTC rebounded significantly after bottoming out, with ETH recording a notable weekly gain. I believe ETH still has room to outperform BTC in the coming period, although it might not happen immediately. Meanwhile, BTC also has the potential to break new highs. This creates a tug-of-war scenario with fluctuations. If your portfolio lacks sufficient allocation to major coins, it might be a good idea to liquidate some of your highly profitable MEME and altcoins to set up an ETH/WBTC grid strategy. This approach not only locks in profits and rebalances your portfolio but also allows you to gain enhanced returns from the grid strategy.
+
+https://preview.redd.it/0frecj82qt4e1.png?width=2868&format=png&auto=webp&s=e08ed42562e74d92db13cf8d57ead6d6ec92d92e
+
+**Knowledge on Portfolio Rebalancing**
+
+When establishing your investment style, you’ve likely considered the concept of portfolio rebalancing. However, many people may not realize its importance. Portfolio rebalancing is an investment strategy used to adjust the proportions of different asset classes in your portfolio, aligning them with your initial target allocation. These proportions depend on your risk tolerance, investment goals, and market expectations.
+
+For instance, you might set the ratio of major coins to altcoins at 70% and 30%. When major coins rise by 30% while altcoins remain unchanged, you could sell 21% of your major coins and buy 21% more altcoins, restoring the 70%-30% ratio. This rebalancing process prompts you to evaluate whether the proportions of asset classes in your portfolio are reasonable and whether adjustments are necessary.
+
+Of course, you can establish more complex relationships, such as allocations for BTC, ETH ecosystems, second-tier blockchains, altcoins, MEME coins, AI projects, and so on. If you have other investments, such as bonds, stocks, or real estate, you can also set proportions between these assets and cryptocurrencies to better control risks and optimize returns.
+
+**2. High-Profit Asset Strategy Suggestions**
+
+**Suggestion Last Week:**
+
+Adopt a neutral ±20% grid strategy for profitable assets.
+
+**Actual Results:**
+
+For me, this asset was **Pendle**, which fluctuated within the 5-6 range throughout the week. My 40-day strategy, generating $5,500 in profits, continues to deliver returns. I’m also pleased to see this strategy featured on [DeGate’s](https://app.degate.com/?utm_source=fatbro_1_Reddit) recommended strategies leaderboard. However, in this round of Ethereum ecosystem gains, Pendle’s rise has been relatively modest. While it remains an excellent asset for grid trading, I’m considering rebalancing my spot holdings once it breaks above 6, reallocating them to other assets. I look forward to sharing the results of these actions with you next week.
+
+https://preview.redd.it/hthj3284qt4e1.jpg?width=1272&format=pjpg&auto=webp&s=57065606c8b498d246c458579d6a593e9c4e46c6
+
+https://preview.redd.it/icfa4g35qt4e1.jpg?width=1272&format=pjpg&auto=webp&s=d74654154b326a2179cd366ad84b7ac2d5d1cffb
+
+**3. Special Recommendations**
+
+**Suggestion Last Week:**
+
+1) **Puffer** (Buy recommendation at $0.28)
+
+**Actual Results:**
+
+Luck was definitely on our side. After buying in at $0.28, the **Based Rollup** sector began gaining traction in the market. Midweek, it even got listed on a Korean exchange, with the price soaring to a high of $0.7. I executed several swing trades and grid strategies during this period, achieving an overall return of approximately 3x for the week.
+
+I’ve already taken out my initial investment and currently hold one-third of my position. Moving forward, part of it will continue with grid trading, while the rest is set at around $1, awaiting a potential second surge. I remain optimistic about the long-term development of Based Rollup and see an additional opportunity in Puffer being one of the Binance Lab-invested projects that has yet to list on Binance.
+
+https://preview.redd.it/y7sg9p08qt4e1.jpg?width=820&format=pjpg&auto=webp&s=f67be3e4dd34689276e84d6738790bf2c4b951a7
+
+https://preview.redd.it/tv1o5xn8qt4e1.png?width=1836&format=png&auto=webp&s=b903c4afcc4fa41adaa0242d6df1e12feffcb87b
+
+2) **LDO**
+
+**Suggestion Last Week:**
+
+LDO (-15% to +30% grid strategy recommendation)
+
+**Actual Results:**
+
+My LDO grid successfully broke out of its initial range this week, meaning the original grid strategy is no longer generating returns. However, since I started building the position at $1.1, the grid profits generated during this time have been consistently reinvested into LDO. As a result, I accumulated over 4,000 LDO tokens and have now set up a new “sell high” grid strategy.
+
+The policy and fundamentals of LDO remain unchanged, so I continue to hold both spot positions and maintain an active grid trading strategy for this asset.
+
+https://preview.redd.it/pk0kxr9cqt4e1.jpg?width=1272&format=pjpg&auto=webp&s=4bddae64bf7e82cb144fbd3b4708765df59b1b28
+
+https://preview.redd.it/1qr129scqt4e1.jpg?width=1272&format=pjpg&auto=webp&s=50758ddf0debfd80247bc8e72b783424657f55a4
+
+**Market Outlook for Next Week**
+
+The Ethereum ecosystem is very likely to steal the spotlight. On the last half-day trading session of November during Thanksgiving, the ETF inflows were astonishing, reaching an unprecedented $332 million. Traditional funds clearly can’t hold back any longer. If the Ethereum ecosystem continues to show strength next week, its leading projects and Layer 2 solutions are expected to perform well.
+
+https://preview.redd.it/78kvs0agqt4e1.png?width=1602&format=png&auto=webp&s=6f1dbb6b9ec3e9df37064bcd2abd6e82a2a18761
+
+Following last week’s recommendation of the Based Rollup sector, today I’d like to introduce another potentially undervalued sector: **ZK Stack**. As we all know, in Ethereum’s Layer 2 ecosystem, projects built on **Op Stack** and **Arbitrum Stack** dominate most of the TVL and user base. However, ZK Stack, representing an alternative technical route within the Ethereum ecosystem, remains at a relatively low valuation level after enduring a prolonged bear market.
+
+With the continuous development of ZK technology and increasing adoption in the application ecosystem, the market is beginning to recognize the potential of ZK Stack. The extensive adoption of ZK technology in Ethereum’s **Beam Chain** roadmap highlights its long-term relevance and ultimate importance. From a user experience perspective, ZK-based Layer 2 solutions offer superior withdrawal experiences compared to Optimism Rollups. If the narrative holds, ZK ecosystems could deliver significant alpha in this bull market by challenging OP-based ecosystems.
+
+Currently, in Ethereum’s Layer 2 ecosystem, I believe there are four major sectors with “Stack” capabilities (referring to ecosystem-level software packages that other chain developers can extend and utilize) as well as several mid-sized projects. These four major L2 stacks are:
+
+**Comparison of the Four Leading L2 Stacks**
+
+https://preview.redd.it/9g2dkgwhqt4e1.png?width=1515&format=png&auto=webp&s=d7c556c91a7e4d79c701e48544de5b69ceb7f4ce
+
+**Among These Stacks, zkSync Elastic Stands Out as the Most Promising**
+
+• **TVL Leader with the Lowest Valuation:**
+
+zkSync Elastic currently ranks first in TVL within the ZK ecosystem but is valued relatively low compared to its peers.
+
+• **Prudent Incentive Strategy:**
+
+During the bear market, zkSync exhibited remarkable restraint, avoiding the common pitfall of wasting significant incentives at the wrong time. Currently, fueled by the momentum of the bull market, the community is voting on an incentive plan. If the proposal goes through successfully, zkSync’s performance during the bull market could be highly noteworthy.
+
+Beyond zkSync Elastic, Puffer’s **UniFi-Based Rollup Stack** has left a strong impression on me. Drawing from a detailed Twitter thread by my friend AB, this project deserves a more systematic introduction. If executed well, it could emerge as one of the most undervalued gems in the market.
+
+**Read more from AB’s Twitter thread:**
+
+[AB’s Twitter Thread](https://twitter.com/_FORAB/status/1854876348487287060)
+
+In addition to zkSync, other ZK ecosystem projects worth keeping an eye on include **Starknet**, **Taiko**, and, of course, [DeGate](https://app.degate.com/?utm_source=fatbro_1_Reddit). 😊
+
+**Tool Selection**
+
+For grid trading strategies, transactions can be executed on the decentralized exchange [DeGate](https://app.degate.com/?utm_source=fatbro_1_Reddit):
+
+[DeGate](https://app.degate.com/?utm_source=fatbro_1_Reddit) is an order book DEX based on zero-knowledge proofs, offering users a trading experience similar to centralized exchanges while maintaining self-custody. Its maker-free feature makes it particularly friendly for grid trading users.
+
+**Community**
+
+Feel free to join our community to exchange experiences with other investors:
+
+**Telegram Group:** [t.me/degate\_public](http://t.me/degate_public)
+
+***Disclaimer***  
+*I am not a professional financial advisor. The above content reflects personal opinions and experiences and does not constitute financial advice. Investing carries risks, and you should proceed cautiously. All investment decisions should be made independently based on your own situation, and you are responsible for the associated risks.*
+
+https://preview.redd.it/zgxw0djiot4e1.png?width=1920&format=png&auto=webp&s=8572d192fd4cf0cddad4f248847b653e8ad0e451"
+Potential usecases for the ARB token,Arbitrum,1h4y4fi,2024-12-02 10:54:40,3,1.0,3,https://www.reddit.com/r/Arbitrum/comments/1h4y4fi/potential_usecases_for_the_arb_token/,Ruttelisious,,"Hi,
+
+Is there any unsecases in the works besides just beeing a govornance token? Staking is the most obvious usecause I think but what other usecases could we potentially see? Discount on DEXes on arb? Use it as fee to access services like launching on arbitrum one? 
+
+I'm a developer so I'm kind of thinking of what I could build to increace incentives to hold ARB."
+Can Arbitrum ARB Make You a Millionaire in 2024?,u_Cheeky_Crypto,1h4lei8,2024-12-01 22:14:52,1,1.0,0,https://youtu.be/M14ogpZozVc,Cheeky_Crypto,,
+Best Crypto Coins to Invest in 2024: Top Picks for High Returns,thecryptoking12,1h46z1z,2024-12-01 11:26:30,1,1.0,1,https://www.reddit.com/r/thecryptoking12/comments/1h46z1z/best_crypto_coins_to_invest_in_2024_top_picks_for/,desemycheez,,"# 
+
+Investing in cryptocurrencies has become a cornerstone of modern portfolios, offering high returns to those who choose wisely. As we enter 2024, the crypto market is brimming with opportunities. Whether you're a seasoned investor or a newcomer, selecting the right coins can make a huge difference in your financial journey. Here are the **best cryptocurrencies to consider in 2024**, including a standout recommendation: **$AVX**, currently in its pre-sale phase.
+
+# 1. $AVX – The Game-Changer with 45x Potential
+
+$AVX is one of the most exciting tokens in 2024, currently available in its **pre-sale phase**. This stage offers early investors the chance to secure the token at a discounted price before it hits major exchanges. Here's why $AVX is a must-watch:
+
+* **High ROI Potential**: Industry analysts project **up to 45x returns** as the token gains traction.
+* **Innovative Technology**: $AVX is built on a scalable and secure blockchain ecosystem tailored for real-world applications.
+* **Strong Community**: The $AVX team has built a loyal and transparent community, ensuring trust and long-term sustainability.
+
+With the ongoing pre-sale, now is the perfect time to invest in $AVX before it potentially skyrockets in value.
+
+# 2. Bitcoin (BTC)
+
+* **Why Invest**: Bitcoin remains the king of cryptocurrencies, a staple in any portfolio. With institutional interest growing and supply capped at 21 million, BTC is a reliable store of value.
+* **Growth Potential**: Analysts expect a price surge as the next halving event approaches, making 2024 a bullish year for Bitcoin.
+
+# 3. Ethereum (ETH)
+
+* **Why Invest**: Ethereum’s dominance in smart contracts and decentralized applications (dApps) remains unchallenged. The successful transition to Ethereum 2.0 enhances its scalability and energy efficiency.
+* **Growth Potential**: As DeFi and NFTs expand, ETH’s utility and value are poised for significant growth.
+
+# 4. Polygon (MATIC)
+
+* **Why Invest**: Polygon enhances Ethereum's scalability, providing cheaper and faster transactions. It's widely adopted for dApps and gaming projects.
+* **Growth Potential**: With partnerships and ecosystem development, MATIC is expected to perform well in 2024.
+
+# 5. Solana (SOL)
+
+* **Why Invest**: Known for its ultra-fast transaction speeds and low fees, Solana is a favorite among blockchain developers.
+* **Growth Potential**: As the NFT and gaming markets grow, SOL is set to benefit significantly.
+
+# 6. Arbitrum (ARB)
+
+* **Why Invest**: Arbitrum is a leading Layer 2 solution for Ethereum, making transactions faster and cheaper.
+* **Growth Potential**: With increasing adoption among DeFi platforms, ARB has strong upside potential.
+
+# Why Diversification Matters
+
+While $AVX offers extraordinary potential for exponential growth, it's wise to diversify your investments across established and emerging coins. Combining stable picks like Bitcoin and Ethereum with high-risk, high-reward options like $AVX ensures a balanced portfolio.
+
+# Final Thoughts
+
+2024 is shaping up to be an exciting year for cryptocurrency investors. With projects like **$AVX** leading the way, now is the time to position yourself for potential life-changing gains. Act quickly to capitalize on the **$AVX pre-sale** and explore the broader crypto market to maximize your investment opportunities.
+
+Take action today—don’t miss your chance to ride the next big wave in crypto!"
+"How to recover, wrongly sent arbitrum ( ETH Network ) to Arbitrum network. Any suggestions?",ledgerwallet,1h45hud,2024-12-01 10:19:32,0,0.5,6,https://www.reddit.com/r/ledgerwallet/comments/1h45hud/how_to_recover_wrongly_sent_arbitrum_eth_network/,Due_Abbreviations553,Official Support Response,"Hi everyone,
+
+I need your help recovering some tokens I sent incorrectly. Here’s what happened:
+
+* I sent **Arbitrum tokens** to my **Coinbase account** (not Coinbase Wallet).
+* The tokens were on the **Ethereum network**, not the Arbitrum network.
+* Coinbase does not officially support Arbitrum tokens (ARB) on the Ethereum network for deposits."
+Arbitrum (ARB) May Continue Bullish Trend Amid Rising Netflow and Easing Selling Pressure,kucoin,1h3wt07,2024-12-01 01:06:17,1,1.0,3,https://en.coinotag.com/arbitrum-arb-may-continue-bullish-trend-amid-rising-netflow-and-easing-selling-pressure/,evasivemoves,,
+Thankful for Polygon,0xPolygon,1h2aou6,2024-11-28 20:32:19,57,0.93,11,https://www.reddit.com/gallery/1h2aou6,Automatic-Train-9153,Discussion,
+Bybit mixed Apex APE with APECoin APE in their halal token certification ,CryptoCurrency,1h22wae,2024-11-28 13:50:19,0,0.28,11,https://www.reddit.com/gallery/1h22wae,mrtac96,DISCUSSION,"Bybit has released a list of tokens deemed halal (permissible) according to Islamic Sharia law. However, there seems to be a significant error in their listing.
+The platform has mistakenly included ApeX, a perpetual decentralized exchange (DEX) that is explicitly forbidden (haram) under Islamic law. This oversight is particularly concerning as Bybit initially used the ApeX name and logo in their listing but on detail page bybit to refer to ApeCoin, a cryptocurrency associated with NFTs.
+As user wont bother to read the detail pdf, 
+this apparent blunder raises serious questions about the diligence and accuracy of Bybit's Shariah compliance efforts. It's crucial for platforms offering Islamic financial services to maintain the highest standards of accuracy and transparency to ensure that users can make informed decisions.
+"
+I sent Arbitrum Via ETH to coinbase from web3 wallet.,CoinBase,1h21q7d,2024-11-28 12:57:32,1,1.0,3,https://www.reddit.com/r/CoinBase/comments/1h21q7d/i_sent_arbitrum_via_eth_to_coinbase_from_web3/,drsas93,,"I sent Arbitrum Via ETH to coinbase from web3 wallet.
+
+web3 showing sent. status saying complete. Block Explorer Status success but no ARB token received??
+
+Case# 21087406."
+Cannot swap ARB,ledgerwallet,1h0lwjl,2024-11-26 15:28:34,0,0.33,3,https://www.reddit.com/r/ledgerwallet/comments/1h0lwjl/cannot_swap_arb/,N0_Klu3,Official Support Response,"A month ago I swapped ETH to ARB. 
+
+In ledger there is 2 ARBs. 
+
+One on Arbitrum network and one on ETH. 
+I used the Arbitrum network one. 
+
+Now I’m trying to switch back to ETH or any currency but it keeps saying I need 0.0004 ETH. 
+
+I have 0.03 ETH available to cover the swap. 
+
+What am I doing wrong? 
+I just cannot swap this pair to anything. 
+
+I cannot even send it to an exchange. "
+📰 AI-curated Daily Crypto Digest - November 26,AIcuratedNewsBrief,1h085k0,2024-11-26 04:42:46,1,1.0,0,https://www.reddit.com/r/AIcuratedNewsBrief/comments/1h085k0/aicurated_daily_crypto_digest_november_26/,crypto_beholder,,"https://preview.redd.it/elpnhg6ev73e1.jpg?width=1792&format=pjpg&auto=webp&s=eac90d43b6a4318dc5227ce05b37c4397d3ab646
+
+📰 **Arbitrum’s 91% Rally Targets $1: Next Stop at $1.86?**
+
+The ARB price trend maintains a bullish approach with the Bitcoin price dropping below the $95,000 mark. With a 26% surge over the last 7 days, the ARB has a market cap of $3.864 billion. [Learn more](https://coinpedia.org/price-analysis/arbitrums-91-rally-targets-1-next-stop-at-1-86/)
+
+
+
+👛 **OKX launches crypto trading platform and wallet in Belgium**
+
+OKX’s services in Belgium are offered through an EU-regulated entity as the exchange doesn’t have dedicated regulatory approval in the country. [Learn more](https://cointelegraph.com/news/okx-launches-crypto-services-belgium?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)
+
+
+
+🖼️ **How NFTs are Evolving to Add ‘Meaning and Story’: RARI Chain**
+
+Leading lights in the NFT space gathered in Bangkok to discuss the future of the technology and how creators are using it. [Learn more](https://decrypt.co/293022/how-nfts-are-evolving-to-add-meaning-and-story-rari-chain)
+
+
+
+🐶 **Shiba Inu: Will Burning 99% of SHIB Boost It to $1? Here’s What Shytoshi Kusama Says**
+
+Shiba Inu (SHIB), a cryptocurrency that originally gained attention as a meme coin, is slowly evolving into something much more. With a market cap of $15 billion and a massive surge in its burn rate, SHIB is gaining momentum. [Read more](https://coinpedia.org/news/will-burning-99-of-shib-take-it-to-1-or-destroy-the-ecosystem-heres-what-shytoshi-kusama-says/)
+
+
+
+📰 **Bullish Flag Breakout: Will AKT Price Trigger a New All-Time High?**
+
+Despite the border market witnessing a 500 million liquidation in the past 24 hours, the AKT price trend maintains a bullish approach. Over the past 24 hours, the Akash Network token price has maintained a bullish trend and has increased by 3.34%. [Explore further](https://coinpedia.org/price-analysis/bullish-flag-breakout-will-akt-price-trigger-a-new-all-time-high/)
+
+
+
+🔑 **XRP Holds Strong as Archax Unveils Tokenized Money Market Fund on XRP Ledger**
+
+Archax has provided access to Abrdn’s U.S. dollar Liquidity Fund (Lux) in tokenized form on XRPL.Ripple will allocate $5 million into tokens on Abrdn’s Lux fund, part of a larger allocation to real-world assets (RWAs) on the XRPL.XRP price jumped 6%, touching a high of $1.49 in the hours following the release, before paring gains in a market-wide drop. [More details](https://www.coindesk.com/markets/2024/11/26/xrp-holds-strong-as-archax-unveils-tokenized-money-market-fund-on-xrp-ledger)
+
+
+
+🔓 **DEXX Hackers Resume Operations: Stolen Funds Begin Laundering into SOL**
+
+The attackers who attacked the latest DEXX have been reactivated after a week of inactivity to change the stolen alt coins for Solana (SOL) in large amounts according to Mistract, cyber security. This comes after, decentralized exchange DEX platform was targeted and users and the platform woke up to hefty losses. [Read the full article](https://coinpedia.org/news/dexx-hackers-resume-operations-stolen-funds-begin-laundering-into-sol/)
+
+  
+Telegram: [https://lnkd.in/dm584XSv](https://lnkd.in/dm584XSv)  
+Source: [https://lnkd.in/dqbiuDrW](https://lnkd.in/dqbiuDrW)"
+Still we are trending..💪,Pepecryptocurrency,1h04oxc,2024-11-26 00:39:06,8,0.9,4,https://i.redd.it/123pestzn63e1.jpeg,krishnaaharii,Meme,
+[EthTrader Contest] R144 (1) - Prediction Contest,ethtrader,1gzy5zx,2024-11-25 19:05:29,12,1.0,50,https://www.reddit.com/r/ethtrader/comments/1gzy5zx/ethtrader_contest_r144_1_prediction_contest/,DBRiMatt,Meta & Donut,"# EthTrader Contest Round 144 #1 – Prediction Contest
+
+* **A simple prediction contest, each multiple choice question is worth 1 point.**
+* **A free choice answer will settle any tie-breakers, closest answers decide the winner**
+* **Entries will close when the Daily Discussion on for Thursday 28th November is posted.**
+* **One entry per user permitted - registered users only, new users are welcome to register!**
+* **Prices are based on Coingecko.com and in USD**
+* **Follow the correct formatting for your entry as shown;**
+
+[Entry submission formatting](https://preview.redd.it/k6t880gg5crd1.png?width=375&format=png&auto=webp&s=3876a1827c7a69ac3d0abab67083327240dc3743) \*Note; number of questions and prize pool has increased
+
+# Prize Pool
+
+* **1st - 3500 DONUT/CONTRIB**
+* **2nd - 1750 DONUT/CONTRIB**
+* **3rd - 750 DONUT/CONTRIB**
+
+# The Questions
+
+**1) According to Coingecko.com; What will the Price of $ETH** **be at 13:00 UTC Sunday, December 1st.**
+
+\[A\] $0 – $2999.99
+
+\[B\] $3000.00 – $3199.99
+
+\[C\] $3200.00 – $3399.99
+
+\[D\] $3400.00 – $3599.99
+
+\[E\] $3600.00 +
+
+**2) According to Coingecko.com; What will the Price of $ARB be at 13:00 UTC Sunday, December 1st.**
+
+\[A\] $0 – $0.7499
+
+\[B\] $0.75 – $0.8499
+
+\[C\] $0.85 – $0.9499
+
+\[D\] $0.95 – $1.0499
+
+\[E\] $1.05 +
+
+**3) According to Coingecko.com; What will the Price of $ETH** **be at 13:00 UTC Sunday, December 8th.**
+
+\[A\] $0 – $2999.99
+
+\[B\] $3000.00 – $3199.99
+
+\[C\] $3200.00 – $3399.99
+
+\[D\] $3400.00 – $3599.99
+
+\[E\] $3600.00 +
+
+**4) According to Coingecko.com; What will the Price of $ARB be at 13:00 UTC Sunday, December 8th.**
+
+\[A\] $0 – $0.7499
+
+\[B\] $0.75 – $0.8499
+
+\[C\] $0.85 – $0.9499
+
+\[D\] $0.95 – $1.0499
+
+\[E\] $1.05 +
+
+**5) According to Coingecko.com; What will the Price of $ETH** **be at 13:00 UTC Sunday, December 15th.**
+
+\[A\] $0 – $2999.99
+
+\[B\] $3000.00 – $3199.99
+
+\[C\] $3200.00 – $3399.99
+
+\[D\] $3400.00 – $3599.99
+
+\[E\] $3600.00 +
+
+**6) According to Coingecko.com; What will the Price of $ARB be at 13:00 UTC Sunday, December 15th.**
+
+\[A\] $0 – $0.7499
+
+\[B\] $0.75 – $0.8499
+
+\[C\] $0.85 – $0.9499
+
+\[D\] $0.95 – $1.0499
+
+\[E\] $1.05 +
+
+**7) According to Coingecko.com; What will the price of $GNO be at 13:00 UTC Sunday, December 15th.**
+
+\[A\] $0 – $199.99
+
+\[B\] $200.00 – $229.99
+
+\[C\] $230.00 – $259.99
+
+\[D\] $260.00 – $289.99
+
+\[E\] $290.00 +
+
+**8) According to Coingecko.com; What will the Price of $SUSHI be at 13:00 UTC Sunday, December 15th.**
+
+\[A\] $0 – $0.899
+
+\[B\] $0.90 – $0.999
+
+\[C\] $1.00 – $1.099
+
+\[D\] $1.10 – $1.199
+
+\[E\] $1.20 +
+
+**9) According to Coingecko.com; What will ETH Dominance be at 13:00 UTC Sunday, December 15th.**
+
+\[A\] 0% – 12.49%
+
+\[B\] 12.50% – 12.79%
+
+\[C\] 12.80% – 13.09%
+
+\[D\] 13.10% – 13.39%
+
+\[E\] 13.4% +
+
+**10) According to l2beat.com; What will the Daily TPS of Arbitrum One be at 13:00 UTC Sunday, December 15th.**
+
+\[A\] 0 – 18.99
+
+\[B\] 19 – 20.99
+
+\[C\] 21 – 22.99
+
+\[D\] 23 – 24.99
+
+\[E\] 25 +
+
+**11) According to Coingecko.com; What will the Rank of $DONUT be at 13:00 UTC Sunday, December 15th.**
+
+\[A\] 1 – 3199
+
+\[B\] 3200 – 3299
+
+\[C\] 3300 – 3399
+
+\[D\] 3400 – 3499
+
+\[E\] 3500 +
+
+**12) What will the Post/DONUT Ratio be for Round 144?**
+
+\[A\] 0 – 21.99
+
+\[B\] 22.00 – 23.99
+
+\[C\] 24.00 – 25.99
+
+\[D\] 26.00 – 27.99
+
+\[E\] 28.00 +
+
+**13) What will the Comment/DONUT Ratio be for Round 144?**
+
+\[A\] 0 – 21.99
+
+\[B\] 22.00 – 23.99
+
+\[C\] 24.00 – 25.99
+
+\[D\] 26.00 – 27.99
+
+\[E\] 28.00 +
+
+**14) How many users will be listed in the final Distribution Summary for Round 144?**
+
+\[A\] 0 – 174
+
+\[B\] 175 – 199
+
+\[C\] 200 – 224
+
+\[D\] 225 – 249
+
+\[E\] 250 +
+
+**15) Tie-break settler (Free-choice): According to Final Distribution Summary; What will cumulative Pay2Post DONUT fees from all users be for round 142? (Eg, 42069.69)**
+
+**Template for your entry**
+
+[X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] 42069"
+What is Ethereum? A Comprehensive Guide to the World’s Leading Smart Contract Platform,CryptoEducationHub,1gzf5p6,2024-11-25 04:36:55,1,1.0,0,https://www.reddit.com/r/CryptoEducationHub/comments/1gzf5p6/what_is_ethereum_a_comprehensive_guide_to_the/,LetsgoJAM,,"[What is Ethereum? A Comprehensive Guide to the World’s Leading Smart Contract Platform](https://blog.netcoins.com/what-is-ethereum-a-comprehensive-guide/)
+
+
+
+Buy crypto on Canada’s leading exchange [here](https://www.netcoins.com/en/)
+
+
+
+[Blockchain technology](https://blog.netcoins.com/what-is-a-blockchain-a-comprehensive-guide-for-beginners/) has redefined how we think about transactions, ownership, and trust. [Bitcoin](https://blog.netcoins.com/what-is-bitcoin-a-comprehensive-guide/) introduced the world to digital money, but it wasn’t long before Ethereum took that innovation to new heights by enabling smart contracts and decentralized applications. Today, Ethereum is the second-largest cryptocurrency by market capitalization and the backbone of countless blockchain-based applications. Whether you’re new to crypto or looking to deepen your understanding, this comprehensive guide to Ethereum will break down everything you need to know about this revolutionary innovation.
+
+# The Basics of Ethereum
+
+# What is Ethereum?
+
+Ethereum is an open-source, decentralized blockchain platform that allows developers to create and deploy smart contracts and decentralized applications (DApps). Unlike Bitcoin, which is primarily designed as a digital currency and store of value, Ethereum is a programmable blockchain with broader applications.
+
+Launched in 2015 by a group of developers led by [Vitalik Buterin](https://vitalik.eth.limo/categories/general.html), Ethereum’s primary objective was to go beyond simple digital payments. By introducing a platform that enables complex applications, Ethereum paved the way for decentralized finance (DeFi), non-fungible tokens (NFTs), and other innovations in the blockchain space.
+
+# Who Created Ethereum?
+
+https://preview.redd.it/eyhsvinuo03e1.png?width=514&format=png&auto=webp&s=be6355f150b898031d8f52ac0873fdc1d1fb1818
+
+Ethereum was founded by Vitalik Buterin, a programmer and crypto enthusiast who was actively involved in the Bitcoin community. Vitalik’s vision for a more flexible and programmable blockchain led to the conceptualization of Ethereum. He collaborated with several other co-founders, including Gavin Wood, who created Ethereum’s programming language Solidity, and Joseph Lubin, who later founded ConsenSys, a major Ethereum development firm.
+
+The Ethereum whitepaper, published by Buterin in 2013, outlined the concept of a blockchain capable of running decentralized applications and executing smart contracts. After a successful crowdsale in 2014, Ethereum officially launched on July 30, 2015.
+
+# The Difference Between Ethereum and Bitcoin
+
+# Bitcoin vs. Ethereum: Purpose
+
+Bitcoin and Ethereum often get compared due to their market positions, but they serve distinct purposes. Bitcoin is primarily designed as a digital store of value—often referred to as “digital gold.” Its main objective is to provide a decentralized alternative to traditional currencies, focusing on security and immutability.
+
+On the other hand, Ethereum was designed to be a world computer. It provides a decentralized platform for running code and applications, allowing developers to build a wide range of decentralized applications, from financial services to digital art marketplaces.
+
+# Technological Differences
+
+The key technological difference between Bitcoin and Ethereum lies in their scripting abilities. Bitcoin’s scripting language is deliberately limited, focusing on maintaining a secure and immutable record of transactions. Ethereum, however, uses a Turing-complete language that enables developers to create complex smart contracts capable of automating tasks and managing assets programmatically.
+
+# Market Position and Utility
+
+Bitcoin’s utility lies in its role as a digital currency and store of value. It’s widely accepted and held by individuals, institutions, and governments. Ethereum, on the other hand, functions as a platform for the entire decentralized ecosystem, hosting applications that range from DeFi protocols to NFTs. While Bitcoin’s value is tied to its role in financial transactions and as a hedge against inflation, Ethereum’s value is linked to the utility of its blockchain and the applications running on it.
+
+# How Does Ethereum Work?
+
+# The Ethereum Blockchain
+
+The Ethereum blockchain functions as a global, decentralized platform for executing smart contracts and running decentralized applications (DApps). Like Bitcoin, Ethereum operates on a distributed ledger technology, where a network of nodes collectively maintains and validates a record of all transactions. However, Ethereum’s blockchain goes beyond simple peer-to-peer currency transfers, introducing a programmable layer that allows for a wide range of applications to be built on top of it.
+
+At its core, Ethereum is a decentralized network that follows the same basic principles as Bitcoin, ensuring that no central authority controls the data or network operations. Each node stores a copy of the entire Ethereum blockchain, which contains all historical transaction data and smart contracts. When a transaction or smart contract is executed, nodes work together to validate the transaction and reach a consensus on its state, updating the blockchain accordingly.
+
+Ethereum’s block time, the period it takes to create a new block, is typically around 12 to 15 seconds, compared to Bitcoin’s 10-minute block time. This faster block creation rate allows Ethereum to process more transactions per second, although it still faces limitations regarding scalability, which are being addressed with Ethereum 2.0 upgrades and Layer 2 solutions.
+
+# Smart Contracts Explained
+
+https://preview.redd.it/wegemctwo03e1.png?width=518&format=png&auto=webp&s=c6a7e776cdccd7d9790e51393e5b3d83008b84a8
+
+One of Ethereum’s most revolutionary features is its support for smart contracts. A smart contract is essentially a self-executing code that enforces an agreement or set of rules without needing intermediaries. These contracts are written in Solidity, Ethereum’s native programming language, which is Turing-complete, meaning it can perform a wide variety of computations.
+
+Smart contracts are stored on the blockchain, making them tamper-proof and transparent. Once deployed, they automatically execute the conditions written in their code. For instance, a simple smart contract could facilitate an escrow service, where funds are automatically released to a seller once the buyer confirms receipt of goods. The potential applications are nearly limitless, from decentralized finance (DeFi) platforms that allow users to borrow and lend cryptocurrencies to complex supply chain tracking systems.
+
+The execution of smart contracts is validated by the Ethereum Virtual Machine (EVM), which runs the code on every node in the network. This ensures that smart contracts produce the same result regardless of which node executes them, establishing a universal standard for DApps.
+
+# Ethereum Virtual Machine (EVM)
+
+The Ethereum Virtual Machine (EVM) is the heart of the Ethereum network. It acts as a runtime environment for executing smart contracts and deploying decentralized applications. The EVM is Turing-complete, which means it can handle complex instructions and perform nearly any computation that a traditional computer can execute.
+
+What makes the EVM particularly significant is its universality. Developers can write smart contracts and DApps in various programming languages, including Solidity, Vyper, and others, and the EVM will execute them consistently across all Ethereum nodes. This consistent execution is crucial for ensuring the integrity and reliability of decentralized applications on the Ethereum network.
+
+The EVM also plays a key role in calculating gas fees, as it determines the computational resources needed to execute transactions and smart contracts. This standardization of execution and fees enables developers to create diverse applications on a secure and scalable platform.
+
+# Gas and Fees
+
+Every transaction or smart contract executed on Ethereum requires computational power, which is quantified in units of gas. Gas is the fuel that drives the Ethereum network, enabling it to execute transactions and run DApps. When a user initiates a transaction or deploys a smart contract, they must pay a gas fee in Ether (ETH), which incentivizes miners or validators to include their transaction in a block.
+
+The amount of gas required for a transaction depends on its complexity. Simple transactions, such as transferring Ether between wallets, require minimal gas. In contrast, more complex operations like executing a DeFi trade or deploying an NFT contract consume significantly more gas. Users can also set their gas prices, with higher gas prices offering faster transaction confirmations during periods of high network congestion.
+
+Gas fees have been a significant challenge for Ethereum, especially during periods of high demand. When the network experiences congestion, gas prices can skyrocket, leading to prohibitively expensive transactions. To address these issues, Ethereum developers have introduced various scaling solutions and upgrades, such as Ethereum 2.0 and Layer 2 technologies such as [arbitrum](https://www.netcoins.com/how-to-buy/arb/).
+
+# Ether (ETH) as Ethereum’s Native Cryptocurrency
+
+# What is Ether?
+
+Ether (ETH) is the native cryptocurrency of the Ethereum network, serving as the lifeblood of the entire ecosystem. While many people think of Bitcoin when they hear the term “cryptocurrency,” Ether plays a fundamentally different role. It’s not just a digital currency, but the fuel that powers the execution of smart contracts and transactions within the Ethereum network.
+
+Ether’s importance goes beyond its monetary value. It’s required to perform any action on the Ethereum blockchain, from deploying a new smart contract to sending a simple transaction. This makes Ether essential for all activities that occur on the Ethereum blockchain, earning it the title of “gas” within the network’s ecosystem.
+
+**How Ether is Used?**
+
+Ether has multiple use cases within the Ethereum network, and each of them contributes to the overall utility of the cryptocurrency:
+
+* **Paying for Gas Fees**: Every interaction with the Ethereum blockchain requires computing resources, which are paid for in Ether. This includes deploying smart contracts, executing functions within a contract, transferring tokens, and more. The cost of these computational tasks is denominated in gas, which users pay for using Ether. The gas system helps prioritize and allocate resources within the Ethereum network, incentivizing miners to process transactions based on the amount of gas fees offered.
+
+* **Staking**: With the transition to Ethereum 2.0, [ETH holders can stake their tokens](https://blog.netcoins.com/how-to-stake-ethereum-in-canada-a-comprehensive-guide-to-eth-staking-rewards/) to participate in the Proof-of-Stake (PoS) consensus mechanism. By staking Ether, users help secure the network and, in return, [earn staking rewards](https://www.netcoins.com/staking/). This passive income opportunity has encouraged many investors to lock up their ETH, reducing the circulating supply and further increasing demand.
+
+
+
+* **Collateral and Lending**: In the world of decentralized finance (DeFi), Ether is often used as collateral for loans and financial instruments. For instance, platforms like [MakerDAO](https://www.netcoins.com/how-to-buy/mkr/) allow users to lock up their ETH to mint [stablecoins](https://blog.netcoins.com/what-are-stablecoins/) like DAI. Additionally, lending protocols such as [Aave](https://blog.netcoins.com/how-aave-is-leading-the-way/) offer users the ability to earn interest on their ETH holdings.
+
+
+
+* **Medium of Exchange and Digital Currency**: Beyond its role within the Ethereum ecosystem, Ether also functions as a digital currency. It’s used for payments and transactions between individuals and businesses, similar to Bitcoin. ETH’s liquidity and market capitalization have made it one of the most widely accepted cryptocurrencies across exchanges and payment platforms.
+
+**Market Position of ETH**
+
+Ether’s market position as the second-largest cryptocurrency, next to Bitcoin, is no accident. Its intrinsic utility, combined with Ethereum’s widespread adoption, has solidified ETH’s role as a cornerstone of the crypto economy. With the rise of DeFi, NFTs, and staking, demand for Ether continues to grow.
+
+The broader crypto market often correlates with the performance of Ether, highlighting its influence. Investors view ETH as not only a store of value but also a means of gaining exposure to the booming Ethereum ecosystem. Additionally, major financial institutions and corporations are beginning to recognize Ether’s potential, leading to increased institutional interest and investment.
+
+**Ethereum 2.0 and the Transition to Proof-of-Stake (PoS)**
+
+**The Move from Proof-of-Work (PoW) to Proof-of-Stake**
+
+Ethereum initially operated on a Proof-of-Work (PoW) consensus mechanism, which required miners to solve complex mathematical puzzles to validate transactions and secure the network. While effective, PoW came with several downsides, including high energy consumption, scalability issues, and the centralization of mining power.
+
+[The transition to Proof-of-Stake (PoS) with Ethereum 2.0](https://blog.netcoins.com/ethereums-dencun-update-a-deeper-dive-into-decentralized-finance-and-ethereum-2-0/) marks a significant upgrade to the network’s consensus mechanism. Under PoS, validators replace miners, and instead of solving puzzles, they secure the network by staking their Ether. Validators are chosen to create new blocks and confirm transactions based on the amount of ETH they have staked, making the process more energy-efficient and decentralized.
+
+# Key Improvements in Ethereum 2.0
+
+https://preview.redd.it/kaok8j22p03e1.png?width=519&format=png&auto=webp&s=f48526e14102719264899e1af317656c13fbbe80
+
+The move to Ethereum 2.0 is expected to bring a host of improvements to the network, addressing the limitations of the original Ethereum blockchain:
+
+* **Energy Efficiency**: One of the most significant benefits of PoS is its drastically reduced energy consumption compared to PoW. PoW requires massive amounts of computational power, leading to high electricity usage and environmental concerns. By transitioning to PoS, Ethereum aims to become a more sustainable blockchain.
+
+* **Scalability**: Ethereum 2.0 introduces sharding, a technique that splits the network into smaller chains called shards. Each shard can process transactions and smart contracts independently, increasing the overall throughput of the Ethereum blockchain. Sharding aims to allow Ethereum to handle thousands of transactions per second, alleviating congestion and reducing gas fees.
+
+* **Security Enhancements**: PoS brings additional security benefits by increasing the cost of attacking the network. In PoS, validators must put their ETH at stake, and if they behave maliciously, they risk losing their staked funds. This economic incentive discourages malicious activity and enhances the overall security of the blockchain.
+
+**The Roadmap and Challenges**
+
+With the successful implementation of “The Merge” and the rollout of sharding, Combined with the growing adoption of Layer 2 solutions like rollups, Ethereum’s scalability has significantly increased. Looking ahead, the next focus areas include refining stateless clients to lower hardware requirements for node operators and enhance decentralization. Additionally, the Ethereum community is exploring protocol-level upgrades to strengthen censorship resistance and improve network security. These advancements aim to solidify Ethereum’s infrastructure and expand its capacity to support even more decentralized applications and innovations.
+
+# Decentralized Applications (DApps) and Ethereum’s Ecosystem
+
+# What are DApps?
+
+https://preview.redd.it/sx58jeq3p03e1.png?width=519&format=png&auto=webp&s=49790c274aa80a7a35512ec07d9fc631451645fa
+
+Decentralized applications, or DApps, are applications that run on a blockchain network rather than a centralized server. They are built using smart contracts, which allow them to operate autonomously and securely without relying on a single point of control. This makes DApps resistant to censorship and tampering, as they are deployed on a decentralized network.
+
+DApps can serve a wide range of purposes, from financial services and gaming to supply chain management and social media. They are typically open-source, meaning anyone can inspect their code and verify their functionality. This transparency fosters trust between developers and users, enhancing the integrity of the applications.
+
+**Notable DApps on Ethereum**
+
+Ethereum is home to some of the most successful and innovative DApps in the blockchain space. The platform’s flexibility and programmability have attracted developers to create a diverse array of decentralized applications:
+
+* **Decentralized Finance (DeFi)**: DeFi protocols such as [Uniswap](https://www.netcoins.com/how-to-buy/uni/), [Aave](https://www.netcoins.com/how-to-buy/aave/), and [Curve DAO](https://www.netcoins.com/how-to-buy/crv/) have transformed the traditional financial landscape. These platforms enable users to trade, lend, borrow, and earn interest without intermediaries. Uniswap, for instance, is a decentralized exchange that allows users to trade ERC-20 tokens directly from their wallets, while Aave and Compound offer lending and borrowing services with competitive interest rates.
+
+
+
+* **NFT Marketplaces**: Ethereum’s support for NFTs has given rise to popular marketplaces like [OpenSea](https://opensea.io/), where users can buy, sell, and trade unique digital assets. OpenSea has become the go-to platform for NFT enthusiasts, hosting a vast collection of digital art, collectibles, and virtual real estate.
+
+
+
+* **Gaming and Virtual Worlds**: Ethereum has also made waves in the gaming industry with DApps like [Axie Infinity](https://www.netcoins.com/how-to-buy/axs/) and [Decentraland](https://www.netcoins.com/how-to-buy/mana/). Axie Infinity allows players to collect and breed digital creatures called Axies, which can be used in battles and sold as NFTs. Decentraland, on the other hand, offers a virtual reality world where users can buy land, create experiences, and monetize their creations using Ethereum’s blockchain.
+
+**The Role of DeFi in Ethereum’s Rise**
+
+Decentralized finance, or DeFi, has been one of the driving forces behind Ethereum’s growth. DeFi refers to a set of financial services built on blockchain technology that allows users to interact directly with protocols and smart contracts, bypassing traditional financial intermediaries. The transparency and efficiency of DeFi have attracted billions of dollars in liquidity, with Ethereum serving as the primary platform for most DeFi applications.
+
+The rise of DeFi has demonstrated the power of Ethereum’s programmable blockchain, showcasing its potential to disrupt traditional banking and financial services. DeFi protocols offer users a wide range of financial services, including lending, borrowing, trading, and yield farming. These platforms provide individuals with greater control over their assets and enable them to earn passive income through interest and rewards.
+
+# Non-Fungible Tokens (NFTs) and Ethereum’s Role in the Digital Art Revolution
+
+# What are NFTs?
+
+Non-fungible tokens (NFTs) are unique digital assets that are stored on a blockchain. Unlike cryptocurrencies like ETH, NFTs cannot be exchanged on a one-to-one basis because each token is unique. NFTs have gained popularity for their role in representing digital art, music, collectibles, and more.
+
+# Why NFTs Flourished on Ethereum
+
+Ethereum’s ERC-721 standard enabled the creation and exchange of NFTs, paving the way for a digital art revolution. The transparency, immutability, and decentralized nature of Ethereum make it the ideal platform for verifying ownership of digital assets.
+
+# Examples of Popular NFTs and Collections
+
+Popular NFT collections like [CryptoPunks](https://cryptopunks.app/), [Bored Ape Yacht Club](https://boredapeyachtclub.com/), and digital artists like Beeple have leveraged Ethereum’s blockchain to sell millions of dollars worth of art and collectibles. These NFTs have sparked discussions about digital ownership and the value of virtual assets.
+
+# Ethereum’s Broader Impact and Future Vision
+
+# Ethereum’s Role in Web3 and Decentralized Web
+
+Web3 represents the next evolution of the internet, focusing on decentralization and user ownership. Ethereum’s smart contract capabilities have made it the backbone of Web3 applications, empowering users to take control of their digital lives.
+
+# Ethereum’s Vision for a Decentralized Future
+
+Ethereum aims to empower individuals and communities through decentralization. Vitalik Buterin’s vision extends beyond just creating a platform for digital assets. The broader vision for Ethereum involves building a decentralized internet that allows for transparent governance, community-owned assets, and trustless interactions. In a world where data privacy and censorship are growing concerns, Ethereum’s vision is to provide an alternative structure for organizing societies and economies.
+
+The Ethereum ecosystem has fostered the rise of Decentralized Autonomous Organizations (DAOs). These organizations are run entirely by code, with decision-making powered by token holders who vote on proposals. DAOs are redefining how organizations can operate without centralized leadership, bringing about a shift in governance that aligns with Ethereum’s goal of decentralization.
+
+# The Ethereum Community and Open-Source Development
+
+One of Ethereum’s greatest strengths is its community-driven approach. As an open-source platform, Ethereum thrives on collaboration and contributions from developers, enthusiasts, and stakeholders worldwide. Unlike traditional software companies, Ethereum’s core protocol is maintained and improved through a decentralized governance model, where key decisions are made transparently and with input from the community.
+
+The Ethereum Foundation plays a pivotal role in fostering development and community initiatives. While the foundation provides financial support and guidance, the broader Ethereum community actively drives innovation through Ethereum Improvement Proposals (EIPs), hackathons, and developer grants.
+
+
+
+# Potential Challenges and Risks of Ethereum
+
+# Scalability Issues and Layer 2 Solutions
+
+https://preview.redd.it/r6vwtk26p03e1.png?width=515&format=png&auto=webp&s=5161b470398be66f171790cc93542545eb89353b
+
+As Ethereum’s popularity has grown, so too have the demands placed on its network. High gas fees and slow transaction speeds have become significant pain points, particularly during periods of high demand. Ethereum’s limited scalability has led to congestion and exorbitant transaction costs, impacting the user experience.
+
+To address these challenges, developers have introduced Layer 2 scaling solutions, such as rollups and sidechains. Rollups, like Optimistic Rollups and zk-Rollups, bundle multiple transactions into a single batch, reducing the load on the main Ethereum chain. These solutions aim to increase transaction throughput while keeping costs low, ensuring that Ethereum remains competitive with other blockchain networks.
+
+# Security and Regulatory Concerns
+
+While Ethereum’s decentralized nature offers enhanced security and censorship resistance, it’s not immune to risks. Smart contract vulnerabilities have led to several high-profile hacks and exploits, raising concerns about the safety of funds locked in these contracts. Ethereum developers continually work to improve security through audits, bug bounties, and protocol upgrades.
+
+Regulatory concerns also pose a challenge to Ethereum’s growth. Governments worldwide are still grappling with how to regulate blockchain technology and cryptocurrencies. Ethereum’s flexibility and programmability make it particularly susceptible to scrutiny, as regulatory authorities debate the legality of decentralized finance, NFTs, and other applications.
+
+# Competition from Other Blockchain Platforms
+
+As Ethereum continues to evolve, it faces increasing competition from other blockchain platforms, such as [Solana](https://www.netcoins.com/how-to-buy/sol/) in particular. [Solana offers faster transaction speeds, lower fees, and unique features](https://blog.netcoins.com/what-is-solana-a-comprehensive-guide-for-beginners/), making them attractive alternatives for developers and users. However, Ethereum’s first-mover advantage, vast developer community, and established infrastructure make it a formidable competitor in the long run.
+
+# How to Buy Ethereum In Canada?
+
+Getting started with Ethereum is simple, especially when you have a trusted exchange like Netcoins. Here’s a step-by-step guide to purchasing Ethereum on Netcoins:
+
+
+
+1. Sign Up:
+
+* Visit the Netcoins website and click on the sign-up button. Or download the Netcoins app from the app store for mobile.
+* Enter your email address, create a strong password, and agree to the terms and conditions.
+* You will receive a confirmation email; click on the link to verify your email address.
+
+https://preview.redd.it/lotkln58p03e1.png?width=500&format=png&auto=webp&s=33fd5748a59bbbeebff9d4cfc5422004e0c2c4eb
+
+2. Verify Your Identity 
+
+* Complete the KYC process by providing your personal information, including your full name, date of birth, and address.
+* Upload a government-issued ID, such as a driver’s license, passport, or health card.
+* Once your documents are verified, you’ll receive confirmation, and your account will be activated
+
+https://preview.redd.it/tdvf5qd9p03e1.png?width=498&format=png&auto=webp&s=f18957fa46ce1dbc8985f9474d47d3e957d0ba06
+
+  Step 3: Deposit Funds
+
+* Once your account is verified, you can deposit funds using various payment methods, including Interac e-Transfer, bank transfer, or buy directly via credit/debit card.
+* Choose the amount you wish to deposit and follow the instructions to complete the transaction.
+
+Whether you’re using fiat currency or another cryptocurrency, the deposit process is straightforward.
+
+https://preview.redd.it/i899hojap03e1.png?width=500&format=png&auto=webp&s=f46d2baeafac3c1512beb6863f7129546238a4bc
+
+Step 4: Buy Ethereum
+
+* Navigate to the “Buy/Sell” section of the app.
+* Select Bitcoin from the list of available cryptocurrencies.
+* Enter the amount of Ethereum you wish to purchase.
+* Review the transaction details and confirm your purchase.
+
+https://preview.redd.it/q2s5iypbp03e1.png?width=515&format=png&auto=webp&s=31f5802f889240a6b2fa2c331433bd0a2dccb19f
+
+# Participating in Staking and Earning Rewards
+
+With the transition to Ethereum 2.0 and its Proof-of-Stake (PoS) consensus mechanism, staking has become a popular way for ETH holders to earn passive income while supporting the network. Here’s how you can get involved:
+
+1. **Understand Staking Requirements**: To become a validator on Ethereum 2.0, you need to stake a minimum of 32 ETH. If you don’t have 32 ETH, you can still participate through staking pools, where multiple users combine their ETH to meet the requirement.
+2. **Choose a Staking Method**: You have two primary options for staking—solo staking or using a staking pool. Solo staking requires running a validator node, which involves technical know-how and hardware setup. Alternatively, you can stake through a pool with exchanges like Netcoins, where the platform handles the technical aspects.
+3. **Start Earning Rewards**: Once your ETH is staked, you’ll start [earning rewards](https://www.netcoins.com/staking/) based on the amount of ETH you’ve staked and the network’s overall staking rate. Staking rewards vary, but they can be a lucrative way to earn passive income while contributing to network security.
+
+# The Future of Ethereum
+
+# Ethereum’s Potential Impact on Global Finance and Technology
+
+Ethereum’s potential extends far beyond digital currencies. By enabling programmable contracts and decentralized applications, Ethereum has the potential to disrupt industries such as finance, real estate, supply chain management, and healthcare. Decentralized finance (DeFi) protocols are already reshaping traditional banking by providing users with greater control over their financial assets.
+
+Moreover, Ethereum’s open-source nature allows for continuous innovation. Developers worldwide are exploring new use cases, from decentralized social media platforms to blockchain-based identity solutions. As the ecosystem continues to grow, Ethereum’s impact on global finance and technology is poised to expand even further.
+
+**Concluding Thoughts**
+
+Ethereum’s journey from its inception to its current status as a leading blockchain platform has been nothing short of remarkable. With its flexible, programmable blockchain, Ethereum has unlocked new possibilities for developers, investors, and businesses alike. As it continues to evolve through upgrades the platform’s influence on decentralized finance, digital assets, and beyond will likely only deepen.
+
+**Key Takeaways:** Ethereum is more than just a cryptocurrency; it’s a platform that enables innovation across various industries. From smart contracts to decentralized applications, Ethereum has established itself as a critical player in the blockchain space. With the transition to Ethereum 2.0 and the ongoing development of its ecosystem, Ethereum’s future looks brighter than ever.
+
+
+
+# Disclaimer
+
+The information provided in the [blog](https://dev.netcoins.ca/blog-2/) posts on this platform is for educational purposes only. It is not intended to be financial advice or a recommendation to buy, sell, or hold any cryptocurrency. Always do your own research and consult with a professional financial advisor before making any investment decisions.
+
+[Cryptocurrency investments carry a high degree of risk](https://www.sec.gov/spotlight/cybersecurity-enforcement-actions), including the risk of total loss. The blog posts on this platform are not investment advice and do not guarantee any returns. Any action you take based on the information on our platform is strictly at your own risk.
+
+The content of our blog posts reflects the authors’ opinions based on their personal experiences and research. However, the rapidly changing and volatile nature of the cryptocurrency market means that the information and opinions presented may quickly become outdated or irrelevant. Always verify the current state of the market before making any decisions."
+Reference token for transaction fees on AAVE (optimism/arbitrum chain),defi,1gy1qdn,2024-11-23 10:10:51,2,1.0,8,https://www.reddit.com/r/defi/comments/1gy1qdn/reference_token_for_transaction_fees_on_aave/,on_zero,:question: Help,"What is the reference token for transaction fees in AAVE on Optimism? Eth or Op?
+
+Same question for Arbitrum. Eth or Arb?
+
+Moreover, what is the cost for lending? Cents or dollars? Thanks!"
+Arbitrum (ARB) Price Rebounds After 80% Decline — Resistance Breakout Key to Reversal,ethtrader,1gwwgiv,2024-11-21 20:45:08,5,0.69,59,https://www.ccn.com/analysis/crypto/arbitrum-arb-price-rbreakout-reversal/,FattestLion,Link,
+ Wigwam has integrated SpaceID Protocol's Web3 Name SDK with supporting .bnb and .arb domains!,wigwamapp,1guzko3,2024-11-19 10:20:37,1,1.0,0,https://www.reddit.com/r/wigwamapp/comments/1guzko3/wigwam_has_integrated_spaceid_protocols_web3_name/,LukahnLSD,,"Managing BNB Chain and Arbitrum addresses just got easier! 🚀
+
+🌟 Wigwam has integrated SpaceID Protocol's Web3 Name SDK, supporting .bnb and .arb domains for more convenient crypto transactions via human-readable wallet addresses 🙌✨
+
+https://preview.redd.it/54akb9zclv1e1.png?width=1360&format=png&auto=webp&s=f8ee605b4447152f7c0bafe1cd79813836a6fa9c
+
+"
+Diving into the Donut Pool: Week 27,ethtrader,1gtzazx,2024-11-18 02:18:26,12,0.93,51,https://www.reddit.com/r/ethtrader/comments/1gtzazx/diving_into_the_donut_pool_week_27/,DBRiMatt,Meta & Donut,"Here are two other sources I find helpful for those wanting to understand a bit more on how and why liquidity positions change.
+
+[Impermanent loss, text explanation](https://www.reddit.com/r/CryptoCurrency/comments/12dducc/impermanent_loss_simple_explanation_liquidity) | [Binance Academy, video explanation](https://academy.binance.com/en/articles/impermanent-loss-explained)
+
+**Current state of the pool & the last week of trading**
+
+Total Value locked in [Sushi.com](https://sushi.com/) is $ 49.75k 
+
+* **4.19069** ETH
+* **7372140** DONUT
+* Trading Volume in last 24 hours = **$** **181.77**
+* Trading Volume in last 7 days = **$ 10.98k**
+* In the last 7 days ETH is has moved **-0.1 %**
+* In the last 7 days DONUT has moved **+6.3 %**
+* Last week 1 ETH =  **628.63k DONUT**
+* Today 1 ETH = **630.11k DONUT**
+* **4753.6** **DONUT** per day distributed amongst all in range positions.
+
+Overall, not a huge amount of trading has occurred for DONUT on Arbitrum, with most users trading more actively on Mainnet with the Uniswap pool. For the time being we seem to have settled at that \~630k DONUT:ETH floor  
+
+
+Due to request on an update of the 2nd largest liquidity position (\~15% of liquidity pool), which is a concentrated position set within the 250k to 460k DONUT:ETH trading range - this position remains out of range and not currently incurring any trading fees or rewards.   
+
+
+|| ETH|DONUT|
+|:-|:-|:-|
+|Initial Asset Balance (August)|0.432835 | 520299 |
+|Current Asset Balance (November)|0| 705904 |
+
+&#x200B;
+
+|Rewards|ETH Fees|DONUT Fees|DONUT Farm|SUSHI Farm|ARB Farm|
+|:-|:-|:-|:-|:-|:-|
+|**Cumulative Total** | **0.05438679** | **25183.66** | **91262.23** | **63.79** | **650.43** |
+|**Cumulative FIAT Total**| **$171.14**|**$124.66** |**$50.32**| **$49.16** | **$456.67**|
+
+* Base Impermanent loss experienced = $-1881.63
+* Cumulative Fees Revenue + Yield Farm Generated = $1254.53
+* Overall Position Performance = $-609.96
+
+Majority of liquidity providers will currently be experiencing losses that outweigh rewards earned, particular if they entered the pool in the last 6 months or so, but those who entered in the last 2-3 weeks might actually be in a much more neutral position.  
+"
+Buy everything you can,u_Junior-Coconut6504,1gtxefm,2024-11-18 00:12:23,1,1.0,0,https://www.reddit.com/r/u_Junior-Coconut6504/comments/1gtxefm/buy_everything_you_can/,Junior-Coconut6504,,"📊 Analysts at brokerage Bernstein announced the start of a bull market in cryptocurrencies and urged traders to add digital assets to their investment portfolios ""as soon as possible, saying"" buy whatever you can. ""
+
+In their report, experts recommend changing the approach to investment for those who previously avoided buying cryptocurrencies due to regulatory problems, since a more favorable regulatory environment is expected after the US elections.  
+For investors who have the opportunity to directly purchase cryptocurrencies, Bernstein advises to consider investments in several digital assets, including Bitcoin (BTC), Ethereum (ETH), Solana (SOL), OP Mainnet (OP), Arbitrum (ARB), Polygon (POL), Unl iswap (UNI), Aave (AAVE), and Chainlink (LINK).
+
+What assets do you plan to add to your portfolio?
+
+  
+
+
+  
+
+
+"
+"Arbitrum: Assessing if ARB can conquer $1.30, target $2.42",ethtrader,1gtpe5m,2024-11-17 17:21:49,7,0.82,48,https://ambcrypto.com/arbitrum-assessing-if-arb-can-conquer-1-30-target-2-42/,FattestLion,Link,
+Withdraw Arbitrum,trustwalletcommunity,1gt9l86,2024-11-17 03:59:32,5,1.0,2,https://www.reddit.com/r/trustwalletcommunity/comments/1gt9l86/withdraw_arbitrum/,LongDiscipline2880,HELP,"Noob question. I have Arbitrum(ONE) on my trustwallet. I want to withdraw and transfer it to my bybit account and sell it to USDT. Do I need Ethereum to cover the gas fees? Would it be better if I swap it directly to USDT(ARB) and then transfer it to bybit or will it also require eth as gas fee to withdraw the USDT? 
+
+Please send help"
+"I am a seventeen quintillionaire, finally! Time in the in the market beats...",ledgerwallet,1gt7itq,2024-11-17 01:28:34,6,0.71,19,https://www.reddit.com/r/ledgerwallet/comments/1gt7itq/i_am_a_seventeen_quintillionaire_finally_time_in/,Psychological-Song65,Official Support Response,"How can I get this back to normal as much as it pains me to know it is not true.  I think I have more Syrup tokens that all the tokens in the world combined. WTF Ledger?  
+
+Been like this for an hour.  Has my Ledger been corrupted or something?
+
+I tried transferring some of (10,000) it to another wallet but it came up on etherscan as 
+
+Transfer
+
+0.00000000000001
+
+SYRUP
+
+To
+
+0x0661279F04a70Fd278D560fb12b\*\*\*\*\*\*\*\*\*\*\*\*
+
+https://preview.redd.it/ti6x1kbxme1e1.png?width=2900&format=png&auto=webp&s=578013bdb0f1d488848f7c0c4c51ad59a1fcb7ee
+
+"
+Arbitrum (ARB) Price Prediction 2025 - How High Will It Go?,u_Cheeky_Crypto,1gt4fq3,2024-11-16 22:18:25,1,1.0,0,https://youtu.be/a1cqB-8Islo,Cheeky_Crypto,,
+What do you think about my wallet ?,Bitvavo,1gr3tpv,2024-11-14 07:38:10,3,1.0,11,https://www.reddit.com/r/Bitvavo/comments/1gr3tpv/what_do_you_think_about_my_wallet/,Hil81,,"Hi all, 
+
+I understand I'm not getting financial advice. I just have a short question about my wallet. I have been holding it for a long time, and this are the coints I have. Should I drop (in your opinion, again, no financial advice) one or to, or should I add something asap?  
+If I want to change something, this is the time before it explodes....
+
+Thanks!
+
+My wallet:
+
+Bitcoin - BTC  
+RENDER  
+VeChain - VET  
+VeThor Token - VTHO  
+Alchemy Pay - ACH  
+Reserve Rights - RSR  
+Arbitrum - ARB  
+Shiba Inu - SHIB  
+FLOKI"
+BAT Available on Public 🚀🚀🚀,BATProject,1gqipqm,2024-11-13 12:44:32,33,1.0,1,https://i.redd.it/rfakdlikhp0e1.jpeg,IconicPenguins,,
+"Six additional cryptos are now available on Public:
+
+Arbitrum $ARB 
+Basic Attention Token $BAT 
+Bonk $BONK 
+EOS $EOS 
+Fantom $FTM 
+The Graph $GRT 
+
+Plus 21 more coins including Doge $DOGE, Shiba Inu $SHIB, Solana $SOL, and more.
+
+Learn more: http://Public.com/crypto",PublicApp,1gppmax,2024-11-12 12:06:16,3,1.0,1,https://i.redd.it/j205663r5i0e1.png,Public,,
+📰 AI-curated Daily Crypto Digest - November 12,AIcuratedNewsBrief,1gpgbdk,2024-11-12 03:38:34,1,1.0,0,https://www.reddit.com/r/AIcuratedNewsBrief/comments/1gpgbdk/aicurated_daily_crypto_digest_november_12/,crypto_beholder,,"https://preview.redd.it/z16w95y7nf0e1.jpg?width=1792&format=pjpg&auto=webp&s=71e6568b28c913e90a9b37b59b2ecee872f1f846
+
+📊 **Ethereum ETF Inflows Surge: $500 Million in 4 Days Fuel ETH Price Rally**
+
+As the crypto cash flow continues to favor large-cap altcoin, Ethereum (ETH) has reminded speculative investors why it is the top-traded altcoin. The veteran altcoin, with a market cap of over $401 billion and a daily average trading volume of around $66.9 billion, has surged 41 percent in the last eight days to trade about … [More details](https://coinpedia.org/news/ethereum-etf-inflows-surge-500-million-in-4-days-fuel-eth-price-rally/)
+
+
+
+📰 **Near Protocol Price Prediction 2024 – 2030: NEAR Price To Record 2X Surge?**
+
+Story Highlights The live price of the Near Protocol token is . Near Protocol is predicted to reach a maximum of $7.28 this year. [Read more](https://coinpedia.org/price-prediction/near-protocol-near-price-prediction/)
+
+
+
+🔑 **AI Crypto Rally: Best AI Tokens for November with Massive Upside!**
+
+With the crypto market crossing $3 trillion, the market cap of altcoins has crossed the $42 billion mark. The top AI tokens have registered massive gains as they inch closer to the $50 billion market cap. [Read more](https://coinpedia.org/price-analysis/ai-crypto-rally-best-ai-tokens-for-november-with-massive-upside/)
+
+
+
+📈 **Bitcoin News Today: Will BTC Price Reach $100K or Face a Sharp Correction Soon?**
+
+Lately, the Bitcoin market has shown aggressive growth; in the last 24 hours alone, it has climbed by at least 9.5%. Many expect that the market will cross the $100K mark soon. [More details](https://coinpedia.org/news/bitcoin-news-today-will-btc-price-reach-100k-or-face-a-sharp-correction-soon/)
+
+
+
+📰 **Bitcoin Just Hit $90K – But Andrew Tate Says The Best Is Yet to Come!**
+
+Bitcoin just surged $90,000 reaching a new all-time high, as investors get excited about a crypto-friendly approach from President-elect Donald Trump. However, Andrew Tate, the former kickboxer and controversial figure, believes this is just the start. [Learn more](https://coinpedia.org/news/bitcoin-just-hit-90k-but-andrew-tate-says-the-best-is-yet-to-come/)
+
+
+
+📈 **Bitcoin ATH Run Spurs Bernstein’s Call To “Buy Everything” In Trump-Fueled Rally**
+
+Bitcoin (BTC) has been on an all-time-high (ATH) run following the election victory of the Republican US presidential candidate Donald Trump. Add Crypto Exposure At The Earliest, Bernstein Tells Clients Despite Bitcoin’s strong gains after the election, analysts at trading firm Bernstein remain confident that the broader crypto market still has substantial room for growth. [Learn more](https://bitcoinist.com/bitcoin-ath-run-spurs-bernsteins-call-to-buy-everything-in-trump-fueled-rally/)
+
+
+
+💸 **DeltaPrime Hack Shakes DeFi Industry: $4.8 Million Lost to Exploit**
+
+In a recent attack, a lending DeFi protocol, DeltaPrime has lost over $4.8 million through an exploit covering Arbitrum (ARB) and Avalanche (AVAX). This attack is the second major hack on DeltaPrime within the last two months and underlines the continuous security issues within the protocol and the DeFi industry in general. [Read the full article](https://coinpedia.org/news/deltaprime-hack-shakes-defi-industry-4-8-million-lost-to-exploit/)
+
+  
+Telegram: [https://lnkd.in/dm584XSv](https://lnkd.in/dm584XSv)  
+Source: [https://lnkd.in/dqbiuDrW](https://lnkd.in/dqbiuDrW)"
+Arcana’s Chain Abstraction Protocol on Arbitrum: A Game Changer for Web3 Users,CryptoMars,1gou451,2024-11-11 09:59:22,2,1.0,2,https://www.reddit.com/r/CryptoMars/comments/1gou451/arcanas_chain_abstraction_protocol_on_arbitrum_a/,maricrisD,DISCUSSION,"Arcana’s Chain Abstraction Protocol, now live on Arbitrum, is set to revolutionize the blockchain experience by addressing key issues like gas fees, cross-chain interactions, and fragmented balances. This breakthrough offers unprecedented simplicity and flexibility, unlocking blockchain for mainstream adoption. Let’s explore the features that make this integration a real game changer.
+
+Unified Balances Across Chains: Simplifying the Blockchain Experience
+
+Blockchain fragmentation has long been a headache for users. Managing funds across different chains requires multiple wallets and manual transfers, which can be a hassle. Arcana solves this with its Chain Abstraction Protocol, unifying users’ balances across various blockchains into one easy-to-use wallet. Now, users can make transactions seamlessly without worrying about which wallet or token they need to use. This streamlined process is a huge win, especially for newcomers who might feel overwhelmed by the technical complexities of traditional blockchain systems.
+
+Gas Fees Made Easy: Pay with USDC/USDT
+
+One of the most daunting aspects of blockchain is dealing with gas fees, especially when you need specific native tokens like ETH or ARB for each network. Arcana’s innovation allows users to pay these fees using stablecoins like USDC and USDT, eliminating the need to constantly manage native tokens. This not only makes transactions simpler but also removes a significant barrier to entry, making blockchain feel more like traditional apps that use familiar, stable currencies.
+
+Solvers: Effortless Cross-Chain Fund Transfers
+
+Arcana’s Chain Abstraction Protocol introduces a network of solvers that automate the process of collecting and transferring funds across chains. Gone are the days of manually moving assets between wallets—Arcana’s solvers handle the entire process in the background. This makes cross-chain transactions feel like a single-click experience, greatly reducing the technical complexity of interacting with multiple blockchains.
+
+Empowering Developers: Arcana’s SDK for Easy Integration
+
+To further simplify blockchain interactions, Arcana is providing an SDK for Arbitrum developers. This tool allows them to integrate Chain Abstraction directly into their decentralized apps (dApps), enabling seamless cross-chain functionality and stablecoin-based gas fees. By empowering developers with the resources to build user-friendly apps, Arcana is helping to drive the next wave of innovation in Web3, from DeFi to NFTs and beyond.
+
+The Future of Web3: Simplified, Scalable, and Accessible
+
+Arcana’s Chain Abstraction Protocol is laying the foundation for a more accessible Web3 ecosystem. By solving major issues like gas fees, cross-chain complexity, and fragmented balances, Arcana is making blockchain easier to use for everyone. As developers adopt this protocol, blockchain adoption will likely accelerate, making Arcana a key player in the push for mainstream blockchain adoption.
+
+Conclusion
+
+Arcana’s Chain Abstraction Protocol on Arbitrum is a major leap forward in simplifying the blockchain experience. By unifying balances, enabling stablecoin gas payments, and automating cross-chain transfers, Arcana is helping to make blockchain more accessible than ever before. With this innovation, the future of Web3 is looking brighter and more user-friendly than ever.
+
+#chainabstraction #ArcanaNetwork #Web3 $XAR"
+Diving into the Donut Pool: Week 26,ethtrader,1goqbrv,2024-11-11 06:44:42,11,0.86,73,https://www.reddit.com/r/ethtrader/comments/1goqbrv/diving_into_the_donut_pool_week_26/,DBRiMatt,Meta & Donut,"Here are two other sources I find helpful for those wanting to understand a bit more on how and why liquidity positions change.
+
+[Impermanent loss, text explanation](https://www.reddit.com/r/CryptoCurrency/comments/12dducc/impermanent_loss_simple_explanation_liquidity) | [Binance Academy, video explanation](https://academy.binance.com/en/articles/impermanent-loss-explained)
+
+**Current state of the pool & the last week of trading**
+
+Total Value locked in [Sushi.com](https://sushi.com/) is $ 50.83k 
+
+* **4.19201** ETH
+* **7353630** DONUT
+* Trading Volume in last 24 hours = **$** **338.39**
+* Trading Volume in last 7 days = **$ 3.07k**
+* In the last 7 days ETH is has moved **+29.9 %**
+* In the last 7 days DONUT has moved **+34.2 %\***
+* Last week 1 ETH = **578.3k DONUT**
+* Today 1 ETH = **628.63k DONUT\***
+
+\*The discrepancy between the DONUT/ETH ratio is due to the fact there have been some larger buys on Uniswap / Mainnet, while Arbitrum trades at a lower price. 
+
+So, some users have continued to sell their recent distributions, but users who have bought, have done so on Mainnet.  
+Currently the DONUT pool is only incentivised by DONUT; ARB and SUSHI emissions have expired.
+
+* **4753.6** **DONUT** per day distributed amongst all in range positions.  
+
+
+The good news with the change in market sentiment and prices is that SUSHI and ARB also benefit, so those who provided liquidity in recent months will see gained value - helping most positions remain slightly more profitable than the Impermanent Loss sustained.   
+
+
+Let's see if \~630k DONUT-ETH is the bottom!
+
+&#x200B;"
+new to crypto market,CryptoMarkets,1goo7ex,2024-11-11 04:14:35,1,1.0,0,https://www.reddit.com/r/CryptoMarkets/comments/1goo7ex/new_to_crypto_market/,Far_Journalist6795,,"""Hello everyone,
+
+I'm new to the world of cryptocurrency and recently started investing  with a long-term approach. After researching various coins, I believe there could be some promising opportunities over the coming year. I'd love to hear your thoughts, and I'd be grateful for any advice you might have.
+
+The coins are:
+
+* DOT (Polkadot)
+* APT (Aptos)
+* ATOM (Cosmos)
+* NEAR (NEAR Protocol)
+* ARB (Arbitrum)
+* FIL (Filecoin)
+* ALGO (Algorand)
+* SAND (The Sandbox)"
+**Arcana’s Chain Abstraction Protocol on Arbitrum: Simplifying Cross-Chain User Experience,BlockchainChat,1gogq0j,2024-11-10 20:35:25,6,0.88,7,https://www.reddit.com/r/BlockchainChat/comments/1gogq0j/arcanas_chain_abstraction_protocol_on_arbitrum/,Marjrie,,"
+
+
+In a major breakthrough for blockchain usability, Arcana has introduced its innovative Chain Abstraction Protocol on the Arbitrum network. This protocol addresses one of Web3’s biggest pain points: the complexity of managing multiple chains and native tokens. With Arcana’s Chain Abstraction, Arbitrum users now experience an unprecedented level of ease and flexibility in cross-chain interactions, paving the way for blockchain’s mass adoption. Here’s a deep dive into what makes this integration so impactful.
+
+### 1. Unified Balances Across Chains
+
+Arcana’s Chain Abstraction Protocol tackles the problem of chain fragmentation, which has long been a challenge for crypto users. With this protocol, users can seamlessly interact with multiple blockchain networks while maintaining a unified balance across chains. No longer do users need to transfer funds manually between networks or hold native tokens just to pay for transactions. Instead, Arcana unifies the user’s balances, allowing instant spending across chains, with the protocol ensuring the correct funds are utilized from the right network.
+
+This capability simplifies the entire user experience, allowing for smoother transactions that feel intuitive and familiar, even for users new to Web3.
+
+### 2. Convenient Gas Fee Payments in USDC/USDT
+
+A standout feature of Arcana’s Chain Abstraction Protocol is the ability to pay gas fees in stablecoins such as USDC and USDT. Traditionally, users need to hold native tokens (e.g., ETH for Ethereum, ARB for Arbitrum) to cover gas fees. This requirement adds an extra layer of complexity, especially for new users who may not understand or even possess these native tokens.
+
+With Arcana, users no longer need to worry about constantly acquiring and managing native tokens for gas. Instead, they can complete transactions using stablecoins, enhancing convenience and removing a key barrier to entry. This stablecoin-based approach to gas fees helps make the Web3 experience much closer to a traditional app experience, which is critical for bringing blockchain to mainstream audiences.
+
+### 3. The Role of Solvers: Efficient Cross-Chain Fund Collection
+
+Another layer of sophistication within Arcana’s Chain Abstraction Protocol is its network of solvers. These solvers dynamically gather the necessary funds from the chains where a user has balances and transfer the required funds directly onto Arbitrum. This means users don’t need to worry about managing multiple wallet addresses or manually transferring funds across chains. The solver network handles these complexities behind the scenes, ensuring a seamless transaction experience.
+
+By reducing the technical complexity associated with cross-chain interactions, Arcana’s Chain Abstraction brings Web3 transactions closer to a single-click experience, which is precisely what blockchain needs for broader adoption.
+
+### 4. Empowering Developers with Arcana’s SDK
+
+As part of this launch, Arcana is also releasing a dedicated SDK, which will enable Arbitrum developers to natively integrate Chain Abstraction within their own applications. This integration will allow developers to bring seamless cross-chain interactions, stablecoin-based gas fees, and unified balances directly into their dApps, delivering a superior user experience.
+
+The availability of Arcana’s SDK empowers developers to build applications that are significantly more user-friendly, paving the way for new innovations in DeFi, NFTs, and beyond. By allowing developers to access Arcana’s cutting-edge protocol features, Arbitrum’s dApp ecosystem will likely see a surge in adoption and engagement.
+
+### 5. The Path Forward: Simplifying Web3 for Mainstream Adoption
+
+Arcana’s Chain Abstraction Protocol represents a new approach to blockchain usability, addressing several of the biggest obstacles standing in the way of mainstream adoption. By simplifying gas payments, unifying balances across chains, and enabling smooth cross-chain transfers, Arcana is creating a pathway for users to engage with blockchain networks without needing extensive technical knowledge.
+
+For the blockchain industry, this is a crucial evolution. Simplifying the experience and removing barriers to entry is what will ultimately drive more people to Web3 and DeFi applications. With Arcana leading the way, the future of blockchain looks increasingly accessible and scalable.
+
+### Conclusion
+
+The integration of Arcana’s Chain Abstraction Protocol with Arbitrum is a monumental step forward for cross-chain technology and user experience in the blockchain space. By enabling users to interact seamlessly across chains, pay gas fees in stablecoins, and unify balances, Arcana is setting a new standard for simplicity and convenience in Web3.
+
+As the Chain Abstraction Protocol rolls out and Arbitrum developers begin to integrate these tools, we’re likely to witness an acceleration in blockchain adoption as more users and developers experience the benefits of a simplified, cross-chain Web3 ecosystem. This protocol isn’t just about making blockchain easier; it’s about making it accessible to everyone. With Arcana’s Chain Abstraction on Arbitrum, the journey to mass adoption feels closer than ever."
+"Monthly LCX Roundup – New Tokens, Events, and Big Wins! 🚀",lcx,1gmkhen,2024-11-08 09:59:56,11,0.92,0,https://www.reddit.com/r/lcx/comments/1gmkhen/monthly_lcx_roundup_new_tokens_events_and_big_wins/,adamsjmorgan,Newsletter,"https://preview.redd.it/ea0o80tfzozd1.jpg?width=1600&format=pjpg&auto=webp&s=545f2b196f843a86ad952623e1cda5290d2f07d8
+
+Monthly LCX Roundup – New Tokens, Events, and Big Wins! 🚀
+
+**Hi LCX Fam,**
+
+It’s been an incredible month at LCX, filled with exciting listings, milestone events, and fresh opportunities. Here’s everything you need to know about what’s new on LCX!  
+  
+**Cardano Native Token (CNT) Listing Week: A New Milestone at LCX**
+
+We recently introduced [**Cardano Native Token Listing Week**](https://wmwzgz.clicks.mlsend.com/td/c/eyJ2Ijoie1wiYVwiOjEwNzU4MTAsXCJsXCI6MTM3MjYzMTE1ODg1NjEwNDMxLFwiclwiOjEzNzI2MzEyODIyNDIwNDcxOX0iLCJzIjoiZTJmM2ZkNzBlOTU4ZDEzZSJ9) — a monumental event where we added a range of Cardano-based tokens to our platform. Now, you can explore and trade these newly listed tokens:  
+
+
+* **$SNEK, $MIN, $IAG, $NVL, $WMTX, $NIKEPIG:** A diverse range of tokens, each with unique applications in DeFi, gaming, and NFTs. 
+
+
+
+More exciting tokens listed on LCX in October:  
+
+
+* **$ZRO:** Enhance your portfolio with a versatile, community-driven token.
+* **$ARB:** Dive into Arbitrum’s scaling solutions for Ethereum.
+* **$QAI:** Discover QuantixAI’s approach to AI-powered finance.
+* **$RENDR, $LDO, $W:** Power up with tokens supporting decentralized infrastructure, governance, and beyond.
+* **$NEIRO, $PENDLE, $SKY:** Join projects dedicated to yield optimization and cross-chain finance.
+* **$TURBO, $EIGEN:** Explore tokens with a focus on scalability and innovation within DeFi.
+
+||
+||
+|[**TRADE NOW**](https://wmwzgz.clicks.mlsend.com/td/c/eyJ2Ijoie1wiYVwiOjEwNzU4MTAsXCJsXCI6MTM3MjYzMTE1ODkyOTUwNDg0LFwiclwiOjEzNzI2MzEyODIyNDIwNDcxOX0iLCJzIjoiMzdlYTk4YTUzOTAxNDFjZCJ9)|
+
+  
+[**Halloween Community Voting**](https://wmwzgz.clicks.mlsend.com/td/c/eyJ2Ijoie1wiYVwiOjEwNzU4MTAsXCJsXCI6MTM3MjYzMTE1ODk4MTkzMzc4LFwiclwiOjEzNzI2MzEyODIyNDIwNDcxOX0iLCJzIjoiYjBjMWQxZmExNDFlYWEzZSJ9) – Our community chose the next big listing on LCX!
+
+[**LCX at Cardano Summit 2024**](https://wmwzgz.clicks.mlsend.com/td/c/eyJ2Ijoie1wiYVwiOjEwNzU4MTAsXCJsXCI6MTM3MjYzMTE1OTAzNDM2MjcxLFwiclwiOjEzNzI2MzEyODIyNDIwNDcxOX0iLCJzIjoiNTIxNmI3NDgxMTE5NDZiMiJ9) – We connected with industry leaders to strengthen blockchain tech.
+
+[**Community Voice**](https://wmwzgz.clicks.mlsend.com/td/c/eyJ2Ijoie1wiYVwiOjEwNzU4MTAsXCJsXCI6MTM3MjYzMTE1OTA3NjMwNTg1LFwiclwiOjEzNzI2MzEyODIyNDIwNDcxOX0iLCJzIjoiM2IzN2QwMjZiODI4NGNmMSJ9) – Our users voted for the next Cardano Native Token listing on LCX!
+
+[**$SNEK Trading Battle** ](https://wmwzgz.clicks.mlsend.com/td/c/eyJ2Ijoie1wiYVwiOjEwNzU4MTAsXCJsXCI6MTM3MjYzMTE1OTEzOTIyMDU2LFwiclwiOjEzNzI2MzEyODIyNDIwNDcxOX0iLCJzIjoiYWQzMjJlNzI4N2FjYmUwMSJ9)– Traders competed for a $100K prize pool, showcasing their strategies.
+
+[**$9M Worth of SNEK**](https://wmwzgz.clicks.mlsend.com/td/c/eyJ2Ijoie1wiYVwiOjEwNzU4MTAsXCJsXCI6MTM3MjYzMTE1OTE5MTY0OTQ4LFwiclwiOjEzNzI2MzEyODIyNDIwNDcxOX0iLCJzIjoiOTgwMWM0Mzk0OGQzOGVmNyJ9) – Users earned SNEK tokens by signing up and completing KYC on LCX.
+
+[**New Languages Added**](https://wmwzgz.clicks.mlsend.com/td/c/eyJ2Ijoie1wiYVwiOjEwNzU4MTAsXCJsXCI6MTM3MjYzMTE1OTIzMzU5MjYyLFwiclwiOjEzNzI2MzEyODIyNDIwNDcxOX0iLCJzIjoiZWY0MzNkNzZmMTFkMDY1ZiJ9) – LCX Exchange now supports 6 multiple languages for a better experience.
+
+[**CCA Token Summit 2024** ](https://wmwzgz.clicks.mlsend.com/td/c/eyJ2Ijoie1wiYVwiOjEwNzU4MTAsXCJsXCI6MTM3MjYzMTE1OTI4NjAyMTYxLFwiclwiOjEzNzI2MzEyODIyNDIwNDcxOX0iLCJzIjoiZmFjMGVjNTA3Mjk4ZTcyYSJ9)– LCX attended and gained insights on digital asset advancements.
+
+||
+||
+|**🚀 BTC Reaches All-Time High!** With Bitcoin hitting its **all-time high**, the crypto market is buzzing. This surge highlights the growing adoption of digital assets, and LCX is here to support you as you navigate this historic moment in crypto.  |
+
+||
+||
+|**Stay connected** for more updates, new listings, and exciting opportunities at LCX!    |
+
+||
+||
+| Warm regards, Team LCX|
+
+  
+"
+"Bug in MM 12.6.0 preventing to send tokens on Arbitrum One and Optimism network (Insufficient funds for gas)
+",Metamask,1gm3bjs,2024-11-07 17:39:48,1,0.67,14,https://www.reddit.com/r/Metamask/comments/1gm3bjs/bug_in_mm_1260_preventing_to_send_tokens_on/,loupiote2,,"There is a bug in MM 12.6.0 that prevents sending certain tokens on the Arbitrum One and Optimism chain, even though there are more than enough ETH funds (on the account on the network being used, Arb or Op) to pay the fees.
+
+For example, if I have 1 ETH and 100 USDC, both on the same Arbitrum account, I am unable to send the USDC.
+
+There is a red error message under the USDC amount box in the sending dialog that says ""Balance:100. Insufficient funds for gas"". Since gas fees on Arbitrum One is paid in ETH and there is enough ETH on the Arbitrum One account, this message makes no sense. And it makes it impossible to send the USDC with MM (I found no way to sign the Tx, it always gives me an error). Note that sending ETH on Arbitrum One is possible with MM, but not sending any other token on the Arbitrum One account, even if you have the ETH on the Arb account to pay the gas.
+
+A similar bug exists on Optimism.
+
+Also note that Rabby does not have those issues and can send the tokens, so it is clearly a bug in MM, and not anything to do with the account balances.
+
+Tested with MM 12.6.0 (latest version), on Chrome 130.0.6723.117 (latest), on an up to date Windows 11 system. The accounts used are secured by a ledger, connected to MetaMask.
+
+Can anyone confirm this bug?"
+"AI Meme Coin KiboShib $KIBSHI - First-Ever Meme Coin Generated by AI (December 8, 2022)",shitcoinmoonshots,1gl6gat,2024-11-06 14:14:18,3,1.0,0,https://www.reddit.com/r/shitcoinmoonshots/comments/1gl6gat/ai_meme_coin_kiboshib_kibshi_firstever_meme_coin/,KiboShib,ERC-20 Token,"**Description**  
+KiboShib stands out as the world’s first meme coin fully generated by AI. Every detail—from its name and logo to its narrative and concept—was generated by ChatGPT, one of the earliest advanced public AI models. Released on December 8, 2022, KiboShib is a pioneering creation in the realm of AI-driven crypto projects.
+
+**Fair Launch**  
+Following a fair distribution model inspired by SHIB, KiboShib’s tokenomics are built on transparency:
+
+* **50% of tokens** were allocated to Vitalik’s wallet (sold in mid-2023, with buyers quickly absorbing the dip).
+* **50% of tokens** were locked in a Uniswap liquidity pool.
+
+**Key Info**
+
+* **Total Supply**: 1,000,000,000,000 KIBSHI tokens
+* **Organic Growth**: No insiders or influencer at launch, KiboShib is a true organic project supported by a passionate, engaged community.
+* **Timeless Narrative**: Leading the trend in AI and meme coins, with almost two years in the space.
+
+With AI memes thriving and more users looking for Ai-related projects, KiboShib’s status as the first AI-generated meme coin makes it a prime choice for those seeking the next big thing.
+
+**Don't trust - Verify!**  
+Curious about KiboShib’s history? Just search ""first AI meme coin"" or ask AI platforms like GrokAI, ChatGPT, Bing Search AI, Llama, or Perplexity AI, ""DO a research and tell me what is the first AI meme coin?""
+
+**Investment Thesis**  
+The AI era is here, and meme coins are here to stay. As the original AI-generated meme coin, KiboShib is both a historic and collectible asset. It also boasts an AI-designed logo, first in the space.
+
+**Official Contract Addresses**
+
+* **Ethereum (ETH)**: 0x02e7F808990638E9e67E1f00313037EDe2362361 (Uniswap)
+* **Solana (SOL)**: BxBkTCHsrcYChcwB459CAGPX9x4fWSVnmzqh5efgUN1R (Raydium)
+* **Arbitrum (ARB)**: 0xf525E73bdeB4ac1b0e741aF3Ed8a8CBB43ab0756 (Uniswap)
+* **Base (BASE)**: 0xC7DcCA0a3e69bD762C8DB257f868f76Be36c8514 (Uniswap)
+
+**AI Memes Are Unstoppable**  
+KiboShib continues to grow, fueled by an enthusiastic community and a narrative that combines the power of AI with the appeal of meme culture."
+Unlocking DeFi Yield Opportunities,Crypto_General,1gko8cv,2024-11-05 21:33:56,22,0.97,17,https://www.reddit.com/r/Crypto_General/comments/1gko8cv/unlocking_defi_yield_opportunities/,tsurutatdk,Pump It,"Alright, so I stumbled on Yelay recently, and this Yield Layer concept sounds like it might actually change the DeFi game a bit. Basically, Yelay’s trying to yield something businesses can plug into seamlessly—like, we’re talking rewards programs, gift cards, loyalty points, etc., but powered by DeFi yields. No need for them to build their own yield infrastructure; they just use Yelay, which handles optimizing returns across multiple DeFi platforms automatically.
+
+And the Ylay token seems to be more than just another utility token. Looks like it could give holders some serious perks within their ecosystem (better yield rates, early access features?). Also, the whole thing’s set up to work cross-chain, so we’re not locked into one network here, which is a huge plus IMO.
+
+Not financial advice, but I think there’s potential here—especially for anyone bullish on DeFi becoming more mainstream. Feels like YLAY might be worth keeping an eye on if they can deliver on these promises.
+
+Anyway, I look forward to seeing more chains so users have more options aside from Arbitrum and Ethereum for DeFi activities. Plus, I'm not sleeping on other coins either. Besides YLAY tokens, I'm also holding major coins like SUI, ETH, ARB, VET, and RNDR, among others.
+
+Which one are you keeping an eye on: DeFi projects or other coins in different narratives?"

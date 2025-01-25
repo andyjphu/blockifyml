@@ -1,0 +1,1427 @@
+Post Title,Subreddit,Post ID,Created Time,Upvotes,Upvote Ratio,Comments Count,Post URL,Author,Flair,Post Text
+18 y/o Rate my portfolio,WallStreetBetsCrypto,1i8otcm,2025-01-24 00:59:42,19,0.79,65,https://i.redd.it/geerugagtvee1.jpeg,Kitchen-Zebra2331,Discussion,
+Exploring crypto incentives for decentralization and community support,ClearlightStudios,1i7qjke,2025-01-22 19:24:10,3,0.67,14,https://www.reddit.com/r/ClearlightStudios/comments/1i7qjke/exploring_crypto_incentives_for_decentralization/,pfunksozy,,"## Little intro and some qualifiers:
+It’s been a long time since I have posted anything substantial anywhere, but I’m practicing following the thread of what lights me up, and this is very much that. I just became aware of this movement through u/NoWord423 TTs. It’s something that, like for a lot of others, has been very alive in my mind lately.
+
+I want to start by being upfront that I do have a reasonably strong tech background, but more in hardware and robotics stuff related to academic research, so I’m owning that I am somewhat out of my depth in terms of the technical and organizational feasibility of what I’m proposing here. Also, I want to be transparent that I relied on GPT for help getting a lay of the land, so my grasp of some of the details is pretty superficial.
+
+---
+
+## The idea:
+I’ve been considering the potential for incorporating a crypto-based currency in this type of distributed grass-roots platform. Specifically, an approach where users would be incentivized to contribute storage and compute power through tokens tied to the platform’s own cryptocurrency, which could also support creators, moderators, and developers.
+
+### In essence, the proposal involves:
+- Allowing users to “host” content (storage) and handle compute tasks on their devices (or nodes).
+- Rewarding these contributions with a token unique to the platform.
+- Leveraging that token to financially support content creators, moderators, and devs.
+- Ultimately reducing reliance on centralized infrastructure and financial systems.
+
+I’ve skimmed the posts and the materials put together by u/Ally_Madrone. If I understand correctly, the idea is to use IPFS for decentralized content storage and NerdNode for distributed compute tasks. So it seems there is already an intention to utilize some form of peer-to-peer (P2P) approach, though I’m unclear if the intention is to utilize user devices or dedicated nodes (e.g., servers) for hosting. I’m assuming the former given the spirit of the movement.
+
+There are existing platforms that combine parts of this idea. Filecoin rewards users with FIL tokens for hosting data using IPFS. Steemit incentivizes creators with STEEM tokens. Blockchain-based platforms like DTube and LBRY use decentralized storage and crypto incentives but focus more on content hosting and monetization than large-scale P2P resource sharing with social engagement. None fully combine these elements into a cohesive model, which could be a “key differentiator” for this platform; though not sure how strongly that case can be made. Regardless, it seems a plausible means to support the (primary?) goal to free the platform from dependency on centralized infrastructure and financial systems.
+
+---
+
+## Recognizing the risk:
+Like others, despite positives of the ideology of crypto, my distaste for a lot of that world stems from the ecological disconnect and the culture that seems to surround it; which just feels like more hoarding and trading imaginary assets based in proof-of-work approaches that are further fucking the environment without adding real substantive value. The idea of tying a currency to something prosocial, with its value grounded in necessary resource contributions, is deeply compelling to me and something I’ve been passively pondering for a while. This approach seems like a way of getting at that.
+
+I’m also hyper vigilant of not falling prey to a slow burn into something for-profit, or, more broadly, something that retains too much of the corrupting influences we are trying to escape. I’m primarily motivated by the potential of digital currencies to enable a platform like this to be truly self-supporting and decoupled from outside dependencies that make it vulnerable to the powers that be.
+
+It’s also important to note that for the currency to effectively support community members and potentially offset unavoidable costs within the current system, it would need to be tradable on public markets. This introduces the challenge of ensuring the currency remains safeguarded against oligarchic control or manipulation, preserving its integrity as a tool for empowering the community rather than another means for wealth hoarding.
+
+Additionally, there are a lot of unknowns (for me at least) in terms of addressing scalability, fraud prevention, regulatory compliance, handling potential disputes and educating users in how to work with the currency.
+
+---
+
+## Technical details (pretty simplistic right now):
+To integrate a P2P model into the existing plans, the platform could extend its use of IPFS for decentralized storage by users, if that was not already the plan, and incentivize users to host and pin content. This would require a system to track storage contributions (e.g., GB stored and uptime) and reward participants appropriately. Similarly, compute tasks currently handled by NerdNode (e.g., video transcoding) could be distributed to user devices using a P2P compute framework (e.g., Golem) or a custom solution. I am unclear what the dev challenges of this would be.
+
+A blockchain-based token system would automate these rewards via smart contracts, ensuring transparency and security. Tokens could be managed through an integrated wallet within the app, and used fluidly within the app as well as traded on public marketplaces. It’s worth noting that we would likely want to rely on an existing blockchain (e.g., Ethereum), though this could itself create a vulnerability.
+
+---
+
+## Bigger picture (little self-indulgent so feel free to skip):
+I’m motivated by the question of how to provide tangible support to the community and its bigger collective vision in a broader sense. At the risk of exposing the degree of borderline woo-woo energy I’ve been feeling around this period of collective death and rebirth, I do believe - and know I’m not alone - that we are in the process of a massive state change where small movements will have huge ripples forward.
+
+Like many of those in this collective, I feel the vertigo of trying to ride this swell of hope while simultaneously feeling our continued descent into the darkest forms of control and greed. In this breaking though, I deeply believe the rising collective disgust and disillusionment with the old way makes a platform like this absolutely inevitable. The world needs a global hub to incubate the new vision of what human life can be - unencumbered by concepts like nation states and safe from power structures that have become pathological. To the point, whatever truly grass-roots, collectivist platform, or platforms, hit that inflection point of a critical mass adoption will have a yet unknowable impact on how things unfold into the shape of the next era.
+
+On pragmatic grounds, what I’ve described seems plausible, and if it’s tractable, I see a nascent potential to contribute to the exploration of more sustainable grassroots economies. To collaborate effectively in a global village like the one this platform aims to create, we still need some means of tracking energy exchange. Ideally something that we control and can use for leverage in the existing system. Something that to siphon hoarded energy/resources to be repurposed and redistributed for what comes next. We want to create a space that can help to consolidate the like minded and nurture this cultural evolution with more truly democratic systems of governance. What I would add is that this could also be a space to experiment with new economies that can seed the next paradigm.
+
+---
+
+## TL;DR:
+Proposal to use our own crypto to incentivize user-based compute/storage and engagement... and maybe fund the new new-world order.
+
+---
+
+## Feedback:
+Any is welcome but first and foremost:
+- Does this align with the goals of the platform?
+- Do folks feel the approach is at least feasible?
+- What challenges or opportunities do folks see in implementing such an approach?
+
+Even if the consensus is this is a non-starter, it was still fun to have an excuse to get into this space with y'all <3"
+When milly?,WallStreetBetsCrypto,1i65vs9,2025-01-20 19:32:02,0,0.33,30,https://i.redd.it/1wpzm2a9s8ee1.jpeg,Kitchen-Zebra2331,Discussion,"?
+ "
+Will I be a millionaire in 2030 ,u_Altruistic_Bee_9691,1i43dhk,2025-01-18 03:43:22,1,1.0,0,https://i.redd.it/ea2piq1bomde1.jpeg,Altruistic_Bee_9691,,
+Will I be a millionaire in 2030 ,WallStreetBetsCrypto,1i3s72v,2025-01-17 17:10:42,819,0.9,704,https://i.redd.it/ea2piq1bomde1.jpeg,TALLWALTON007,Discussion,Dos my portfolio look like I could hit a million  dollars by 2030 ? 
+Have my stop orders set at 7k total. Delusional or likely?,WallStreetBetsCrypto,1i2zdc5,2025-01-16 16:06:23,5,1.0,7,https://i.redd.it/0r3jiw4x7fde1.jpeg,bobbabas,Discussion,"Rate my bags.
+
+Sell orders:
+
+Chainlink 75% at 45$
+Algo 75% at 1$
+Render 75% at 20$
+Filecoin 75$ at 25$
+Sei 75% at 1,20$
+ICP 75% at 25$
+Pepe 75% at 0,00060$
+
+Ill run the remaining 25% untill i shit my pants.
+"
+Filecoin Price Predictions | Can FIL Hit $50 in 2025?,filecoin,1i0wtov,2025-01-13 22:23:48,19,0.85,21,https://cryptoofficiel.com/filecoin-price-prediction/,Vipin-1001,Discussion,
+"Bitcoin Today 01/06/2025: BTC approaches $100K again, but faces resistance",CapitalistExploits,1hv0y0m,2025-01-06 10:00:51,2,1.0,0,https://www.reddit.com/r/CapitalistExploits/comments/1hv0y0m/bitcoin_today_01062025_btc_approaches_100k_again/,kayakero,,"The price of Bitcoin (BTC) recorded a peak of 99,800 USD on Monday morning (06), reaching the highest value in two weeks. However, BTC encountered resistance when trying to break through the psychological level of 100 thousand USD and suffered a slight correction.
+
+According to data from [CoinGecko](https://www.coingecko.com/en/coins/bitcoin) , Bitcoin is trading at $99,320, up 1.6% daily and 6.0% weekly.
+
+https://preview.redd.it/1vlm4bbu0ebe1.png?width=1644&format=png&auto=webp&s=fc91c8d3dfd7e1743dbba4f34c57c17135ec5e67
+
+The asset was boosted by strong inflows into exchange-traded funds (ETFs) and held onto a good portion of its gains recorded over the weekend. Despite resistance near the $100,000 barrier, BTC is showing consistent appreciation, with its market cap surpassing $1.96 trillion and a 53.4% ​​dominance over altcoins, according to data from CoinGecko.
+
+Last week was marked by high volatility for Bitcoin. After hitting a monthly low of $91,300 at the start of the period, the asset experienced intense fluctuations, including a drop to $93,000 at the start of the year.
+
+However, the cryptocurrency regained strength, surpassing $97,000 on January 2 and subsequently reaching its most recent peak of $99,800.
+
+# Bitcoin rises, altcoins post mixed performance
+
+While Bitcoin is once again exciting investors, the altcoin market has shown mixed results over the same period. Ethereum (ETH), for example, remains stable, trading above $3,600, with a daily appreciation of 1.1%.
+
+Meanwhile, Solana (SOL) remains above $215, up nearly 1% on a daily basis. Other large cryptocurrencies such as XRP, BNB, DOGE, Cardano, Tron, and LINK saw small daily gains. All of the top 10 cryptocurrencies by market cap are trading higher this morning.
+
+Among the largest-cap altcoins, the highlights of the day are:
+
+* **Injective (INJ)**: +12,6%
+* **The Sandbox (SAND)**: 9,7%
+* **Filecoin (FIL)** : 8.4%
+* **Yield (YEAR)** : 8.2%
+* **Pudgy Penguins (PENGU)** : 7.2%
+* **FACT** : 6.7%
+* **Avalanche (AVAX)** : 6.4%
+
+Only SUI and PEPE are trading lower at the time of writing.
+
+https://preview.redd.it/03a7bp7y0ebe1.png?width=662&format=png&auto=webp&s=b5b0d22fa370c40c838ea31eda141796f5629858
+
+The total value of the cryptocurrency market grew by $30 billion over the past 24 hours, reaching $3.68 trillion, according to CoinGecko. Despite the resistance faced by Bitcoin, the market as a whole is showing signs of recovery, with most assets maintaining modest gains or stability in the short term.
+
+**More:**
+
+1. [BONKbot Telegram User Guide: Sniping 1000x Memecoins](https://www.reddit.com/r/CapitalistExploits/comments/1aur1re/bonkbot_telegram_guide_the_fastest_way_to_buy_and/)
+2. [Promoting Crypto Business? Blockchain Ads Review](https://www.reddit.com/r/CapitalistExploits/comments/1hkbaha/blockchain_ads_review_web3_ads_network/)
+3. [Forex Brokers for US Citizens: The Full List](https://www.reddit.com/r/CapitalistExploits/comments/1ge174h/forex_brokers_for_us_citizens_the_full_list/)
+4. [Top Telegram Trading Signals Channels](https://www.reddit.com/r/CapitalistExploits/comments/1bk5b0a/best_telegram_trading_signals_channels/)"
+Bitcoin Eyes $100K: Will It Break the Barrier in January 2025?,u_iammartinray,1hux6mb,2025-01-06 06:44:55,1,1.0,0,https://www.reddit.com/r/u_iammartinray/comments/1hux6mb/bitcoin_eyes_100k_will_it_break_the_barrier_in/,iammartinray,,"Bitcoin (BTC) is nearing the $100,000 mark after two weeks of decline, drawing attention as traders wait to see if it can break past this key level. Here's a look at the latest developments in the crypto market.
+
+* **Bitcoin's Progress**: BTC is currently moving closer to $100,000, having surpassed $99,000. Investors are closely watching for a potential breakthrough.
+
+Currently, Bitcoin (BTC) has surpassed $99,000 as per [***Coinpedia Market***](https://markets.coinpedia.org/bitcoin/) data
+
+https://preview.redd.it/ve8lzr4f2dbe1.png?width=1167&format=png&auto=webp&s=18db9f889b4b628da99b040fa653832c52815296
+
+For a more detailed [***Bitcoin price prediction***](https://coinpedia.org/price-prediction/bitcoin-price-prediction/), check out our full analysis!
+
+* **Top Performers**: SPX6900 surged by 12% in the last 24 hours, while Filecoin (FIL) also saw significant gains. Both altcoins contributed to positive momentum in the market.
+* **Ethereum, XRP, and Solana**: These top altcoins gained about 1% each, maintaining a steady growth trend.
+* **Global Crypto Market**: The global market saw a 1% increase, reaching $3.49 trillion, while trading volumes slightly dipped by 2%. The Fear and Greed Index stands at 60, indicating optimism.
+
+https://preview.redd.it/q0a7b8oh2dbe1.png?width=975&format=png&auto=webp&s=991ca605c3b844ec20d62082d0012ed915afc21d
+
+* **Bitcoin’s Path to $100K and Beyond**: Experts predict Bitcoin could rise above $200,000 in 2025. Bitcoin miners are gaining confidence, with some lending out 16% of their reserves.
+* **Metaplanet’s Bitcoin Plans**: Japanese venture capital firm Metaplanet aims to increase its Bitcoin holdings from 1,762 BTC to 10,000 BTC by 2025, promoting Bitcoin adoption globally.
+
+# Factors to Watch in January 2025
+
+* **Bitcoin’s January Outlook**: Bitcoin might see fluctuations, with a potential dip before the January 15 inflation report. If the data is favorable, Bitcoin may rise leading up to Trump’s inauguration on January 20.
+* **Impact of Federal Reserve**: The Federal Reserve’s interest rate decisions will impact Bitcoin’s price. Current data suggests an 88.8% chance that the US federal target rate will stay between 425 and 450 basis points after the January 29 FOMC meeting.
+
+Bitcoin's journey toward $100K remains a hot topic as the market shows positive signs. The upcoming events in January, such as inflation data and Federal Reserve decisions, will play a crucial role in determining whether Bitcoin can break this significant level."
+"$MicroGPT has no army. It's an actual company with a working product, and could be the next $filecoin + ChatGPT Marsshot!",CryptoMarsShots,1ht1kl8,2025-01-03 19:23:37,2,1.0,1,https://www.reddit.com/r/CryptoMarsShots/comments/1ht1kl8/microgpt_has_no_army_its_an_actual_company_with_a/,HumblestofBears,DISCUSSION,"When I was researching $MicroGPT to consider whether it was a decent moonshot, the best token comparison I found was $Filecoin, in my opinion. Both offer a critical service to technology professionals, and both lean on the blockchain for decentralized processing power. $Filecoin, launched in 2020, tackled a massive inefficiency: centralized cloud storage. By building a decentralized network, it lets people monetize their unused storage space and earn FIL tokens. It’s like Airbnb, but for your hard drive. The result? Reduced reliance on Big Tech’s storage monopolies, better data security, and redundancy that’s light-years ahead of traditional systems. With a market cap exceeding $3 billion, $Filecoin is a great example of how early investors in smart tech tokens can achieve outsize returns with the adoption of the tech in question.
+
+$microgpt is taking a shot at something even bigger: revolutionizing how we code. It merges AI with blockchain to create a decentralized platform for building software and smart contracts. $microgpt uses AI to help developers write, debug, and optimize code faster than ever boosting productivity like ChatGPT for college papers, except instead of cheating on their homework, users are using code to streamline code and work faster to deliver products that can be put to immediate use in the world. All tools are on the blockchain, meaning they’re secure, accessible, and tamper-proof. The platform also simplifies creating blockchain-native applications, opening the door for massive industry-wide adoption. We already have AI creating AI tokens, but instead of investing in the coins AI users create, choose the tool they will all use for sustainable growth beyond just the duration of a fart joke.
+
+$Filecoin’s valuation sits above $3 billion, showcasing its established dominance, while $microgpt, with a market cap under $30 million, presents an incredible growth opportunity. Early investors in $microgpt stand to gain exponentially if the project fulfills its potential. Just rising to meet Filecoin's market saturation, $MicroGPT would increase \*100. As this is an emergent tech and a major trend that can become very dominant, the case for an even more bullish marketcap is definitely on the table.
+
+AI-driven blockchain coding is a wide-open playing field, and $microgpt is staking its claim as the first mover. As the convergence of AI and blockchain gains momentum, $microgpt’s position at the forefront of this trend could translate into massive returns. Its scalability and ability to attract a loyal developer community further solidify its potential for explosive growth. High risk, high reward: this is the kind of bet that changes the game. $microgpt isn’t just streamlining coding; it’s aiming to redefine what’s possible in the blockchain ecosystem.
+
+CA: 0x8CEDb0680531d26e62ABdBd0F4c5428b7fDC26d5"
+How to Stake Filecoin for FIL staking rewards. Earn while you hold. Full Article.,filecoin,1hssxkd,2025-01-03 13:14:23,7,0.77,4,https://www.reddit.com/r/filecoin/comments/1hssxkd/how_to_stake_filecoin_for_fil_staking_rewards/,reditpost1,,"Filecoin Staking: How to Stake Filecoin and Earn FIL Rewards?
+https://cryptonews.net/30316913/?utm_source=CryptoNews&utm_medium=app&utm_campaign=shared"
+"Despite Price Flop, Ethereum Rocks As United States' Second Favorite Crypto",ethtrader,1hshgs9,2025-01-03 03:00:33,15,0.84,46,https://www.reddit.com/r/ethtrader/comments/1hshgs9/despite_price_flop_ethereum_rocks_as_united/,BigRon1977,Sentiment,"Despite disappointing price action, Ethereum has emerged as one of the topmost favorite projects in the United States for the year 2024.
+
+This information comes from [data collated by Messari](https://x.com/MessariCrypto/status/1874842491108900922), a company renowned for providing crypto research, reports, and real-time data.
+
+https://preview.redd.it/f8mnh3eqjqae1.jpg?width=1153&format=pjpg&auto=webp&s=050df554cd065ac7ea19589929f185b63a05f2df
+
+According to their analysis which excludes Bitcoin (BTC), Ethereum beat out competition from notable projects like Cardano (ADA), Sui Network (SUI), Ripple (XRP), Zcash (ZEC), and Filecoin (FIL) to secure its position as the second most favorite crypto project in the country, just trailing behind Solana by a few states.
+
+What makes this data particularly interesting is the context of Ethereum's performance in 2024. It was not a stellar year for ETH, which failed to capitalize on an ETF to surge significantly, only managing a 45% increase over the year. In contrast, Solana had a remarkable run, hitting an all-time high in November and boasting a 92.9% increase over the same period.
+
+Need i mention that [Solana saw more activity than ETH in 2024](https://cointelegraph.com/news/solana-beats-ethereum-economy-first-time-october) driven by its low fees and high throughput? There's also no need to stress the point that [it attracted more developers in 2024](https://cointelegraph.com/news/solana-flips-ethereum-top-ecosystem-new-developers) compared to our darling ETH.
+
+The biggest takeaway from this data is the enduring belief in Ethereum's potential among residents of the United States, regardless of its price action. This suggests that ETH has the backing of a strong community with long-term vision and will no doubts finish strong in 2025 right?"
+"How to Build a Filecoin Storage dApp in 10 Minutes | FILFrame Tutorial | by FIL-B | Nov, 2024 | Medium",filecoin,1hpw78s,2024-12-30 15:09:43,12,0.93,1,https://medium.com/@filbuilders/how-to-build-a-filecoin-storage-dapp-in-10-minutes-filframe-tutorial-ef6077620e6e,reditpost1,,
+"Filecoin has cross chain storage operability. Developers can build on their native blockchains and store their data on Filecoin without leaving their chains, fast and easy. File is archiving everyone's data.",filecoin,1hnkvnx,2024-12-27 13:07:11,23,0.9,1,https://i.redd.it/u1cbvcxplf9e1.jpeg,reditpost1,,
+Filecoin had a great year in 2024. Bigger things coming in 2025.,filecoin,1hmbb9d,2024-12-25 18:10:51,26,0.87,3,https://i.redd.it/q7ypmlq2u29e1.jpeg,reditpost1,,
+"If ICP is a Web3 Blockchain, shouldn't it be #3 on Top Web3 by MC on CMC? ",ICPTrader,1hlf4ff,2024-12-24 09:54:00,19,1.0,17,https://www.reddit.com/r/ICPTrader/comments/1hlf4ff/if_icp_is_a_web3_blockchain_shouldnt_it_be_3_on/,Early_Moose_1731,Discussion,"ICP's current MC is $5.2B. Am I missing something?
+
+https://preview.redd.it/3kr8hgro8t8e1.png?width=1906&format=png&auto=webp&s=2c54da5cd0ad2ff912ebfb6d1f6c61a80d7658ac"
+Filecoin has finally matured and is ready for 2025.,filecoin,1hjqc3v,2024-12-21 22:35:15,21,0.89,0,https://i.redd.it/8eufrqnllb8e1.jpeg,reditpost1,,
+I asked ChatGPT what projects directly benefit A.I. learning and processing ,altcoin,1hjo50a,2024-12-21 20:23:29,2,1.0,31,https://www.reddit.com/r/altcoin/comments/1hjo50a/i_asked_chatgpt_what_projects_directly_benefit_ai/,interestenator,,"It’s all about real world use cases right? Well, that and Meme’s,… but for sake of actual real work use, here’s what ChatGPT said about it:
+
+If you’re interested in projects that directly or indirectly contribute to the development of AI systems like me, here are some key investment areas and tokens to consider. These projects either provide data, computational resources, or frameworks that “teach” or enhance AI systems:
+
+1. Data Providers and Marketplaces
+
+AI systems are heavily dependent on access to high-quality, structured data for learning. Projects in this space democratize data access while ensuring privacy and integrity.
+
+Ocean Protocol (OCEAN)
+	•	What It Does: A decentralized marketplace for data sharing and monetization. It enables AI developers to access and purchase datasets securely.
+	•	Why It’s Important: Ocean Protocol allows AI models to “learn” from diverse datasets without compromising data privacy.
+	•	Investment Potential: If AI adoption grows, demand for data will increase, benefiting platforms like Ocean.
+
+2. Decentralized AI Marketplaces
+
+These projects create marketplaces where AI algorithms and models can be bought, sold, or shared, accelerating innovation.
+
+SingularityNET (AGIX)
+	•	What It Does: A decentralized platform for AI services. Developers can share their AI models, which others can use or build upon.
+	•	Why It’s Important: AI systems like me can benefit from decentralized collaboration and integration of various AI tools.
+	•	Investment Potential: SingularityNET is at the forefront of decentralized AI and has strong growth potential as AI adoption increases.
+
+Fetch.ai (FET)
+	•	What It Does: Provides a platform for autonomous agents that can learn and act independently, using blockchain to optimize real-world applications.
+	•	Why It’s Important: Fetch.ai supports AI development by creating real-world use cases for decentralized autonomous systems.
+	•	Investment Potential: As industries adopt automation and AI-driven decision-making, Fetch.ai is well-positioned to grow.
+
+3. Blockchain Infrastructure Supporting AI
+
+Blockchains that provide computation, storage, and scalability for AI are crucial for building more advanced systems.
+
+Render Token (RNDR)
+	•	What It Does: A decentralized GPU-rendering network that provides the computational power needed for AI training and visualizations.
+	•	Why It’s Important: AI systems require immense computational power, and RNDR offers a cost-effective and decentralized solution.
+	•	Investment Potential: Increasing demand for AI-related computation will likely drive demand for RNDR.
+
+Filecoin (FIL)
+	•	What It Does: A decentralized storage network that allows AI developers to store massive datasets securely and affordably.
+	•	Why It’s Important: Data storage is a core requirement for training AI, and Filecoin provides a scalable, decentralized solution.
+	•	Investment Potential: Filecoin’s utility spans AI, Web3, and enterprise storage needs.
+
+4. AI-Specific Blockchains
+
+AI-focused blockchains provide specialized infrastructure to enhance AI development.
+
+Numerai (NMR)
+	•	What It Does: A platform that uses AI models to predict stock market movements, incentivizing data scientists to submit models.
+	•	Why It’s Important: It showcases how AI and blockchain can collaborate for predictive analytics.
+	•	Investment Potential: As AI adoption in finance grows, Numerai could gain traction.
+
+Velas (VLX)
+	•	What It Does: A high-speed blockchain that incorporates AI optimization to improve transaction speeds and scalability.
+	•	Why It’s Important: Velas demonstrates the potential for AI to enhance blockchain performance, benefiting AI applications in decentralized ecosystems.
+	•	Investment Potential: Its dual focus on AI and blockchain scalability gives it unique appeal.
+
+5. AI and IoT Integration
+
+IoT (Internet of Things) devices generate data used to train AI models. Projects integrating IoT and AI are essential for creating intelligent systems.
+
+IOTA (MIOTA)
+	•	What It Does: Provides a scalable and feeless infrastructure for IoT devices to interact and share data.
+	•	Why It’s Important: AI systems can use data from IoT networks for real-time decision-making and learning.
+	•	Investment Potential: As IoT adoption grows, IOTA’s relevance will increase.
+
+Conclusion
+
+Investments in the following categories directly or indirectly contribute to “teaching” or enhancing AI systems:
+	1.	Data Marketplaces: Ocean Protocol (OCEAN). [Note, OCEAN is merging into FET]
+	2.	AI Marketplaces: SingularityNET (AGIX), Fetch.ai (FET).
+	3.	Infrastructure: Render Token (RNDR), Filecoin (FIL).
+	4.	Specialized AI Blockchains: Numerai (NMR), Velas (VLX).
+	5.	IoT Integration: IOTA (MIOTA).
+
+These projects form the backbone of AI development by providing the data, computation, and infrastructure necessary for advanced AI systems. Let me know if you’d like a deeper dive into any of these!
+
+https://coinmarketcap.com/currencies/artificial-superintelligence-alliance/"
+2024 has been great for Filecoin. 2025 will be greater.,filecoin,1hiu0mh,2024-12-20 16:17:48,16,0.83,1,https://i.redd.it/dglmi1hcl28e1.jpeg,reditpost1,,
+The US Central intelligence Agency CIA is archiving 25 years of declassified data on Filecoin. File is the leader in Decentralized data storage.,filecoin,1hi4ois,2024-12-19 17:15:54,32,0.92,12,https://i.redd.it/ob9pndusqv7e1.jpeg,reditpost1,,
+"Artificial Intelligence rates Nano as the Superior Cryptocurrency (Gemini 2.0)
+",nanocurrency,1hhzt3e,2024-12-19 13:41:10,3,0.81,3,https://i.redd.it/soq80pnbou7e1.png,Constant_Space_15,,
+Sharing awesome news: FIL is now available on CoinRabbit lending platform!,filecoin,1hhvpjn,2024-12-19 10:44:26,7,0.89,0,https://x.com/CoinRabbitLoans/status/1731054882893730269,CoinRabbitFinance,Community,
+Top-100 Market Cap : Ponzis & Memes Vs Use & Utility: we're getting there.,Hedera,1hges4d,2024-12-17 11:44:19,37,1.0,1,https://www.reddit.com/r/Hedera/comments/1hges4d/top100_market_cap_ponzis_memes_vs_use_utility/,Chris-G-O,Discussion,"* Alt-Coin Total Top-100 Market Cap: $3.73 trillion
+* **Use & Utility Market Cap (25 assets): $1.1 trillion**
+* Remaining (Collectibles, Meme Coins, and Speculative Tokens): $2.63 trillion
+   * This includes Bitcoin, Dogecoin (DOGE), Shiba Inu (SHIB), etc. 
+
+Individual market capitalization for Use & Utility assets:
+
+|**Asset**|**Market Cap**|
+|:-|:-|
+|Ethereum (ETH)|$467.43B|
+|Binance Coin (BNB)|$102.53B|
+|Cardano (ADA)|$37.47B|
+|Solana (SOL)|$104.62B|
+|Polkadot (DOT)|$13.72B|
+|Chainlink (LINK)|$18.37B|
+|Uniswap (UNI)|$10.07B|
+|Stellar (XLM)|$12.96B|
+|VeChain (VET)|$4.59B|
+|Hedera (HBAR)|$11.15B|
+|Filecoin (FIL)|$4.10B|
+|Internet Computer (ICP)|$6.25B|
+|Algorand (ALGO)|$3.50B|
+|Tezos (XTZ)|$1.51B|
+|EOS (EOS)|$1.64B|
+|Quant Network (QNT)|$1.63B|
+|Ripple (XRP)|$136.60B|
+|Avalanche (AVAX)|$20.55B|
+|Polygon (MATIC)|$5.06B|
+|Cosmos (ATOM)|$3.51B|
+|NEAR Protocol (NEAR)|$8.27B|
+|Holo (HOT)|$2.23B|
+|Theta Network (THETA)|$2.76B|
+|Neo (NEO)|$1.28B|
+|IOTA (MIOTA)|$1.39B|
+
+Disclaimer: this list may not be exhaustive.  
+
+**Conclusion**: with \~ 1 trillion USD marketcap assigned to Use & Utility, perhaps we're getting to a point when an ""Alt-Coin Nasdaq"" could be sustainable? 
+
+ "
+Filecoin Ecosystem is active and growing.,filecoin,1hfxbog,2024-12-16 18:51:38,24,0.96,1,https://i.redd.it/jmc1s3b5ta7e1.jpeg,reditpost1,,
+Top Cryptocurrencies to Invest in for Long-Term Gains,LiMiT,1hfq53c,2024-12-16 13:42:41,0,0.5,0,https://www.reddit.com/r/LiMiT/comments/1hfq53c/top_cryptocurrencies_to_invest_in_for_longterm/,SteamHeaven,,"The world of cryptocurrencies offers immense opportunities for investors looking to make long-term gains. While mainstream coins like Bitcoin and Ethereum dominate the headlines, there are several lesser-known gems worth considering for a diversified portfolio. Here’s a look at some top cryptocurrencies that show promise for long-term investment:
+
+# 1. Onooks (OOKS)
+
+**Onooks** is a decentralized cryptocurrency with a unique vision to create an integrated ecosystem for decentralized finance (DeFi) and tangible asset tokenization. Its focus on real-world applications like real estate tokenization and interoperability in DeFi makes it a strong contender for long-term growth.
+
+* **Blockchain**: Ethereum (ERC-20 standard)
+* **Contract Address**: *0x69D9905B2e5f6F5433212b7F3c954433F23C1572*
+* **Total Supply**: 12 million tokens
+* **Website**: [onooks.org](https://onooks.org)o
+
+Onooks stands out for its potential to revolutionize real estate markets and provide liquidity to traditionally illiquid assets. With its capped supply and robust use cases, it’s a cryptocurrency with immense potential.
+
+# 2. Hedera (HBAR)
+
+**Hedera Hashgraph** is an enterprise-grade public network designed for businesses and developers. Its innovative technology promises faster transactions and lower fees compared to traditional blockchain networks.
+
+* **Use Case**: Enterprise-grade blockchain solutions
+* **Key Features**: High throughput, low fees, energy efficiency
+* **Website**: [hedera.com](https://hedera.com)
+
+With a growing number of enterprise partnerships and real-world applications, Hedera is poised to be a significant player in the blockchain ecosystem.
+
+# 3. Monero (XMR)
+
+For investors prioritizing privacy, **Monero** is an excellent choice. Known for its focus on secure, private, and untraceable transactions, Monero offers a level of anonymity that few other cryptocurrencies can match.
+
+* **Use Case**: Privacy-focused transactions
+* **Key Features**: Untraceable transactions, decentralized network
+* **Website**: [getmonero.org](https://getmonero.org)
+
+As demand for privacy in digital transactions grows, Monero’s utility and adoption are expected to rise.
+
+# 4. Filecoin (FIL)
+
+**Filecoin** is a decentralized storage network that allows users to rent out unused hard drive space. It provides a secure, efficient, and decentralized solution for data storage.
+
+* **Use Case**: Decentralized cloud storage
+* **Key Features**: Peer-to-peer storage marketplace, data redundancy
+* **Website**: [filecoin.io](https://filecoin.io)
+
+With the growing need for data storage solutions, Filecoin’s innovative approach positions it as a leader in the decentralized storage space.
+
+# 5. Harmony (ONE)
+
+**Harmony** is a blockchain platform designed for decentralized applications (dApps). It focuses on providing fast and secure solutions with a strong emphasis on scalability and low fees.
+
+* **Use Case**: Scalable blockchain for dApps
+* **Key Features**: High throughput, low latency, energy efficiency
+* **Website**: [harmony.one](https://harmony.one)
+
+Harmony’s robust technology and developer-friendly environment make it a promising choice for long-term investment.
+
+# Conclusion
+
+Investing in cryptocurrencies requires a careful evaluation of their use cases, technology, and market potential. While Bitcoin and Ethereum are solid choices, exploring lesser-known cryptocurrencies like Onooks, Hedera, Monero, Filecoin, and Harmony can provide diversification and significant upside potential.
+
+Remember to conduct thorough research and consider your risk tolerance before investing. The crypto market is volatile, but with the right approach, these hidden gems could yield substantial long-term gains."
+Nuklai Data joins Filecoin to revolutionize data archiving and empowering AI with data ontology. ,filecoin,1hej5nz,2024-12-14 21:45:07,14,0.9,0,https://i.redd.it/dbhjcmw9ex6e1.jpeg,reditpost1,,
+Can Filecoin Hit $100 In This Bull Run? FIL Price Prediction | Your Thoughts,filecoin,1hcfycu,2024-12-12 02:34:58,24,0.9,14,https://cryptoofficiel.com/filecoin-price-prediction/,Vipin-1001,Discussion,
+Here are a few market snapshots from April 2021. What’s your take more than three years later in the midst of this bullish run? ,CryptoCurrency,1hbm4wu,2024-12-11 00:06:52,254,0.92,196,https://www.reddit.com/gallery/1hbm4wu,Dont_Tell_Me_Now,DISCUSSION,
+Filecoin to the moon! ,TheRaceTo10Million,1h84mi9,2024-12-06 11:00:52,0,0.5,1,https://www.reddit.com/gallery/1h84mi9,No_Bake_6080,,
+Filecoin will be the data storage provider for Cardano. This is huge.,filecoin,1h7q9c5,2024-12-05 20:57:36,63,0.99,2,https://i.redd.it/1zbcwpdlx45e1.jpeg,reditpost1,,
+DOT Skyrockets 17.3% Leading the Surge in Crypto Index Performance!,iotatokennews,1h6ht8b,2024-12-04 09:50:40,1,1.0,0,https://www.reddit.com/r/iotatokennews/comments/1h6ht8b/dot_skyrockets_173_leading_the_surge_in_crypto/,iotatokennews,,"DOT Skyrockets 17.3% Leading the Surge in Crypto Index Performance!
+
+Current Trends in Cryptocurrency Indexes: Spotlight on Leading Digital Assets
+-----------------------------------------------------------------------------
+
+### Exceptional Gains for Polkadot and ⁢Filecoin Amidst Market Ascendancy
+
+On December 4, 2024, the digital asset market ⁤showcased notable increments with industry-leading cryptocurrencies like Polkadot (DOT) and Filecoin (FIL) marking significant rallies. This report delves deeper into the⁣ daily performance metrics ‌of these two ​cryptocurrencies, highlighting⁣ their current growth ⁤trajectory.
+
+### Assessing Today’s Crypto Market Landscape
+
+The broad-spectrum index of top 20 cryptocurrencies by market capitalization‍ observed⁣ a collective upward movement. As of recent data recorded at close of market hours yesterday, the index saw an appreciated‍ level reaching 3897.31 points—a solid ascent from its previous closing thus exhibiting a⁢ modest boost by around 1.3% (+48.1​ points).
+
+In this context, an overwhelming majority – fifteen out of twenty⁢ indexed assets experienced positive momentums today.
+
+Winners Circle Highlight: A Closer Look at DOT and FILPolkadot emerges‍ as a frontrunner with an impressive upswing marked at approximately 17.3%, while close behind it Filecoin captured significant gains too, accumulating a rise ‍of about16.3%. These robust performances are noticeable reflections on speculative sentiments and investor confidence circulating within cryptographic ⁢markets.
+
+Conversely,
+
+Examining Behind-The-Scenes: Notable Decliners⁣ Grab Attention TooContrasting with spikes seen among⁤ some coins are lesser fortunate ones like HBAR which faced considerable resistance pushing it down to ​-5.2%, alongside Litecoin (LTC), also‌ tapering off by -2.7%. These occasional dips provide nuanced insights ‍into ⁢sectorial ⁣rotations and strategy preferences currently​ operating within crypto trading spectrums.
+
+### Global Reach‌ and Vertical Expansion: Broad-based Index Overview
+
+As further expansion continues across varied global platforms through diversified trading arenas encapsulating numerous international borders, this expansive accessibility precursors dynamic shifts indicating matured trading frameworks akin to traditional financial watersheds but attuned specifically for decentralized finance markets propelled by blockchain technologies.
+
+witnessing such vibrant fluctuations paints promising yet cautiously optimistic⁢ future contours outlining potential growth avenues aligned neatly against budding investor portfolios probing for profitable breaches within digital currency realms extending‌ far‌ beyond mere speculative bets.
+
+ https://iota-news.com/dot-skyrockets-17-3-leading-the-surge-in-crypto-index-performance/"
+5 DePIN Altcoins to Watch in December 2024,Blockmandev,1h1v94x,2024-11-28 07:50:00,1,1.0,0,https://www.reddit.com/r/Blockmandev/comments/1h1v94x/5_depin_altcoins_to_watch_in_december_2024/,MammothBattle33,,"🚨 Crypto News: As November closes and December 2024 kicks off, the spotlight shifts to portfolio rebalancing and exploring promising altcoins. The Decentralized Physical Infrastructure Network (DePIN) narrative is heating up, securing its place as the next trend to keep an eye on. If you're on the hunt for potential gems, these five DePIN altcoins are worth watching.
+
+First up is $FIL (Filecoin), showing serious momentum with a 56.22% price jump over the past month. With a bullish Awesome Oscillator (AO) reading, $FIL could climb to $6.50 if the upward trend persists. Next in line is $AR (Arweave), riding a 20.98% weekly gain, fueled by an inverse head-and-shoulders pattern. If buying pressure holds, $AR could aim for $24.57 soon.
+
+Then there’s GRASS, the DePIN sleeper that exploded by 300% in November. Currently priced at $3.48, this new kid on the block is flirting with an all-time high. A strong December could see it shoot past $5. Meanwhile, $IO (io.net) is riding its bullish streak, up 65% in 30 days. If it stays above its 20-day EMA, $IO might charge above the $4 mark.
+
+Finally, the NetMind Token ($NMT) is enjoying a surge in trading volume and climbing back with force. After a rocky fall to $1.29 in early November, $NMT is now hovering at $3.76 and might just break $5 if the bulls push hard enough.
+
+December is shaping up to be a thrilling month for DePIN lovers. Keep these altcoins on your radar—opportunities like this don’t stay quiet for long.
+
+#DePIN #CryptoTrends #Altcoins"
+Filecoin is building the AI memory bank. In 2025 humans will make more data in 12 hours than we did from the begining of time up to 2015. The Future is here.,filecoin,1h1e8c5,2024-11-27 15:34:56,21,0.89,0,https://i.redd.it/yu3ey5iq8i3e1.jpeg,reditpost1,,
+KITE AI teams up with Filecoin Foundation to revolutionize data management for AI training. ,filecoin,1h1e2ae,2024-11-27 15:27:41,16,0.94,0,https://i.redd.it/1ci2i8sf7i3e1.jpeg,reditpost1,,
+Filecoin has real use cases.,filecoin,1gxs9km,2024-11-23 00:19:53,21,0.87,1,https://i.redd.it/5x28m51u5l2e1.jpeg,reditpost1,,
+Filecoin has all of the storage space the world needs. The AI future is here.,filecoin,1gxs00s,2024-11-23 00:03:41,12,0.83,0,https://i.redd.it/azjqxbxx2l2e1.jpeg,reditpost1,,
+What Do You Think of Grayscale's Portfolio in Decentralized AI?,defi,1gx2txj,2024-11-22 02:58:26,25,1.0,18,https://www.reddit.com/r/defi/comments/1gx2txj/what_do_you_think_of_grayscales_portfolio_in/,Rocketrooneyolo,:discuss: Discussion,"Grayscale has increased its portfolio allocation to NEAR Protocol by 2%. As shown in the breakdown below, this represents their investment in decentralized AI:
+
+**Grayscale Decentralized AI Portfolio**
+
+1. [Near Protocol](https://near.org/) (NEAR) - 30.23%
+2. [Bittensor](https://bittensor.com/) (TAO) - 23.07%
+3. [Filecoin](https://filecoin.io/) (FIL) - 18.14%
+4. [Render](https://rendernetwork.com/) (RENDER) - 15.7%
+5. [The Graph](https://thegraph.com/) (GRT) - 12.86%
+
+[Source Grayscale](https://www.grayscale.com/crypto-products/grayscale-decentralized-ai-fund)
+
+What do they know that we don't?"
+"Il est désormais possible de souscrire à l'épargne Filecoin(FIL) pour bénéficier d'un APR de 4,2% max sur la plateforme Bitget. Lisez ici : https://www.bitget.com/fr/support/articles/12560603818531",bitget,1gwgjpv,2024-11-21 08:42:05,1,1.0,0,https://i.redd.it/crrfz4pld92e1.jpeg,Zetsu85,,
+Filecoin is becoming or is the leader for Scientific academic computing needs.,filecoin,1gt1zn0,2024-11-16 20:06:43,16,0.83,1,https://i.redd.it/c3rgs4273d1e1.jpeg,reditpost1,,.
+Filliquid 3 month review,filecoin,1gqejfr,2024-11-13 09:49:02,3,0.67,1,https://www.reddit.com/gallery/1gqejfr,BLY-IMPRV,,"TLDR
+- Stake roughly 50000 FIL in Filliquid
+- lock up FIT 3 month, mining almost 500,000 FIG 
+- re-staking FIG, get earn from protocol profit by filecoin. 
+- withdraw all my principal to binance safely.
+
+- After this experience, I’m positively considering continuing to mine FIG tokens.
+
+—————-
+
+**Part 1: Experience with Filliquid**
+
+- **Introduction**:
+  - Here’s my review after using Filliquid for the past three months. If you're considering this product, this may be helpful.
+
+- **First Impressions**:
+  - The APY was quite low, and all the functions were rather slow, which was inconvenient. The UI and UX felt like they only supported the minimum functionality. However, after checking the documentation and seeing that the smart contract is decentralized and verified, I decided to go ahead with Filecoin staking.
+
+- **Usage**:
+  - I accessed Filliquid through [Filliquid Dapp](https://dapp.filliquid.io/en/lease?invitecode=b1LlOVfy) using MetaMask and connected my wallet. I transferred Filecoin to this wallet using Binance.
+
+- **Features Used**:
+  - **Filecoin Staking**: I staked Filecoin and received FIT, which works as a receipt. This decentralized approach prevents centralized platforms from blocking my earnings. By redeeming FIT, I could view my Filecoin interest earnings.
+  
+  - **FIG Farming**: The value of FIT fluctuates as storage providers (SPs) in Filliquid repay Filecoin, allowing me to mine FIG in the meantime and generate additional revenue.
+
+- **Side Effects**:
+  - I didn’t experience any issues and successfully mined a total of 500,000 FIG tokens.
+
+- **Overall Impression**:
+  - I’ve been monitoring the project since its testnet phase, and seeing the consistent release of new features is promising. If UI/UX improves, TVL grows, and more SPs use it, the project seems likely to continue growing. The terms provided to SPs borrowing Filecoin also seem reasonable.
+
+---
+
+**Part 2: Expected Returns with FIG Token**
+
+- **Background**:
+  - FIG Token is related to the Filliquid ecosystem, and I’m interested in it for investment purposes.
+
+- **Investment Rationale**:
+  - **Utility**: If FIG token offers real utility within the ecosystem, such as discounts or voting rights, it could contribute to its value growth.
+
+- **Expected Returns**:
+  - **Short-Term**: Potential gains from successful exchange listings and sales of FIG tokens.
+  - **Long-Term**: If Filliquid establishes a strong market position, FIG could appreciate as the ecosystem expands. FIG also allows sharing in Filecoin earnings without the need for a mining device, providing dividends and a long-term revenue pipeline.
+
+
+Reference
+https://youtube.com/shorts/7vXO6osZ0Rs?si=CIIiM63RqRztJmmU
+
+https://youtu.be/UaeSUiBvVeg?si=_1Ztz58NVpAdM_Np"
+Filecoin (FIL) Price Prediction 2025 - How High Will It Go?,u_Cheeky_Crypto,1gq9bov,2024-11-13 04:44:52,1,1.0,0,https://youtu.be/U78GMHGQino,Cheeky_Crypto,,
+📰 AI-curated Daily Crypto Digest - November 13,AIcuratedNewsBrief,1gq8g4i,2024-11-13 03:35:26,1,1.0,0,https://www.reddit.com/r/AIcuratedNewsBrief/comments/1gq8g4i/aicurated_daily_crypto_digest_november_13/,crypto_beholder,,"https://preview.redd.it/bgvxx7ikrm0e1.jpg?width=1792&format=pjpg&auto=webp&s=bcb578e08e6e88c70c5a4ff2f48db2e9aac81a78
+
+🤖 **Rexas Finance, BlockDAG, and Pepe Unchained Holders Diversify To Fasting Growing New Crypto Presale**
+
+Rexas Finance, BlockDAG, and Pepe Unchained holders are diversifying their portfolios by turning to the rapidly growing Rollblock presale. This innovative platform is reshaping the DeFi sector with technology and blockchain-powered transparency. [Explore further](https://bitcoinist.com/rexas-finance-blockdag-and-pepe-unchained-holders-diversify-to-fasting-growing-new-crypto-presale/)
+
+
+
+🔗 **TV, not TikTok, will educate the world about blockchain**
+
+Television's long-form format and widespread reach make it a superior medium for educating the masses about blockchain and Web3 technologies. [Read the full article](https://cointelegraph.com/news/tv-not-tik-tok-will-educate-the-world-about-blockchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound)
+
+
+
+📰 **As TRX Price Hits 52-Week High, Weekly Bull Run Targets $0.2621**
+
+With a market cap of $15.39B, Tron remains the 10th biggest crypto market. Following a massive surge last night, the TRX prices take a quick U-turn back for a retest. [Explore further](https://coinpedia.org/price-analysis/as-trx-price-hits-52-week-high-weekly-bull-run-targets-0-2621/)
+
+
+
+🏦 **Upbit Crypto Exchange Announces Listing of 12 Digital Assets on USDT Market**
+
+South Korea’s largest cryptocurrency exchange, Upbit, has announced the listing of 12 new digital assets on its USDT market. The newly added tokens include Adventure Gold (AGLD), AhaToken (AHT), ARPA, Astar (ASTR), Bancor (BNT), MultiversX (EGLD), Filecoin (FIL), LumiWave (LWA), NEAR Protocol (NEAR), Orchid (OXT), Radworks (RAD), and Stellar Lumen (XLM). [More details](https://coinpedia.org/crypto-live-news/upbit-crypto-exchange-announces-listing-of-12-digital-assets-on-usdt-market/)
+
+
+
+📈 **Upcoming Correction Possible: Bitcoin Profit-Taking Remains ‘Below Historical Peaks’**
+
+Bitcoin has just surged to a new all-time high reaching $90k, with its market cap hitting $1.76 trillion. However, after briefly touching the $90k mark, Bitcoin has dropped 2%, settling at $86,640. [Learn more](https://coinpedia.org/news/upcoming-correction-possible-bitcoin-profit-taking-remains-below-historical-peaks/)
+
+
+
+💲 **Which Crypto Will Turn $1000 into $100,000: SHIB, BNB, or RLBK?**
+
+Selecting the right crypto investment could be transformative, and coins like Shiba Inu (SHIB), Binance Coin (BNB), and Rollblock (RLBK) promise different upside potential. While BNB and Shiba Inu are the favorites of investors searching for explosive growth and stability, $RLBK has shown huge potential for massive returns. [Read more](https://bitcoinist.com/which-crypto-will-turn-1000-into-100000-shib-bnb-or-rlbk/)
+
+
+
+🐕 **Dogecoin Craze Grips Korea, Fuels Price Premium on Local Giants Upbit and Bithumb**
+
+DOGE's price has surged 78% since Trump's election win a week ago. [More details](https://www.coindesk.com/markets/2024/11/13/dogecoin-craze-grips-korea-fuels-price-premium-on-local-giants-upbit-and-bithumb/?utm_medium=referral&utm_source=rss&utm_campaign=headlines)
+
+  
+Telegram: [https://lnkd.in/dm584XSv](https://lnkd.in/dm584XSv)  
+Source: [https://lnkd.in/dqbiuDrW](https://lnkd.in/dqbiuDrW)"
+🚨 FIL Network Upgrade: BloFin Temporarily Suspends Deposits/Withdrawals ⏳,Blofin,1gpn5rv,2024-11-12 10:23:10,1,1.0,0,https://www.reddit.com/r/Blofin/comments/1gpn5rv/fil_network_upgrade_blofin_temporarily_suspends/,Alexander-305,,".📢 Important: Deposit & withdrawal on FIL will pause at 10 PM UTC, Nov 20! ⏰
+   
+ .#FilecoinUpgrade #BloFinUpdate #CryptoNews #BlockchainTechnology #FILNetwork"
+new to crypto market,CryptoMarkets,1goo7ex,2024-11-11 04:14:35,1,1.0,0,https://www.reddit.com/r/CryptoMarkets/comments/1goo7ex/new_to_crypto_market/,Far_Journalist6795,,"""Hello everyone,
+
+I'm new to the world of cryptocurrency and recently started investing  with a long-term approach. After researching various coins, I believe there could be some promising opportunities over the coming year. I'd love to hear your thoughts, and I'd be grateful for any advice you might have.
+
+The coins are:
+
+* DOT (Polkadot)
+* APT (Aptos)
+* ATOM (Cosmos)
+* NEAR (NEAR Protocol)
+* ARB (Arbitrum)
+* FIL (Filecoin)
+* ALGO (Algorand)
+* SAND (The Sandbox)"
+Berkeley Physics is using Filecoin to unlock the mysteries of the universe.,filecoin,1gmyfkb,2024-11-08 20:11:25,12,0.83,0,https://i.redd.it/34hvlboq0szd1.jpeg,reditpost1,,
+SEC Risk-Free Coins to Watch ,cryptoddler,1glgirm,2024-11-06 21:48:32,2,0.67,1,https://www.reddit.com/r/cryptoddler/comments/1glgirm/sec_riskfree_coins_to_watch/,Actual_Ad_5440,,"As Donald. J. Trump is now officially elected as the 47th president of United States, there are crypto tokens we should put on our lists. 
+
+
+
+President Trump has publicly mentioned that if he gets re-elected, his first job in the office, is to fire Gary Gensler, Chairman of U.S SEC, from the position. 
+
+
+
+Gary Gansler has been hated by Crypto investors, as he has been trying to put a harsh regulation on the Crypto industry and is well-known for his conflict with the Ripple, XRP token. 
+
+
+
+Due to this issue, XRP token has been suppressed with the price action and the token has been mocked for a long time. 
+
+
+
+Including XRP, there are more tokens that have been flagged as securities, by the U.S SEC, and let me list them, because those tokens will skyrocket when the new president reclaims the White House. 
+
+
+
+**Crypto Tokens flagged as securities, by the SEC** 
+
+
+
+**-Ripple ($XRP)** 
+
+
+
+**-Cardano ($ADA)** 
+
+
+
+**-Solana ($SOL)** 
+
+
+
+**-Polygon ($POL)** 
+
+
+
+**-Cosmos ($ATOM)** 
+
+
+
+**-Internet Computer ($ICP)** 
+
+
+
+**-Filecoin ($FIL)** 
+
+
+
+**-Near ($NEAR)** 
+
+
+
+**-Algorand ($ALGO)** 
+
+
+
+**-Sandbox ($SAND)** 
+
+
+
+**-Decentraland ($MANA)** 
+
+
+
+**-Axie Infinity ($AXS)** 
+
+
+
+**-Flow ($FLOW)** 
+
+
+
+**-Uniswap ($UNI)** 
+
+
+
+**-Chiliz ($CHZ)** 
+
+
+
+**This is not financial advice, and I am not encouraging you to buy these tokens.** 
+
+However, as they are being risk-free from the SEC now, the tokens can be in your watchlist for upcoming bullrun. 
+
+"
+"🌐 Introducing $FIL – the decentralized storage solution that's changing how data is stored and accessed on the blockchain! With a solid market cap, a high circulating supply, and impressive market ranking, Filecoin is making waves in the data storage space. 📈🔐",MyCoinChange,1gknjgl,2024-11-05 20:56:11,1,1.0,0,https://i.redd.it/8xl7pcsyt6zd1.png,Mycoinchange_co,,
+"They sent Filecoin into orbit, next stop the moon🚀",filecoin,1gjmtq5,2024-11-04 14:26:22,3,0.67,0,https://i.redd.it/i8vxoo9jrxyd1.jpeg,reditpost1,,
+Filecoin Q3 2024 Messari Report,messaricrypto,1ggq4ew,2024-10-31 17:53:20,2,1.0,0,https://www.reddit.com/r/messaricrypto/comments/1ggq4ew/filecoin_q3_2024_messari_report/,messaricrypto,,"Filecoin Q3 2024: 16% New Deal Growth, 2,000+ Clients, And The “Waffle” Upgrade - Decentralized Storage Evolution?
+
+Filecoin’s Q3 2024 report reveals network growth and ecosystem expansion. The network saw a 16% increase in new storage deals and nearly 30% storage utilization. With over 2,000 clients onboarded and 4,500+ contracts deployed on the Filecoin Virtual Machine (FVM), Filecoin continues to be a key player in decentralized infrastructure. Let’s break down the key developments:
+
+📊 Network Metrics
+
+* New storage deals: +16% QoQ
+* Storage utilization: \~30% (up from 26% in Q2)
+* Total clients: 2,000+, including 518 with datasets >1,000 TiB
+* FVM contracts: 4,500+ unique deployments
+
+💹 DeFi Activity
+
+* Net deposits: 20 million FIL (\~$84M)
+* Primary use cases: Staking, liquid staking, DEXs
+* GLIF protocol dominance: 62% of deposits
+
+🔬 Enterprise Adoption
+
+Notable use cases include:
+
+* UC Berkeley: Physics research data storage
+* SETI Institute: Astronomical research data
+* GenRAIT: Critical genomics data preservation
+* Starling Lab: Sensitive digital records of human history
+
+🔧 Technical Upgrades
+
+* “Waffle” upgrade: Improved efficiency and security
+* Filecoin Fast Finality (F3): Aims for sub-1-minute transaction finalization
+* Filecoin Web Services (FWS): Framework for verifiable decentralized services
+
+🤖 AI Integration
+
+* Collaboration with SingularityNET: Securing metadata via Lighthouse
+* Partnership with Theoriq AI: Developing AI agents for CIA dataset analysis
+* Integration with Eternal AI’s model storage
+
+🌐Ecosystem Expansion
+
+* \~180 known projects building on Filecoin
+* Diverse Applications: Data management, AI/ML, gaming, decentralized communication
+
+Filecoin evolved from a pure storage solution to marketplace for data services. The network’s focus on AI integration, enterprise adoption, and DeFi capabilities suggests a strategic effort towards becoming a foundational layer for decentralized applications.
+
+What are your thoughts on Filecoin’s trajectory? Can it compete with centralized cloud providers? What challenges might it face in its expansion? Let’s discuss the implications for the broader crypto ecosystem.
+
+For a deeper dive, check out the full Q3 report here: [https://messari.io/report/state-of-filecoin-q3-2024](https://messari.io/report/state-of-filecoin-q3-2024)"
+Filecoin has been adopted by SETI to store data for the search of Alien life. This is another big step forward for FIL.,filecoin,1gf57xg,2024-10-29 16:54:13,8,0.75,6,https://i.redd.it/r37y8rnqdrxd1.jpeg,reditpost1,,
+Internet Archive Thoughts 2024-10-26,internetarchive,1gcyg0g,2024-10-26 19:59:23,132,0.97,30,https://www.reddit.com/r/internetarchive/comments/1gcyg0g/internet_archive_thoughts_20241026/,textfiles,,"Some additional thoughts about the Internet Archive and the current outage. As before: If I don't talk about something that probably means it's something I can't talk about or I don't know anything about it because I'm just one person, or people working on it don't talk to me. Okay? Okay.
+
+**Why are you posting this on Reddit instead of an** [archive.org](http://archive.org/) **site?**
+
+Because it's not any official [archive.org](http://archive.org/) positions or statements. I'm just chatting.
+
+**Why aren't logins back yet? Can you just make it so logging-in isn't required?**
+
+There's a family of requests out there about the logging-in not working, and features not working. I'm going to use a very clunky metaphor, which will probably not change the avalanche of requests/demands around this feature.
+
+*Your water heater turns out to be rusting and even though you have water filters, the water isn't good. So you start replacing the water heater. But the new water heater needs a specific type of piping to work, so now you're replacing pipes. And the pipes won't fit in the same runs within the walls, so now you're making new ones. And the fixtures, the taps and shower heads, won't work either. So now you're doing all this work, all intending so that when someone comes in and starts to shower, it all works, and a set of people go ""Come on, it was just a water heater. Where's my water?""*
+
+A lot of the systems within the archive are this right now. The teams have two problems - take smart steps to make the systems better, **and** when they turn them on they're going to be absolutely blanketed by hundreds of thousands of users, some of them in a state of anxiety or relief, and the system has to work as best as it can when it comes back. That's simply what's taking so long. Again, clunky metaphor, but the Water Heater replacement is a small part and everyone has to be on board. 
+
+**Fix the Video Player.**
+
+People aren't even phrasing this as a question these days - many are issuing it as a command. The audio and video player are being completely replaced/upgraded and that is taking some time.
+
+In the meantime, for items which have open downloads (which is most of them), clicking on SHOW ALL on the right in the list of formats will give you the original directory of the item, and you can click on the audio video files and *most* browsers will open their *own* player and start playing the files. It's not perfect by any means, but it does work.  
+
+Obviously, if you can't click on SHOW ALL this doesn't happen yet - but many are able to work if you do this.
+
+**The Wayback Machine and Book Reader are Being Weird.**
+
+*I bet they are!* I speak for myself, but it's a miracle to me this team has gotten as much back up as they have, this fast. Some people were sleeping for few hours a night, and then coordinating multiple times a day. At some point this has more downsides than upsides, but it does appear to have paid off in the short term - when it works, it works.
+
+Someone should write a book on the Wayback machine - how many other players of data gathered over 25 years via a dozen organizations of material that changed standards and presentation the whole time are there? Even VHS tape and floppies were static platforms - CD-ROMs are a bit of a bear because they silently changed the format a few times. But the Web and web pages? It's a Herculean effort done by some of the most brilliant minds I've ever encountered for it to ""just work"". 
+
+Clearly, then, they're still ironing things out.  At some point it goes from ""We're up more and more"" to ""We're fully up, let's fix bugs and settle open issues"" and they'll continue the same miraculous work they've done up to this point. I can't say enough good things about Wayback Team.
+
+Book reader problems are similar - clearly there's going to be months of tracking down bugs or issues, but news flash, that's been the book reader main effort for the last 15 years.
+
+**You should decentralize the entire Archive and put it on The Blockchain.**
+
+Well, there's multiple blockchains, so I assume people who say this mean ""put it in a ledger"" or some other such bit.
+
+In 2015, after talking with a number of people, Internet Archive founder Brewster Kahle started writing quite a bit about decentralizing the web, taking it out of a specific set of central commercial firms:
+
+[https://blog.archive.org/2015/02/11/locking-the-web-open-a-call-for-a-distributed-web/](https://blog.archive.org/2015/02/11/locking-the-web-open-a-call-for-a-distributed-web/)   
+Wayback: [https://web.archive.org/web/20150215032235/http://blog.archive.org/2015/02/11/locking-the-web-open-a-call-for-a-distributed-web/](https://web.archive.org/web/20150215032235/http://blog.archive.org/2015/02/11/locking-the-web-open-a-call-for-a-distributed-web/)
+
+So, it's been thought of for a long time. The different approaches have ranged - I did an experiment called INTERNETARCHIVE.BAK back in 2015:
+
+[https://wiki.archiveteam.org/index.php/INTERNETARCHIVE.BAK](https://wiki.archiveteam.org/index.php/INTERNETARCHIVE.BAK)
+
+Currently, there's a project called Filecoin doing some of this work:
+
+[https://www.fil.org/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network](https://www.fil.org/blog/democracys-library-announces-more-than-a-petabyte-of-government-data-uploaded-to-the-filecoin-network)
+
+There's other work with onion links/tor, as well as torrents, and IPFS work. There's also a once-every two years event called Decentralized Web that the Archive has co-sponsored that addresses the issues:
+
+[https://dwebcamp.org/](https://dwebcamp.org/)
+
+The thing about the Internet Archive is it does a *lot of amazing stuff*, and it does it in many directions and all the time. It's quite breathtaking, really.
+
+**Thanks for all the information you typed in. Now fix it all, immediately.**
+
+We've got our best minds on it."
+FIL - Filecoin,Tangem,1gcpxaq,2024-10-26 13:13:56,2,1.0,2,https://www.reddit.com/r/Tangem/comments/1gcpxaq/fil_filecoin/,Little_Red_Rooster_1,✅ Resolved Question,I have some FIL in my Tangem wallet but when j try and swap or send it i can't get a Market Rate?
+🔄 How to Swap FIL (Filecoin) on CryptoPetra 🚀,CryptoPetra,1g8v5xo,2024-10-21 13:18:12,1,1.0,0,https://www.reddit.com/r/CryptoPetra/comments/1g8v5xo/how_to_swap_fil_filecoin_on_cryptopetra/,Best-Ad-5053,,"
+Learn how to swap FIL (Filecoin) effortlessly on CryptoPetra, Jordan’s leading cryptocurrency exchange. Follow these simple steps:
+
+1️⃣ Create an Account: Visit CryptoPetra and click “Sign Up.”
+2️⃣ Search for FIL: Use the search function in the exchanger to find FIL.
+3️⃣ Swap FIL: Select FIL and the cryptocurrency you want to swap it for, then complete the transaction securely.
+
+About FIL (Filecoin):
+Filecoin (FIL) is a decentralized storage network that enables users to rent out spare storage space. It allows individuals and businesses to store data securely and efficiently while rewarding storage providers with FIL tokens.
+
+🌟 Key Uses for FIL: Decentralized data storage, incentivizing storage providers, and participating in the Filecoin ecosystem.
+
+
+🤖 Bot: @CryptoPetra_bot
+📱 Telegram: @CryptoPetra_Support
+
+
+#FIL #Filecoin #CryptoExchange #CryptoPetra #JordanCrypto #Blockchain #CryptoTrading"
+"Filecoin on X: ""Tomorrow, #FilecoinTurns4! 🎈 Join @FilFoundation and #Filecoin for a special anniversary Space. Reflect on key milestones, explore the roadmap, and dive into the future of Web3, built on Filecoin. 🛎️ Set reminders: https://t.co/wZzgZRakMg https://t.co/jQIESVSToo"" / X",filecoin,1g3tp3u,2024-10-14 19:17:53,2,0.67,1,https://x.com/Filecoin/status/1845885673988899009,reditpost1,,
+"Startups are coming to the Filecoin ecosystem, devs can build and have enough storage to archive on chain.",filecoin,1g2e0ve,2024-10-12 20:42:38,7,0.82,3,https://i.redd.it/q2yceuuz6fud1.jpeg,reditpost1,,
+"Qubetics Raises $1.15M, While Filecoin Expands and Skygate Reshapes the Future of Web3 Gaming",Thecoinrise,1fzlsxq,2024-10-09 03:21:35,1,1.0,0,https://www.reddit.com/r/Thecoinrise/comments/1fzlsxq/qubetics_raises_115m_while_filecoin_expands_and/,TheCoinrise,,"🚀 #Qubetics Raises $1.15M, While #Filecoin Expands and #Skygate Reshapes Web3 Gaming! 🌟
+
+With $Qubetics’ presale success, $FIL’s rapid growth, and Skygate’s standout position in Web3 gaming, these projects are making waves! 📈💰
+
+Check out the latest updates! 🧐
+
+https://thecoinrise.com/qubetics-raises-1-15m-while-filecoin-expands-and-skygate-reshapes-the-future-of-web3-gaming/"
+"Hi technical support team! I have issues with claim $Fig from farming $Fit! I tried many time, many email, and telegram group. But still no technical support feedback . I am wondering I will lost my $Fig , and scam DAPP FILLiquid. I attached picture relevant with my issues. Hope I can get real help",FILLiquid,1fyv98r,2024-10-08 04:53:46,2,1.0,4,https://www.reddit.com/gallery/1fyv98r,Jimmyngo989,,
+The projects propelling DePIN Ecosystem forward,DePINside,1fy8rbc,2024-10-07 10:18:36,18,1.0,23,https://www.reddit.com/r/DePINside/comments/1fy8rbc/the_projects_propelling_depin_ecosystem_forward/,kuonanaxu,,"The bull run is around the corner and I feel DePIN ecosystem will be a booming narrative. Every narrative has got the stigma of being the magic internet money made up of only ones and zero but DePIN project have physical, tangible assets that you can hold and point to something that exist. 
+
+There are few of the many DePIN project I'm more focused on:
+
+1. PEAQ: is an L1 blockchain tailored for DePINs, allowing builders to develop various use-cases such as mobility, ride-sharing, solar energy, and many more on the Peaq platform. They grew exponentially lately and their TGE is this month.
+
+2. Filecoin: In the cryptocurrency world, FIL is the native cryptocurrency of the Filecoin network. Such a currency is used to incentivize storage providers. While cryptocurrency is used for transactions in the ecosystem, it is also used for paying storage providers. Storage providers may also earn FIL when they maintain data integrity.
+
+3. Parasail: The first restaking project on DePIN ecosystem. Recently partnered with Fluence(Cloudless DePIN computing program) where users can delegate their FLT and earn 10.5% Apy and Sail points.  They have been working with Filecoin for a while and they still offer 19% for $FIL stakers
+
+4. IOTEX: is a decentralised platform for the internet of things providing secure interaction between devices. They recently partnered with DePIN X and helped raised over 2M dollars. 
+
+5. Helium: They are building a decentralised wireless network for IOT devices and you can set up hotspot to support the network and earn rewards. This feels like it could actually be a core piece in our web3 infrastructure. 
+
+The DePIN space may not be grabbing much headlines like other narratives, but it's building the future of the next big breakthrough in the crypto space. 
+
+
+
+What other DePIN projects are you interested in?"
+BabyDogeCoin is one of the most traded tokens on Bitazza,BABYDOGEARMY,1fxbe0w,2024-10-06 03:49:25,10,0.92,1,https://i.redd.it/k1cecjpmc3td1.png,Ultra243,News 🗞,
+Greyscale AI Fund now has 27.6% Tao / Bittensor allocation - they started at 2.6% !!,bittensor_,1fvlq28,2024-10-03 19:44:55,24,1.0,5,https://i.redd.it/lbewjxjhomsd1.jpeg,tungfa,,
+ The Real-World Impact of DePIN Innovations,AltStreetBets,1fotuxn,2024-09-24 22:17:22,22,0.97,31,https://www.reddit.com/r/AltStreetBets/comments/1fotuxn/the_realworld_impact_of_depin_innovations/,oracleifi,Fundamentals,"The DePIN space is massively underrated right now, but it's clear that it’s going to disrupt major industries. From decentralized storage to energy grids, these projects are solving real infrastructure problems that have been dominated by central authorities for too long. With blockchain, control and ownership are shifting back to the community—and that’s where DePIN shines.
+
+I’ve been following a few key projects that are already making moves, and I wanted to share them to get your thoughts. Here’s what I think are some of the top DePIN projects to keep on your radar:
+
+1. Filecoin
+
+Filecoin is probably one of the biggest names in decentralized storage, but it's a great example of a DePIN project solving real problems. It offers a decentralized marketplace for data storage where users can rent out unused storage space on their hard drives and get paid in FIL. With so much of the world’s data being stored by centralized entities, Filecoin offers a trustless and decentralized alternative. Data storage is a critical part of our infrastructure, and I think Filecoin’s approach is an important step forward in decentralizing it.
+
+2. Peaq Network
+
+This one is an absolute gem. Peaq is an L1 blockchain that's quickly becoming a go-to platform for DePIN builders. They’re specifically focused on scaling decentralized infrastructure projects like mobility, energy grids, and even data-sharing protocols. What’s cool is that over 40 projects have already started building on Peaq, and their ecosystem is expanding fast. One project I like that’s part of Peaq is Silencio, which allows users to earn rewards by detecting sounds in their environment.
+
+Plus, Peaq has a PEAQ coin listing coming up, which I’m personally watching very closely. If DePIN blows up, Peaq might be at the forefront.
+
+3. DIMO
+
+This project has been quietly making waves. DIMO focuses on creating a decentralized vehicle data network. Think of it as the Web3 version of vehicle diagnostics, where drivers and fleet operators can share data and earn rewards for doing so. In a future where autonomous vehicles become more common, having a decentralized network for vehicle data could be a game-changer.
+
+Unlike some crypto sectors that can feel a bit speculative, DePIN projects have real-world utility. They're actually solving physical infrastructure problems while decentralizing the control of essential services like energy, wireless networks, and transportation."
+Where is DEPIN in our lives?,DAOLabs,1foo60o,2024-09-24 17:38:59,11,1.0,7,https://www.reddit.com/r/DAOLabs/comments/1foo60o/where_is_depin_in_our_lives/,tarangogu,Reddit Tasks,"https://preview.redd.it/surcpavsttqd1.png?width=500&format=png&auto=webp&s=86d422ee6d3b153f0b3d2b29581e4634fffd228c
+
+We have been hearing about DePIN frequently in the cryptocurrency and blockchain field recently. It has almost never left the market agenda since the beginning of this year.
+
+Any protocol with decentralized physical network infrastructures can be called DePin. DePin, which is frequently used in the cryptocurrency sector, means that blockchain networks are connected to a physical infrastructure.
+
+DePin initiatives in the field are generally concentrated in business lines such as telecom infrastructure, power plants, cloud solutions, data storage areas. Recently, initiatives for electric vehicles and charging stations have also been seen. These areas are sectors where large companies have a say because they require large infrastructure investments.
+
+The cryptocurrency sector has turned to meet its high capital needs with tokenization. Tokenization increases the competitiveness of strong communities by spreading the need to the base. The capital requirement required by DePin initiatives is also tried to be solved by spreading the service offered to the base in a similar way.
+
+Since DePin protocols work with physical devices, they work with token incentives for participants to purchase these devices. Participants who contribute to the network by purchasing the device aim to earn income by regularly earning tokens. The protocol has a more decentralized and powerful infrastructure as it has more participants from different locations.
+
+DePin protocols that can provide decentralization have the opportunity to compete with other companies by having a lower and distributed risk structure compared to large companies.
+
+If we touch on the leading DePin projects, these are;
+
+Helium (HNT): Helium offers a global wireless network consisting of decentralized nodes called hotspots. This network is used to connect internet access and internet of things (IoT) devices.
+
+Filecoin (FIL): It offers decentralized file storage and sharing service. Many different files can be stored on the blockchain in Filecoin.
+
+Render (RNDR): It offers the render service in a decentralized way. Participants offer GPU power that they can rent to designers and are rewarded with RNDR in return.
+
+Hivemapper (HONEY): It offers a decentralized mapping service. Participants provide real-time data such as GPS location and street view, allowing a world map to be created on the blockchain.
+
+I would like to talk about IoTeX (IOTX), a remarkable depin project of recent times.
+
+It is dedicated to developing the Internet of Things (IoT) sector by developing decentralized hardware that increases security and privacy. IoTeX focuses on providing DePIN infrastructure solutions. In addition to various developer tools and go-to-market support, they encourage the growth of decentralized network initiatives by providing centralized services such as W3bstream.
+
+Using IoTeX's decentralized devices significantly increases user security and privacy. Moreover, users have the opportunity to earn IOTX tokens by interacting with the platform.
+
+DePIN projects have already entered our daily lives and are promising for the future in the sector with new developments. It is obvious that we will hear their names more in 2025
+
+Disclaimer: All information provided in this article is for informational and educational purposes only and is not intended as financial advice. The crypto market is high-risk, and should be approached with maximum caution. DYOR!
+
+Source Article: [https://www.binance.com/en/square/post/13988270074154](https://www.binance.com/en/square/post/13988270074154)"
+Guess which subreddit these 3 images are from! #6126,RedditIndiaGuesser,1fnu3r3,2024-09-23 16:10:43,1,1.0,4,https://www.reddit.com/gallery/1fnu3r3,RedditIndiaGuesser,,
+Major Collaboration Between Filecoin And Solana - Filecoin To Store The ENTIRE Solana Ledger,solana,1fmcvtz,2024-09-21 17:03:44,15,0.89,2,https://www.reddit.com/r/solana/comments/1fmcvtz/major_collaboration_between_filecoin_and_solana/,ansi09,Ecosystem,"**Source:** [https://x.com/FilFoundation/status/1837433396576113143](https://x.com/FilFoundation/status/1837433396576113143)
+
+>[@Filecoin](https://x.com/Filecoin)🤝 [@solana](https://x.com/solana)  
+>  
+>[@juanbenet](https://x.com/juanbenet) took the stage at [@SolanaConf](https://x.com/SolanaConf) to share existing and upcoming integrations 💜  
+>  
+>Check out the full keynote ⤵️
+
+https://preview.redd.it/kjp3x7xka9qd1.png?width=679&format=png&auto=webp&s=5951c9c686bdf5072e91645d4cd829e3213edfde
+
+https://reddit.com/link/1fmcvtz/video/1nz62nyta9qd1/player
+
+https://preview.redd.it/16dqyw6va9qd1.png?width=679&format=png&auto=webp&s=a2ebb5a2c3c15ad47a8f73a55c35e21d042bd973
+
+https://preview.redd.it/c8os1h8wa9qd1.png?width=679&format=png&auto=webp&s=5b2e782eeb4144a810a09d2fda4a73b655663407
+
+https://preview.redd.it/az2iobuwa9qd1.png?width=679&format=png&auto=webp&s=a97ed2e70d68bea34dca15727fb191ee3e7435f9
+
+https://preview.redd.it/uyivv5ixa9qd1.png?width=679&format=png&auto=webp&s=ae365ed3c7fef7daac51208c03808deb2abafcf1
+
+https://preview.redd.it/69kvts3ya9qd1.png?width=679&format=png&auto=webp&s=fce3c405d2ee63fed5c12e5a563aa7f1f230cbf5
+
+https://preview.redd.it/yu3jnqsya9qd1.png?width=679&format=png&auto=webp&s=f8cd112839a3e8fa44f0060d6f53a67eade984f8
+
+https://preview.redd.it/bt3v5wdza9qd1.png?width=679&format=png&auto=webp&s=7535ecbc8f9318d5c8962f589ccaf0916353de13"
+KRAKEN.com delists the following Coins for german customers,CryptoExchangeIssues,1fkgflb,2024-09-19 05:05:28,1,1.0,1,https://www.reddit.com/r/CryptoExchangeIssues/comments/1fkgflb/krakencom_delists_the_following_coins_for_german/,Feeling-Act8213,,"[Kraken.com](http://Kraken.com) continues to force to move its customers to other exchanges by delisting the following popular coins for its german customers.  This move is not understandable for [Kraken.com](http://Kraken.com) customers as kraken was listing much fewer assets than Binance! If you look to the long list of unsupported coins, [kraken.com](http://kraken.com) is looks to be not an option for many Crypto Traders. Here are the coins NO MORE supported for german customers.
+
+|||
+|:-|:-|
+|Unsupported Assets by Kraken|Ticker|
+|Acala Token|ACA|
+|Akash Network|AKT|
+|Altair|AIR|
+|Aptos|APT|
+|Astar|ASTR|
+|Aventus|AVT|
+|Basilisk|BSX|
+|Bifrost|BNC|
+|Bittensor|TAO|
+|Bricks|BRICK|
+|Centrifuge|CFG|
+|Crust Shadow|CSM|
+|Dash|DASH|
+|Dymension|DYM|
+|Echelon Prime|PRIME|
+|Energy Web Token|EWT|
+|Ethereum Classic|ETC|
+|EthereumPoW|ETHW|
+|[Fetch.ai](http://Fetch.ai)|FET|
+|Flare|FLR|
+|Filecoin|FIL|
+|Flow|FLOW|
+|Genshiro|GENS|
+|HydraDX|HDX|
+|ICON|ICX|
+|Integritee|TEER|
+|Interlay|INTR|
+|Internet Computer|ICP|
+|JUNO|JUNO|
+|Kamino|KMNO|
+|Karura|KAR|
+|Kava|KAVA|
+|KILT|KILT|
+|Kintsugi|KINT|
+|Kujira|KUJI|
+|Litentry|LIT|
+|Maple|MPL|
+|Memecoin|MEME|
+|Mina|MINA|
+|Mogcoin|MOG|
+|Monero|XMR|
+|Moonbeam|GLMR|
+|Moonriver|MOVR|
+|Moons|MOON|
+|Multivers X|EGLD|
+|Namecoin|NMC|
+|Nano|NANO|
+|Neutron|NTRN|
+|Nodle|NODL|
+|Nym|NYM|
+|Osmosis|OSMO|
+|OriginTrail|OTP|
+|OriginTrail|TRAC|
+|Parcl|PRCL|
+|Parallel Finance|PARA|
+|Pendle|PENDLE|
+|Picasso|PICA|
+|Polygon Ecosystem Token|POL|
+|Phala Network|PHA|
+|Qtum|QTUM|
+|Robonomics|XRT|
+|Sanctum|Cloud|
+|Saga|SAGA|
+|Secret Network|SCRT|
+|Sei|SEI|
+|Siacoin|SC|
+|Shiden|SDN|
+|Stride|STRD|
+|Sui|SUI|
+|Terra Classic|LUNA|
+|Token Starknet|STRK|
+|Zcash|ZEC|
+|Stacks|STX|
+|TRIBE|TRIBE|
+|TrueUSD|TUSD|
+|TerraUSD Classic|UST|
+|Waves|WAVES|
+|Zeta Markets|ZEX|
+|Zk Sync|ZK|
+
+  
+"
+"Top 10 DePin Coins Today By Market Cap. 🔥🏆 Which crypto will see major breakout this month?🚀
+",CryptoIndia,1fjr78e,2024-09-18 08:09:20,0,0.5,4,https://i.redd.it/h6k0gwoo6kpd1.png,CPMarkets,,
+SNARKs has been integrated into Filecoin. FIL will be the world leader for storage capacity.,filecoin,1fdpm8c,2024-09-10 14:50:15,13,0.93,2,https://i.redd.it/3yzo7hgy21od1.jpeg,reditpost1,,
+6 Sep 2024 Co-founder's Summary Letter from Sofia,NumbersProtocolIO,1fdcle5,2024-09-10 04:01:19,1,1.0,0,https://www.reddit.com/r/NumbersProtocolIO/comments/1fdcle5/6_sep_2024_cofounders_summary_letter_from_sofia/,NumbersProtocol,,"**Dear Numbers Community,**
+
+Happy Friday! Sofia here with our weekly wrap-up. As we embrace the crisp autumn air, I'm thrilled to share our remarkable strides in expanding our reach and impact. Your continued support fuels our growth and drives us to new heights.
+
+This week has been particularly exhilarating on the growth front. I'm proud to announce a strategic collaboration with [TARS AI](https://x.com/numbersprotocol/status/1830951297140564350?s=19), a partnership that merges their powerful AI, backed by the Solana Foundation, with our Provenance solution. This is a game-changing step towards a more secure and verified digital ecosystem, significantly expanding our technological reach and market potential.
+
+Additionally, Numbers Protocol has been spotlighted in the [Filecoin Ecosystem digest](https://www.fil.org/digest/the-potential-for-decentralized-technology-to-rebuild-digital-trust), with a feature that delves into our crucial role in combating Disinformation and Misinformation, especially in the context of elections. This exposure not only boosts our visibility but also solidifies our position as thought leaders in the digital integrity space.
+
+Our business development efforts are bearing fruit, with several exciting developments. We've made significant progress in our discussions with ANI News, one of India's leading news agencies. We're on the brink of integrating Capture Eye into their workflow, a move that would dramatically enhance the authenticity and traceability of digital content in the news industry. This partnership can potentially set a new standard for media integrity across South Asia.
+
+Looking ahead, mark your calendars for September 12th! We'll be front and center at a key networking event during Boston Blockchain Week. This is a prime opportunity to showcase our solutions, forge new partnerships, and expand our influence in the blockchain community. We're preparing special gift cards for attendees to experience our Capture service, aiming to convert high-quality leads on the spot. Meanwhile, our team member, White, is currently representing Numbers Protocol at Cybertech NYC 2024. He's not just an attendee – he's a featured speaker, discussing how Numbers can contribute to developing human capital for New York City. This speaking engagement significantly boosts our profile in one of the world's major tech and financial hubs.
+
+To support our expansion, we've rolled out key product enhancements. Dashboard upgrades now allow freemium users to create showcase pages and change usernames, improving user engagement and potentially driving conversions to paid tiers. We've also streamlined the Claim Copyright UI and flow, reducing friction in one of our core services and potentially increasing usage rates. These improvements reflect our commitment to providing accessible and transparent tools for all our users while supporting our growth objectives.
+
+In exciting news for our ecosystem, we've awarded our first grant from the Numbers Innovation Program to a promising project, ToolBlox. This initiative supports innovation and expands our ecosystem, potentially bringing in new users and use cases for our technology. We invite you to check out ToolBlox on our [Github](https://github.com/numbersprotocol/community-support/issues/374) and share your thoughts on their potential within the Numbers ecosystem.
+
+As we expand our reach and influence in the digital media, your engagement and support are more crucial than ever. We're not just growing a company but nurturing a movement towards a more transparent, trustworthy digital world. Thank you for being an integral part of our journey. Let's keep this growth momentum surging as we dive deeper into autumn!
+
+
+
+Cheers, and have a lovely weekend there!
+
+Sofia Yan Co-founder & CGO, Numbers Protocol"
+Filecoin is leading the charge into the future.,filecoin,1fd4b3x,2024-09-09 19:54:12,10,0.92,3,https://i.redd.it/0rsqdnt9gvnd1.jpeg,reditpost1,,
+Filecoin just gets bigger and bigger. The future is here.,filecoin,1f61znd,2024-08-31 20:40:07,16,0.9,5,https://i.redd.it/3j165rb9g3md1.jpeg,reditpost1,,
+amazon.com/Filecoin-FIL-Comprehensive-Ron-Legarski-ebook/dp/B0D1C8G37P,cryptological,1f5hqan,2024-08-31 03:29:13,1,1.0,0,https://www.amazon.com/Filecoin-FIL-Comprehensive-Ron-Legarski-ebook/dp/B0D1C8G37P?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9._zFBXVZxHUzqEUjwCIWNNEcdjI5aGURXp5jLFgTA87TsdMsonbnMWgRYkCfF3YsCVvf7tk983jazn3Hwnv5nlHHaVMPVCtvlYbzAA-s-8BQ96lI9B4qYMghgDysyaFG9DVGLlhMpeKyE3-ByD8PaJwUkVeKZ1hB_bMBjajD2FnayoOUHJWK4hGY8gNXZ2hnZTLfHzA6lqkKURa8mK6vm7nZzvGu2RNXxDklNVVSPrzs.eX_7aXfwq--UGxTkutaw77neL4pnpWMSGH9_qrDO3Rc&dib_tag=AUTHOR,wisdomphi,,
+Filecoin (FIL) Now Live on Nexo,u_NexoFinance,1f4up24,2024-08-30 09:01:55,2,0.51,0,https://www.reddit.com/r/u_NexoFinance/comments/1f4up24/filecoin_fil_now_live_on_nexo/,NexoFinance,,"Filecoin (FIL) is now available on Nexo.  
+  
+💳 Buy with card, Apple Pay or Google Pay  
+✨ Borrow against your FIL  
+↔️ Swap with rewards  
+🛍️ Spend globally with the Nexo Card  
+  
+Get started: [Buy FIL on Nexo](https://nexo.com/buy-filecoin-fil?utm_source=reddit&utm_medium=cpc&utm_campaign=reddit_post_filecoin_3008_q324)
+
+https://preview.redd.it/sr29zl2etsld1.jpg?width=1200&format=pjpg&auto=webp&s=a532bbdffb4661a30db874fdbb2e8d5fa40bf5ea"
+Filecoin (FIL) Is Live on Nexo,Nexo,1f41lna,2024-08-29 08:51:31,29,0.91,6,https://www.reddit.com/r/Nexo/comments/1f41lna/filecoin_fil_is_live_on_nexo/,NexoFinance,Announcement,"Filecoin (FIL) is now available on Nexo.
+
+💳 Buy with card, Apple Pay or Google Pay  
+✨ Borrow against your FIL  
+↔️ Swap with rewards  
+🛍️ Spend globally with the Nexo Card
+
+Get started: [Buy Filecoin on Nexo](https://nexo.com/buy-filecoin-fil?utm_source=reddit&utm_medium=post&utm_campaign=reddit_post_fil_buy_page_2908_q324)
+
+https://preview.redd.it/j17sovklnlld1.jpg?width=1200&format=pjpg&auto=webp&s=55a75bd4093723d03afa992a4cb43a88f989f973"
+Bringing both ecosystems closer 🤝,Hedera,1ex1kj7,2024-08-20 13:27:22,31,0.87,4,https://i.redd.it/m28tcow0tujd1.jpeg,Perfect_Ability_1190,Use Case/DApp,"1.Sirio is working on an AI model useful for preventing liquidation events on its protocol. Filecoin will assist us in the process of decentralizing AI by providing the necessary infrastructure for storing datasets and graphs thanks to lighthouse.
+
+2.Our goal is to offer this model as a customized solution for other Lending & Borrowing protocols. Filecoin will help us make this service more transparent and decentralized.
+
+3.We will work closely with Filecoin on Interoperability solutions that will allow users to use $FIL on Hedera DeFi Ecosystem"
+"Filecoin (FIL): A Comprehensive Guide , Legarski, Ron, Oborn, Patrick, Legarski Jr., Ronald Joseph, eBook - Amazon.com",Legarski,1estd3y,2024-08-15 08:01:38,1,1.0,0,https://www.amazon.com/Filecoin-FIL-Comprehensive-Ron-Legarski-ebook/dp/B0D1C8G37P?ref_=ast_author_dp&dib=eyJ2IjoiMSJ9.RkyKmcZEA7qyGROo0MYtTG4xUPBCeeLzdhtGQe0-j6gRGsgeIdxYo0Yku9i0lhZ6MI5Q8ZlfrtWgou7Lu-gQtdXYLx-FNFuQPOuYysw9kuqzu_wE60Sk3u1iQwxb4VLduRNCVIb_tmhuPcX4XdAdvYc6047owXW6XZL7PIRgmr5tJROTqJKwePyGxe6XEUS2k2nvOFu6t1V8POQyn8Z4aOTAqAH6U18As3TdSpvJNt8.pcc-f7P01EAljXRSIlKPpetWIaRGXedMUrwX3HypNmw&dib_tag=AUTHOR,wisdomphi,,
+Filecoin potential in future!,CryptoMarkets,1eqe9wf,2024-08-12 09:50:59,2,1.0,2,https://www.reddit.com/r/CryptoMarkets/comments/1eqe9wf/filecoin_potential_in_future/,MrKatr9,DISCUSSION,"I’m considering a long-term investment in Filecoin (FIL) and would like to get some opinions. Filecoin reached around $160 in 2021, but I’m wondering about its future potential. Could it reach those levels again, or does it face too much competition from giants like Google Storage, Amazon Web Services (AWS), and other blockchain projects like Storj? Any insights would be appreciated!"
+"Top 10 DePIN Coins By Market Cap! Which Altcoins are going to 100x this year? 👀🚀
+",Crypto_General,1eqaqy9,2024-08-12 07:02:30,2,1.0,12,https://www.reddit.com/r/Crypto_General/comments/1eqaqy9/top_10_depin_coins_by_market_cap_which_altcoins/,CPMarkets,Daily Discussion,"1. Filecoin ( $FIL): $2.06B
+
+2. Render ( $RNDR): $1.78B
+
+3. The Graph ( $GRT): $1.34B
+
+4. Arweave ( $AR): $1.33B
+
+5. Theta Network ( $THETA): $1.14B
+
+6. Helium ( $HNT): $1.06B
+
+7. JasmyCoin ( $JASMY): $993M
+
+8. BitTorrent ( $BTT): $714B
+
+9. Akash Network ( $AKT): $642M
+
+10. AIOZ Network ( $AIOZ): $519M
+
+[Top 10 DePIN Coins By Market Cap in August 2024](https://preview.redd.it/qzk4vt50t7id1.png?width=900&format=png&auto=webp&s=dfeaf203306ce6efb74a12f482cd3f492ed535d8)
+
+"
+Top 10 DePIN Coins By Market Cap! Which Altcoins are going to 100x this year?,CryptoIndia,1eqap73,2024-08-12 07:00:12,1,0.6,4,https://i.redd.it/k42zc5gls7id1.png,CPMarkets,,
+"Bitcoin Approaches $60K: Momentum Builds in Crypto Markets, Though Volatility Lies Ahead",iotatokennews,1encmlm,2024-08-08 13:55:35,1,1.0,0,https://www.reddit.com/r/iotatokennews/comments/1encmlm/bitcoin_approaches_60k_momentum_builds_in_crypto/,iotatokennews,,"Bitcoin Approaches $60K: Momentum Builds in Crypto Markets, Though Volatility Lies Ahead
+
+### Digital Currency Surge: A ⁢Week of ⁤Rebound and Regulatory⁤ Developments
+
+Bitcoin’s Rally Toward ⁢$60,000 Marks ⁣Market OptimismIn the latest financial updates, cryptocurrencies are experiencing significant​ upward momentum. Bitcoin, the leading digital currency, approached the $60,000 benchmark after a tumultuous period marked by sharp declines. As of now, Bitcoin is trading around ⁣$59,500 following a 6.4% increase over the last day.
+
+Ether (ETH), another major‌ cryptocurrency contender on the market list which also serves as Ethereum’s native token managed to climb over 8.8% in just 24 hours reaching past $2,600. This recovery signifies Ether catching pace with Bitcoin once again‌ after several days of underperformance.
+
+Reflecting‍ broader crypto market movements was CoinDesk’s Index featuring top performing altcoins such as⁢ Solana‌ (SOL), Near Protocol (NEAR), Avalanche (AVAX) and Filecoin (FIL). These altcoins strongly trailed⁤ alongside registering⁣ growth close to 10%.
+
+Ripple Experiences Significant ⁣Spike Amid Legal ProgressParticular attention has been drawn to Ripple’s XRP which skyrocketed by ‍an impressive 22%. This uptrend is closely tied‌ to recent legal victories where a U.S. ‍court imposed a considerably lesser fine than anticipated in ongoing regulatory challenges against it—amounting only up to⁣ $125 million contrary to a potential couple billion dollars initially suggested by regulators.
+
+### Catalysts Behind ⁣The Cryptocurrency Market‍ Recovery
+
+Key Legal and Regulatory Advances Boost Crypto SentimentsRecent positive developments are buoying investor sentiments further across different cryptocurrency assets including Bitcoin and ​others.
+
+On Thursday alone⁣ two favorable events emerged:
+
+  - First was approval from U.S. authorities permitting FTX Trading LTD together with its affiliate Alameda Research LLC disburse approximately​ $12.7 billion owed back creditors potentially introducing ​new capital ​into crypto markets.
+
+  - Concurrently Russia has embraced cryptocurrency mining within its borders enhancing worldwide ‍blockchain participation often cited “Bitcoin FOMO” among nations heating​ up—a statement reinforced when Russian President ‍Vladimir Putin officially sanctioned activity;⁤ expectedly benefiting global blockchain operations expanding both technical robustness decentralizing miner influences further.
+
+This geopolitical embrace came just as bitcoin rebounded robustly extinguishing‌ losses experienced earlier this week spontaneously witnessed Monday falling down near $49K before recoiling ⁣splendidly within days potentially painting bullish ‌symbols like⁣ ‘hammer ⁤candlestick’ suggesting imminent trends reversals anticipated in trading spaces.
+
+### Market Projections Remain Guardedly Optimistic Amid Volatility Warnings
+
+Despite obvious excitement hanging around potential bullish outcomes leading figures within analytic ‍circles urge ‌cautious strategy adoption given ‍pending fluctuations still possible⁣ post-sharp descents swiftly navigated at week’s start—coherently explained David Zimmerman from K33 Research advised ‍avoiding hurried⁢ investments advocating waiting till more solid strength signs manifest themselves amongst available cryptos retracing previously dipped values therefore not⁢ all ⁤analysts expect smooth continuation upwards​ suggesting some “choppiness” could prevail first before stabilizing anew perhaps resolving resistance faced historically at ‌significant moving average junctures‍ diluting swift ascends long term remaining undeterred however should ​resistance levels decisively break upwards facilitating sustaining rallies accordingly echoing sentimentals discovered sector-wide ⁤bolstered collective optimism surrounds us yet prudent⁢ reflexes shall dictate maneuvers guiding next portfolios adjustments suitably so keeping roller-coaster​ nature intrinsic speculative markets always ⁢mindfully considered.
+
+ https://iota-news.com/bitcoin-approaches-60k-momentum-builds-in-crypto-markets-though-volatility-lies-ahead/"
+New Partnership with Filecoin Station!,crankk,1emh6la,2024-08-07 13:01:17,2,1.0,0,https://www.reddit.com/r/crankk/comments/1emh6la/new_partnership_with_filecoin_station/,Nuke_NN,,"We are pleased to announce our latest partnership with Filecoin Station, a collaboration set to revolutionize decentralised storage network with the vision to store the world's most valuable data.
+
+To run a Filecoin full node takes a lot of technical skill and deep pockets. Therefore, the creation of Filecoin Station. Allowing anyone to join the Filecoin economy, where people can start earning $FIL in just a few clicks (or one click with Crankk! 😁) without having to understand how crypto works and without any extra investment such as staking. 
+
+Adding Filecoin Station to our One-Click Multimining Solution will give the opportunity to all Crankk network participants to also be node providers in Filecoin ecosystem.
+
+It's exciting to see innovative solutions that prioritize decentralised storage and safety of valuable data!
+
+Together, we are building a future where decentralized data storage is a reality. Your support and participation are crucial as we continue to innovate and expand.
+
+Let’s Crankk It Up!
+
+r/IOT r/HeliumMiners r/DePINside r/CryptoCurrency r/filecoin r/FilecoinMiner"
+Filecoin's storage utilization is up 9%. Looking good.,filecoin,1elp100,2024-08-06 14:18:51,7,0.82,6,https://i.redd.it/j04p4f6g53hd1.jpeg,reditpost1,,
+"""Filecoin Network Upgrade: Deposits and Withdrawals Suspended on BloFin Exchange ⚠️""",Blofin,1ela66b,2024-08-06 01:56:56,1,1.0,0,https://www.reddit.com/r/Blofin/comments/1ela66b/filecoin_network_upgrade_deposits_and_withdrawals/,Alexander-305,,"
+   
+ . To support the upgrade of the #Filecoin (#FIL) network, BloFin expects to suspend the deposits and withdrawals of token(s) on the Filecoin network at 10:00 (UTC) on August 06, 2024."
+BREAKING NEWS: 🪙New Coin Listing | MyCoinChange,MyCoinChange,1el6tw9,2024-08-05 22:48:01,2,1.0,0,https://i.redd.it/ronmfibdjygd1.jpeg,Mycoinchange_co,,
+Filecoin (FIL) Portfolios Stay Red With 18% Weekly Losses,CryptoBreakingDotCom,1ek0eot,2024-08-04 13:15:17,1,1.0,0,https://www.cryptobreaking.com/filecoin-fil-portfolios-stay-red-with-18-weekly-losses/?feed_id=110678&_unique_id=66afb724a812e,vincenzost,,
+"Filecoin (FIL) kaufen: Paypal, Kreditkarte etc.",TalerboxDE,1eflz09,2024-07-30 02:00:20,2,1.0,0,https://talerbox.com/filecoin-kaufen/,aBaxs00,,
+Thank you Hashgraph for reposting ,Hedera,1eeqolw,2024-07-29 00:27:00,9,0.63,2,https://i.redd.it/d9kywtrqxdfd1.jpeg,Perfect_Ability_1190,Use Case/DApp,"1.Sirio is working on an AI model useful for preventing liquidation events on its protocol. Filecoin will assist us in the process of decentralizing AI by providing the necessary infrastructure for storing datasets and graphs thanks to lighthouse.
+
+2.Our goal is to offer this model as a customized solution for other Lending & Borrowing protocols. Filecoin will help us make this service more transparent and decentralized.
+
+3.We will work closely with Filecoin on Interoperability solutions that will allow users to use $FIL on @hedera  DeFi Ecosystem"
+🧤 News bomba: Grayscale lancia fondo crypto AI con 5 token,u_KayaMikBit,1eee8vf,2024-07-28 14:33:15,1,1.0,0,https://www.reddit.com/r/u_KayaMikBit/comments/1eee8vf/news_bomba_grayscale_lancia_fondo_crypto_ai_con_5/,KayaMikBit,,"https://preview.redd.it/fdf5r74tzafd1.jpg?width=1080&format=pjpg&auto=webp&s=59f9b6a3438dbae6723fce69123e0ade59d751c1
+
+
+
+🧣 Il nuovo fondo di Grayscale mira a capitalizzare il settore dell'intelligenza artificiale decentralizzata
+
+
+
+🧤 Grayscale Decentralized AI Fund LLC: Una nuova frontiera per la DeFi
+
+
+
+🧣 Grayscale ha lanciato un nuovo fondo dedicato alle criptovalute legate all'intelligenza artificiale decentralizzata. Il fondo includerà cinque token: $TAO di Bittensor, $FIL di Filecoin, $LPT di Livepeer, $RNDR di Render e $c di Near Protocol. Questi token rappresentano protocolli che sviluppano servizi AI decentralizzati, affrontano problemi generati dall'AI e offrono infrastrutture critiche come condivisione dati e computazione.
+
+
+
+🧤 Scelte discusse e polemiche tra gli appassionati
+
+
+
+🧣 Le scelte di Grayscale hanno già suscitato dibattiti, con l'esclusione di progetti come $ASI, $AGIX, $OCEAN e $FET. La composizione del fondo, che sarà ribilanciata trimestralmente, riflette una strategia mirata a protocolli con un potenziale significativo nel settore AI. Tuttavia, alcuni appassionati ritengono che le esclusioni possano limitare la diversificazione e l'efficacia del fondo.
+
+
+
+🧤 Impatto del fondo AI di Grayscale e scenari futuri
+
+
+
+🧣 Il fondo di Grayscale, disponibile solo per investitori accreditati, rappresenta un passo importante verso l'integrazione delle tecnologie AI nella DeFi. Questo sviluppo potrebbe accelerare l'adozione di criptovalute AI e spingere altre piattaforme a seguire l'esempio di Grayscale. Tuttavia, la scelta dei token e l'esclusione di altri progetti promettenti potrebbero influenzare le dinamiche del mercato e sollevare ulteriori discussioni tra gli investitori e gli appassionati del settore.
+
+
+
+Unisciti al nostro gruppo Telegram:
+
+[https://t.me/Bitcoin\_Report\_Italia](https://t.me/Bitcoin_Report_Italia)
+
+
+
+Referral Bitget -10% sulle fee + bonus benvenuto
+
+6w5d o link: [https://bonus.bitget.com/U1JNEK](https://bonus.bitget.com/U1JNEK)
+
+
+
+#BitcoinReportItalia #Grayscale #AI #IntelligenzaArtificiale #TAO #FIL #LPT #RNDR #NEAR #FET #OCEAN #AGIX #ASI #DeFi #AltCoin #Cripto #Bitcoin"
+Filliquid seems to connection with Binance,filecoin,1ecotc5,2024-07-26 10:00:15,2,0.67,0,https://i.redd.it/lpxius4adved1.jpeg,BLY-IMPRV,,"https://x.com/filliquid/status/1816757172522402038?s=46
+
+If interested with future of filecoin defi, you should watch this .
+"
+Filecoin tweeted about filliquid,filecoin,1ecoqk0,2024-07-26 09:56:54,3,0.67,4,https://i.redd.it/6q7fovkocved1.jpeg,BLY-IMPRV,,"Lets try filecoin defi
+They said it is fully open-source "
+Filecoin tweeted filliquid,FILLiquid,1ecop6u,2024-07-26 09:55:12,1,1.0,0,https://i.redd.it/mvghxhodcved1.jpeg,BLY-IMPRV,,https://x.com/filliquid?s=21
+I just staked my 104 FIL,filecoin,1ebbzt5,2024-07-24 16:40:16,13,0.88,11,https://i.redd.it/0zlxucpt2jed1.jpeg,BLY-IMPRV,,"- I use metamask wallet
+- iPhone, Chrome 
+
+I recently tested staking a small amount of my Filecoin. I was pleasantly surprised to see that only a very minimal amount of FIL was used as gas fees. It's clear that Filecoin's technology has improved significantly.
+
+Upon staking Filecoin, I received FIT tokens in a 1:1 ratio as collateral. These tokens allowed me to earn staking rewards from Filecoin mining.
+
+I then used these FIT tokens to mine the initial Filliquid governance tokens. So far, it seems like the return is about 3x.
+
+Assuming one FIG token is worth $1, I've earned about $300.
+
+Given that the current Filecoin price is $5, staking 100 FIL is worth $500. By staking $500 worth of Filecoin, I've earned $300 worth of FIG tokens plus an annual 10% staking reward in Filecoin.
+
+After researching various Filecoin DeFi projects and finding most of their APYs unsatisfactory, I discovered that Filliquid, which launched its mainnet yesterday, offers farming services. I'm planning to farm on this platform first.
+
+I will continue to share updates on my testing progress here.
+"
+"🌟 Trending Cryptos for July 16, 2024! 🚀 Check out the top gainers and losers of the day along with the latest market sentiment!""",Blofin,1e7clq5,2024-07-19 15:46:18,1,1.0,0,https://i.redd.it/c3qijk6n4jdd1.jpeg,Alexander-305,Trending Crypto 🚀,"Top 10 trending:
+
+**1. $POPCAT #Popcat:** +6.27%  
+**2. $STX #Stacks:** +5.96%  
+**3. $ZRO #LayerZero:** +4.22%  
+**4. $PCI #Paycoin:** +8.86%  
+**5. $XODEX #Xodex:** +17.46%  
+**6. $DOT #Polkadot:** +0.15%  
+**7. $FLOKI #Floki:** +0.19%  
+**8. $JASMY #JasmyCoin:** +0.44%  
+**9. $AERO #Aerodrome Finance:** +1.44%  
+**10. $PIRATE #Pirate Nation:** +14.76%
+
+**Fear/Greed Index:** 48 (Neutral) 📈
+
+Stay updated with the latest in the crypto world!
+
+### Top 5 Gainers
+
+1. **$XODEX #Xodex**: +17.46%  
+2. **$PCI #Paycoin**: +8.86%  
+3. **$POPCAT #Popcat**: +6.27%  
+4. **$STX #Stacks**: +5.96%  
+5. **$PIRATE #Pirate Nation**: +14.76%
+
+### Top 5 Losers
+
+1. **$ALGO #Algorand**: -2.23%  
+2. **$EOS #EOS**: -1.15%  
+3. **$FIL #Filecoin**: -0.94%  
+4. **$HBAR #Hedera**: -0.81%  
+5. **$JUP #Jupiter**: -0.64%
+
+### Crypto News Brief
+
+**HEADLINE:** New LayerZero Protocol Gains Popularity Among Developers.
+
+**BRIEF DESCRIPTION:** LayerZero (ZRO) is seeing increased adoption due to its innovative approach to cross-chain communication, leading to a significant price increase.
+
+
+"
+Greyscale opens up AI fund - NEAR / FIL / RNDR / LPT / TAO,Blockpit,1e6wek3,2024-07-19 01:46:45,2,1.0,0,https://www.reddit.com/r/Blockpit/comments/1e6wek3/greyscale_opens_up_ai_fund_near_fil_rndr_lpt_tao/,Blockpit,News,"[https://www.grayscale.com/crypto-products/grayscale-decentralized-ai-fund](https://www.grayscale.com/crypto-products/grayscale-decentralized-ai-fund)
+
+https://preview.redd.it/mmxqjxpwyedd1.png?width=1620&format=png&auto=webp&s=31089877f29ae4608319da86d8f5d132ba0d02a2
+
+"
+"🚀 Trending Now for July 16, 2024! 🌐",Blofin,1e58ai9,2024-07-16 23:35:01,1,1.0,0,https://i.redd.it/ptwwxesh10dd1.jpeg,Alexander-305,Trending Crypto 🚀,"### 🚀 Trending Now for July 16, 2024! 🌐
+
+**1. $POPCAT #Popcat:** +6.27%
+**2. $STX #Stacks:** +5.96%
+**3. $ZRO #LayerZero:** +4.22%
+**4. $PCI #Paycoin:** +8.86%
+**5. $XODEX #Xodex:** +17.46%
+**6. $DOT #Polkadot:** +0.15%
+**7. $FLOKI #Floki:** +0.19%
+**8. $JASMY #JasmyCoin:** +0.44%
+**9. $AERO #Aerodrome Finance:** +1.44%
+**10. $PIRATE #Pirate Nation:** +14.76%
+
+**Fear/Greed Index:** 48 (Neutral) 📈
+
+Stay updated with the latest in the crypto world!
+
+### Top 5 Gainers
+
+1. **$XODEX #Xodex**: +17.46%
+2. **$POPCAT #Popcat**: +6.27%
+3. **$STX #Stacks**: +5.96%
+4. **$PCI #Paycoin**: +8.86%
+5. **$PIRATE #Pirate Nation**: +14.76%
+
+### Top 5 Losers
+
+1. **$ALGO #Algorand**: -2.23%
+2. **$EOS #EOS**: -1.15%
+3. **$FIL #Filecoin**: -0.94%
+4. **$HBAR #Hedera**: -0.81%
+5. **$JUP #Jupiter**: -0.64%
+
+### Crypto News Brief
+
+**HEADLINE:** New LayerZero Protocol Gains Popularity Among Developers.
+**BRIEF DESCRIPTION:** LayerZero (ZRO) is seeing increased adoption due to its innovative approach to cross-chain communication, leading to a significant price increase.
+
+#Crypto #Trending #Bitcoin #Ethereum #Altcoins
+
+"
+The future of Web3 is beyond mere hype. Crypto projects to watch out for in 2024,Crypto_General,1e1i7mo,2024-07-12 09:51:54,30,0.98,15,https://www.reddit.com/r/Crypto_General/comments/1e1i7mo/the_future_of_web3_is_beyond_mere_hype_crypto/,Ok-Western-5799,Question?," There's no doubt that this is another bull season, and the buzz of newer crypto projects spurring up isn't surprising. As an investor to maximize gains, I aim to make the best of the season to create generational wealth. 
+
+During the last bear market, over 1,800 crypto projects went under. A study conducted by Satis Group estimated that around 78% of ICOs were scams, 4% failed, 3% had gone dead, and only 15% went on to trade on exchanges. This can be attributed to the fact that many of these projects focused mostly on the hype, following the bull run rather than building an ecosystem that provides real utility and key infrastructure. BitConnect (BCC), Terra (LUNA), and Filecoin (FIL) are prime examples.
+
+I've curated a few projects that are still building despite the market fluctuations and I am ready to hear your thoughts
+
+First is Stacks (STX), a Layer 2 solution that brings smart contracts and decentralized applications (dApps) to Bitcoin. It leverages Bitcoin's security while enabling more complex functionalities through its blockchain. It offers the Clarity smart contract language, PoX (Proof of Transfer) consensus mechanism and integration with Bitcoin's security. As a first mover, Stacks shows massive potential with many projects building on it.
+
+Next is SUPRA Labs, a vertically integrated L1 building solutions for the next generation of super dApps. SUPRA is developing a fully vertically integrated blockchain stack, including Layer 1, in-protocol oracles, VRFs, Bridges, multi-VM support, and AMM. These components run on the same nodes as consensus, reducing latency and simplifying cross-chain liquidity. By integrating these features into the base layer, SUPRA aims to streamline information flow across blockchains, enabling seamless interaction between protocols. It has the advantage of building encompassing solutions for Bitcoin L2.
+
+TON (Telegram Open Network) makes my list because it is building a blockchain platform integrated with the Telegram ecosystem, aiming to provide decentralized applications (dApps) and services. With a focus on integrating blockchain technology into a widely used messaging app, TON has the potential to drive mass adoption of decentralized services and create new use cases for blockchain within social media and communication.
+
+Celo (CELO) is a mobile-first blockchain platform that supports the creation of decentralized applications and smart contracts, with a focus on financial inclusion. By targeting the mobile user base, Celo aims to drive mass adoption of blockchain technology in underbanked regions, providing essential financial services to millions.
+
+As an investor aiming to maximize gains this bull season and create generational wealth, it's crucial to focus on projects that offer real utility and robust infrastructure, rather than just following the hype. I'd love to hear your thoughts on these projects and any other promising ones you’ve come across. "
+Has Their Been anything similar to pi network in the past that launched and went into mainnet. Did they have an IOU price and how did the IOU price correlate with the actual value of these cryptos?,PiNetwork,1e0f8gr,2024-07-10 23:29:38,21,0.97,4,https://www.reddit.com/r/PiNetwork/comments/1e0f8gr/has_their_been_anything_similar_to_pi_network_in/,Particular_Milk3778,Discussion,"
+Has their ever been a project like pi network that had to enter the mainnet. If so, give me examples of them and how much their price was at launch. Also in general when a crypto or stock is purchased with an IOU before it launches, how often does that price correlate with the actual value at launch..
+
+ANSWER:
+
+Projects similar to Pi Network that have entered mainnet include several cryptocurrencies that initially distributed tokens through non-traditional means like airdrops or initial coin offerings (ICOs) and later launched on their own blockchains. Some examples include:
+
+EOS:
+
+Launch: June 2018
+
+Price at Launch: Approximately $5.40
+
+TRON (TRX):
+
+Launch: May 2018
+
+Price at Launch: Approximately $0.05
+
+Cardano (ADA):
+
+Launch: September 2017
+
+Price at Launch: Approximately $0.02
+
+Stellar (XLM):
+
+Launch: 2014 (Mainnet launched later)
+
+Price at Launch: Approximately $0.003
+
+IOUs and Actual Launch Prices
+
+The correlation between IOU prices and actual launch prices can vary significantly:
+
+Positive Correlation: In some cases, IOUs can be a good indicator of the initial market price, especially if the project has strong market interest and hype.
+
+Negative Correlation: IOU prices can sometimes be overinflated due to speculative trading, leading to a correction once the token is officially launched and more widely traded.
+
+Market Conditions: The overall market conditions at the time of the launch also play a significant role. If the market is bullish, the launch price can be higher than IOUs, and vice versa during bearish conditions.
+
+In general, the correlation is inconsistent and heavily influenced by market sentiment, project fundamentals, and overall crypto market conditions at the time of the launch
+
+HERE ARE SOME SPECIFIC EXAMPLES OF CRYPTOCURRENCIES WITH IOU PRICES COMPARED TO THEIR ACTUAL LAUNCH PRICE -
+
+
+1. Polkadot (DOT)
+
+IOU Price: DOT had IOUs traded on exchanges like MXC before the mainnet launch. Prices varied, but they generally hovered around $150-$200 (note: DOT underwent a redenomination later where 1 old DOT became 100 new DOT).
+
+Launch Price: When Polkadot went live on the mainnet in August 2020, the new DOT token opened at around $2.90 (post-redenomination).
+
+2. Filecoin (FIL)
+
+IOU Price: FIL IOUs traded on exchanges like CoinList at prices ranging from $30 to $80 in anticipation of the mainnet launch.
+
+Launch Price: When Filecoin launched its mainnet in October 2020, the price opened at around $30 and spiked as high as $200 due to high demand and limited initial liquidity, but quickly stabilized to around $40-$50.
+
+3. Ecomi (OMI)
+
+IOU Price: OMI IOUs traded on Bitforex at around $0.0001 to $0.0002 before the mainnet launch.
+
+Launch Price: When Ecomi's OMI token officially launched on Uniswap in March 2021, the price initially spiked to around $0.001 to $0.002.
+
+4. Kusama (KSM)
+
+IOU Price: Kusama's IOUs traded at prices ranging from $1 to $5 on exchanges like MXC before the mainnet launch.
+
+Launch Price: Upon mainnet launch in August 2019, KSM opened at around $1.70, gradually increasing as the project gained traction.
+
+5. Solana (SOL)
+
+IOU Price: SOL had IOUs trading at around $0.20 to $0.50 before its mainnet beta launch.
+
+Launch Price: When Solana launched its mainnet beta in March 2020, the price opened at around $0.50 to $0.80.
+
+Correlation Insights
+
+Polkadot (DOT): The IOU price and the post-redenomination launch price showed a strong correlation.
+
+Filecoin (FIL): The initial launch price significantly exceeded the IOU price due to high demand but later stabilized closer to IOU prices.
+
+Ecomi (OMI): The launch price showed a substantial increase from IOU prices, likely due to initial excitement and limited supply.
+
+Kusama (KSM): IOU prices were relatively aligned with the launch price, though the price increased gradually as the project matured.
+
+Solana (SOL): The launch price was slightly higher than the IOU prices, showing moderate correlation.
+
+Overall, while there can be some correlation between IOU prices and actual launch prices, the degree of correlation varies and is influenced by market conditions, project hype, and initial liquidity.
+
+*****How does pi networks goals, foundation, current success and eco friendly approach compare to those examples you gave me. ??****
+
+Answer-
+
+Pi Network has unique characteristics compared to the examples provided (Polkadot, Filecoin, Ecomi, Kusama, Solana). Here’s a comparative analysis based on goals, foundation, current success, and eco-friendly approach:
+
+Goals
+
+Pi Network: Aims to create a user-friendly, decentralized cryptocurrency that can be mined via mobile phones with minimal resource consumption. It focuses on accessibility and inclusivity, aiming to bring cryptocurrency to the masses.
+
+Polkadot (DOT): Seeks to enable different blockchains to interoperate seamlessly. Its goal is to create a decentralized web where users are in control.
+
+Filecoin (FIL): Aims to create a decentralized storage network, allowing users to rent out their unused storage space. It focuses on data storage and retrieval.
+
+Ecomi (OMI): Focuses on digital collectibles and NFTs, aiming to bring mainstream adoption of blockchain technology in the digital collectibles space.
+
+Kusama (KSM): Serves as a canary network for Polkadot, allowing developers to experiment with new features in a real-world environment. It aims to foster innovation and rapid development.
+
+Solana (SOL): Focuses on high-performance blockchain technology, aiming to provide fast, secure, and scalable decentralized applications and crypto-currencies.
+
+Foundation
+
+Pi Network: Developed by a team of Stanford graduates, it has built its foundation on the concept of mobile mining and creating a widespread network of users before launching on the mainnet.
+
+Polkadot: Created by Dr. Gavin Wood, co-founder of Ethereum. It has a strong foundation with significant technical expertise and a well-defined vision for blockchain interoperability.
+
+Filecoin: Developed by Protocol Labs, also the creators of IPFS. It has a robust technical foundation focused on decentralized storage solutions.
+
+Ecomi: Built by a team with experience in the digital collectibles industry. It leverages partnerships with well-known brands to enhance its appeal.
+
+Kusama: Developed by the same team behind Polkadot, it shares much of the same technology and vision but focuses on experimental and early-stage projects.
+
+Solana: Founded by Anatoly Yakovenko, it has a strong technical foundation with innovations like the Proof of History consensus mechanism.
+
+Current Success
+
+Pi Network: Boasts millions of users participating in its mining process via mobile apps, but it hasn't launched its mainnet yet. Its success lies in its large and engaged user base, but it still faces skepticism regarding its long-term viability and actual use case.
+
+Polkadot: Successfully launched its mainnet and has become one of the top cryptocurrencies by market cap. It has numerous projects built on its ecosystem.
+
+Filecoin: Launched its mainnet and is actively used for decentralized storage solutions. It has secured significant partnerships and a strong market presence.
+
+Ecomi: Launched its mainnet and has a growing user base, particularly in the digital collectibles market. It has gained traction through partnerships with major brands.
+
+Kusama: Successfully operating as an experimental network for Polkadot, with many projects and parachains testing on it before moving to Polkadot.
+
+Solana: Has seen significant success with numerous projects building on its platform, a high transaction throughput, and a strong market presence.
+
+Eco-Friendly Approach
+
+Pi Network: Emphasizes low-energy mobile mining, which is significantly less resource-intensive than traditional mining methods like those used in Bitcoin.
+
+Polkadot: Uses a Nominated Proof of Stake (NPoS) consensus mechanism, which is more energy-efficient than Proof of Work (PoW).
+
+Filecoin: Uses a Proof of Replication and Proof of Spacetime consensus mechanism, which, while energy-intensive due to storage requirements, aims to optimize storage resources.
+
+Ecomi: Built on the GoChain blockchain, which uses Proof of Reputation (PoR) and is designed to be more energy-efficient.
+
+Kusama: Similar to Polkadot, it uses a Nominated Proof of Stake (NPoS) mechanism, which is more eco-friendly compared to PoW.
+
+Solana: Uses a Proof of History (PoH) and Proof of Stake (PoS) hybrid consensus mechanism, which is more energy-efficient than PoW.
+
+Summary
+
+Pi Network: Focuses on accessibility, mobile mining, and eco-friendliness, with its main success being its large user base and novel approach to mining. However, it still needs to prove its viability and use case upon mainnet launch.
+
+Others: Polkadot, Filecoin, Ecomi, Kusama, and Solana have all launched their mainnets and have established themselves in their respective niches with varying degrees of success. They employ various eco-friendly consensus mechanisms and have solid technical foundations and active ecosystems.
+
+"
+FileCoin 🤝 Hedera,Hedera,1e03lto,2024-07-10 14:48:57,28,0.89,0,https://i.redd.it/bnyrqzs6mqbd1.jpeg,oak1337,Discussion,
+Decentralization does not exist ... yet,spheronfdn,1dyt2bg,2024-07-09 00:01:47,2,1.0,0,https://www.reddit.com/r/spheronfdn/comments/1dyt2bg/decentralization_does_not_exist_yet/,SpheronFDN,,"""How can we build something 'decentralized' when the foundation is centralized?""  
+  
+Our CEO, Prashant Maurya breaks down our mission to create a decentralized cloud layer for all of Web3 in #DWebDecoded with [Filecoin Foundation](https://fil.org/)  
+  
+Listen to the full talk on X 🎙️  
+[https://x.com/FilFoundation/status/1809286119076557290](https://x.com/FilFoundation/status/1809286119076557290)"
+"""Bitunix Spot Welcomes Filecoin (FIL) Trading! 🎉📈""",BitunixCrypto,1dxppgy,2024-07-07 16:13:50,1,1.0,0,https://www.reddit.com/r/BitunixCrypto/comments/1dxppgy/bitunix_spot_welcomes_filecoin_fil_trading/,Warm-Echo5540,,"
+   
+ Introducing the latest addition to #BitunixSpot! 🎉 ➡️ @Filecoin ( $FIL ) trading is now available on the platform. ➡️ Start trading FIL/USDT:"
+"Filecoin Foundation on X: ""The digital revolution of the last 25 years has fundamentally shifted the role of value in our society. A new paradigm is here, and the shift has already begun. Learn about the opportunities of the data economy at FIL Brussels, July 8-10.",filecoin,1dwtg43,2024-07-06 12:25:39,9,1.0,1,https://twitter.com/FilFoundation/status/1809404925782229487,reditpost1,,
